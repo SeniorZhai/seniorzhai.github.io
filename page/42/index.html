@@ -1,0 +1,1549 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  
+    <title>SeniorZhai&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Dear宅学长">
+    
+
+    
+    <meta name="description" content="专注于移动平台">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SeniorZhai&#39;s blog">
+<meta property="og:url" content="http://seniorzhai.github.io/page/42/index.html">
+<meta property="og:site_name" content="SeniorZhai&#39;s blog">
+<meta property="og:description" content="专注于移动平台">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SeniorZhai&#39;s blog">
+<meta name="twitter:description" content="专注于移动平台">
+
+    
+    <link rel="alternative" href="/atom.xml" title="SeniorZhai&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/logo.png">
+    <link rel="apple-touch-icon-precomposed" href="/img/logo.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="SeniorZhai&#39;s blog" title="SeniorZhai&#39;s blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="SeniorZhai&#39;s blog">SeniorZhai&#39;s blog</a></h1>
+				<h2 class="blog-motto">苟利国家生死以，起因福祸趋避之</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:seniorzhai.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main">
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/02/22/NDK-Samples/" title="NDK Samples" itemprop="url">NDK Samples</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2014-02-22T14:15:09.000Z" itemprop="datePublished"> 发表于 2014-02-22</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <ul>
+<li>在NDk的目录下有一个例子<code>\android-ndk\samples\hello-jni</code></li>
+</ul>
+<ol>
+<li>将它导入到eclipse开发环境中（最好选择cpoy到自己的工作空间）</li>
+<li>在命令行进入该项目的路径，执行<code>ndk-build</code>命令，编译程序</li>
+<li>在eclipse上试运行（注：在4.x的版本要将Dependencies包去掉，貌似这个包是做低版本支持的，在高版本中会出错）<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022406.png" alt></li>
+<li>运行成功</li>
+</ol>
+<p><img src="https://github.com/zt1991616/blog/raw/master/Image/14022407.png" alt></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//hello-jni.c</span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;jni.h&gt;</span></span></span><br><span class="line"><span class="comment">// &lt;jni.h&gt;用于java的调用</span></span><br><span class="line">jstring</span><br><span class="line"><span class="comment">// 名字即包名加函数名</span></span><br><span class="line">Java_com_example_hellojni_HelloJni_stringFromJNI( JNIEnv* env, jobject thiz )</span><br><span class="line">&#123;</span><br><span class="line"><span class="meta"># <span class="meta-keyword">if</span> defined(__arm__)</span></span><br><span class="line">  <span class="meta"># <span class="meta-keyword">if</span> defined(__ARM_ARCH_7A__)</span></span><br><span class="line">    <span class="meta"># <span class="meta-keyword">if</span> defined(__ARM_NEON__)</span></span><br><span class="line">      <span class="meta"># <span class="meta-keyword">define</span> ABI <span class="meta-string">"armeabi-v7a/NEON"</span></span></span><br><span class="line">    <span class="meta"># <span class="meta-keyword">else</span></span></span><br><span class="line">      <span class="meta"># <span class="meta-keyword">define</span> ABI <span class="meta-string">"armeabi-v7a"</span></span></span><br><span class="line">    <span class="meta"># <span class="meta-keyword">endif</span></span></span><br><span class="line">  <span class="meta"># <span class="meta-keyword">else</span></span></span><br><span class="line">   <span class="meta"># <span class="meta-keyword">define</span> ABI <span class="meta-string">"armeabi"</span></span></span><br><span class="line">  <span class="meta"># <span class="meta-keyword">endif</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">elif</span> defined(__i386__)</span></span><br><span class="line">   <span class="meta"># <span class="meta-keyword">define</span> ABI <span class="meta-string">"x86"</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">elif</span> defined(__mips__)</span></span><br><span class="line">   <span class="meta"># <span class="meta-keyword">define</span> ABI <span class="meta-string">"mips"</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">else</span></span></span><br><span class="line">   <span class="meta"># <span class="meta-keyword">define</span> ABI <span class="meta-string">"unknown"</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">endif</span></span></span><br><span class="line">    <span class="comment">// env为java与C交互的结构，返回UTF编码的字符串</span></span><br><span class="line">    <span class="keyword">return</span> (*env)-&gt;NewStringUTF(env, <span class="string">"Hello from JNI !  Compiled with ABI "</span> ABI <span class="string">"."</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloJni</span> <span class="keyword">extends</span> <span class="title">Activity</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        TextView  tv = <span class="keyword">new</span> TextView(<span class="keyword">this</span>);</span><br><span class="line">        tv.setText(stringFromJNI() );</span><br><span class="line">        setContentView(tv);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 声明一个native方法，即.c的函数</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">native</span> String  <span class="title">stringFromJNI</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">native</span> String  <span class="title">unimplementedStringFromJNI</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        System.loadLibrary(<span class="string">"hello-jni"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="在adb-shell中运行c程序"><a href="#在adb-shell中运行c程序" class="headerlink" title="在adb shell中运行c程序"></a>在adb shell中运行c程序</h2><ul>
+<li>在<code>\android-ndk\samples\test-libstdc++</code>下有这样一个例子，我们进行修改后然后在设备上运行它。</li>
+</ul>
+<ol>
+<li>将jni目录下的<code>test-libstl.cpp</code>的文件进行修改</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;cerrno&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;cstddef&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"Zoe\n"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>在命令行下使用<code>ndk-build</code>编译该项目<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022408.png" alt></li>
+<li>将项目目录下的<code>\libs\armeabi\test-libstl</code>文件拷贝到设备的<code>/data/data</code>目录下(你需要该目录的写权限)<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022409.png" alt></li>
+<li>进入设备的shell，并获取权限<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022410.png" alt></li>
+<li>切换到<code>/data/data</code>目录，修改<code>test-libstl</code>文件的权限，并执行它<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022411.png" alt></li>
+</ol>
+<h2 id="编写自己的程序"><a href="#编写自己的程序" class="headerlink" title="编写自己的程序"></a>编写自己的程序</h2><ol>
+<li>在任意目录下，创建jni文件夹</li>
+<li><p>创建一个你的程序，如：<code>MyDemo.c</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> a,b,c;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%d %d %d"</span>,&amp;a,&amp;b,&amp;c);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%d+%d+%d=%d\n"</span>,a,b,c,a+b+c);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建<code>Android.mk</code>文件，注意<code>LOCAL_MODULE</code>、<code>LOCAL_SRC_FILES</code>属性</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">LOCAL_PATH := $(call my-dir)</span><br><span class="line">include $(CLEAR_VARS)</span><br><span class="line">LOCAL_MODULE := MyDemo</span><br><span class="line">LOCAL_SRC_FILES := MyDemo.c</span><br><span class="line">include $(BUILD_EXECUTABLE)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按上一个例子编译、拷贝、执行</p>
+</li>
+</ol>
+<p><img src="https://github.com/zt1991616/blog/raw/master/Image/14022412.png" alt></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Android/">Android</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Android/">Android</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/02/22/NDK-Samples/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/02/22/NDK-Samples/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/02/22/UITextView多行文本控件/" title="UITextView多行文本控件" itemprop="url">UITextView多行文本控件</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2014-02-22T06:39:44.000Z" itemprop="datePublished"> 发表于 2014-02-22</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <ul>
+<li>继承了UIScrollView:UIView控件，默认带有滚动条</li>
+<li>UITextView与UITextField的区别<ul>
+<li>UITextView是一个多行文本框，UITextField只是单行文本</li>
+<li>UITextView没有继承UIControl控件</li>
+<li>UITextView继承了UIScrollView，所以它具有UISrollView的功能和行为。<h2 id="UIScrollView支持的属性"><a href="#UIScrollView支持的属性" class="headerlink" title="UIScrollView支持的属性"></a>UIScrollView支持的属性</h2></li>
+</ul>
+</li>
+<li>控制显示区域的属性<ul>
+<li>contentSize:该属性是一个CGSize类型的值，制定显示内容的完整宽度和完整高度。</li>
+<li>contentInset:该属性是一个UIEdgeInsets类型的值，表示所需要内容在上下左右的留白。</li>
+<li>contentOffset:该属性是一个CGPoint值，表示可视区域在显示内容上滚动的距离。</li>
+</ul>
+</li>
+<li>属性设置<br>1.Scrollers<ul>
+<li>Shows Horizontal Scrllers:当用户水平滚动该控件时，该控件会显示水平滚动条。</li>
+<li>Shows Vertical Scrollers: 当用户垂直滚动该控件时，该控件会显示垂直滚动条。</li>
+<li>Scrolling Enabled:控件能否滚动。</li>
+<li>Paging Enabled:是否分页。</li>
+<li>Direction Lock Enabled:第一次滚动后，不允许向其他方向滚动。</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>Bounce<ul>
+<li>Bounce :弹回效果。</li>
+<li>Bounce Horizontally:水平弹回效果。</li>
+<li>Bounce Vertically:垂直弹回效果。</li>
+</ul>
+</li>
+<li>Zoom<ul>
+<li>Min 最小的可缩放比例。</li>
+<li>Max 最大的可缩放比例。</li>
+</ul>
+</li>
+<li>Touch<ul>
+<li>Bounces Zoom:内容缩放是否有弹性。</li>
+<li>Delays Content Touches:真正确定滚动意图才去处理触碰手势。</li>
+<li>Cancellable Content Touches:勾选后，如果该UIScrollView中的内容已经跟踪用户手势触碰动作的情况下，且用户拖动手指足以启动一个滚动事件，该UISrollView控件会调用touchesCancelled:withEvent:方法，并将该手指拖动事件当成滚动该UISroll控件。如果不勾选，UIScrollView控件已经跟踪某个手指动作，将不会理会其他的手指动作。</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>使用委托对象处理UITextView事件<ul>
+<li>委托对象必须实现UITextViewDelegate协议，协议定义了如下方法。</li>
+</ul>
+<ol>
+<li>-textViewShouldBeginEdting:将要开始编辑内容时回调。</li>
+<li>-textViewDidBeginEdting:开始编辑内容时回调。</li>
+<li>-textViewShouldEndEdting:将要结束时回调。</li>
+<li>-textViewDidEndEdting:结束编辑时回调。</li>
+<li>-textView:shouldChangeTextInRange:replacementText:指定范围内的文本内容将要被替换是回调。</li>
+<li>-textViewDidChange:文本内容发生改变时回调。</li>
+<li>-textViewDidChangeSelection:文本内某些文本改变时回调。</li>
+</ol>
+</li>
+<li><a href="https://github.com/zt1991616/iOSDemo/tree/master/UIViewDemo6" target="_blank" rel="noopener">实例</a></li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/iOS/">iOS</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/iOS/">iOS</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/02/22/UITextView多行文本控件/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/02/22/UITextView多行文本控件/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/02/22/xib文件注意点/" title="xib文件注意点" itemprop="url">xib文件注意点</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2014-02-22T06:38:34.000Z" itemprop="datePublished"> 发表于 2014-02-22</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <ol>
+<li>创建控制器. File-&gt;New File-&gt;Iphone OS-&gt;Cocoa Touch Class-&gt;UIViewController subclass;</li>
+<li>创建xib. File-&gt;New File-&gt;Iphone OS-&gt;User Interface-&gt;View XIB</li>
+<li>绑定controller和view. 用Interface Builder打开xxx.xib, 点击Files’ Owner, 在Identity Inspector里面的Class Identity, 选择Step 1创建的控制器类, 接着拖拽File’s Owner到View中, 选择Outlets-&gt;view.先选中file’s owner(这个很重要)</li>
+</ol>
+<p><img src="https:github.com/zt1991616/blog/raw/master/Image/14022204.png" alt><br><img src="https:github.com/zt1991616/blog/raw/master/Image/14022205.png" alt></p>
+<h2 id="定制iOS应用图标"><a href="#定制iOS应用图标" class="headerlink" title="定制iOS应用图标"></a>定制iOS应用图标</h2><ul>
+<li>需要57X57、114X114、120X120的图片作为图标。</li>
+<li><h1 id="需要320X480、640X960、640X1136的素材作为启动画面。"><a href="#需要320X480、640X960、640X1136的素材作为启动画面。" class="headerlink" title="需要320X480、640X960、640X1136的素材作为启动画面。"></a>需要320X480、640X960、640X1136的素材作为启动画面。</h1></li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/iOS/">iOS</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/iOS/">iOS</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/02/22/xib文件注意点/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/02/22/xib文件注意点/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/02/21/UIImageView-UIAlertView-UIActionSheet/" title="UIImageView-UIAlertView-UIActionSheet." itemprop="url">UIImageView-UIAlertView-UIActionSheet.</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2014-02-21T06:35:32.000Z" itemprop="datePublished"> 发表于 2014-02-21</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="UIImageView"><a href="#UIImageView" class="headerlink" title="UIImageView"></a>UIImageView</h2><ul>
+<li>一个显示图片控件，直接继承了UIView基类，没有继承UIControl，不能接受用户输入，不能与用户交互。</li>
+<li>常用属性<br><code>image</code>:访问或设置该控件显示的图片<br><code>highlighteImage</code>:访问或设置该控件出于高亮状态时显示的图片</li>
+<li>UIImage还可以使用动画显示一组图片<br><code>animationImages</code>:访问或者设置该UIImageView需要动画显示的多张图片，该属性的值为NSArray对象。<br><code>highlightedAnimationImages</code>:访问或设置该UIImageView高亮状态下需要动画显示的多张图片，该属性的值为NSArray对象。<br><code>animationDuration</code>:访问或设置该UIImageView的动画持续时间。<br><code>animationRepeatCout</code>:访问或设置该UIImageView的动画重复次数。<br><code>startAnimating</code>:开始播放动画。<br><code>stopAnimating</code>:停止播放动画。<br><code>isAnimationg</code>:该方法判断该UIImageView是否正在播放动画。</li>
+<li>缩放模式<br><code>Scale To Fill</code>:不保持纵横比缩放图片，使图片完全适应该UIImageView控件。<br><code>Aspect Fit</code>:保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来。<br><code>Aspect Fill</code>:保持纵横比缩放图片，只保证短边完全显示出来。<br><code>Center</code>:不缩放图片，只显示图片的中间区域。<br><code>Top</code>:不缩放图片，只显示图片的顶部区域。<br><code>Bottom</code>:不缩放图片，只显示图片的底部区域。<br><code>Left</code>:不缩放图片，只显示图片的左边区域。<br><code>Right</code>:不缩放图片，只显示图片的右边区域。<br><code>Top Right</code>:不缩放图片，只显示图片的右上边区域。<br><code>Top Left</code>:不缩放图片，只显示图片的左上边区域。<br><code>Bottom Left</code>:不缩放图片，只显示图片的左下边区域。<br><code>Bottom Right</code>:不缩放图片，只显示图片的右下边区域。<h2 id="UIAlertView-警告框"><a href="#UIAlertView-警告框" class="headerlink" title="UIAlertView(警告框)"></a>UIAlertView(警告框)</h2></li>
+<li><p>UIAlertView</p>
+<ul>
+<li>显示在屏幕中央的弹出式警告框。</li>
+<li>基本用法<ol>
+<li>创建<code>UIAlertView</code>,指定标题、消息内容、包含多少个按钮、指定UIAlertViewDelegate委托对象。</li>
+<li>调用<code>UIAlertView</code>显示出来。</li>
+<li>实现<code>UIAlertViewDelegate</code>协议中的方法。</li>
+</ol>
+</li>
+<li><p>实例代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">-(void)viewDidLoad</span><br><span class="line">&#123;</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line">&#125;</span><br><span class="line">-(IBAction)clicked:(id)sender</span><br><span class="line">&#123;</span><br><span class="line">    UIAlertView *alert = [[UIAlertView alloc]</span><br><span class="line">        initWithTitle:@&quot;提示&quot;</span><br><span class="line">        message:@&quot;警告框信息&quot;</span><br><span class="line">        deledgate:self</span><br><span class="line">        cancelButtonTitle:@&quot;确定&quot;</span><br><span class="line">        otherButtonTitles:@&quot;按钮一&quot;,@&quot;按钮二&quot;,@&quot;按钮三&quot;,nil];</span><br><span class="line">    [alert show];</span><br><span class="line">&#125;</span><br><span class="line">-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</span><br><span class="line">&#123;</span><br><span class="line">    NSString* msg = [NSString stringWithFormat:@&quot;你点击了第%d按钮&quot;,buttonIndex];</span><br><span class="line">    UIAlertView *alert = [[UIAlertView alloc]</span><br><span class="line">        initWithTitle:@&quot;提示&quot;</span><br><span class="line">        message:msg</span><br><span class="line">        delegate:nil</span><br><span class="line">        cancelButtonTitle:@&quot;确定&quot;</span><br><span class="line">        otherButtonTitles:nil];</span><br><span class="line">    [alert show]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>UIAlertViewDelegate协议中常用的方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex:</span><br><span class="line">//当用户点击该警告框中某个按钮时激发该方法，buttonIndex参数代表用户单击按钮的索引，索引从0开始。</span><br><span class="line">-(void)willPresenAlertView:(UIAlertView *)alertView:</span><br><span class="line">//当该警告框将要显示出来时将会激发该方法。</span><br><span class="line">-(void)didPresenAlertView:(UIAlertView *)alertView:</span><br><span class="line">//当该警告框将要显示出来后将会激发该方法。</span><br><span class="line">-(BOOL)alertViewShouldEnableFirstOtherButton:(UIAlertView *)alertView:</span><br><span class="line">//当该警告框第一个非Cancel按钮被启用时激发该方法。</span><br><span class="line">-(void)alertView:(UIAlertView *)alerView willDismissWithButtonIndex:(NSInteger)buttonIndex:</span><br><span class="line">//当用户单击某个按钮将要隐藏该警告框时激发该用法。</span><br><span class="line">-(void)alertViewCancel:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInterger)buttonIndex:</span><br><span class="line">//当用户通过单击某个按钮完全隐藏该警告框时激发该方法。</span><br><span class="line">-(void)alertViewCancel:(UIAlertView *)alertView:</span><br><span class="line">//当该警告框被取消时（如用户单击了Home键）激发该方法。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>带输入框的UIAlertView</p>
+<ul>
+<li><p>UIAlertView支持actionSheetStyle属性，用于设置该UIAlert的风格，支持如下枚举值：</p>
+<p><code>UIAlertViewStyleDefault</code>：默认的警告框风格。<br><code>UIAlertViewStyleSecureTextInput</code>：警告框中包含一个密码输入框。<br><code>UIAlertViewStylePlainTextInput</code>：警告框中包含一个普通的输入框。<br><code>UIAlertViewStyleLoginAndPasswordInput</code>：警告框中包含用户名、密码两个输入框。</p>
+</li>
+</ul>
+</li>
+<li>实例代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">-(void)viewDidLoad</span><br><span class="line">&#123;</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line">&#125;</span><br><span class="line">-(IBAction)clicked:(id)sender</span><br><span class="line">&#123;</span><br><span class="line">    UIAlertView *alert = [[UIAlertView alloc]</span><br><span class="line">        initWithTitle:@&quot;登录&quot;</span><br><span class="line">        message:@&quot;&quot;</span><br><span class="line">        delegate:self</span><br><span class="line">        cancelButtonTitle:@&quot;取消&quot;</span><br><span class="line">        otherButtonTitles:@&quot;确定&quot;,nil];</span><br><span class="line">    alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;</span><br><span class="line">    [alert textFieldAtIndex:1].keyboardType = UIKeyboardTypeNumberPad;</span><br><span class="line">    [alert show];</span><br><span class="line">&#125;</span><br><span class="line">-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInterger)buttonIndex</span><br><span class="line">&#123;</span><br><span class="line">    if(buttonIndex == 1)&#123;</span><br><span class="line">        UITextField* nameField = [alertView textFieldAtIndex:0];</span><br><span class="line">        UITextField* passField = [alertView textFieldAtIndex:1];</span><br><span class="line">        NSString* msg = [NSString stringWithFormat:&quot;输入的用户名为：%@，密码为%@&quot;,nameField.text,passField.text];</span><br><span class="line">        UIAlertView *alert = [[UIAlertView alloc]</span><br><span class="line">            initWithTitle:@&quot;提示&quot;</span><br><span class="line">            message:msg</span><br><span class="line">            delegate:nil</span><br><span class="line">            cancelButtonTitle:@&quot;确定&quot;</span><br><span class="line">            otherButtonTitles:nil];</span><br><span class="line">        [alert show];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">-(void)willPresentAlerView:(UIAlertView *)alertView</span><br><span class="line">&#123;</span><br><span class="line">    for(UIView * view in alertView.subViews)</span><br><span class="line">    &#123;</span><br><span class="line">        if([view isKindOfClass[UILabel class])</span><br><span class="line">        &#123;</span><br><span class="line">            UILabel* label = (UILabel*)view;</span><br><span class="line">            label.textAlignment=UITextAlignmentLeft;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="UIActionSheet"><a href="#UIActionSheet" class="headerlink" title="UIActionSheet"></a>UIActionSheet</h2><ul>
+<li><p>显示在底部的按钮列表，用户通过单击某个按钮来表明自己的态度。</p>
+<ul>
+<li><p>风格(actionSheetStyle)：</p>
+<p><code>UIActionSheetStyleDefault</code>:默认风格，灰色背景上显示白色文字。<br><code>UIActionSheetStyleBlackTranslucent</code>:在透明的黑色背景上显示白色文字。<br><code>UIActionSheetStyleBlackOpaque</code>:在纯黑的背景上显示白色文字</p>
+</li>
+</ul>
+</li>
+<li>示例代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">-(void)viewDidLoad</span><br><span class="line">&#123;</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line">&#125;</span><br><span class="line">-(IBAction)clicked:(id)sender&#123;</span><br><span class="line">    UIActionSheet* sheet = [[UIActionSheet alloc] </span><br><span class="line">        initWithTitle:@&quot;请确认是否确认&quot;</span><br><span class="line">        delegate:self</span><br><span class="line">        cancelButton:@&quot;取消&quot;</span><br><span class="line">        destrutiveButtonTitle:@&quot;确定&quot;</span><br><span class="line">        otherButtonTitle:@&quot;按钮一&quot;,@&quot;按钮二&quot;,nil];</span><br><span class="line">    sheet.actionSheetStyle = UIActionSheetStyleAutomaic;</span><br><span class="line">    [sheet showInView:self.view];</span><br><span class="line">&#125;</span><br><span class="line">-(void)actionSheet:(UIActionSheet *)actionSheetclickedButtonAtIndex:(NSInteger)buttonIndex</span><br><span class="line">&#123;</span><br><span class="line">    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@&quot;提示&quot;</span><br><span class="line">        message:[NSString stringWithFormat:@&quot;你单击了第%d个按钮&quot;,buttonIndex</span><br><span class="line">        delegate:nil</span><br><span class="line">        cancelButtonTitle:@&quot;确定&quot;</span><br><span class="line">        otherButtonTitles:nil];</span><br><span class="line">    [alert show];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/iOS/">iOS</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/UIImageView/">UIImageView</a><a href="/tags/UIAlertView/">UIAlertView</a><a href="/tags/UIActionSheet/">UIActionSheet.</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/02/21/UIImageView-UIAlertView-UIActionSheet/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/02/21/UIImageView-UIAlertView-UIActionSheet/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/02/20/Anroid-NDK的安装与配置/" title="Anroid NDK的安装与配置" itemprop="url">Anroid NDK的安装与配置</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2014-02-20T14:14:20.000Z" itemprop="datePublished"> 发表于 2014-02-20</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="Mac版"><a href="#Mac版" class="headerlink" title="Mac版"></a>Mac版</h2><ol>
+<li>到Google的官网下载<a href="&quot;http://developer.android.com/tools/sdk/ndk/index.html&quot;">Andorid NDK</a></li>
+<li>解压到你要存放的位置</li>
+<li>开启终端，输入命令pico .bash_profile<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022001.png" alt></li>
+<li><p>添加NDK的绝对路径<br><code>export PATH=${PATH}:/Users/userName/Documents/android-ndk-r9c</code><br><code>A_NDK_ROOT=/Users/userName/Documents/android-ndk-r8d</code><br><code>export A_NDK_ROOT</code><br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022002.png" alt></p>
+<ul>
+<li>注：图片中有SDK的部分，具体路径视个人情况而定。</li>
+</ul>
+</li>
+<li><p>测试：关闭终端后重启，输入ndk-build,出现以下提示，证明配置成功<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022002.png" alt></p>
+</li>
+</ol>
+<h2 id="Windows版"><a href="#Windows版" class="headerlink" title="Windows版"></a>Windows版</h2><ol>
+<li>到Google的官网下载<a href="&quot;http://developer.android.com/tools/sdk/ndk/index.html&quot;">Andorid NDK</a></li>
+<li>解压到你要存放的位置</li>
+<li>计算机-属性-高级系统设置-高级-环境变量-系统环境变量-编辑<code>Path</code>变量-添加NDK的存放路径</li>
+<li>测试：在命令行中输入ndk-build,出现以下提示，证明配置成功<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022005.png" alt></li>
+</ol>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Android/">Android</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Android/">Android</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/02/20/Anroid-NDK的安装与配置/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/02/20/Anroid-NDK的安装与配置/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/02/20/导航栏/" title="导航栏" itemprop="url">导航栏</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2014-02-20T07:34:50.000Z" itemprop="datePublished"> 发表于 2014-02-20</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <ul>
+<li>UINavigationBar<ul>
+<li>一个导航栏一般包括四个对象：UINavigationController、UINavigationBar、UIViewControllerUINavigationItem;其中UINavigationItem存放在UINavigationBar上。<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022007.png" alt></li>
+</ul>
+</li>
+<li>导航栏结构剖析图<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022008.png" alt><br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022009.png" alt></li>
+<li><p>定制标题视图</p>
+<ul>
+<li>通过NavigationItem的titleView属性，定制标题视图，titleView属性是一个视图类，因此可以添加一个UIView的实例，也可以添加UIView的子类，也可以在UIView的实例中添加子视图。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UIView *cView = [[UIView alloc]initWithFrame:CGRectMake(0,0,160,44)];</span><br><span class="line">cView = [UIColor redColor];</span><br><span class="line">self.navigationItem.titleView = cView;</span><br><span class="line">[cView release];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>定制左、右栏目</p>
+<ul>
+<li>NavigationItem实例有一个leftBarButtonItem和reightBarButtonItem，而这两个属性又是UIBatButtonItem的实例，可以通过初始化实例，定制。</li>
+<li>UIBarButtonItem类提供了常用的四个初始化方法，通过这些不同的初始化方法，用户可以得到不同风格的Item。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 初始化一个UIBarButtonItem的实例，初始化一个系统的Item</span><br><span class="line">-(id)initWithBarButtonSystemItem:(UIBarButtonSystemItem)systemItem taget:(id)target action:(SEL)action;</span><br><span class="line">// 初始化一个带图片的UIButtonItem实例</span><br><span class="line">-(id)initWithImage:(UIImage *)image style:(UIBarButtonItemStyle)style target:(id)target action:(SEL)action;</span><br><span class="line">// 初始化一个自带标题的UIBarButtonItem实例</span><br><span class="line">-(id)initWithTitle:(NSString *)title style:(UIBarButtonItemStyle)style target:(id)target action:(SEL)action;</span><br><span class="line">// 初始化一个自定义视图</span><br><span class="line">-(id)initWithCustomView:(UIView *)customView;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>设置风格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 设置导航栏的风格为黑色</span><br><span class="line">self.navigationController.navigationBar.barStyle = UIBarStyleBlack;</span><br><span class="line">// 设置导航栏为透明</span><br><span class="line">self.navigationController.navigationBar.translucent = YES;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置颜色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 设置导航栏的颜色</span><br><span class="line">self.navigationController.navigationBar。tintColor = [UIColor redColor];</span><br><span class="line">// 设置自定义颜色，注意每一个颜色的范围是0~1之间</span><br><span class="line">[UIColor colorWithRed:0/255.0 green:225/255.0 blue:122/255.0 alpha:1];</span><br><span class="line">// 以图片作为颜色，注意这里是无法设置NavigationBar</span><br><span class="line">[UIColor colorWithPatternImage:[UIImage imageNamed:@&quot;img.png&quot;]];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>隐藏返回按钮</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 隐藏返回按钮，后者带动画效果</span><br><span class="line">[self.navigationItem setHidesBackButton:YES];</span><br><span class="line">[self.navigationController setToolbarHidden：YES animated:YES];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置prompt属性</p>
+<ul>
+<li>导航栏的prompt属性，通过navigationItem来设置，其主要作用是用于提示用户。比如，用户正在请求网络数据时，提示用户数据正在被加载，待加载完成后可以将它的值设置为nil，取消显示。<br><img src="https://github.com/zt1991616/blog/raw/master/Image/prompt.png" alt><h2 id="工具栏"><a href="#工具栏" class="headerlink" title="工具栏"></a>工具栏</h2></li>
+</ul>
+</li>
+<li><p>创建UIToolBar的实例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">UIToolBar *toolBar = [[UIToolBar alloc]initWithFrame:CFrectMake(0,460-88,320,44)];</span><br><span class="line">// 初始化UIToolBar的UIBarButtonItem实例，与UINavigationItem中左、右栏目是相同的</span><br><span class="line">UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@&quot;天气&quot; style:UIBarButtonItemStyleBordered target:self action:nil];</span><br><span class="line">// 向UIToolBar添加UIBarButtonItem</span><br><span class="line">NSArray *itemArray = [NSArray arrayWithObjects:item1,nil];</span><br><span class="line">// 设置UIToolBar的间隔，前者是item之前选择一个合适的列宽，后者用户可以自定义item之间的列宽，需要通过UIBar实例中的width属性来设置。</span><br><span class="line">UIBarButtonSystemItemFlexibleSpace|UIBarButtonSystemItemFixedSpace</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>导航控制器中的UIToolBar</p>
+<ul>
+<li>在导航控制器中会带有一个UIToolBar的实例，但默认是隐藏的，如果需要显示，需要通过<code>[self.navigationController setToolbarHidden:No animated:YES]</code>将其打开。</li>
+<li>导航控制器只拥有一个UIToolBar实例，但UIToolBar所拥有的UIBarButtonItem实例，由视图控制器管理。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 将UIBarButtonItem放入数组中，最后添加至UIToolBar中，self表示视图控制器</span><br><span class="line">[self setToolbarItems:itemArray animated:YES];</span><br><span class="line">// 以下代码UIBarButtonItem不会出现在UIToolBar中，且toolbar是制度属性</span><br><span class="line">[self.navigationController.toolbar setItem:itemsArray animated:YES];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0,460-44-44,320,44)];</span><br><span class="line">toolBar.barStyle = UIBarStyleDefault;</span><br><span class="line">[self.view addSubView:toolBar];</span><br><span class="line">[toolBar release];</span><br><span class="line">UIBarButtonItem *addItem = [[UIBarButton alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:nil];</span><br><span class="line">UIBarButtonItem *saveItem = [[UIBarButton alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:nil];</span><br><span class="line">UIBarButtonItem *titleItem = [[UIBarButton alloc]initWithTitle:@&quot;title&quot; style:UIBarButtonItemStylePlain target:self action:nil];</span><br><span class="line">UIBarButtonItem *imageItem = [[UIBarButton alloc]initWithImage:[UIImage imageNamed:@&quot;1&quot;] style:UIBarButtonItemStylePlain target:self action:nil];</span><br><span class="line">UIBarButtonItem *flexibleItem = [[UIBar]</span><br><span class="line">NSArray *items = @[addItem,saveItem,titleItem,imageItem];</span><br><span class="line">[toolBar setItems:items animated:Yes];</span><br></pre></td></tr></table></figure>
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/iOS/">iOS</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/iOS/">iOS</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/02/20/导航栏/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/02/20/导航栏/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/02/20/UIControl/" title="UIControl" itemprop="url">UIControl</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2014-02-20T07:33:50.000Z" itemprop="datePublished"> 发表于 2014-02-20</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <ul>
+<li>UIControl<ul>
+<li>作用：具有事件处理的控件的父类</li>
+<li>事件响应的3种形式：基于触摸、基于值、基于编辑</li>
+</ul>
+</li>
+<li><p>常用方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-(void)addTarget:(id)taget action:(SEL)action forControlEvent:(UIControlEvents)controlEvents //添加一个事件</span><br><span class="line">-(void)removeTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents // 移除某一个事件</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>事件处理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">// 按下时触发</span><br><span class="line">UIControlEventTouchDown</span><br><span class="line">// 多击触发</span><br><span class="line">UIControlEventTouchDownRepeat</span><br><span class="line">// 控件内拖动触发</span><br><span class="line">UIControlEventTouchDragInside</span><br><span class="line">// 控件外拖动触发</span><br><span class="line">UIControlEventTouchDrageOutside</span><br><span class="line">// 当触摸从控件外拖动到控件内部时</span><br><span class="line">UIControlEventTouchDragEnter</span><br><span class="line">// 当触摸从控件内拖动到控件外部时</span><br><span class="line">UIControlEventTouchDragExit</span><br><span class="line">// 控件之内触摸抬起时</span><br><span class="line">UIControlEventTouchupInside</span><br><span class="line">// 控件之外触摸抬起时</span><br><span class="line">UIControlEventTouchUpOutside</span><br><span class="line">// 触摸事件取消</span><br><span class="line">UIControlEventTouchCancel</span><br><span class="line">// 当控件的值发生改变时</span><br><span class="line">UIControlEventTouchValueChanged</span><br><span class="line">// 文本控件中开始编辑</span><br><span class="line">UIControlEventEditingDidBegin</span><br><span class="line">// 文本控件中的文本被改变</span><br><span class="line">UIControlEventEditingChanged</span><br><span class="line">// 文本孔家中编辑结束</span><br><span class="line">UIControlEventEditingDidEnd</span><br><span class="line">// 文本孔家中通过按下回车键结束编辑时</span><br><span class="line">UIControlEventEditingDidOnExit</span><br><span class="line">// 所有触摸事件</span><br><span class="line">UIControlEventAlltouchEvents</span><br><span class="line">// 所有编辑事件</span><br><span class="line">UIControlEventAllEditingEvents</span><br><span class="line">// 所有事件</span><br><span class="line">UIControlEventAllEvents</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="导航控制器"><a href="#导航控制器" class="headerlink" title="导航控制器"></a>导航控制器</h2><ul>
+<li>基本概念<br>  +<code>UINavigationController</code>用于构建分层应用程序的主要工具，管理着多个内容视图的换入（压入）和换出（弹出）。自身提供了视图切换的动画效果。<ul>
+<li>它的父类是<code>UIViewController</code>，是所有视图控件器的基类。</li>
+<li>导航控制器以栈的形式来实现。<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022004.png" alt></li>
+</ul>
+</li>
+<li>栈的基本概念和性质<ul>
+<li>栈是一种先进后出（后进先出）的数据结构，导航控制器以栈的形式来管理视图控制器，任何视图控制器都可以放入栈中。</li>
+<li>向栈添加一个对象的操作称为入栈（push）</li>
+<li>第一个入栈的对象叫做基栈</li>
+<li>最后一个入栈的对象叫栈顶</li>
+<li>栈删除一个对象的操作叫做出栈（pop）</li>
+<li>当前现实点视图控制器，即为栈顶。选择”返回”时，这个视图控制器就出栈了。</li>
+</ul>
+</li>
+<li>基本样式<ul>
+<li>蓝色部分：导航控制器的导航栏（NavigationBar）</li>
+<li>橙色部分：控制器包含的内容视图</li>
+<li>绿色部分：导航控制器的工具栏（UIToolBar，默认是隐藏的）<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022005.png" alt></li>
+</ul>
+</li>
+<li>元素尺寸<br><img src="https://github.com/zt1991616/blog/raw/master/Image/14022006.png" alt></li>
+<li><p>代码示例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// 控制器的初始化，为控制器添加导航控制器</span><br><span class="line">RootViewController *rootVC = [[RootViewController alloc] init];</span><br><span class="line">UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:rootVC];</span><br><span class="line">// 子控制器设置title，显示在导航栏上的标题</span><br><span class="line">self.title = @&quot;根控制器&quot;；</span><br><span class="line">// 控制器之间的导航</span><br><span class="line">SecondViewController *secondVC = [[SecondViewController alloc] init];</span><br><span class="line">[self.navigationController pushViewController:secondVC animated:YES];</span><br><span class="line">[secondVC release];</span><br><span class="line">// 隐藏（显示）导航栏、工具栏目</span><br><span class="line">[self.navigationController setNavigationBarHidden:NO animated:YES];</span><br><span class="line">[self.navigationController setToolbarHidden:NO animated:YES];</span><br><span class="line">// 延时调用hidden方法</span><br><span class="line">[self performSelector:@selector(hidden) withObject:nil afterDelay:0.3];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Demo代码片段</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">// AppDelegate.m</span><br><span class="line">// didFinshLunchingWithOptions()</span><br><span class="line">// ...</span><br><span class="line">RootViewcController * rootViewController = [[RootViewcController alloc] init];</span><br><span class="line">UINavigationController *navigation = [[UINavigationController alloc]initWithRootViewController:rootViewController];</span><br><span class="line">self.window.rootViewController = navigation;</span><br><span class="line">[rootViewController release];</span><br><span class="line">[navigation release];</span><br><span class="line">//RootController.m </span><br><span class="line">-(void)loagView</span><br><span class="line">&#123;</span><br><span class="line">	UIView *baseView = [[UIView alloc] initWithFrame:[UIScreen mainScreen] applicationFrame];</span><br><span class="line">	baseView.backgroundColor = [UIColor purpleColor];</span><br><span class="line">	self.view = baseView;</span><br><span class="line">	[baseView release];</span><br><span class="line"></span><br><span class="line">	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];</span><br><span class="line">	[button setTitle:@&quot;Push&quot; forState:UIControlStateNormal];</span><br><span class="line">	[button setFrame:CGRectMake(90,100,140,35)];</span><br><span class="line">	[button addTaget:self action:@selector(pushVC) forControlEvents:UIControlEventTouchUpInside];</span><br><span class="line">	[self addSubview:button];</span><br><span class="line">&#125;</span><br><span class="line">-(void)pushVC</span><br><span class="line">&#123;</span><br><span class="line">	SencondViewController *secondVC = [[SencondViewController alloc] init];</span><br><span class="line">	[self navigationController pushViewController:secondVC animated:YES];</span><br><span class="line">	[secondVC release];</span><br><span class="line">&#125;</span><br><span class="line">//SencondViewController.m</span><br><span class="line">-(void)loagView</span><br><span class="line">&#123;</span><br><span class="line">	UIView *baseView = [[UIView alloc] initWithFrame:[UIScreen mainScreen] applicationFrame];</span><br><span class="line">	baseView.backgroundColor = [UIColor orangeColor];</span><br><span class="line">	self.view = baseView;</span><br><span class="line">	[baseView release];</span><br><span class="line"></span><br><span class="line">	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];</span><br><span class="line">	[button setTitle:@&quot;HiidenOrShow&quot; forState:UIControlStateNormal];</span><br><span class="line">	[button setFrame:CGRectMake(90,150,140,35)];</span><br><span class="line">	[button addTaget:self action:@selector(hiddenOrShow) forControlEvents:UIControlEventTouchUpInside];</span><br><span class="line">	[self addSubview:button];</span><br><span class="line"></span><br><span class="line">	UIButton *back = [UIButton buttonWithType:UIButtonTypeRoundedRect];</span><br><span class="line">	[back setTitle:@&quot;backRootVC&quot; forState:UIControlStateNormal];</span><br><span class="line">	[back setFrame:CGRectMake(90,200,140,35)];</span><br><span class="line">	[back addTaget:self action:@selector(hiddenOrShow) forControlEvents:UIControlEventTouchUpInside];</span><br><span class="line">	[self addSubview:back];</span><br><span class="line">&#125;</span><br><span class="line">-(void)viewWillAppear:(BOOL)animated</span><br><span class="line">&#123;</span><br><span class="line">	[super viewWillAppear:animated];</span><br><span class="line">	[self.navigationController setToolBarHidden:YES animated:YES];</span><br><span class="line">&#125;</span><br><span class="line">-(void)hiddenOrShow</span><br><span class="line">&#123;</span><br><span class="line">	if(self.navigationController.toolbarHidden)</span><br><span class="line">	&#123;</span><br><span class="line">		[self.navigationController setToolBarHidden:NO animated:YES];</span><br><span class="line">		[self.navigationController setNavigationBarHidden:NO animated:YES];</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		[self.navigationController setToolBarHidden:YES animated:YES];</span><br><span class="line">		[self.navigationController setNavigationBarHidden:NO animated:YES];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">-(void)backRootVC</span><br><span class="line">&#123;</span><br><span class="line">	[self.navigationController popViewControllerAnimated:YES];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>导航控制器常用属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 获取到在栈中最顶层的视图控制器</span><br><span class="line">@property(nonatomic,readonly,retain)UIViewController *topViewController;</span><br><span class="line">// 获取到在斩重当前显示的视图控制器</span><br><span class="line">@property(nonatomic,readonly,retain)UIViewController *visibleViewController;</span><br><span class="line">// 在栈中当前视图控制器</span><br><span class="line">@property(nonatomic,copy)NSAraay *viewControllers;</span><br><span class="line">// 隐藏导航栏，默认不隐藏</span><br><span class="line">@property(nonatomic,getter=isNavigationBarHidden)BOOL navigationBarHidden;</span><br><span class="line">// 获取到导航栏</span><br><span class="line">@property(nonatomic,readonly)UINavigationBar *navigatuonBar;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>导航控制器常用方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 初始化一个根视图控制器，在栈的最底层</span><br><span class="line">-(id)initWithRootViewController:(UIViewController *)rootViewController;</span><br><span class="line">// 压入一个新的视图控制器</span><br><span class="line">-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;</span><br><span class="line">// 弹出一个新的视图控制器</span><br><span class="line">-(UIViewController *)popViewControllerAnimated:(BOOL)animated;</span><br><span class="line">// 弹出到指定的视图控制器</span><br><span class="line">-(NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated;</span><br><span class="line">// 回到跟视图控制器</span><br><span class="line">-(NSArray *)popToRootViewControllerAnimated:(BOOL)animated;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/iOS/">iOS</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/iOS/">iOS</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/02/20/UIControl/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/02/20/UIControl/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/02/18/常用UIView组件/" title="常用UIView组件" itemprop="url">常用UIView组件</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2014-02-18T04:46:08.000Z" itemprop="datePublished"> 发表于 2014-02-18</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="UIButton"><a href="#UIButton" class="headerlink" title="UIButton"></a>UIButton</h2><ul>
+<li>常用属性</li>
+</ul>
+<p>1.Type</p>
+<pre><code>+ Custom:选择此属性外观主要依靠自定义实现。
++ System:系统能够默认风格。
++ Detail Disclosure:详情标示。
++ Info Light:显示“i”图标的图形按钮。
++ IndoDark:显示“i”图标的图形按钮。
++ Add Contact:显示黑色“+”图标图形按钮。
+</code></pre><ol start="2">
+<li>State Config<ul>
+<li>按钮的状态<ul>
+<li>默认状态（Default）</li>
+<li>高亮状态（Highlighted）</li>
+<li>选中状态（Selected）</li>
+<li>禁用状态（Disable）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Title<ul>
+<li>可以选择Plain和Attributed文本方式</li>
+<li>制定显示的字符信息</li>
+</ul>
+</li>
+<li>Font<ul>
+<li>文本字体、大小、字体风格</li>
+</ul>
+</li>
+<li>Text Color<ul>
+<li>文本的颜色</li>
+</ul>
+</li>
+<li>Shadow Color<ul>
+<li>阴影颜色</li>
+</ul>
+</li>
+<li>Image<ul>
+<li>设置为图片按钮，Title属性将不会起作用。</li>
+</ul>
+</li>
+<li>Background<ul>
+<li>设置背景图片</li>
+</ul>
+</li>
+<li>Shadow Offset<ul>
+<li>文本和阴影的偏移量</li>
+</ul>
+</li>
+<li>Link Break<ul>
+<li>省略方式</li>
+</ul>
+</li>
+<li>Edge<ul>
+<li>Content:内容作为边界</li>
+<li>Title:文本作为边界</li>
+<li>Image:图片作为边界</li>
+</ul>
+</li>
+<li>Inset<ul>
+<li>边界距离</li>
+</ul>
+</li>
+</ol>
+<h2 id="UIAlert-And-UIActionSheet"><a href="#UIAlert-And-UIActionSheet" class="headerlink" title="UIAlert And UIActionSheet"></a>UIAlert And UIActionSheet</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@&quot;title&quot; message:@&quot;message&quot; delegate:nil cencelButtonTitle:@&quot;cancel&quot; otherButtonTitles:@&quot;other&quot;,nil];</span><br><span class="line">[alertView show];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UIActionSheet *actionSheet = [[UIActionSheet alloc] initWIthTitle:@&quot;title&quot; delegate:nil cancelButtonTitle:@&quot;cancel&quot;</span><br><span class="line">destructiveButtonTitle:@&quot;destrutive&quot;</span><br><span class="line">otherButtonTitles:@&quot;other1&quot;,nil];</span><br><span class="line">[actionSheet show];</span><br></pre></td></tr></table></figure>
+<h2 id="UIButton-1"><a href="#UIButton-1" class="headerlink" title="UIButton"></a>UIButton</h2><ul>
+<li>UIButton<ul>
+<li>作用：响应用户的点击事件的View</li>
+</ul>
+</li>
+<li><p>常用方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 设置指定状态对应的标题文本</span><br><span class="line">-(void)setTitle:(NSString *)title forState:(UIControlState)state;</span><br><span class="line">// 设置指定状态对应的标题颜色</span><br><span class="line">-(void)setTitleColor:(UIColor *)color forState:(UIControlState)state;</span><br><span class="line">// 设置指定状态对应的显示图片</span><br><span class="line">-(void)setImage:(UIImage *)image forState:(UIControlState)state;</span><br><span class="line">// 设置指定状态对应的背景图片</span><br><span class="line">-(void)setBackgroundImage:(UIImage *)image forState:(UIControlState)state;</span><br><span class="line">// 为按钮添加事件</span><br><span class="line">-(void)addtarget:(id *)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>UIButton状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">UICtrolStateNormal          // 正常状态</span><br><span class="line">UICtrolStateHighlighted     // 高亮状态</span><br><span class="line">UICtrolStateDisabled        // 禁用状态</span><br><span class="line">UICtrolStateSelected        // 选中状态</span><br><span class="line">UICtrolStateApplication</span><br><span class="line">UICtrolStateReserved</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>事件处理</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">// 用户按下时触发</span><br><span class="line">UIControlEventTouchDown</span><br><span class="line">// 点击计数大于1的触发</span><br><span class="line">UIControlEventTouchDownRepeat</span><br><span class="line">// 当触摸在控件内部拖动时触发</span><br><span class="line">UIControlEventTouchDragInside</span><br><span class="line">// 当触摸在控件之外拖动时触发</span><br><span class="line">UIControlEventTouchDragDutside</span><br><span class="line">// 当触摸从控件之外拖到内部时</span><br><span class="line">UIControlEventTouchDragEnter</span><br><span class="line">// 当触摸从控件内部拖到外部时</span><br><span class="line">UIControlEventTouchDragExit</span><br><span class="line">// 控件之内触摸抬起时</span><br><span class="line">UIControlEventTouchUpInside</span><br><span class="line">// 控件之外触摸抬起时</span><br><span class="line">UIControlEventTouchUpOutside</span><br><span class="line">// 触摸取消时间，设备被上锁或者电话呼叫打断</span><br><span class="line">UIControlEventTouchCanel</span><br></pre></td></tr></table></figure>
+<ul>
+<li>代码示例</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">UIButton *button = [UIButton buttonWithType:UIButttonTypeRoundedRect];</span><br><span class="line">[button setTitle:@&quot;Normal&quot; forState:UIControlNormal];</span><br><span class="line">[button setTitle:@&quot;Highlighted&quot; forState:UIControlHighlighted];</span><br><span class="line">[button setTitle:@&quot;Disabled&quot; forState:UIControlDisabled];</span><br><span class="line">[button setTitle:@&quot;Selected&quot; forState:UIControlSelected];</span><br><span class="line">button.frame = CGRectMake(90,100,140,40);</span><br><span class="line">[self.window.addSubview:button];</span><br></pre></td></tr></table></figure>
+<h2 id="图片视图"><a href="#图片视图" class="headerlink" title="图片视图"></a>图片视图</h2><ul>
+<li><p>UIImageView</p>
+<ul>
+<li>作用：专用于显示图片的视图</li>
+</ul>
+</li>
+<li><p>常用属性和方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 初始化图片</span><br><span class="line">-(id)initWithImage:(UIImage *)image;</span><br><span class="line">// 初始化高亮的图片</span><br><span class="line">-(id)initWithImage:(UIImage *)image hightlightedImage:(UIImage *)highlightedImage</span><br><span class="line">// 点语法设置图片</span><br><span class="line">@property(nonatomic,retain)UIImage *image;</span><br><span class="line">// 点语法设置高亮图片</span><br><span class="line">@property(nonatomic,retain)UIImage *highlightedImage;</span><br><span class="line">// 是否打开用户交互，默认为NO</span><br><span class="line">@preperty(nonatomic,getter=isUserInteractionEnabled)BOOL userInteractionEnabled;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>示例代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,100,100)];</span><br><span class="line">imageView.image = [UIImage imageNamed:@&quot;t.png&quot;];</span><br><span class="line">imageView.highlightImage = [UIImage imageNamed:@&quot;t1.png&quot;];</span><br><span class="line">imageView.userInteractionEnabled = YES;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="UIActivityIndicatorView"><a href="#UIActivityIndicatorView" class="headerlink" title="UIActivityIndicatorView"></a>UIActivityIndicatorView</h2><ul>
+<li>UIActivityIndicatorView<ul>
+<li>作用：提示用户当前页面正在加载数据</li>
+</ul>
+</li>
+<li><p>常用属性和方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 设置风格</span><br><span class="line">@property(nonatomic)UIActivityIndicatorViewStylr;</span><br><span class="line">// 停止时、隐藏视图，默认为YES</span><br><span class="line">@property(nonatomic)BOOL hideWhenStopped;</span><br><span class="line">// 修改颜色、注意版本问题</span><br><span class="line">@property(readWrite,nonatomic,retain)UIColor *color;</span><br><span class="line">// 开始动画</span><br><span class="line">-(void)startAnimating;</span><br><span class="line">// 停止动画</span><br><span class="line">-(void)stopAnimating;</span><br><span class="line">// 判断动画的状态（停止或开始）</span><br><span class="line">-(BOOL)isAnimating;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>示例代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorViewStyleWhite];</span><br><span class="line">activityView.frame = CGRectMake(0,0,100,100);</span><br><span class="line">[activityView startAnimating];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="滑动控件"><a href="#滑动控件" class="headerlink" title="滑动控件"></a>滑动控件</h2><ul>
+<li>UISlider视图<ul>
+<li>作用：控制系统声音，或者表示播放进度等等</li>
+</ul>
+</li>
+<li><p>常用属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 设置获取slider的value值</span><br><span class="line">@property(nonatomic)float value;</span><br><span class="line">// 设置slider的最小值</span><br><span class="line">@property(nonatomic)float minimumValue;</span><br><span class="line">// 设置slider的最大值</span><br><span class="line">@property(nonatomic)float maximumValue;</span><br><span class="line">// 设置图片</span><br><span class="line">@property(nonatomic,retain)UIImage *minimumValueImage;</span><br><span class="line">// 设置图片</span><br><span class="line">@property(nonatomic,retain)UIImage *maximumValueImage;</span><br><span class="line">// 设置slider的value值，是否存在动画</span><br><span class="line">-(void)setValue:(float)value animated:(BOOL)animated;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>示例代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(20,0,150,25)];</span><br><span class="line">[slider addTarget:self action:@selector(sliderAction:) forControlEvent:UIControlEventValueChanged];</span><br><span class="line">slider.maxmumValue = 100;</span><br><span class="line">slider.minmumValue = 0;</span><br><span class="line">slider.value = 50;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="分段控件"><a href="#分段控件" class="headerlink" title="分段控件"></a>分段控件</h2><ul>
+<li>UISegmentedControl<ul>
+<li>作用：分段控件、页面切换等</li>
+</ul>
+</li>
+<li>示例代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">NSArray *array = [NSArray arrayWithObjects:@&quot;选择&quot;,@&quot;搜索&quot;,@&quot;工具&quot;,nil];</span><br><span class="line">UISegmentedControl *segmentCtrl = [[UISegmentedControl alloc] initWithItems:array];</span><br><span class="line">segmentCtrl.frame = CGRectMake(20,0,150,25);</span><br><span class="line">segmentCtrl.segmentedControlStyle = UISegmentedControlStyleBar;</span><br><span class="line">segmentCtrl.selectedSegmentIndex = 0;</span><br><span class="line">[segmentCtrl addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="分页控件"><a href="#分页控件" class="headerlink" title="分页控件"></a>分页控件</h2><ul>
+<li>UIPageControl<ul>
+<li>作用：通常和UIScrollView连用，提示用户当前显示页数</li>
+</ul>
+</li>
+<li><p>常用属性和方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 共有几个分页“圆圈”</span><br><span class="line">@property(nonatomic)NSInteger numberOfPages;</span><br><span class="line">// 显示当前的页</span><br><span class="line">@property(nonatomic)NSInteger currentPage;</span><br><span class="line">// 只存在一页时，是否隐藏，默认为YES</span><br><span class="line">@property(nonatomic)BOOL hidesForSinglePage;</span><br><span class="line">// 刷新视图</span><br><span class="line">-(void)updateCurrentPageDisplay;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>示例代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">UIPageControl *pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(0,100,320,40)];</span><br><span class="line">pageControl.numberOfPages = 10;</span><br><span class="line">pageControl.currentPage = 2;</span><br><span class="line">pageControl.backgroundColor = [UIColor grayColor];</span><br><span class="line">[pageControl addTarget:self action:@selector(change:) froControlEvents:UIControlEventValueChanged];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="UITextField"><a href="#UITextField" class="headerlink" title="UITextField"></a>UITextField</h2><ul>
+<li>常用代理方法<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 将要开始输入时调用</span><br><span class="line">-(BOOL)textFieldShoudBeginEdting:(UITextField *)textField&#123;</span><br><span class="line">    return YES;</span><br><span class="line">&#125;</span><br><span class="line">// 将要输入结束时调用</span><br><span class="line">-(BOOL)textFieldShouldEndEditing:(UITextField *)textField&#123;</span><br><span class="line">    return YES;</span><br><span class="line">&#125;</span><br><span class="line">// 清除文字按钮点击事件</span><br><span class="line">-(BOOL)textFieldShouldClear:(UITextField *)textField&#123;</span><br><span class="line">    return YES;</span><br><span class="line">&#125;</span><br><span class="line">// 键盘上的return按钮</span><br><span class="line">-(BOOL)textFieldShouldReturn:(UITextField *)textField&#123;</span><br><span class="line">    [textField resignFirstResponder];</span><br><span class="line">    return YES;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="UILabel"><a href="#UILabel" class="headerlink" title="UILabel"></a>UILabel</h2><ul>
+<li>UILabel<ul>
+<li>作用：显示文本</li>
+</ul>
+</li>
+<li><p>常用属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">// 设置文本内容，默认为nil</span><br><span class="line">@property(nonatomic,copy)NSString *text;</span><br><span class="line">// 设置字体大小</span><br><span class="line">@property(nonatomic,retain)UIFont *font;</span><br><span class="line">// 设置字体颜色</span><br><span class="line">@property(nonatomic,retain)UIColor *textColor;</span><br><span class="line">// 设置阴影，默认没有阴影，若果设置需要设置偏移量</span><br><span class="line">@property(nonatomic,retain)UIColor *shadowColor;</span><br><span class="line">// 设置偏移量</span><br><span class="line">@property(nonatomic）CGSize shadowOffset;</span><br><span class="line">// 文本内容对齐方式</span><br><span class="line">@property(nonatomic)NSTextAlignment textAlignment;</span><br><span class="line">// 当文本超出frame时，文本截取的方式</span><br><span class="line">@property(nonatomic)NSLineBreakMode lineBreakMode;</span><br><span class="line">// 文本选中时，高亮的颜色</span><br><span class="line">@property(nanatomic,retain)UIColor *highlightedTextColor;</span><br><span class="line">// 是否存在高亮，默认为nil</span><br><span class="line">@property(nanatomic,getter=isHighlighted)BOOL highlighted;</span><br><span class="line">// 交互是否打开，默认为NO</span><br><span class="line">@property(nanatomic,getter=isUserInteractionEnabled)BOOL userInteractionEnabled;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>示例代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(90,100,140,40)];</span><br><span class="line">label.text = @&quot;text&quot;;</span><br><span class="line">label.backgroundColor = [UIColor redColor];</span><br><span class="line">label.textAligment = NSTextAligmentCenter;</span><br><span class="line">label.textColor = [UIColor blueColor];</span><br><span class="line">label.shadowColor = [UIColor yellowColor];</span><br><span class="line">label.shadowOffset = CGSizeMake(-2,2);</span><br><span class="line">[self.window addSubview:label];</span><br><span class="line">[label release];</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/iOS/">iOS</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/iOS/">iOS</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/02/18/常用UIView组件/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/02/18/常用UIView组件/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/02/18/利用代理/" title="利用代理" itemprop="url">利用代理</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2014-02-18T04:01:25.000Z" itemprop="datePublished"> 发表于 2014-02-18</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <ul>
+<li>代理是一种简单而功能强大的设计模式，这种模式用于一个对象“代表”另外一个对象和程序中其他的对象进行交互。 主对象（这里指的是delegating object）中维护一个代理（delegate）的引用并且在合适的时候向这个代理发送消息。这个消息通知“代理”主对象即将处理或是已经处理完了某一个事件。这个代理可以通过更新自己或是其它对象的UI界面或是其它状态来响应主对象所发送过来的这个事件的消息。或是在某些情况下能返回一个值来影响其它即将发生的事件该如何来处理。代理的主要价值是它可以让你容易的定制各种对象的行为。注意这里的代理是个名词，它本身是一个对象，这个对象是专门代表被代理对象来和程序中其他对象打交道的。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// RootViewController.h</span><br><span class="line"># import &quot;ModalViewContorller.h&quot;</span><br><span class="line">@optional</span><br><span class="line">//optional 强制必须实现的方法</span><br><span class="line">-(void)changeLabelText:(NSString *)text;</span><br><span class="line">@end</span><br><span class="line">@interface ModalViewController:UIViewController</span><br><span class="line">&#123;</span><br><span class="line">@private</span><br><span class="line">    UITextField *textFiled;</span><br><span class="line">&#125;</span><br><span class="line">@property(nonatomic,assign)id &lt;ModalViewControllerDelegate&gt; delegate;</span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">// RootViewController.m</span><br><span class="line">-(void)viewDidLoad</span><br><span class="line">&#123;</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line">    self.view.backgroundColor = [UIColor redColor];</span><br><span class="line">    </span><br><span class="line">    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];</span><br><span class="line">    button.tag = 101;</span><br><span class="line">    button.frame = CGRectMake(320/2-140/2,200,140,40);</span><br><span class="line">    [button setTile:@&quot;进入&quot; forState:UIControlStateNormal];</span><br><span class="line">    [button addTarget:self action:@selector(presentModalVC) forControlEvent:UIControlEventTouchUpInside];</span><br><span class="line">    [self.view addSubiew:button];</span><br><span class="line">    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(90,100,140,40)];</span><br><span class="line">    label.text = @&quot;hello world&quot;;</span><br><span class="line">    label.tag = 102;</span><br><span class="line">    label.textAligment = NSTextAligmentCenter;</span><br><span class="line">    [self.view addSubView:label];</span><br><span class="line">&#125;</span><br><span class="line">-(void)presentModalVC</span><br><span class="line">&#123;</span><br><span class="line">    ModalViewController *modalVc = [[ModalViewController alloc] init];</span><br><span class="line">    modalVc.delegate = self;</span><br><span class="line">    // 动画效果</span><br><span class="line">    modalVc.modalTranstionSyle = UIModalTransitionStylePatialCurl;</span><br><span class="line">    if([[UIDevice currentDevice].systemVersion floatValue] &lt; 6.0)&#123;</span><br><span class="line">        [self.presentModalViewController:modalVc animated:YES];</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        [self.presentModalViewController:modalVc animated:YES completion:^&#123;</span><br><span class="line">        NSLog(@&quot;call back&quot;);</span><br><span class="line">        &#125;];</span><br><span class="line">    [modalVC relese];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">-(void)changeLabelText:(NSString *)text</span><br><span class="line">&#123;</span><br><span class="line">    UILabel *label = (UILable *)[self.view viewWithTag:102];</span><br><span class="line">    label.text = text;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// ModalViewController.h</span><br><span class="line">@protocol ModalViewControllerDelegate &lt;NSObject&gt;</span><br><span class="line">@optional</span><br><span class="line">//optional 强制必须实现的方法</span><br><span class="line">-(void)changeLabelText:(NSString *)text;</span><br><span class="line">@end</span><br><span class="line">@interface ModalViewController:UIViewController</span><br><span class="line">&#123;</span><br><span class="line">@private</span><br><span class="line">    UITextField *textFiled;</span><br><span class="line">&#125;</span><br><span class="line">@property(nonatomic,assign)id &lt;ModalViewControllerDelegate&gt; delegate;</span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">//ModalViewController.m</span><br><span class="line">-(void)viewDidLoad</span><br><span class="line">&#123;</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line">    self.view.backgroundColor = [UIColor greenColor];</span><br><span class="line">    </span><br><span class="line">    *textField = [[UIText alloc] initWithFrame:CGRectMake(70,100,100,30)];</span><br><span class="line">    textField.borderStyle = UITextBorderStyleRoundedRect;</span><br><span class="line">    [self.view addSubview:textField];</span><br><span class="line">    </span><br><span class="line">    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];</span><br><span class="line">    button.frame = CGRectMake(320/2-140/2,100,140,40);</span><br><span class="line">    [button setTitle:@&quot;dismiss&quot; forState:UIControlEvent:UIControlEventTouchUpInside];</span><br><span class="line">    [self.view addSubview:button];</span><br><span class="line">&#125;</span><br><span class="line">-(void)dismiss</span><br><span class="line">&#123;   </span><br><span class="line">    if([self.delegate respondsToSelector:@selector(changeLabelText:)])&#123;</span><br><span class="line">     [self.delegate changeLabelText:textField.text];</span><br><span class="line">    &#125;</span><br><span class="line">    // 将模态视图关闭</span><br><span class="line">    [self dismissViewControllerAnimated:YES completion:^&#123;</span><br><span class="line">        NSLog(@&quot;dismiss&quot;)];</span><br><span class="line">    &#125;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="利用通知"><a href="#利用通知" class="headerlink" title="利用通知"></a>利用通知</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 在通知中心注册一条名为ChangeLabelTextNotification的通知</span><br><span class="line">[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeLabelText:) name:@&quot;ChangeLabelTextNotification&quot; object:nil];</span><br><span class="line">// deallco时需要删除</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-(void)changeLabelText:(NSNotification *)notification</span><br><span class="line">&#123;</span><br><span class="line">    id text = notification.object;</span><br><span class="line">    UILabel *label = (UILabel *)[self.view viewWithTag:102];</span><br><span class="line">    label.text = text;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[[NSNotificationCenter defaultCenter] postNotificationName:@&quot;ChangeLabelTextNotification&quot; object:_textField.text]</span><br></pre></td></tr></table></figure>
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/iOS/">iOS</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/iOS/">iOS</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/02/18/利用代理/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/02/18/利用代理/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/02/17/UIView/" title="UIView" itemprop="url">UIView</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2014-02-17T06:00:00.000Z" itemprop="datePublished"> 发表于 2014-02-17</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <ul>
+<li>视图，表示屏幕上的一块矩形区域，同时处理该区域的绘制和触屏事件。</li>
+<li>一个视图也可以作为其他视图的父视图，同时决定着这些子视图的位置和大小.</li>
+<li>UIView类做了大量的工作去管理这些内部视图的关系。</li>
+<li>视图同时也是App中MVC的View部分</li>
+<li>iPhone的视图以左上角为原点</li>
+<li>每个View的frame所使用的坐标系以它的父视图的左上角为坐<br>关函数<ul>
+<li>视图结构和相<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CGPoint Point = CGPointMake(x,y);//设置</span><br><span class="line">CGSize size = CGSizeMake(width,height);//大小</span><br><span class="line">CGRect rect = CGRectMake(x,y,width,height);//位置和大小</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Frame和Bounds"><a href="#Frame和Bounds" class="headerlink" title="Frame和Bounds"></a>Frame和Bounds</h2><ul>
+<li>Frame以其父视图为起点，得出它自己的位置信息</li>
+<li>Bounds以iOS系统的坐标原点为起点，坐标是(0,0)</li>
+<li>Center表示视图中心所在的位置，设置此属性可改变视图的位置<ul>
+<li>默认情况下，视图边框并不会被父视图的边框裁剪。如果需要裁剪，将其clipsToBounds属性设置为YES.</li>
+</ul>
+</li>
+</ul>
+<h2 id="创建UIView"><a href="#创建UIView" class="headerlink" title="创建UIView"></a>创建UIView</h2><ul>
+<li>创建UI有两种方式，xib文件和代码创建</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//通过xib方式来创建视图对象</span><br><span class="line">NSBundle *bundle = [NSBundle mainBundle];</span><br><span class="line">NSArray *arr = [bundle loadNibNamed:@&quot;myView&quot; owner:self</span><br><span class="line">options:nil];</span><br><span class="line">UIView *myView = [arr objectAtIndex:0];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//代码创建视图对象</span><br><span class="line">CGRect viewRect = CGRectMake(0,0,100,100);</span><br><span class="line">UIView *myView =[[UIView alloc] initWithFrame:viewRect];</span><br></pre></td></tr></table></figure>
+<h2 id="视图的层次结构"><a href="#视图的层次结构" class="headerlink" title="视图的层次结构"></a>视图的层次结构</h2><ul>
+<li>UIView层次结构可以理解为“视图树”————view hierarychy</li>
+<li>一个视图就是一个容器，当一个视图包含其他的视图的时候，两个视图之间就建立了一个父子关系，被包含的视图被称为“姿势图（subView）”，包含的视图称为“父视图（superView）”</li>
+<li>从视觉上看，子视图会覆盖父视图的内容，设置透明属性可以看到父视图的内容。</li>
+<li>每个父视图都有一个有序的数组存储着它的子视图，存储的顺序就会影响到每个子视图的显示效果，后加的视图会覆盖之前的视图。</li>
+<li>一个视图可以嵌入多个subView，但是只能有一个superView。<ul>
+<li>视图的常用方法<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">addSubView:                     // 添加子视图</span><br><span class="line">insertSubview:atIndex:          // 视图插入到指定索引位置</span><br><span class="line">insertSubview:ahoveSubview:     // 视图插入指定视图之上</span><br><span class="line">insertSubview:belowSubview:     // 视图插入指定视图之下</span><br><span class="line">bringSubviewToFront:            // 把视图移动到最顶层</span><br><span class="line">sendSubviewToBack:              // 把视图移动到最底层</span><br><span class="line">exchangeSubViewAtIndex:withSubviewAtIndex://把两个索引对应的视图调换位置</span><br><span class="line">removeFromSuperview:            // 把视图从父视图中移除</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="查找视图"><a href="#查找视图" class="headerlink" title="查找视图"></a>查找视图</h2><ul>
+<li>UIView类中有一个tag属性，通过这个属性可以标志一个视图对象（整数）</li>
+<li>获取的方法，viewWithTag:方法来检索标志过的子视图  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UIView *myView = [[UIView alloc] initWithFrame:CGRectmake(0,0,100,100)];</span><br><span class="line">myView.tag = 100;</span><br><span class="line">// 通过tag查找view</span><br><span class="line">UIView *myView = [self.view vieWithTag:100];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="UIView的常用属性"><a href="#UIView的常用属性" class="headerlink" title="UIView的常用属性"></a>UIView的常用属性</h2><ul>
+<li>alpha                         // 透明度</li>
+<li>backgroundColor               // 背景颜色</li>
+<li>subViews                      // 子视图集合</li>
+<li>hidden                        // 是否隐藏</li>
+<li>tag                           // 标签值</li>
+<li>superview                     // 父视图</li>
+<li>mulitpleTouchEnaled           // 是否开启多点触摸</li>
+<li>userInteractionEnabled        // 是否响应触摸事件</li>
+</ul>
+<h2 id="坐标系统变换"><a href="#坐标系统变换" class="headerlink" title="坐标系统变换"></a>坐标系统变换</h2><ul>
+<li>坐标变换通过transform属性来改变<ul>
+<li>CGAffineTransformScale        对视图比例缩放</li>
+<li>CGAffineTransformRotae        对视图做变焦旋转</li>
+<li>CGAffineTransformTranslate    对视图相对原位置做平移<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">    CGAffineTransform transform = rootView.transform;</span><br><span class="line">    rootView.transform = CGAffineTransformScale(transform,0.5,0.5);</span><br><span class="line">    rootView.transform = CGAffineTransformRotae(transform,0.33);</span><br><span class="line">    CGAffineTransformScale(transform,0.5,0.5);</span><br><span class="line">    rootView.transform = CGAffineTransformTranslate(transform,100,100);</span><br><span class="line">    </span><br><span class="line">## 视图的内容模式</span><br><span class="line">- 视图的contentMode属性决定了边界变化和缩放操作</span><br><span class="line">```Objective-c</span><br><span class="line">    UIImageView *imgeView1 = [[UIImageView alloc] initWithFrame:CFRectMake(320/2-200/2,30,200,200)];</span><br><span class="line">    imgeView1.imge = [UIImage imageNamed:@&quot;01&quot;];</span><br><span class="line">    imgeView1.backgroundColor = [UIColor redColor];</span><br><span class="line">    imgeView1.contentMode = UIViewContentModeScaleAspectFit;</span><br><span class="line">    [self.window addSubview:imgeView1];</span><br><span class="line">    [imView1 release];</span><br><span class="line">    </span><br><span class="line">    UIImageView *imgeView2 = [[UIImageView alloc] initWithFrame:CFRectMake(320/2-200/2,240,200,200)];</span><br><span class="line">    imgeView2.backgroundColor = [UIColor yelloColor];</span><br><span class="line">    imgeView2.contentMode = UIViewContentModeBottom;</span><br><span class="line">    [self.window addSubview:imgeView2];</span><br><span class="line">    [imView2 release];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="UIView属性的动画"><a href="#UIView属性的动画" class="headerlink" title="UIView属性的动画"></a>UIView属性的动画</h2><ul>
+<li><p>UIView类的很多属性都被设计为动画，动画的属性是指当属性从一个值变为另一个值的时候，可以半自动地支持动画，你仍然必须告诉UIKit希望执行什么类型的动画，但是动画一旦开始，Core Animation就会全权负责。UIView对象中支持动画的属性有如下几个：</p>
+<ul>
+<li>frame - 动画的改变视图的尺寸和位置</li>
+<li>bounds - 动画的改变视图的尺寸</li>
+<li>center - 动画的改变视图的位置</li>
+<li>transform - 动画的翻转或者缩放视x图</li>
+<li>alpha - 动画的改变视图的透明度</li>
+<li>backgroundColor - 改变视图的背景色</li>
+<li>contentStetch - 改变视图内容如何拉伸<h3 id="配置动画委托"><a href="#配置动画委托" class="headerlink" title="配置动画委托"></a>配置动画委托</h3></li>
+</ul>
+<ul>
+<li>可以为动画分配一个委托，并通过该委托接受动画开始和结束的消息。当需要在动画开始前和动画结束后极力执行其他任务时，可能就需要设置委托。</li>
+<li><p>通过UIView调用setAnmationDelegate:方法来设置委托，并通过setAnimationWillStartSelector:和setAnimationDidStopSelector:方法来指定接受消息的选择器方法。消息处理方法形式如下:<br><code>(void)animationWillStart:(NSString *)animationID context:(void *)context;</code><br><code>(void)animationDidStop:(NSString *)animationID finished context:(void *)context;</code><br>上面的两个方法的animationID和context参数和动画块开始时传给<code>beginAnimations:context:</code>方法的参数相同</p>
+<ul>
+<li>animationID - 应用程序提供的字符串，用于标识一个动画块中的动画</li>
+<li>context - 应用程序提供的对象，用于向委托对象传递额外的信息</li>
+</ul>
+<p>setAnimationDidStopSelector:选择器方法还有一个参数——即一个布尔值。如果动画顺利完成，没有被其他动画取消或停止，则该值为YES。</p>
+<h3 id="配置动画的参数"><a href="#配置动画的参数" class="headerlink" title="配置动画的参数"></a>配置动画的参数</h3></li>
+<li>用<code>setAnimationStartDateS</code>方法来设置动画在<code>commitAnimations:</code>方法返回之后的发生日期。</li>
+<li>用<code>setAnimationDelay:</code>方法来设置实际发生动画和<code>commitAnimations:</code>方法返回的时间点之间的间隔</li>
+<li>用<code>setAnimationDuration:</code>方法来设置动画的持续秒数</li>
+<li>用<code>setAnimationCurve:</code>方法来设置动画过程的相对速度，比如动画可能在启动阶段逐渐加速、而在结束阶段逐渐减少，或者这个过程都保持相同的速度</li>
+<li>用<code>setAnimationRepeatCount:</code>方法来设置动画的重复次数</li>
+<li>用<code>setAnimationRepeatAutoreverses:</code>方法来指定动画在到达目标值时是否自动反向播放。可是结合使用这个方法和<code>setAnimationRepeatCount:</code>方法，使各个属性在初始值和目标值之间平滑切换一段时间。</li>
+<li>缺省情况下，所有支持动画的属性在动画块中发生的变化都会形成动画。如果希望让动画块中发生的某些变化不产生动画效果，可以通过<code>setAnimationsEnableed:</code>方法来暂时禁止动画，在完成修改后才重新激活动画，在调用<code>setAnimationsEnabled:</code>方法并传入NO值之后，所有的改变都不会产生动画效果，指定用YES值再次调用这个方法或者提交这个动画块是，动画才会恢复，可以用<code>areAnimationsEnable:</code>方法来确定当前是否激活动画。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">-(void)animationAlpha</span><br><span class="line">&#123;</span><br><span class="line">    [UIView beginAnimations:nil context:NULL];// 需要设置代理时</span><br><span class="line">    [UIView setAnimationDuration:1];// 动画的持续时间</span><br><span class="line">    [UIview setAnimationDelay:1];// 动画延迟时间</span><br><span class="line">    view2.apleha = 0.0;</span><br><span class="line">    [UIView commitAnimations];// 标记着动画块的结束</span><br><span class="line">&#125;</span><br><span class="line">-(void)animationFrame</span><br><span class="line">&#123;</span><br><span class="line">    [UIView beginAnimations:nil context:NULL];</span><br><span class="line">    [UIView setAnimationDuration:5];</span><br><span class="line">    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];// 动画相对速度，开始和结束的时候慢，中间快</span><br><span class="line">    view.center = CGPointMake(0,0);</span><br><span class="line">    [UIView commitAnimations];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/iOS/">iOS</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/iOS/">iOS</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/02/17/UIView/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/02/17/UIView/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+
+  <nav id="page-nav" class="clearfix">
+    <a class="extend prev" rel="prev" href="/page/41/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/40/">40</a><a class="page-number" href="/page/41/">41</a><span class="page-number current">42</span><a class="page-number" href="/page/43/">43</a><a class="extend next" rel="next" href="/page/43/">Next<span></span></a>
+  </nav>
+
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/Android/" title="Android">Android<sup>188</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Camera/" title="Camera">Camera<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Cocos2d-X/" title="Cocos2d-X">Cocos2d-X<sup>11</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Docker/" title="Docker">Docker<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Flutter/" title="Flutter">Flutter<sup>11</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Kotlin/" title="Kotlin">Kotlin<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/OpenCV/" title="OpenCV">OpenCV<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Prose/" title="Prose">Prose<sup>27</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Python/" title="Python">Python<sup>22</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/ReactNative/" title="ReactNative">ReactNative<sup>8</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Vue/" title="Vue">Vue<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/electron/" title="electron">electron<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/ffmpeg/" title="ffmpeg">ffmpeg<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/flutter/" title="flutter">flutter<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/iOS/" title="iOS">iOS<sup>84</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/node-js/" title="node.js">node.js<sup>30</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/前端/" title="前端">前端<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/杂文/" title="杂文">杂文<sup>3</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/AFNetworking/" style="font-size: 10px;">AFNetworking</a> <a href="/tags/APK/" style="font-size: 10px;">APK</a> <a href="/tags/AS/" style="font-size: 10px;">AS</a> <a href="/tags/Adapter/" style="font-size: 10px;">Adapter</a> <a href="/tags/Android/" style="font-size: 20px;">Android</a> <a href="/tags/Android-5-0/" style="font-size: 10px;">Android 5.0</a> <a href="/tags/Android-Studio/" style="font-size: 11.54px;">Android Studio</a> <a href="/tags/AndroidAninotations/" style="font-size: 10px;">AndroidAninotations</a> <a href="/tags/AndroidStudio/" style="font-size: 15.38px;">AndroidStudio</a> <a href="/tags/Animation/" style="font-size: 12.31px;">Animation</a> <a href="/tags/Api/" style="font-size: 11.54px;">Api</a> <a href="/tags/App/" style="font-size: 10px;">App</a> <a href="/tags/Apple/" style="font-size: 10px;">Apple</a> <a href="/tags/Async/" style="font-size: 10px;">Async</a> <a href="/tags/Atom/" style="font-size: 10.77px;">Atom</a> <a href="/tags/AutoLayout/" style="font-size: 10px;">AutoLayout</a> <a href="/tags/BaseAdapter/" style="font-size: 10px;">BaseAdapter</a> <a href="/tags/Blur/" style="font-size: 10px;">Blur</a> <a href="/tags/Box2D/" style="font-size: 10px;">Box2D</a> <a href="/tags/Broadcast/" style="font-size: 10px;">Broadcast</a> <a href="/tags/C/" style="font-size: 10.77px;">C++</a> <a href="/tags/CardView/" style="font-size: 10px;">CardView</a> <a href="/tags/CocoaPods/" style="font-size: 10px;">CocoaPods</a> <a href="/tags/Cocos2d-X/" style="font-size: 13.08px;">Cocos2d-X</a> <a href="/tags/CocosPods/" style="font-size: 10px;">CocosPods</a> <a href="/tags/ContentProvider/" style="font-size: 10px;">ContentProvider</a> <a href="/tags/Context/" style="font-size: 10px;">Context</a> <a href="/tags/Coroutine/" style="font-size: 10px;">Coroutine</a> <a href="/tags/Crouton/" style="font-size: 10px;">Crouton</a> <a href="/tags/CursorLoader/" style="font-size: 10px;">CursorLoader</a> <a href="/tags/Demo/" style="font-size: 10.77px;">Demo</a> <a href="/tags/Dialog/" style="font-size: 10px;">Dialog</a> <a href="/tags/EditView/" style="font-size: 10px;">EditView</a> <a href="/tags/EventBus/" style="font-size: 10px;">EventBus</a> <a href="/tags/Express/" style="font-size: 10px;">Express</a> <a href="/tags/Express学习笔记/" style="font-size: 10px;">Express学习笔记</a> <a href="/tags/Flex/" style="font-size: 10.77px;">Flex</a> <a href="/tags/Fragment/" style="font-size: 10.77px;">Fragment</a> <a href="/tags/GET/" style="font-size: 10px;">GET</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Gradle/" style="font-size: 10.77px;">Gradle</a> <a href="/tags/GridLayout/" style="font-size: 10px;">GridLayout</a> <a href="/tags/GridView/" style="font-size: 10.77px;">GridView</a> <a href="/tags/Gson/" style="font-size: 10px;">Gson</a> <a href="/tags/HTTP/" style="font-size: 10.77px;">HTTP</a> <a href="/tags/Handler/" style="font-size: 10px;">Handler</a> <a href="/tags/HeadersList/" style="font-size: 10px;">HeadersList</a> <a href="/tags/Hello-World/" style="font-size: 10px;">Hello World</a> <a href="/tags/Holo/" style="font-size: 10px;">Holo</a> <a href="/tags/IDE/" style="font-size: 10px;">IDE</a> <a href="/tags/IM/" style="font-size: 10.77px;">IM</a> <a href="/tags/Indicator/" style="font-size: 10px;">Indicator</a> <a href="/tags/IntentService/" style="font-size: 10px;">IntentService</a> <a href="/tags/JCenter/" style="font-size: 10px;">JCenter</a> <a href="/tags/JSON解析/" style="font-size: 10px;">JSON解析</a> <a href="/tags/Java/" style="font-size: 16.15px;">Java</a> <a href="/tags/Json/" style="font-size: 10.77px;">Json</a> <a href="/tags/KVO/" style="font-size: 10.77px;">KVO</a> <a href="/tags/Kotlin/" style="font-size: 11.54px;">Kotlin</a> <a href="/tags/Layout/" style="font-size: 10px;">Layout</a> <a href="/tags/Lint/" style="font-size: 10px;">Lint</a> <a href="/tags/ListView/" style="font-size: 10.77px;">ListView</a> <a href="/tags/Log/" style="font-size: 10px;">Log</a> <a href="/tags/MVVM/" style="font-size: 10.77px;">MVVM</a> <a href="/tags/Mac/" style="font-size: 10.77px;">Mac</a> <a href="/tags/Markdown/" style="font-size: 10.77px;">Markdown</a> <a href="/tags/Masonry/" style="font-size: 10px;">Masonry</a> <a href="/tags/Material/" style="font-size: 10.77px;">Material</a> <a href="/tags/Material-Design/" style="font-size: 10px;">Material Design</a> <a href="/tags/MaterialDesign/" style="font-size: 10px;">MaterialDesign</a> <a href="/tags/Meterial/" style="font-size: 10.77px;">Meterial</a> <a href="/tags/Meterial-Design/" style="font-size: 10px;">Meterial Design</a> <a href="/tags/Model/" style="font-size: 10px;">Model</a> <a href="/tags/MongoDB/" style="font-size: 10.77px;">MongoDB</a> <a href="/tags/Mongoose/" style="font-size: 10px;">Mongoose</a> <a href="/tags/NavBar/" style="font-size: 10px;">NavBar</a> <a href="/tags/Navigator/" style="font-size: 10px;">Navigator</a> <a href="/tags/NavtigationBar/" style="font-size: 10px;">NavtigationBar</a> <a href="/tags/NoSQL/" style="font-size: 10px;">NoSQL</a> <a href="/tags/OSX/" style="font-size: 10px;">OSX</a> <a href="/tags/Objective-C/" style="font-size: 16.92px;">Objective-C</a> <a href="/tags/OpenCV/" style="font-size: 10.77px;">OpenCV</a> <a href="/tags/POST/" style="font-size: 10px;">POST</a> <a href="/tags/PagerAdapter/" style="font-size: 10px;">PagerAdapter</a> <a href="/tags/PagerTranformer/" style="font-size: 10px;">PagerTranformer</a> <a href="/tags/Paint/" style="font-size: 10px;">Paint</a> <a href="/tags/Parcelable/" style="font-size: 10px;">Parcelable</a> <a href="/tags/PerferenceScreencreen/" style="font-size: 10px;">PerferenceScreencreen</a> <a href="/tags/Post/" style="font-size: 10px;">Post</a> <a href="/tags/ProGuard/" style="font-size: 10px;">ProGuard</a> <a href="/tags/Prose/" style="font-size: 12.31px;">Prose</a> <a href="/tags/Python/" style="font-size: 18.46px;">Python</a> <a href="/tags/REST/" style="font-size: 10.77px;">REST</a> <a href="/tags/Random/" style="font-size: 10px;">Random</a> <a href="/tags/React/" style="font-size: 10px;">React</a> <a href="/tags/ReactNative/" style="font-size: 10px;">ReactNative</a> <a href="/tags/RecyclerView/" style="font-size: 10.77px;">RecyclerView</a> <a href="/tags/Rive/" style="font-size: 10px;">Rive</a> <a href="/tags/SDK/" style="font-size: 11.54px;">SDK</a> <a href="/tags/SD卡/" style="font-size: 10px;">SD卡</a> <a href="/tags/SE5/" style="font-size: 10px;">SE5</a> <a href="/tags/SE6/" style="font-size: 10px;">SE6</a> <a href="/tags/SaveInstance/" style="font-size: 10px;">SaveInstance</a> <a href="/tags/Serializable/" style="font-size: 10px;">Serializable</a> <a href="/tags/SharedPreferce/" style="font-size: 10px;">SharedPreferce</a> <a href="/tags/SizeClass/" style="font-size: 10px;">SizeClass</a> <a href="/tags/Spider/" style="font-size: 10px;">Spider</a> <a href="/tags/Sprite/" style="font-size: 10.77px;">Sprite</a> <a href="/tags/Style/" style="font-size: 10px;">Style</a> <a href="/tags/Sublime/" style="font-size: 10px;">Sublime</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/SublimeText/" style="font-size: 10px;">SublimeText</a> <a href="/tags/Swift/" style="font-size: 17.69px;">Swift</a> <a href="/tags/TextView/" style="font-size: 10.77px;">TextView</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/Tips/" style="font-size: 10px;">Tips</a> <a href="/tags/ToolBar/" style="font-size: 10px;">ToolBar</a> <a href="/tags/UI/" style="font-size: 10px;">UI</a> <a href="/tags/UIActionSheet/" style="font-size: 10px;">UIActionSheet.</a> <a href="/tags/UIAlertView/" style="font-size: 10px;">UIAlertView</a> <a href="/tags/UIImageView/" style="font-size: 10px;">UIImageView</a> <a href="/tags/UIL/" style="font-size: 10px;">UIL</a> <a href="/tags/UIScrollView/" style="font-size: 10px;">UIScrollView</a> <a href="/tags/Ui/" style="font-size: 10px;">Ui</a> <a href="/tags/View/" style="font-size: 10px;">View</a> <a href="/tags/Volley/" style="font-size: 10px;">Volley</a> <a href="/tags/Vue/" style="font-size: 10px;">Vue</a> <a href="/tags/WebStorm/" style="font-size: 10px;">WebStorm</a> <a href="/tags/WebStrom/" style="font-size: 10px;">WebStrom</a> <a href="/tags/XCode/" style="font-size: 10px;">XCode</a> <a href="/tags/adb/" style="font-size: 10px;">adb</a> <a href="/tags/app/" style="font-size: 10.77px;">app</a> <a href="/tags/async/" style="font-size: 10px;">async</a> <a href="/tags/blur/" style="font-size: 10px;">blur</a> <a href="/tags/branch/" style="font-size: 10px;">branch</a> <a href="/tags/cache/" style="font-size: 10px;">cache</a> <a href="/tags/color/" style="font-size: 10px;">color</a> <a href="/tags/console/" style="font-size: 10px;">console</a> <a href="/tags/cookie/" style="font-size: 10px;">cookie</a> <a href="/tags/coroutines/" style="font-size: 10px;">coroutines</a> <a href="/tags/curl/" style="font-size: 10px;">curl</a> <a href="/tags/dart/" style="font-size: 10px;">dart</a> <a href="/tags/desktop/" style="font-size: 12.31px;">desktop</a> <a href="/tags/eclipse/" style="font-size: 10px;">eclipse</a> <a href="/tags/electron/" style="font-size: 10px;">electron</a> <a href="/tags/emoji/" style="font-size: 10px;">emoji</a> <a href="/tags/express/" style="font-size: 10px;">express</a> <a href="/tags/fallthrough/" style="font-size: 10px;">fallthrough</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/findViewById/" style="font-size: 10px;">findViewById</a> <a href="/tags/flare/" style="font-size: 10px;">flare</a> <a href="/tags/flutter/" style="font-size: 10px;">flutter</a> <a href="/tags/git/" style="font-size: 13.08px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/google/" style="font-size: 10px;">google</a> <a href="/tags/gradle/" style="font-size: 10px;">gradle</a> <a href="/tags/gradlew/" style="font-size: 10px;">gradlew</a> <a href="/tags/gravity/" style="font-size: 10px;">gravity</a> <a href="/tags/host/" style="font-size: 10px;">host</a> <a href="/tags/http/" style="font-size: 10.77px;">http</a> <a href="/tags/iOS/" style="font-size: 19.23px;">iOS</a> <a href="/tags/iPhone/" style="font-size: 10px;">iPhone</a> <a href="/tags/icon/" style="font-size: 10px;">icon</a> <a href="/tags/include/" style="font-size: 10px;">include</a> <a href="/tags/jQerry/" style="font-size: 11.54px;">jQerry</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/js/" style="font-size: 14.62px;">js</a> <a href="/tags/json/" style="font-size: 10px;">json</a> <a href="/tags/keymap/" style="font-size: 10px;">keymap</a> <a href="/tags/lambda/" style="font-size: 10px;">lambda</a> <a href="/tags/layout/" style="font-size: 12.31px;">layout</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/measure/" style="font-size: 10px;">measure</a> <a href="/tags/merge/" style="font-size: 10px;">merge</a> <a href="/tags/meteor/" style="font-size: 10.77px;">meteor</a> <a href="/tags/module/" style="font-size: 10px;">module</a> <a href="/tags/mongo/" style="font-size: 10px;">mongo</a> <a href="/tags/ndk/" style="font-size: 12.31px;">ndk</a> <a href="/tags/nil/" style="font-size: 10px;">nil</a> <a href="/tags/node/" style="font-size: 10.77px;">node</a> <a href="/tags/node-js/" style="font-size: 14.62px;">node.js</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/package/" style="font-size: 10px;">package</a> <a href="/tags/px/" style="font-size: 10px;">px</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/ripple/" style="font-size: 10px;">ripple</a> <a href="/tags/selector/" style="font-size: 10px;">selector</a> <a href="/tags/session/" style="font-size: 10px;">session</a> <a href="/tags/shape/" style="font-size: 10px;">shape</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/slot/" style="font-size: 10px;">slot</a> <a href="/tags/so/" style="font-size: 10.77px;">so</a> <a href="/tags/sp/" style="font-size: 10px;">sp</a> <a href="/tags/sqlite/" style="font-size: 10px;">sqlite</a> <a href="/tags/style/" style="font-size: 10px;">style</a> <a href="/tags/supervisor/" style="font-size: 10px;">supervisor</a> <a href="/tags/support/" style="font-size: 10px;">support</a> <a href="/tags/swfit/" style="font-size: 10px;">swfit</a> <a href="/tags/swift/" style="font-size: 10.77px;">swift</a> <a href="/tags/switch/" style="font-size: 10px;">switch</a> <a href="/tags/view/" style="font-size: 10px;">view</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web-app/" style="font-size: 10px;">web app</a> <a href="/tags/weex/" style="font-size: 10px;">weex</a> <a href="/tags/wifi/" style="font-size: 10px;">wifi</a> <a href="/tags/yield/" style="font-size: 10px;">yield</a> <a href="/tags/事件/" style="font-size: 10px;">事件</a> <a href="/tags/依赖管理/" style="font-size: 10px;">依赖管理</a> <a href="/tags/保存数据/" style="font-size: 10px;">保存数据</a> <a href="/tags/倒计时/" style="font-size: 10px;">倒计时</a> <a href="/tags/入门/" style="font-size: 10px;">入门</a> <a href="/tags/关键字/" style="font-size: 10px;">关键字</a> <a href="/tags/函数/" style="font-size: 10px;">函数</a> <a href="/tags/分支/" style="font-size: 10.77px;">分支</a> <a href="/tags/分辨率/" style="font-size: 10.77px;">分辨率</a> <a href="/tags/分配率/" style="font-size: 10px;">分配率</a> <a href="/tags/切换/" style="font-size: 10px;">切换</a> <a href="/tags/初始化/" style="font-size: 10px;">初始化</a> <a href="/tags/前端/" style="font-size: 11.54px;">前端</a> <a href="/tags/加密/" style="font-size: 10px;">加密</a> <a href="/tags/动态交互/" style="font-size: 10px;">动态交互</a> <a href="/tags/动态注入/" style="font-size: 10px;">动态注入</a> <a href="/tags/动画/" style="font-size: 13.85px;">动画</a> <a href="/tags/包/" style="font-size: 10px;">包</a> <a href="/tags/反编译/" style="font-size: 10.77px;">反编译</a> <a href="/tags/取色/" style="font-size: 10px;">取色</a> <a href="/tags/图片加载/" style="font-size: 10px;">图片加载</a> <a href="/tags/坐标系/" style="font-size: 10px;">坐标系</a> <a href="/tags/基础/" style="font-size: 11.54px;">基础</a> <a href="/tags/复用/" style="font-size: 10px;">复用</a> <a href="/tags/多分辨率/" style="font-size: 10px;">多分辨率</a> <a href="/tags/多屏幕/" style="font-size: 10px;">多屏幕</a> <a href="/tags/大不同/" style="font-size: 16.15px;">大不同</a> <a href="/tags/妈妈再也不用担心系列/" style="font-size: 10px;">妈妈再也不用担心系列</a> <a href="/tags/定位代码/" style="font-size: 10px;">定位代码</a> <a href="/tags/定时任务/" style="font-size: 10px;">定时任务</a> <a href="/tags/对象/" style="font-size: 10px;">对象</a> <a href="/tags/导航/" style="font-size: 10px;">导航</a> <a href="/tags/属性/" style="font-size: 10.77px;">属性</a> <a href="/tags/嵌套/" style="font-size: 10px;">嵌套</a> <a href="/tags/工具类/" style="font-size: 11.54px;">工具类</a> <a href="/tags/布局/" style="font-size: 12.31px;">布局</a> <a href="/tags/带标题的ListView/" style="font-size: 10px;">带标题的ListView</a> <a href="/tags/常用/" style="font-size: 10.77px;">常用</a> <a href="/tags/序列化/" style="font-size: 10px;">序列化</a> <a href="/tags/开始/" style="font-size: 10px;">开始</a> <a href="/tags/开源/" style="font-size: 10px;">开源</a> <a href="/tags/开源库/" style="font-size: 10px;">开源库</a> <a href="/tags/异步/" style="font-size: 10.77px;">异步</a> <a href="/tags/异步加载/" style="font-size: 10px;">异步加载</a> <a href="/tags/引导/" style="font-size: 10px;">引导</a> <a href="/tags/引用/" style="font-size: 10px;">引用</a> <a href="/tags/录屏/" style="font-size: 10px;">录屏</a> <a href="/tags/快捷键/" style="font-size: 10px;">快捷键</a> <a href="/tags/持久化/" style="font-size: 10px;">持久化</a> <a href="/tags/按钮/" style="font-size: 10px;">按钮</a> <a href="/tags/提示/" style="font-size: 10.77px;">提示</a> <a href="/tags/插件/" style="font-size: 11.54px;">插件</a> <a href="/tags/数学/" style="font-size: 10px;">数学</a> <a href="/tags/数学，宏/" style="font-size: 10px;">数学，宏</a> <a href="/tags/数据库/" style="font-size: 11.54px;">数据库</a> <a href="/tags/数据绑定/" style="font-size: 10.77px;">数据绑定</a> <a href="/tags/文本大小/" style="font-size: 10px;">文本大小</a> <a href="/tags/杂文/" style="font-size: 10.77px;">杂文</a> <a href="/tags/权限/" style="font-size: 10px;">权限</a> <a href="/tags/样式/" style="font-size: 10px;">样式</a> <a href="/tags/模块/" style="font-size: 10.77px;">模块</a> <a href="/tags/模拟/" style="font-size: 10px;">模拟</a> <a href="/tags/模糊/" style="font-size: 10.77px;">模糊</a> <a href="/tags/毛玻璃/" style="font-size: 10px;">毛玻璃</a> <a href="/tags/波纹/" style="font-size: 10px;">波纹</a> <a href="/tags/注入/" style="font-size: 10.77px;">注入</a> <a href="/tags/注解/" style="font-size: 10px;">注解</a> <a href="/tags/测试/" style="font-size: 10px;">测试</a> <a href="/tags/混淆/" style="font-size: 10px;">混淆</a> <a href="/tags/热启动/" style="font-size: 10px;">热启动</a> <a href="/tags/爬虫/" style="font-size: 10.77px;">爬虫</a> <a href="/tags/物理引擎/" style="font-size: 10px;">物理引擎</a> <a href="/tags/环信/" style="font-size: 10.77px;">环信</a> <a href="/tags/环境配置/" style="font-size: 10px;">环境配置</a> <a href="/tags/生命周期/" style="font-size: 11.54px;">生命周期</a> <a href="/tags/用时/" style="font-size: 10px;">用时</a> <a href="/tags/界面/" style="font-size: 10px;">界面</a> <a href="/tags/硬盘缓存/" style="font-size: 10px;">硬盘缓存</a> <a href="/tags/第一个项目/" style="font-size: 10px;">第一个项目</a> <a href="/tags/精灵/" style="font-size: 10px;">精灵</a> <a href="/tags/精灵帧/" style="font-size: 10px;">精灵帧</a> <a href="/tags/约束/" style="font-size: 10px;">约束</a> <a href="/tags/线程/" style="font-size: 10px;">线程</a> <a href="/tags/绘制/" style="font-size: 10px;">绘制</a> <a href="/tags/继承/" style="font-size: 10px;">继承</a> <a href="/tags/缓存/" style="font-size: 10px;">缓存</a> <a href="/tags/网站/" style="font-size: 10px;">网站</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/网络请求/" style="font-size: 10.77px;">网络请求</a> <a href="/tags/翻墙/" style="font-size: 10.77px;">翻墙</a> <a href="/tags/自动布局/" style="font-size: 10px;">自动布局</a> <a href="/tags/自定义/" style="font-size: 10.77px;">自定义</a> <a href="/tags/自定义控件/" style="font-size: 10px;">自定义控件</a> <a href="/tags/自适应/" style="font-size: 10px;">自适应</a> <a href="/tags/虚拟键/" style="font-size: 10px;">虚拟键</a> <a href="/tags/角标/" style="font-size: 10px;">角标</a> <a href="/tags/设计/" style="font-size: 10px;">设计</a> <a href="/tags/设计缺陷/" style="font-size: 10px;">设计缺陷</a> <a href="/tags/访问/" style="font-size: 10px;">访问</a> <a href="/tags/调试/" style="font-size: 10.77px;">调试</a> <a href="/tags/资源/" style="font-size: 10px;">资源</a> <a href="/tags/资源文件/" style="font-size: 10px;">资源文件</a> <a href="/tags/路由/" style="font-size: 10px;">路由</a> <a href="/tags/转义/" style="font-size: 10px;">转义</a> <a href="/tags/轻量级/" style="font-size: 10px;">轻量级</a> <a href="/tags/连接/" style="font-size: 10px;">连接</a> <a href="/tags/适配/" style="font-size: 10.77px;">适配</a> <a href="/tags/遍历/" style="font-size: 10px;">遍历</a> <a href="/tags/配置/" style="font-size: 10px;">配置</a> <a href="/tags/镜像/" style="font-size: 10px;">镜像</a> <a href="/tags/闭包/" style="font-size: 10px;">闭包</a> <a href="/tags/随机/" style="font-size: 10px;">随机</a> <a href="/tags/隐藏/" style="font-size: 10px;">隐藏</a> <a href="/tags/面向对象/" style="font-size: 10px;">面向对象</a> <a href="/tags/预处理/" style="font-size: 10px;">预处理</a> <a href="/tags/颜色/" style="font-size: 10.77px;">颜色</a> <a href="/tags/颜色选择器/" style="font-size: 10px;">颜色选择器</a> <a href="/tags/魅族/" style="font-size: 10px;">魅族</a>
+    </div>
+  </div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">36</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">42</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">24</span></li></ul>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://daimajia.com/" target="_blank" title="DaiMaJia.Blog">DaiMaJia.Blog</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://macrotea.com/welcome/" target="_blank" title="Macrotea.Blog">Macrotea.Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello,I&#39;m Zoe,a Android and iOS developers. <br/>
+			This is my blog,I hope you will enjoy them.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2292032577" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/seniorzhai" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:developer.zhaitao@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2020 
+		
+		<a href="/about" target="_blank" title="Dear宅学长">Dear宅学长</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-54646832-1', '');  
+ga('send', 'pageview');
+</script>
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":true,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":160},"mobile":{"show":true},"log":false});</script>
+  </body>
+ </html>
