@@ -12,7 +12,95 @@
   <rights>All rights reserved 2026, Dear宅学长</rights>
   <subtitle>苟利国家生死以，起因福祸趋避之</subtitle>
   <title>SeniorZhai's blog</title>
-  <updated>2026-04-15T06:32:12.875Z</updated>
+  <updated>2026-04-15T06:47:36.656Z</updated>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Alignment" scheme="https://seniorzhai.github.io/tags/Alignment/"/>
+    <category term="Human Feedback" scheme="https://seniorzhai.github.io/tags/Human-Feedback/"/>
+    <category term="Training" scheme="https://seniorzhai.github.io/tags/Training/"/>
+    <content>
+      <![CDATA[<p>过去很多机器学习系统里，人类的角色主要体现在“标注数据”这一步：人负责给样本打标签，模型负责拟合这些标签。但随着模型能力变强、任务开放度提高，这种关系正在变化。人类反馈不再只是静态监督，而越来越像训练回路的一部分。</p><span id="more"></span><h2 id="为什么静态标签开始不够了"><a href="#为什么静态标签开始不够了" class="headerlink" title="为什么静态标签开始不够了"></a>为什么静态标签开始不够了</h2><p>很多开放任务并不存在唯一标准答案。尤其在生成、对话、辅助决策这些场景里，“更好”往往不是一个固定标签，而是偏好、体验和上下文共同决定的结果。</p><p>这时如果还只依赖传统标签，模型往往学不到真正重要的那部分质量。</p><h2 id="人类反馈会如何进入训练闭环"><a href="#人类反馈会如何进入训练闭环" class="headerlink" title="人类反馈会如何进入训练闭环"></a>人类反馈会如何进入训练闭环</h2><h3 id="1-从单点标注走向比较判断"><a href="#1-从单点标注走向比较判断" class="headerlink" title="1. 从单点标注走向比较判断"></a>1. 从单点标注走向比较判断</h3><p>与其让人给一个绝对分数，很多时候比较两个结果哪个更好，反而更稳定、更接近真实偏好。</p><h3 id="2-从离线数据走向持续修正"><a href="#2-从离线数据走向持续修正" class="headerlink" title="2. 从离线数据走向持续修正"></a>2. 从离线数据走向持续修正</h3><p>模型上线之后，真实交互里的反馈会不断暴露问题，这些信号本身就应该被重新吸收到训练系统里。</p><h3 id="3-从“监督模型”走向“塑造行为”"><a href="#3-从“监督模型”走向“塑造行为”" class="headerlink" title="3. 从“监督模型”走向“塑造行为”"></a>3. 从“监督模型”走向“塑造行为”</h3><p>人类反馈的价值，不只是告诉模型答案是什么，更是告诉模型什么样的行为模式更符合使用目标。</p><h2 id="这件事的意义"><a href="#这件事的意义" class="headerlink" title="这件事的意义"></a>这件事的意义</h2><p>如果这个方向继续发展，未来模型训练会更像一个持续调校系统，而不是一次性喂完数据就结束。这样一来，模型能力、产品体验和用户反馈之间的关系会更紧密。</p><h2 id="潜在问题"><a href="#潜在问题" class="headerlink" title="潜在问题"></a>潜在问题</h2><ul><li>反馈本身会有偏差</li><li>不同用户偏好可能互相冲突</li><li>如何把反馈稳定地转化为训练信号并不简单</li><li>一旦反馈回路设计不好，也可能强化错误行为</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我觉得人类反馈真正重要的地方，不在“人参与了训练”这句话，而在于它让模型训练从静态拟合走向动态校正。后面的很多对齐和产品化能力，可能都会建立在这类回路之上。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2021/04/03/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-20-%E4%BA%BA%E7%B1%BB%E5%8F%8D%E9%A6%88%E4%BC%9A%E4%BB%8E%E6%A0%87%E7%AD%BE%E5%8F%98%E6%88%90%E8%AE%AD%E7%BB%83%E5%9B%9E%E8%B7%AF/</id>
+    <link href="https://seniorzhai.github.io/2021/04/03/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-20-%E4%BA%BA%E7%B1%BB%E5%8F%8D%E9%A6%88%E4%BC%9A%E4%BB%8E%E6%A0%87%E7%AD%BE%E5%8F%98%E6%88%90%E8%AE%AD%E7%BB%83%E5%9B%9E%E8%B7%AF/"/>
+    <published>2021-04-03T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>过去很多机器学习系统里，人类的角色主要体现在“标注数据”这一步：人负责给样本打标签，模型负责拟合这些标签。但随着模型能力变强、任务开放度提高，这种关系正在变化。人类反馈不再只是静态监督，而越来越像训练回路的一部分。</p>]]>
+    </summary>
+    <title>AI研究周报(二十)：人类反馈会从标签变成训练回路</title>
+    <updated>2026-04-15T06:47:36.656Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Open Source" scheme="https://seniorzhai.github.io/tags/Open-Source/"/>
+    <category term="Model Ecosystem" scheme="https://seniorzhai.github.io/tags/Model-Ecosystem/"/>
+    <category term="Community" scheme="https://seniorzhai.github.io/tags/Community/"/>
+    <content>
+      <![CDATA[<p>这几年看 AI 发展，一个越来越明显的趋势是：除了大公司主导的闭源系统，开放模型和社区生态也在逐步积累势能。虽然在很多关键节点上，领先成果仍然更容易先出现在封闭体系里，但开放生态的价值正在变得越来越清楚。</p><span id="more"></span><h2 id="为什么开放生态重要"><a href="#为什么开放生态重要" class="headerlink" title="为什么开放生态重要"></a>为什么开放生态重要</h2><p>开放不只是“免费可用”，更重要的是它能形成更快的扩散、复现和改进循环。一个能力一旦进入社区，就会迅速被拆解、适配、重组，然后扩散到更多场景。</p><p>这会带来两个效果：</p><ul><li>研究创新的传播速度变快</li><li>工程落地的门槛被持续拉低</li></ul><h2 id="社区为什么能放大技术势能"><a href="#社区为什么能放大技术势能" class="headerlink" title="社区为什么能放大技术势能"></a>社区为什么能放大技术势能</h2><h3 id="1-复现会变成再创造"><a href="#1-复现会变成再创造" class="headerlink" title="1. 复现会变成再创造"></a>1. 复现会变成再创造</h3><p>很多技术在论文里只是原型，但进入开放社区后，会被变成脚本、框架、模板、教程和可复用组件。</p><h3 id="2-需求来自更多样的场景"><a href="#2-需求来自更多样的场景" class="headerlink" title="2. 需求来自更多样的场景"></a>2. 需求来自更多样的场景</h3><p>大公司常常只优先做大市场，而社区会把技术带到长尾场景里。长尾恰恰是很多新机会出现的地方。</p><h3 id="3-人才和知识流动更快"><a href="#3-人才和知识流动更快" class="headerlink" title="3. 人才和知识流动更快"></a>3. 人才和知识流动更快</h3><p>开放生态会降低学习门槛，让更多开发者参与改进，这种网络效应长期看非常强。</p><h2 id="开放生态也有现实限制"><a href="#开放生态也有现实限制" class="headerlink" title="开放生态也有现实限制"></a>开放生态也有现实限制</h2><ul><li>训练资源门槛仍然高</li><li>高质量数据不容易开放</li><li>商业产品会保留部分关键能力</li><li>社区项目往往在维护稳定性上吃亏</li></ul><p>所以开放生态未必在所有层面都领先，但它会越来越像一股持续累积的底层力量。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我觉得未来 AI 的竞争格局，不会只是几家闭源平台之间的竞赛，也会是平台力量和开放生态之间的长期互动。谁能持续吸引开发者、沉淀工具链、形成社区复利，谁就能在后续浪潮里拥有更深的势能。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2021/03/27/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-19-%E5%BC%80%E6%94%BE%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%80%81%E5%BC%80%E5%A7%8B%E7%A7%AF%E7%B4%AF%E5%8A%BF%E8%83%BD/</id>
+    <link href="https://seniorzhai.github.io/2021/03/27/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-19-%E5%BC%80%E6%94%BE%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%80%81%E5%BC%80%E5%A7%8B%E7%A7%AF%E7%B4%AF%E5%8A%BF%E8%83%BD/"/>
+    <published>2021-03-27T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这几年看 AI 发展，一个越来越明显的趋势是：除了大公司主导的闭源系统，开放模型和社区生态也在逐步积累势能。虽然在很多关键节点上，领先成果仍然更容易先出现在封闭体系里，但开放生态的价值正在变得越来越清楚。</p>]]>
+    </summary>
+    <title>AI研究周报(十九)：开放模型生态开始积累势能</title>
+    <updated>2026-04-15T06:47:33.999Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Agent" scheme="https://seniorzhai.github.io/tags/Agent/"/>
+    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
+    <category term="Automation" scheme="https://seniorzhai.github.io/tags/Automation/"/>
+    <content>
+      <![CDATA[<p>关于 AI 的未来，经常会听到一个很吸引人的愿景：一个足够聪明的代理，理解目标、拆解任务、调用工具、持续执行，像真正的数字员工一样工作。这个方向当然成立，但如果从落地路径看，我更相信先大规模出现的，不会是全能代理，而是工作流自动化。</p><span id="more"></span><h2 id="为什么不是一步到位的通用代理"><a href="#为什么不是一步到位的通用代理" class="headerlink" title="为什么不是一步到位的通用代理"></a>为什么不是一步到位的通用代理</h2><p>通用代理意味着模型要在开放环境里稳定规划、执行、纠错，还要承担很高的可靠性要求。这件事难度极大，不只是模型能力问题，还有环境、工具接口、异常处理和责任边界问题。</p><p>相比之下，工作流自动化的边界更清楚：</p><ul><li>输入输出更明确</li><li>工具集合更有限</li><li>目标更容易验证</li><li>人可以保留关键决策点</li></ul><p>因此它更容易先形成稳定产品。</p><h2 id="自动化工作流为什么更现实"><a href="#自动化工作流为什么更现实" class="headerlink" title="自动化工作流为什么更现实"></a>自动化工作流为什么更现实</h2><h3 id="1-业务里天然就有流程"><a href="#1-业务里天然就有流程" class="headerlink" title="1. 业务里天然就有流程"></a>1. 业务里天然就有流程</h3><p>大量实际工作不是开放式创造，而是结构化流程：整理资料、提取信息、生成草稿、汇总结论、触发后续动作。这非常适合模型参与。</p><h3 id="2-更容易建立验收标准"><a href="#2-更容易建立验收标准" class="headerlink" title="2. 更容易建立验收标准"></a>2. 更容易建立验收标准</h3><p>只要流程节点清楚，就能定义检查条件，而不是把所有结果都交给主观判断。</p><h3 id="3-更适合人与模型协作"><a href="#3-更适合人与模型协作" class="headerlink" title="3. 更适合人与模型协作"></a>3. 更适合人与模型协作</h3><p>在很多场景里，模型并不需要完全取代人，只要把重复环节自动化，就已经能带来很大增益。</p><h2 id="未来会怎么演化"><a href="#未来会怎么演化" class="headerlink" title="未来会怎么演化"></a>未来会怎么演化</h2><p>我觉得路径大概会是：</p><ul><li>先有一批半自动工作流</li><li>再出现能跨多个节点协同的系统</li><li>最后才逐步逼近更通用的代理能力</li></ul><p>也就是说，代理能力不会突然降临，而是先以“流程自动化”的形式进入真实世界。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>如果把 AI 看作生产力工具，那么它最先改变的，往往不是最浪漫的那一层，而是最重复、最流程化、最容易验证的部分。工作流自动化，很可能就是通往更强代理系统之前的主战场。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2021/03/20/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-18-%E5%B7%A5%E4%BD%9C%E6%B5%81%E8%87%AA%E5%8A%A8%E5%8C%96%E4%BC%9A%E5%85%88%E4%BA%8E%E9%80%9A%E7%94%A8%E4%BB%A3%E7%90%86%E8%90%BD%E5%9C%B0/</id>
+    <link href="https://seniorzhai.github.io/2021/03/20/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-18-%E5%B7%A5%E4%BD%9C%E6%B5%81%E8%87%AA%E5%8A%A8%E5%8C%96%E4%BC%9A%E5%85%88%E4%BA%8E%E9%80%9A%E7%94%A8%E4%BB%A3%E7%90%86%E8%90%BD%E5%9C%B0/"/>
+    <published>2021-03-20T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>关于 AI 的未来，经常会听到一个很吸引人的愿景：一个足够聪明的代理，理解目标、拆解任务、调用工具、持续执行，像真正的数字员工一样工作。这个方向当然成立，但如果从落地路径看，我更相信先大规模出现的，不会是全能代理，而是工作流自动化。</p>]]>
+    </summary>
+    <title>AI研究周报(十八)：工作流自动化会先于通用代理落地</title>
+    <updated>2026-04-15T06:47:31.244Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Inference" scheme="https://seniorzhai.github.io/tags/Inference/"/>
+    <category term="Product" scheme="https://seniorzhai.github.io/tags/Product/"/>
+    <category term="Cost" scheme="https://seniorzhai.github.io/tags/Cost/"/>
+    <content>
+      <![CDATA[<p>大模型讨论里，大家最先关注的通常是训练：参数多大、数据多少、算力多强。但如果把视角放到真正可用的产品层，会发现另一个变量正在变得越来越关键——推理成本。模型不是训练完就结束，真正进入业务后，成本、时延和吞吐会反过来决定产品长什么样。</p><span id="more"></span><h2 id="为什么推理成本的重要性在上升"><a href="#为什么推理成本的重要性在上升" class="headerlink" title="为什么推理成本的重要性在上升"></a>为什么推理成本的重要性在上升</h2><p>训练是一次性重投入，推理却是持续性支出。只要系统真的被大量用户使用，每一次调用都会变成长期账单。因此模型能不能跑得起、回得够快、撑得住峰值，往往比离线分数高一点更重要。</p><h2 id="产品会怎么被成本重塑"><a href="#产品会怎么被成本重塑" class="headerlink" title="产品会怎么被成本重塑"></a>产品会怎么被成本重塑</h2><h3 id="1-功能边界会被重新划线"><a href="#1-功能边界会被重新划线" class="headerlink" title="1. 功能边界会被重新划线"></a>1. 功能边界会被重新划线</h3><p>不是所有看起来“能做”的能力都适合直接上线。有些能力在研究场景里很好，但在高频产品里会因为时延或成本被迫降级。</p><h3 id="2-用户体验会受到直接影响"><a href="#2-用户体验会受到直接影响" class="headerlink" title="2. 用户体验会受到直接影响"></a>2. 用户体验会受到直接影响</h3><p>用户未必懂模型结构，但一定能感受到慢不慢、稳不稳、值不值得等。推理效率本质上就是体验的一部分。</p><h3 id="3-系统架构会出现分层"><a href="#3-系统架构会出现分层" class="headerlink" title="3. 系统架构会出现分层"></a>3. 系统架构会出现分层</h3><p>未来产品里，很可能不是一个模型包打天下，而是轻量模型、缓存策略、检索模块和重型生成模型一起组成系统。谁负责快，谁负责准，谁负责最后一跳，需要被重新设计。</p><h2 id="这会带来什么研究方向"><a href="#这会带来什么研究方向" class="headerlink" title="这会带来什么研究方向"></a>这会带来什么研究方向</h2><ul><li>更高效的推理框架</li><li>更适合部署的模型结构</li><li>缓存、蒸馏、裁剪、量化等工程手段</li><li>面向场景的级联式系统设计</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我越来越觉得，推理成本不是工程末节，而是产品化时代的结构变量。未来很多 AI 产品的形态，不会只由“模型能做什么”决定，也会由“模型能以什么代价持续做这件事”决定。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2021/03/13/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-17-%E6%8E%A8%E7%90%86%E6%88%90%E6%9C%AC%E5%BC%80%E5%A7%8B%E5%8F%8D%E8%BF%87%E6%9D%A5%E5%A1%91%E9%80%A0%E4%BA%A7%E5%93%81/</id>
+    <link href="https://seniorzhai.github.io/2021/03/13/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-17-%E6%8E%A8%E7%90%86%E6%88%90%E6%9C%AC%E5%BC%80%E5%A7%8B%E5%8F%8D%E8%BF%87%E6%9D%A5%E5%A1%91%E9%80%A0%E4%BA%A7%E5%93%81/"/>
+    <published>2021-03-13T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>大模型讨论里，大家最先关注的通常是训练：参数多大、数据多少、算力多强。但如果把视角放到真正可用的产品层，会发现另一个变量正在变得越来越关键——推理成本。模型不是训练完就结束，真正进入业务后，成本、时延和吞吐会反过来决定产品长什么样。</p>]]>
+    </summary>
+    <title>AI研究周报(十七)：推理成本开始反过来塑造产品</title>
+    <updated>2026-04-15T06:47:28.772Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Dear宅学长</name>
@@ -197,8 +285,8 @@
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
     <category term="Generative Model" scheme="https://seniorzhai.github.io/tags/Generative-Model/"/>
-    <category term="DALL-E" scheme="https://seniorzhai.github.io/tags/DALL-E/"/>
     <category term="Multimodal" scheme="https://seniorzhai.github.io/tags/Multimodal/"/>
+    <category term="DALL-E" scheme="https://seniorzhai.github.io/tags/DALL-E/"/>
     <content>
       <![CDATA[<p>最近看 DALL·E 相关工作，最值得注意的不是“能根据文字生成图片”这句表面描述，而是它把文本生成和图像生成之间的距离进一步拉近了。多模态建模这件事，突然变得不再只是检索和匹配，而是开始触及真正的创造性生成。</p><span id="more"></span><h2 id="DALL·E-的关键想法"><a href="#DALL·E-的关键想法" class="headerlink" title="DALL·E 的关键想法"></a>DALL·E 的关键想法</h2><p>这条路线的核心在于：把图像也表示成一种可以被语言模型处理的离散 token 序列。这样一来，文本和图像就可以在一个更统一的生成框架里被建模。</p><p>简单理解，就是：</p><ul><li>文本是一串 token</li><li>图像也被编码成一串 token</li><li>模型学习从文本 token 生成图像 token</li></ul><p>这让图像生成第一次显得像是语言模型能力自然外延出来的结果。</p><h2 id="为什么这件事重要"><a href="#为什么这件事重要" class="headerlink" title="为什么这件事重要"></a>为什么这件事重要</h2><h3 id="1-多模态统一建模开始变得具体"><a href="#1-多模态统一建模开始变得具体" class="headerlink" title="1. 多模态统一建模开始变得具体"></a>1. 多模态统一建模开始变得具体</h3><p>以前大家说多模态统一，很多时候停留在“共享表示”或者“对齐空间”。DALL·E 让“统一生成”这件事也变得可讨论了。</p><h3 id="2-文本正在成为更强的创作接口"><a href="#2-文本正在成为更强的创作接口" class="headerlink" title="2. 文本正在成为更强的创作接口"></a>2. 文本正在成为更强的创作接口</h3><p>如果一张图可以由自然语言描述驱动生成，那未来很多内容生产工具的交互方式都会变化。文本不只是检索条件，也可以成为创作指令。</p><h3 id="3-语言模型的边界被继续外推"><a href="#3-语言模型的边界被继续外推" class="headerlink" title="3. 语言模型的边界被继续外推"></a>3. 语言模型的边界被继续外推</h3><p>大模型如果既能处理文本，又能生成图像，那它的能力边界就不再局限于传统 NLP。模型会更像一个跨模态内容系统。</p><h2 id="现在还需要保持冷静的地方"><a href="#现在还需要保持冷静的地方" class="headerlink" title="现在还需要保持冷静的地方"></a>现在还需要保持冷静的地方</h2><h3 id="生成结果离真实生产工具还有距离"><a href="#生成结果离真实生产工具还有距离" class="headerlink" title="生成结果离真实生产工具还有距离"></a>生成结果离真实生产工具还有距离</h3><p>概念很惊艳，但从实验展示到稳定可用的生产级系统，中间还有很长的工程路要走。</p><h3 id="图像-token-化本身会带来信息损失"><a href="#图像-token-化本身会带来信息损失" class="headerlink" title="图像 token 化本身会带来信息损失"></a>图像 token 化本身会带来信息损失</h3><p>离散化表示很聪明，但也意味着编码方式会直接影响最终生成质量。</p><h3 id="数据与安全问题都会更复杂"><a href="#数据与安全问题都会更复杂" class="headerlink" title="数据与安全问题都会更复杂"></a>数据与安全问题都会更复杂</h3><p>一旦模型能从语言直接生成图像，数据版权、偏见控制、内容安全这些问题都会更早浮出水面。</p><h2 id="我更关心的后续方向"><a href="#我更关心的后续方向" class="headerlink" title="我更关心的后续方向"></a>我更关心的后续方向</h2><p>我觉得这条路线后面最值得看的是：</p><ul><li>更好的图像离散表示</li><li>更强的文本控制能力</li><li>更高分辨率生成</li><li>更稳定的多模态联合训练</li></ul><p>如果这些环节继续提升，多模态生成会非常快地从研究热点走向产品能力。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>DALL·E 给人的感觉像是一个前瞻信号：文本、图像、生成模型和大模型，正在往同一个方向汇合。这个方向一旦成熟，未来的软件交互方式、内容生产方式，甚至设计流程，都会被重新定义。</p>]]>
     </content>
@@ -262,8 +350,8 @@
     </author>
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Multimodal" scheme="https://seniorzhai.github.io/tags/Multimodal/"/>
     <category term="CLIP" scheme="https://seniorzhai.github.io/tags/CLIP/"/>
+    <category term="Multimodal" scheme="https://seniorzhai.github.io/tags/Multimodal/"/>
     <category term="Contrastive Learning" scheme="https://seniorzhai.github.io/tags/Contrastive-Learning/"/>
     <content>
       <![CDATA[<p>最近重新回看 CLIP 这条路线，会明显感觉到一个变化：图像理解这件事，开始不再只是“把图片分到固定标签里”，而是逐渐转向“把图像放进语言所构成的语义空间里”。</p><span id="more"></span><h2 id="CLIP-在解决什么问题"><a href="#CLIP-在解决什么问题" class="headerlink" title="CLIP 在解决什么问题"></a>CLIP 在解决什么问题</h2><p>传统视觉分类模型通常依赖封闭标签集。训练时定义好类别，模型学会在这些类别里做判断。但现实世界并不是一个固定标签列表，很多时候我们更想要的是：</p><ul><li>用自然语言描述一个概念</li><li>让模型理解图片和描述是否匹配</li><li>不重新训练就能扩展到新的类别</li></ul><p>CLIP 的关键思路，就是把图像编码器和文本编码器一起训练，让正确的图文对在表示空间里更接近，不匹配的更远。</p><h2 id="为什么这件事重要"><a href="#为什么这件事重要" class="headerlink" title="为什么这件事重要"></a>为什么这件事重要</h2><h3 id="1-视觉模型开始拥有“开放词汇”能力"><a href="#1-视觉模型开始拥有“开放词汇”能力" class="headerlink" title="1. 视觉模型开始拥有“开放词汇”能力"></a>1. 视觉模型开始拥有“开放词汇”能力</h3><p>过去模型识别的是预定义类别，现在模型可以借助文本提示去理解更广泛的概念。这会让视觉系统从封闭任务，逐步走向开放世界识别。</p><h3 id="2-多模态预训练第一次展现出很强的通用性"><a href="#2-多模态预训练第一次展现出很强的通用性" class="headerlink" title="2. 多模态预训练第一次展现出很强的通用性"></a>2. 多模态预训练第一次展现出很强的通用性</h3><p>CLIP 的吸引力不只是分类效果，而是它展示了一种更通用的学习方式：</p><ul><li>图像负责感知</li><li>文本负责语义锚定</li><li>对比学习负责把两者对齐</li></ul><p>这使得图像模型不再只靠人工标签定义世界，而是直接从海量图文数据中学习语义对应关系。</p><h3 id="3-Prompt-在视觉任务里也出现了"><a href="#3-Prompt-在视觉任务里也出现了" class="headerlink" title="3. Prompt 在视觉任务里也出现了"></a>3. Prompt 在视觉任务里也出现了</h3><p>以前 prompt 更多出现在 NLP 里，但 CLIP 让“文本模板设计”也进入视觉系统。类别描述怎么写、上下文怎么组织，都会影响结果。</p><h2 id="目前看到的局限"><a href="#目前看到的局限" class="headerlink" title="目前看到的局限"></a>目前看到的局限</h2><h3 id="数据噪声很大"><a href="#数据噪声很大" class="headerlink" title="数据噪声很大"></a>数据噪声很大</h3><p>互联网图文数据规模虽大，但噪声也非常明显。模型学到的语义既丰富，也可能混入偏见和错误关联。</p><h3 id="评测方式还不够统一"><a href="#评测方式还不够统一" class="headerlink" title="评测方式还不够统一"></a>评测方式还不够统一</h3><p>CLIP 擅长的并不只是传统分类指标，因此如何公平衡量它在开放场景下的能力，仍然需要新的评测方法。</p><h3 id="工程落地仍有门槛"><a href="#工程落地仍有门槛" class="headerlink" title="工程落地仍有门槛"></a>工程落地仍有门槛</h3><p>虽然概念很优雅，但真正接入业务时，还需要解决文本模板、召回结构、推理效率等问题。</p><h2 id="对后续研究的启发"><a href="#对后续研究的启发" class="headerlink" title="对后续研究的启发"></a>对后续研究的启发</h2><p>我觉得 CLIP 的意义在于它打开了几个很重要的方向：</p><ul><li>开放词汇识别</li><li>图文统一语义空间</li><li>多模态检索与匹配</li><li>文本驱动的视觉任务定义</li></ul><p>这意味着未来图像模型可能不会只是一个分类器，而更像一个能够听懂语言描述的感知接口。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>CLIP 让我印象最深的是，它把视觉模型从“识别像什么”，往“理解它在语言里意味着什么”推进了一步。这个变化不只是精度层面的，而是接口层面的。图像和语言的边界，正在被重新打通。</p>]]>
@@ -365,83 +453,5 @@
     </summary>
     <title>AI研究周报(一)：大模型缩放与 GPT-3</title>
     <updated>2026-04-15T05:28:29.827Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="Android" scheme="https://seniorzhai.github.io/categories/Android/"/>
-    <category term="layout" scheme="https://seniorzhai.github.io/tags/layout/"/>
-    <category term="declarative" scheme="https://seniorzhai.github.io/tags/declarative/"/>
-    <content>
-      <![CDATA[<span id="more"></span><h2 id="Transition"><a href="#Transition" class="headerlink" title="Transition"></a>Transition</h2><p>Transition内部使用了属性动画实现，是一种属性动画的封装。Transition主要负责两个方面，一是保存开始和结束场景的状态。二是两种状态之间创建动画。</p><h3 id="Scene"><a href="#Scene" class="headerlink" title="Scene"></a>Scene</h3><p>Scene 场景过渡动画就是实现View从一个状态变化到另一个状态，Scene就代表一个场景，内部保存一个完整的视图结构</p><p>Scene(ViewGroup sceneRoot)<br>Scene(ViewGroup sceneRoot, View layout)</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2020/11/14/Contour/</id>
-    <link href="https://seniorzhai.github.io/2020/11/14/Contour/"/>
-    <published>2020-11-14T07:05:09.000Z</published>
-    <summary>
-      <![CDATA[<span id="more"></span>
-
-<h2 id="Transition"><a href="#Transition" class="headerlink" title="Transition"></a>Transition</h2><p>Transition内部使]]>
-    </summary>
-    <title>Contour</title>
-    <updated>2026-04-15T04:32:10.140Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="flutter" scheme="https://seniorzhai.github.io/categories/flutter/"/>
-    <category term="flutter" scheme="https://seniorzhai.github.io/tags/flutter/"/>
-    <category term="Rive" scheme="https://seniorzhai.github.io/tags/Rive/"/>
-    <content>
-      <![CDATA[<p>Rive是一个flutter的动画引擎</p><span id="more"></span><h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>添加<code>rive</code>到<strong>pubspec.yaml</strong></p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dependencies:</span></span><br><span class="line">  <span class="attr">rive:</span> <span class="string">^0.6.2</span></span><br><span class="line"><span class="attr">flutter:</span></span><br><span class="line">  <span class="attr">assets:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">assets/truck.riv</span></span><br></pre></td></tr></table></figure><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;package:flutter/material.dart&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;package:flutter/services.dart&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;package:rive/rive.dart&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> main() =&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context)&#123;</span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      title:<span class="string">&#x27;Rive Flutter Deme&#x27;</span>,</span><br><span class="line">      home: Scaffold(</span><br><span class="line">        body: MyRiveAnimation()</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyRiveAnimation</span> <span class="keyword">extends</span> <span class="title">StatefulWidget</span> </span>&#123; </span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  _MyRiveAnimationState createState() =&gt; _MyRiveAnimationState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">_MyRiveAnimationState</span> <span class="keyword">extends</span> <span class="title">State</span>&lt;<span class="title">MyRiveAnimation</span>&gt; </span>&#123;</span><br><span class="line">  <span class="keyword">final</span> riveFileName = <span class="string">&#x27;assets/truck.riv&#x27;</span>;</span><br><span class="line">  Artboard _artboard;</span><br><span class="line">  </span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> initState() &#123;</span><br><span class="line">    _loadRiveFile();</span><br><span class="line">    <span class="keyword">super</span>.initState();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">void</span> _loadRiveFile() <span class="keyword">async</span> &#123;</span><br><span class="line">    <span class="keyword">final</span> byte = <span class="keyword">await</span> rootBundle.load(riveFileName);</span><br><span class="line">    <span class="keyword">final</span> file = RiveFile();</span><br><span class="line">    <span class="keyword">if</span>(file.<span class="keyword">import</span>(bytes)) &#123;</span><br><span class="line">      setState(()=&gt; _artboard = file.mainArtborad</span><br><span class="line">        ..addController(</span><br><span class="line">          SimpleAnimation(<span class="string">&#x27;idle&#x27;</span>),</span><br><span class="line">        ));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2020/11/09/Rive/</id>
-    <link href="https://seniorzhai.github.io/2020/11/09/Rive/"/>
-    <published>2020-11-09T15:31:25.000Z</published>
-    <summary>
-      <![CDATA[<p>Rive是一个flutter的动画引擎</p>]]>
-    </summary>
-    <title>Rive</title>
-    <updated>2026-04-15T04:32:10.154Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="ffmpeg" scheme="https://seniorzhai.github.io/categories/ffmpeg/"/>
-    <category term="ffmpeg" scheme="https://seniorzhai.github.io/tags/ffmpeg/"/>
-    <content>
-      <![CDATA[<h2 id="视频帧"><a href="#视频帧" class="headerlink" title="视频帧"></a>视频帧</h2><p>视频是由一系列图片构成，每一张画面即视频帧，视频由许许多多视频帧构成</p><span id="more"></span><h3 id="帧率"><a href="#帧率" class="headerlink" title="帧率"></a>帧率</h3><p>单位时间内帧的数量，单位是<code>帧/秒</code>(fps frames per second)，表示一秒内包含多少图片</p><h2 id="色彩空间"><a href="#色彩空间" class="headerlink" title="色彩空间"></a>色彩空间</h2><ul><li>RGB<br>通过RGB光的三原色，混合所有颜色，广泛的引用在现在的电子设备中</li><li>YUV<br>这是一种亮度与色度分离的色彩格式<br>早起的电视都是黑白的，即只有亮度Y，有了彩色电视后，加入了UV两个色度，形成了YUV也叫YCbCr<br>Y: 亮度，即灰度值，表示亮度以外还包含较多的绿色通道量<br>U: 蓝色通道与亮度的差值<br>V: 红色通道与亮度的差值</li></ul><blockquote><p>人眼对亮度敏感，对色度不敏感，因此减少部分UV的数据量，人眼也无法感知，通过压缩UV的分辨率，在不怎么影响观感的前提下，可以减小视频的体积</p></blockquote><h3 id="RGB与YUV的换算"><a href="#RGB与YUV的换算" class="headerlink" title="RGB与YUV的换算"></a>RGB与YUV的换算</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Y = 0.299R + 0.587G + 0.1148</span><br><span class="line">U = -0.147R - 0.289G + 0.436B</span><br><span class="line">V = 0.615R - 0.515G - 0.100B</span><br><span class="line">----------------------------</span><br><span class="line">R = Y + 1.114V</span><br><span class="line">G = Y - 0.39U - 0.58V</span><br><span class="line">B = Y + 2.03U</span><br></pre></td></tr></table></figure><h1 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h1><p>音频的数据承载方式常见<code>脉冲编码调制</code>，<code>PCM</code><br>声音是一种波，有自己的振幅和频率，保存声音就是保存声音在各个时间点上的振幅，数字信号并不能连续保存所有时间点的振幅。<br>根据奈奎斯特采样定理：为了不失真地恢复模拟信号，采样率应该不小于模拟信号频谱中最高频率的2倍<br>PCM采集步骤：</p><blockquote><p>模拟信号-&gt;采样-&gt;量化-&gt;编码-&gt;数字信号<br><img src="/img/20110101.webp"></p></blockquote><h2 id="采样率和采样位数"><a href="#采样率和采样位数" class="headerlink" title="采样率和采样位数"></a>采样率和采样位数</h2><p>采样率即采样的频率<br>采样率要大于原声频率的2倍，人耳听到的最高的频率为20kHz，为了满足人耳听觉要求采样率至少为40kHz，通常为44.1kHz，更高的通常为48kHz。<br>波形振幅在模拟信号上也是连续的样本值，而在数字信号中，信号不连续，所以模拟信号量化后，只能取一个近似值的整数值，为了记录这些振幅值，采样器会采用一个固定的位数来记录这些振幅值，通常有8位、16位、32位。</p><table><thead><tr><th align="left">位数</th><th align="left">最小值</th><th align="left">最大值</th></tr></thead><tbody><tr><td align="left">8</td><td align="left">0</td><td align="left">255</td></tr><tr><td align="left">16</td><td align="left">-32768</td><td align="left">32767</td></tr><tr><td align="left">32</td><td align="left">-2147483648</td><td align="left">214748367</td></tr></tbody></table><p><img src="/img/20110102.jpg"></p><h3 id="声道数"><a href="#声道数" class="headerlink" title="声道数"></a>声道数</h3><p>指支持不同发声的音响的个数</p><h3 id="码率"><a href="#码率" class="headerlink" title="码率"></a>码率</h3><p>码率值一个数据流中每秒能通过的信息量，单位bps（bit per second)<br>码率 &#x3D; 采样率 * 采样位数 * 声道数</p><h2 id="视频编码"><a href="#视频编码" class="headerlink" title="视频编码"></a>视频编码</h2><p>视频编码格式有很多，比如H26x和MPEG系列编码<br>其中 H26X(1&#x2F;2&#x2F;3&#x2F;4&#x2F;5) 系列由ITU(International Telecommunication Union)国际电视视讯联盟主导<br>MPEG(1&#x2F;2&#x2F;3&#x2F;4) 系列由MPEG(Moving Picture Experts Group,ISO旗下组织)主导</p><h3 id="H264"><a href="#H264" class="headerlink" title="H264"></a>H264</h3><p>目前最流行的视频编码标准<br><code>H264</code>由ITU和MPEG共同定制，属于MPEG-4第十部分内容</p><ul><li>视频由一帧帧的画面组成，但是视频中大多数画面内容相近，所以视频的数据不是所有的画面原始数据<br>H264会根据一段时间内，画面的变化情况，选取一帧画面作为完整编码，下一阵只记录与上一帧完整数据的差别<br>在H264中，三种类型的帧数据分别为<br><code>I帧</code>: 帧内编码帧，就是一个完整帧<br><code>P帧</code>: 前向预测编码帧，是一个非完整帧，通过参考前面的I帧或P帧生成<br><code>B帧</code>: 双向预测内编码帧，参考前后图像帧编码生成，B帧依赖其前最近的一个I帧或P帧以及其后最近的一个P帧</li><li>图像组GOP 和 关键帧IDR<br>Group of picture 指一组变化不大的视频组<br>IDR都是I帧，可以防止一帧解码出错，导致后面的所有帧解码出错。当加码器在解码到IDR时，会将之前的参考帧清空，重新开始一个新的序列。这样即使前一帧出现重大的错误，也不会蔓延都后续的数据中。</li><li>DTS 和 PTS<br>DTS Decoding Time Stamp 标示读入内存中数据流在什么时候开始送入解码器中进行解码，也就是编码顺序的时间戳<br>PTS Presentation Time Stamp 标示编码后的视频什么时候被显示出来</li><li>帧的色彩空间<br>H264采用的是YUV<br>YUV存储方式分为两大类：planar和packed<br>planar 先存储Y紧接着存储U最后是V<br>packed 像素点的Y、U、V连续交叉存储<br><img src="/img/20110103.webp"><br><img src="/img/20110104.webp"><br>因为人眼对色度不敏感，所以可以通过省略一定的色度信息，即亮度公用一些色度信息进而节省存储空间，planar又区分了以下几种格式: YUV444、YUV422、YUV420<br>YUV 4:4:4 每个Y对应一组UV分量<br><img src="/img/20110105.webp"><br>YUV 4:2:2 每两个Y公用一组UV分量<br><img src="/img/20110106.webp"><br>YUV 4:2:0 每四个Y公用一组UV分量<br><img src="/img/20110107.webp"><br>其中最常用的就是YUV420<br>-YUV420属于planar存储方式<br>YUV420P 三面存储 数据组成为YYYYYYYYUUVV（如I420）或YYYYYYYYVVUU（如YV12）<br>YUV420SP：两平面存储 分为两种类型YYYYYYYYUVUV（如NV12）或YYYYYYYYVUVU（如NV21）</li></ul><h2 id="音频编码"><a href="#音频编码" class="headerlink" title="音频编码"></a>音频编码</h2><p>原始的PCM音频数据也是非常大的数据量，因此也需要对其进行压缩编码<br>音频的编码格式也有许多，比如 WAV MP3 WMA APE FLAC等等，后两种属于无损压缩格式<br>AAC是一种有损压缩技术，一种高压缩比的音频压缩算法，MP4视频中的音频数据，大多数时候都是采用AAC压缩格式<br>主要分为ADIF、ADTS<br>ADIF Audio Data Interchange Format 音频数据交换格式，这种格式的特征是可以确定的这个音频数据的开始，不需要进行音频数据中间开始解码，即它的编码必须在明确的开始处进行。</p><p>ADTS Audio Data Transport Strem 音频数据数据传输流，它是一个同步的比特流，解码可以在任意位置开始。</p><p>ADIF 数据</p><table><thead><tr><th align="left">header</th><th align="left">raw_data</th></tr></thead><tbody><tr><td align="left">ADTS 一帧 数据格式</td><td align="left"></td></tr><tr><td align="left">…</td><td align="left">sync_word</td></tr><tr><td align="left">:–</td><td align="left">:–</td></tr></tbody></table><h2 id="音频容器"><a href="#音频容器" class="headerlink" title="音频容器"></a>音频容器</h2><p>常见的音视频格式map4、rmvb、avi、mkv、mov就是音视频编码数据的容器，用来把特定的标准编码的视频流和音频流混在一起</p><h2 id="硬解码和软解码"><a href="#硬解码和软解码" class="headerlink" title="硬解码和软解码"></a>硬解码和软解码</h2><p>硬解码指CPU、GPU等加码器硬件进行解码<br>软解码利用CPU计算能力进行解码，由于CPU的性能可能会比较慢和造成CPU发热，但是因为统一的算法，兼容性很好</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2020/11/01/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80(%E4%B8%80)/</id>
-    <link href="https://seniorzhai.github.io/2020/11/01/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
-    <published>2020-11-01T13:15:44.000Z</published>
-    <summary>
-      <![CDATA[<h2 id="视频帧"><a href="#视频帧" class="headerlink" title="视频帧"></a>视频帧</h2><p>视频是由一系列图片构成，每一张画面即视频帧，视频由许许多多视频帧构成</p>]]>
-    </summary>
-    <title>音视频基础(一)</title>
-    <updated>2026-04-15T04:32:10.169Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <content>
-      <![CDATA[<p>Flutter属于声明式(declarative)UI，构建界面的就是应用当前的状态</p><span id="more"></span><p><img src="/img/20092601.png"><br>当应用状态改变时（比如用户的操作或者网络数据返回），将会触发界面的重绘</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2020/09/26/Flutter%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/</id>
-    <link href="https://seniorzhai.github.io/2020/09/26/Flutter%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/"/>
-    <published>2020-09-26T13:11:25.000Z</published>
-    <summary>
-      <![CDATA[<p>Flutter属于声明式(declarative)UI，构建界面的就是应用当前的状态</p>]]>
-    </summary>
-    <title>Flutter状态管理</title>
-    <updated>2026-04-15T04:32:10.143Z</updated>
   </entry>
 </feed>
