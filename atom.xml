@@ -12,7 +12,95 @@
   <rights>All rights reserved 2026, Dear宅学长</rights>
   <subtitle>苟利国家生死以，起因福祸趋避之</subtitle>
   <title>SeniorZhai's blog</title>
-  <updated>2026-04-15T05:28:29.851Z</updated>
+  <updated>2026-04-15T05:41:17.964Z</updated>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Multimodal" scheme="https://seniorzhai.github.io/tags/Multimodal/"/>
+    <category term="DALL-E" scheme="https://seniorzhai.github.io/tags/DALL-E/"/>
+    <category term="Generative Model" scheme="https://seniorzhai.github.io/tags/Generative-Model/"/>
+    <content>
+      <![CDATA[<p>最近看 DALL·E 相关工作，最值得注意的不是“能根据文字生成图片”这句表面描述，而是它把文本生成和图像生成之间的距离进一步拉近了。多模态建模这件事，突然变得不再只是检索和匹配，而是开始触及真正的创造性生成。</p><span id="more"></span><h2 id="DALL·E-的关键想法"><a href="#DALL·E-的关键想法" class="headerlink" title="DALL·E 的关键想法"></a>DALL·E 的关键想法</h2><p>这条路线的核心在于：把图像也表示成一种可以被语言模型处理的离散 token 序列。这样一来，文本和图像就可以在一个更统一的生成框架里被建模。</p><p>简单理解，就是：</p><ul><li>文本是一串 token</li><li>图像也被编码成一串 token</li><li>模型学习从文本 token 生成图像 token</li></ul><p>这让图像生成第一次显得像是语言模型能力自然外延出来的结果。</p><h2 id="为什么这件事重要"><a href="#为什么这件事重要" class="headerlink" title="为什么这件事重要"></a>为什么这件事重要</h2><h3 id="1-多模态统一建模开始变得具体"><a href="#1-多模态统一建模开始变得具体" class="headerlink" title="1. 多模态统一建模开始变得具体"></a>1. 多模态统一建模开始变得具体</h3><p>以前大家说多模态统一，很多时候停留在“共享表示”或者“对齐空间”。DALL·E 让“统一生成”这件事也变得可讨论了。</p><h3 id="2-文本正在成为更强的创作接口"><a href="#2-文本正在成为更强的创作接口" class="headerlink" title="2. 文本正在成为更强的创作接口"></a>2. 文本正在成为更强的创作接口</h3><p>如果一张图可以由自然语言描述驱动生成，那未来很多内容生产工具的交互方式都会变化。文本不只是检索条件，也可以成为创作指令。</p><h3 id="3-语言模型的边界被继续外推"><a href="#3-语言模型的边界被继续外推" class="headerlink" title="3. 语言模型的边界被继续外推"></a>3. 语言模型的边界被继续外推</h3><p>大模型如果既能处理文本，又能生成图像，那它的能力边界就不再局限于传统 NLP。模型会更像一个跨模态内容系统。</p><h2 id="现在还需要保持冷静的地方"><a href="#现在还需要保持冷静的地方" class="headerlink" title="现在还需要保持冷静的地方"></a>现在还需要保持冷静的地方</h2><h3 id="生成结果离真实生产工具还有距离"><a href="#生成结果离真实生产工具还有距离" class="headerlink" title="生成结果离真实生产工具还有距离"></a>生成结果离真实生产工具还有距离</h3><p>概念很惊艳，但从实验展示到稳定可用的生产级系统，中间还有很长的工程路要走。</p><h3 id="图像-token-化本身会带来信息损失"><a href="#图像-token-化本身会带来信息损失" class="headerlink" title="图像 token 化本身会带来信息损失"></a>图像 token 化本身会带来信息损失</h3><p>离散化表示很聪明，但也意味着编码方式会直接影响最终生成质量。</p><h3 id="数据与安全问题都会更复杂"><a href="#数据与安全问题都会更复杂" class="headerlink" title="数据与安全问题都会更复杂"></a>数据与安全问题都会更复杂</h3><p>一旦模型能从语言直接生成图像，数据版权、偏见控制、内容安全这些问题都会更早浮出水面。</p><h2 id="我更关心的后续方向"><a href="#我更关心的后续方向" class="headerlink" title="我更关心的后续方向"></a>我更关心的后续方向</h2><p>我觉得这条路线后面最值得看的是：</p><ul><li>更好的图像离散表示</li><li>更强的文本控制能力</li><li>更高分辨率生成</li><li>更稳定的多模态联合训练</li></ul><p>如果这些环节继续提升，多模态生成会非常快地从研究热点走向产品能力。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>DALL·E 给人的感觉像是一个前瞻信号：文本、图像、生成模型和大模型，正在往同一个方向汇合。这个方向一旦成熟，未来的软件交互方式、内容生产方式，甚至设计流程，都会被重新定义。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2021/01/09/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-08-DALL-E%E4%B8%8E%E7%A6%BB%E6%95%A3%E7%94%9F%E6%88%90/</id>
+    <link href="https://seniorzhai.github.io/2021/01/09/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-08-DALL-E%E4%B8%8E%E7%A6%BB%E6%95%A3%E7%94%9F%E6%88%90/"/>
+    <published>2021-01-09T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>最近看 DALL·E 相关工作，最值得注意的不是“能根据文字生成图片”这句表面描述，而是它把文本生成和图像生成之间的距离进一步拉近了。多模态建模这件事，突然变得不再只是检索和匹配，而是开始触及真正的创造性生成。</p>]]>
+    </summary>
+    <title>AI研究周报(八)：DALL·E 与离散生成</title>
+    <updated>2026-04-15T05:41:17.964Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Generative Model" scheme="https://seniorzhai.github.io/tags/Generative-Model/"/>
+    <category term="Diffusion" scheme="https://seniorzhai.github.io/tags/Diffusion/"/>
+    <category term="DDPM" scheme="https://seniorzhai.github.io/tags/DDPM/"/>
+    <content>
+      <![CDATA[<p>生成模型这条线这些年一直很热闹，GAN 曾经是最亮眼的主角，但最近再看 DDPM 一类扩散模型的工作，会感觉到一种不太一样的气质：它不靠极度激进的对抗训练，而是走了一条更稳定、更物理、更逐步逼近数据分布的路线。</p><span id="more"></span><h2 id="扩散模型在做什么"><a href="#扩散模型在做什么" class="headerlink" title="扩散模型在做什么"></a>扩散模型在做什么</h2><p>如果用直观的话来讲，扩散模型的过程可以分成两步：</p><ol><li>先把真实数据一步步加噪，直到接近纯噪声</li><li>再训练一个模型学习如何把噪声一步步还原回有结构的数据</li></ol><p>这个思路的好处在于，生成过程被拆成很多小步，每一步都只需要处理一个相对局部的去噪任务。</p><h2 id="为什么值得关注"><a href="#为什么值得关注" class="headerlink" title="为什么值得关注"></a>为什么值得关注</h2><h3 id="1-训练目标更稳定"><a href="#1-训练目标更稳定" class="headerlink" title="1. 训练目标更稳定"></a>1. 训练目标更稳定</h3><p>GAN 的问题大家都很熟：不稳定、容易模式崩塌、调参痛苦。扩散模型虽然慢，但训练目标相对更清晰，优化过程也更可控。</p><h3 id="2-生成质量正在逼近甚至挑战主流路线"><a href="#2-生成质量正在逼近甚至挑战主流路线" class="headerlink" title="2. 生成质量正在逼近甚至挑战主流路线"></a>2. 生成质量正在逼近甚至挑战主流路线</h3><p>过去大家会觉得这类方法只是“概念好看”，但现在已经能看到它在图像生成质量上具备很强竞争力。只要后面采样效率继续改进，它的吸引力会越来越大。</p><h3 id="3-与概率建模联系更紧"><a href="#3-与概率建模联系更紧" class="headerlink" title="3. 与概率建模联系更紧"></a>3. 与概率建模联系更紧</h3><p>扩散模型给人的感觉不是纯工程 trick，而是和概率建模、分布演化有更自然的对应关系。这让它在理论和方法演化上都很有空间。</p><h2 id="当前最现实的问题"><a href="#当前最现实的问题" class="headerlink" title="当前最现实的问题"></a>当前最现实的问题</h2><h3 id="采样慢"><a href="#采样慢" class="headerlink" title="采样慢"></a>采样慢</h3><p>这是扩散模型最明显的短板。一步步去噪意味着推理链路长，真正落到交互式产品时会有明显压力。</p><h3 id="工程生态还早"><a href="#工程生态还早" class="headerlink" title="工程生态还早"></a>工程生态还早</h3><p>GAN 相关经验和工具积累更多，而扩散模型目前还像一个正在快速成长的新方向。</p><h3 id="应用边界还没完全打开"><a href="#应用边界还没完全打开" class="headerlink" title="应用边界还没完全打开"></a>应用边界还没完全打开</h3><p>现在看到的亮点主要集中在图像生成，但这条路线能不能自然扩展到更多模态，仍然需要继续观察。</p><h2 id="我更看重的地方"><a href="#我更看重的地方" class="headerlink" title="我更看重的地方"></a>我更看重的地方</h2><p>我觉得扩散模型最大的价值，是它给生成建模提供了另一种主线：</p><ul><li>不一定非要靠对抗训练</li><li>可以用多步逼近的方式做高质量生成</li><li>训练稳定性本身也是核心竞争力</li></ul><p>如果后续有人把采样速度问题解决掉，这类方法可能会有非常大的爆发力。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>现在下结论说扩散模型会完全替代别的生成路线还太早，但它已经发出了一个很强的信号：生成模型的主战场，未必只属于 GAN。稳定、可解释、逐步还原的建模思路，可能会在后面带来更大的惊喜。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2021/01/02/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-07-%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%97%A9%E6%9C%9F%E4%BF%A1%E5%8F%B7/</id>
+    <link href="https://seniorzhai.github.io/2021/01/02/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-07-%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%97%A9%E6%9C%9F%E4%BF%A1%E5%8F%B7/"/>
+    <published>2021-01-02T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>生成模型这条线这些年一直很热闹，GAN 曾经是最亮眼的主角，但最近再看 DDPM 一类扩散模型的工作，会感觉到一种不太一样的气质：它不靠极度激进的对抗训练，而是走了一条更稳定、更物理、更逐步逼近数据分布的路线。</p>]]>
+    </summary>
+    <title>AI研究周报(七)：扩散模型的早期信号</title>
+    <updated>2026-04-15T05:41:17.953Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="AlphaFold2" scheme="https://seniorzhai.github.io/tags/AlphaFold2/"/>
+    <category term="Protein Folding" scheme="https://seniorzhai.github.io/tags/Protein-Folding/"/>
+    <category term="Science" scheme="https://seniorzhai.github.io/tags/Science/"/>
+    <content>
+      <![CDATA[<p>这一阵子看 AlphaFold2 的进展，最大的感受不是“又一个 benchmark 被刷了”，而是 AI 开始在一些传统科学难题上展现出真正的突破性价值。蛋白质折叠并不是一个容易被营销化理解的话题，但它的重要性非常实在。</p><span id="more"></span><h2 id="AlphaFold2-为什么让人震动"><a href="#AlphaFold2-为什么让人震动" class="headerlink" title="AlphaFold2 为什么让人震动"></a>AlphaFold2 为什么让人震动</h2><p>蛋白质结构预测一直是生物信息学里的核心问题之一。序列决定结构，结构影响功能，而实验解析结构成本很高、周期很长。如果 AI 能显著提升结构预测质量，它影响的不是某一个模型榜单，而是整个生命科学研究效率。</p><p>AlphaFold2 的突破之处，在于它不是简单做一个局部预测器，而是把：</p><ul><li>序列信息</li><li>进化信息</li><li>残基之间的关系建模</li><li>几何约束</li></ul><p>组织成了一个更统一的预测框架。</p><h2 id="这件事的更大意义"><a href="#这件事的更大意义" class="headerlink" title="这件事的更大意义"></a>这件事的更大意义</h2><h3 id="1-AI-不再只是在互联网任务里卷指标"><a href="#1-AI-不再只是在互联网任务里卷指标" class="headerlink" title="1. AI 不再只是在互联网任务里卷指标"></a>1. AI 不再只是在互联网任务里卷指标</h3><p>过去 AI 的高光时刻很多发生在图像分类、机器翻译、语言建模这些更贴近互联网或通用基准的任务上。AlphaFold2 则提醒我们，AI 也可以成为科学发现流程里的高价值工具。</p><h3 id="2-结构化归纳依然重要"><a href="#2-结构化归纳依然重要" class="headerlink" title="2. 结构化归纳依然重要"></a>2. 结构化归纳依然重要</h3><p>虽然近几年大家都在强调端到端、大模型、预训练，但 AlphaFold2 说明，在科学问题里，对结构、几何和约束的建模依然非常关键。不是所有问题都能只靠堆数据解决。</p><h3 id="3-评价-AI-的标准正在变"><a href="#3-评价-AI-的标准正在变" class="headerlink" title="3. 评价 AI 的标准正在变"></a>3. 评价 AI 的标准正在变</h3><p>如果一个模型能节省实验成本、缩短研究周期、帮助科学家更快筛选方向，那它的价值已经远远超过常规 leaderboard 分数。</p><h2 id="对工程和研究的启发"><a href="#对工程和研究的启发" class="headerlink" title="对工程和研究的启发"></a>对工程和研究的启发</h2><h3 id="AI-for-Science-会成为独立方向"><a href="#AI-for-Science-会成为独立方向" class="headerlink" title="AI for Science 会成为独立方向"></a>AI for Science 会成为独立方向</h3><p>我很看好后面几年 AI 在材料、药物、蛋白、分子模拟等方向继续爆发。因为这类领域同时满足几个条件：</p><ul><li>数据复杂且高价值</li><li>人工试错成本高</li><li>领域知识强</li><li>自动化需求明显</li></ul><h3 id="通用模型与领域模型会长期并存"><a href="#通用模型与领域模型会长期并存" class="headerlink" title="通用模型与领域模型会长期并存"></a>通用模型与领域模型会长期并存</h3><p>像 AlphaFold2 这样的成果也说明，通用架构固然重要，但深度结合领域结构知识的模型依旧会有巨大价值。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>AlphaFold2 让我看到，AI 的下一阶段不只是替代某些内容生成或分类工作，更可能深入科学研究链路本身。真正值得关注的，不只是模型参数规模，而是模型是否开始帮助人类更快理解自然世界。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2020/12/26/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-06-AlphaFold2%E4%B8%8E%E7%A7%91%E5%AD%A6AI/</id>
+    <link href="https://seniorzhai.github.io/2020/12/26/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-06-AlphaFold2%E4%B8%8E%E7%A7%91%E5%AD%A6AI/"/>
+    <published>2020-12-26T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这一阵子看 AlphaFold2 的进展，最大的感受不是“又一个 benchmark 被刷了”，而是 AI 开始在一些传统科学难题上展现出真正的突破性价值。蛋白质折叠并不是一个容易被营销化理解的话题，但它的重要性非常实在。</p>]]>
+    </summary>
+    <title>AI研究周报(六)：AlphaFold2 与科学 AI</title>
+    <updated>2026-04-15T05:41:17.978Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="CLIP" scheme="https://seniorzhai.github.io/tags/CLIP/"/>
+    <category term="Multimodal" scheme="https://seniorzhai.github.io/tags/Multimodal/"/>
+    <category term="Contrastive Learning" scheme="https://seniorzhai.github.io/tags/Contrastive-Learning/"/>
+    <content>
+      <![CDATA[<p>最近重新回看 CLIP 这条路线，会明显感觉到一个变化：图像理解这件事，开始不再只是“把图片分到固定标签里”，而是逐渐转向“把图像放进语言所构成的语义空间里”。</p><span id="more"></span><h2 id="CLIP-在解决什么问题"><a href="#CLIP-在解决什么问题" class="headerlink" title="CLIP 在解决什么问题"></a>CLIP 在解决什么问题</h2><p>传统视觉分类模型通常依赖封闭标签集。训练时定义好类别，模型学会在这些类别里做判断。但现实世界并不是一个固定标签列表，很多时候我们更想要的是：</p><ul><li>用自然语言描述一个概念</li><li>让模型理解图片和描述是否匹配</li><li>不重新训练就能扩展到新的类别</li></ul><p>CLIP 的关键思路，就是把图像编码器和文本编码器一起训练，让正确的图文对在表示空间里更接近，不匹配的更远。</p><h2 id="为什么这件事重要"><a href="#为什么这件事重要" class="headerlink" title="为什么这件事重要"></a>为什么这件事重要</h2><h3 id="1-视觉模型开始拥有“开放词汇”能力"><a href="#1-视觉模型开始拥有“开放词汇”能力" class="headerlink" title="1. 视觉模型开始拥有“开放词汇”能力"></a>1. 视觉模型开始拥有“开放词汇”能力</h3><p>过去模型识别的是预定义类别，现在模型可以借助文本提示去理解更广泛的概念。这会让视觉系统从封闭任务，逐步走向开放世界识别。</p><h3 id="2-多模态预训练第一次展现出很强的通用性"><a href="#2-多模态预训练第一次展现出很强的通用性" class="headerlink" title="2. 多模态预训练第一次展现出很强的通用性"></a>2. 多模态预训练第一次展现出很强的通用性</h3><p>CLIP 的吸引力不只是分类效果，而是它展示了一种更通用的学习方式：</p><ul><li>图像负责感知</li><li>文本负责语义锚定</li><li>对比学习负责把两者对齐</li></ul><p>这使得图像模型不再只靠人工标签定义世界，而是直接从海量图文数据中学习语义对应关系。</p><h3 id="3-Prompt-在视觉任务里也出现了"><a href="#3-Prompt-在视觉任务里也出现了" class="headerlink" title="3. Prompt 在视觉任务里也出现了"></a>3. Prompt 在视觉任务里也出现了</h3><p>以前 prompt 更多出现在 NLP 里，但 CLIP 让“文本模板设计”也进入视觉系统。类别描述怎么写、上下文怎么组织，都会影响结果。</p><h2 id="目前看到的局限"><a href="#目前看到的局限" class="headerlink" title="目前看到的局限"></a>目前看到的局限</h2><h3 id="数据噪声很大"><a href="#数据噪声很大" class="headerlink" title="数据噪声很大"></a>数据噪声很大</h3><p>互联网图文数据规模虽大，但噪声也非常明显。模型学到的语义既丰富，也可能混入偏见和错误关联。</p><h3 id="评测方式还不够统一"><a href="#评测方式还不够统一" class="headerlink" title="评测方式还不够统一"></a>评测方式还不够统一</h3><p>CLIP 擅长的并不只是传统分类指标，因此如何公平衡量它在开放场景下的能力，仍然需要新的评测方法。</p><h3 id="工程落地仍有门槛"><a href="#工程落地仍有门槛" class="headerlink" title="工程落地仍有门槛"></a>工程落地仍有门槛</h3><p>虽然概念很优雅，但真正接入业务时，还需要解决文本模板、召回结构、推理效率等问题。</p><h2 id="对后续研究的启发"><a href="#对后续研究的启发" class="headerlink" title="对后续研究的启发"></a>对后续研究的启发</h2><p>我觉得 CLIP 的意义在于它打开了几个很重要的方向：</p><ul><li>开放词汇识别</li><li>图文统一语义空间</li><li>多模态检索与匹配</li><li>文本驱动的视觉任务定义</li></ul><p>这意味着未来图像模型可能不会只是一个分类器，而更像一个能够听懂语言描述的感知接口。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>CLIP 让我印象最深的是，它把视觉模型从“识别像什么”，往“理解它在语言里意味着什么”推进了一步。这个变化不只是精度层面的，而是接口层面的。图像和语言的边界，正在被重新打通。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2020/12/19/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-05-CLIP%E4%B8%8E%E8%B7%A8%E6%A8%A1%E6%80%81%E9%A2%84%E8%AE%AD%E7%BB%83/</id>
+    <link href="https://seniorzhai.github.io/2020/12/19/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-05-CLIP%E4%B8%8E%E8%B7%A8%E6%A8%A1%E6%80%81%E9%A2%84%E8%AE%AD%E7%BB%83/"/>
+    <published>2020-12-19T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>最近重新回看 CLIP 这条路线，会明显感觉到一个变化：图像理解这件事，开始不再只是“把图片分到固定标签里”，而是逐渐转向“把图像放进语言所构成的语义空间里”。</p>]]>
+    </summary>
+    <title>AI研究周报(五)：CLIP 与跨模态预训练</title>
+    <updated>2026-04-15T05:41:17.941Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Dear宅学长</name>
@@ -65,8 +153,8 @@
     </author>
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Transformer" scheme="https://seniorzhai.github.io/tags/Transformer/"/>
     <category term="ViT" scheme="https://seniorzhai.github.io/tags/ViT/"/>
+    <category term="Transformer" scheme="https://seniorzhai.github.io/tags/Transformer/"/>
     <category term="Vision" scheme="https://seniorzhai.github.io/tags/Vision/"/>
     <content>
       <![CDATA[<p>Transformer 在 NLP 里已经证明了自己，但把它直接搬到视觉领域，最开始其实并不让人完全放心。图像毕竟和文本不一样，卷积网络长期以来在视觉任务里几乎是默认答案。</p><span id="more"></span><h2 id="ViT-的核心想法"><a href="#ViT-的核心想法" class="headerlink" title="ViT 的核心想法"></a>ViT 的核心想法</h2><p>Vision Transformer 做了一件非常直接的事情：</p><ol><li>把一张图切成固定大小的 patch</li><li>把每个 patch 当成一个 token</li><li>加上位置编码</li><li>送进标准 Transformer Encoder</li></ol><p>这个做法的冲击在于，它说明了 <strong>卷积并不一定是视觉任务不可替代的归纳偏置</strong>。</p><h2 id="为什么这个思路重要"><a href="#为什么这个思路重要" class="headerlink" title="为什么这个思路重要"></a>为什么这个思路重要</h2><h3 id="1-视觉与语言的建模方式正在统一"><a href="#1-视觉与语言的建模方式正在统一" class="headerlink" title="1. 视觉与语言的建模方式正在统一"></a>1. 视觉与语言的建模方式正在统一</h3><p>如果文本可以被表示成 token 序列，图像也可以被表示成 patch 序列，那么很多过去分裂的建模方式就开始收敛：</p><ul><li>NLP 用 Transformer</li><li>Vision 也能用 Transformer</li><li>多模态就有了更自然的统一接口</li></ul><p>这会让未来图文、视频、音频等多模态模型更容易共享同一套主干结构。</p><h3 id="2-全局建模能力更自然"><a href="#2-全局建模能力更自然" class="headerlink" title="2. 全局建模能力更自然"></a>2. 全局建模能力更自然</h3><p>CNN 在处理局部模式上很强，但要建模长距离依赖，往往需要不断堆层或者借助额外模块。</p><p>Transformer 的 self-attention 则天然具备全局交互能力，任何 patch 都可以直接和其他 patch 建立联系。</p><p>这对于下面这些任务都很重要：</p><ul><li>场景理解</li><li>关系建模</li><li>复杂目标交互</li><li>跨区域语义聚合</li></ul><h3 id="3-预训练的重要性更高了"><a href="#3-预训练的重要性更高了" class="headerlink" title="3. 预训练的重要性更高了"></a>3. 预训练的重要性更高了</h3><p>ViT 也提醒了一件事：<strong>当我们拿掉卷积的强归纳偏置以后，模型会更加依赖大规模数据预训练</strong>。</p><p>也就是说，模型更通用了，但也更“吃数据”。</p><h2 id="需要看到的现实问题"><a href="#需要看到的现实问题" class="headerlink" title="需要看到的现实问题"></a>需要看到的现实问题</h2><h3 id="数据需求高"><a href="#数据需求高" class="headerlink" title="数据需求高"></a>数据需求高</h3><p>ViT 在大数据集上效果很好，但在数据量不足时未必比 CNN 更稳。</p><h3 id="计算成本高"><a href="#计算成本高" class="headerlink" title="计算成本高"></a>计算成本高</h3><p>attention 的代价会随着 token 数量增长得很快，高分辨率输入时尤其明显。</p><h3 id="工程生态还不成熟"><a href="#工程生态还不成熟" class="headerlink" title="工程生态还不成熟"></a>工程生态还不成熟</h3><p>卷积网络在部署、蒸馏、移动端优化上已经很成熟，而视觉 Transformer 相关工具链还处在早期。</p><h2 id="我更关心的两个方向"><a href="#我更关心的两个方向" class="headerlink" title="我更关心的两个方向"></a>我更关心的两个方向</h2><h3 id="更高效的视觉-Transformer"><a href="#更高效的视觉-Transformer" class="headerlink" title="更高效的视觉 Transformer"></a>更高效的视觉 Transformer</h3><p>未来一定会有人继续做：</p><ul><li>分层结构</li><li>稀疏注意力</li><li>局部窗口注意力</li><li>更低成本的 patch 表示</li></ul><p>目标很明确：把 Transformer 的表达能力和 CNN 的工程效率结合起来。</p><h3 id="视觉与语言的统一预训练"><a href="#视觉与语言的统一预训练" class="headerlink" title="视觉与语言的统一预训练"></a>视觉与语言的统一预训练</h3><p>一旦视觉端也全面 token 化，多模态预训练就会更加顺滑。图像、文本甚至视频都可以被表示成统一的序列建模问题。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>ViT 的意义不只是把分类精度再抬高一点，而是让大家开始认真思考：</p><ul><li>视觉是不是也能走“预训练大模型”路线</li><li>多模态模型是不是应该共享统一主干</li><li>归纳偏置和通用性之间，最佳平衡点在哪里</li></ul><p>从长期看，这篇工作更像是一块路标，它告诉我们：<strong>Transformer 不是 NLP 的专属结构，它可能是一种更普适的表示学习框架。</strong></p>]]>
@@ -87,8 +175,8 @@
     </author>
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="GPT-3" scheme="https://seniorzhai.github.io/tags/GPT-3/"/>
     <category term="Transformer" scheme="https://seniorzhai.github.io/tags/Transformer/"/>
+    <category term="GPT-3" scheme="https://seniorzhai.github.io/tags/GPT-3/"/>
     <category term="Scaling" scheme="https://seniorzhai.github.io/tags/Scaling/"/>
     <content>
       <![CDATA[<p>这段时间重新系统看了一轮大模型研究，最强烈的感受是：模型能力的提升，很多时候不是来自某一个花哨技巧，而是来自规模、数据和训练稳定性的共同作用。</p><span id="more"></span><h2 id="GPT-3-带来的直接冲击"><a href="#GPT-3-带来的直接冲击" class="headerlink" title="GPT-3 带来的直接冲击"></a>GPT-3 带来的直接冲击</h2><p>GPT-3 最让人震撼的并不是“参数更多”这句话本身，而是它把 <strong>预训练语言模型的上限</strong> 往前推了一大截。</p><p>过去大家更习惯于这样的范式：</p><ol><li>预训练一个通用模型</li><li>在下游任务上做 finetune</li><li>针对不同任务维护不同模型</li></ol><p>而 GPT-3 展现的是另一条路线：<strong>通过足够大的模型规模，让模型在 prompt 条件下直接完成任务</strong>。也就是说，模型在很多场景下不再必须依赖专门的任务头和复杂的微调流程。</p><h2 id="几个值得记住的结论"><a href="#几个值得记住的结论" class="headerlink" title="几个值得记住的结论"></a>几个值得记住的结论</h2><h3 id="1-模型规模本身就是能力来源"><a href="#1-模型规模本身就是能力来源" class="headerlink" title="1. 模型规模本身就是能力来源"></a>1. 模型规模本身就是能力来源</h3><p>从小模型到大模型，收益并不是线性增加的体验，而像是不断跨过某些“能力阈值”。参数上来以后，模型开始表现出：</p><ul><li>更强的上下文学习能力</li><li>更好的语言流畅度</li><li>更自然的任务迁移能力</li><li>更强的少样本甚至零样本效果</li></ul><p>这意味着工程上不能只盯着网络结构微调，<strong>训练规模也是核心变量</strong>。</p><h3 id="2-Prompt-开始变成新的接口层"><a href="#2-Prompt-开始变成新的接口层" class="headerlink" title="2. Prompt 开始变成新的接口层"></a>2. Prompt 开始变成新的接口层</h3><p>以前模型接口更像 <code>input -&gt; classifier</code>，现在越来越像：</p><ul><li>给模型任务说明</li><li>给几个样例</li><li>让它直接续写或完成</li></ul><p>这让“怎么写 prompt”从一个临时技巧，逐步变成一种新的系统设计能力。模型能力越强，prompt 的表达空间就越大。</p><h3 id="3-Few-shot-让通用模型更像平台"><a href="#3-Few-shot-让通用模型更像平台" class="headerlink" title="3. Few-shot 让通用模型更像平台"></a>3. Few-shot 让通用模型更像平台</h3><p>few-shot 的价值在于：</p><ul><li>降低下游任务接入门槛</li><li>减少任务级训练成本</li><li>统一模型服务入口</li></ul><p>对于工程团队来说，这种能力意味着未来的 AI 系统可能会从“一个任务一个模型”，逐渐转向“一个大模型服务多个任务”。</p><h2 id="还没有被解决的问题"><a href="#还没有被解决的问题" class="headerlink" title="还没有被解决的问题"></a>还没有被解决的问题</h2><p>当然，GPT-3 并不是没有问题。</p><h3 id="训练成本极高"><a href="#训练成本极高" class="headerlink" title="训练成本极高"></a>训练成本极高</h3><p>大模型的训练资源门槛非常高，普通团队很难完整复现。</p><h3 id="可控性不足"><a href="#可控性不足" class="headerlink" title="可控性不足"></a>可控性不足</h3><p>生成效果虽然惊艳，但稳定性、事实正确性和风格一致性依旧存在问题。</p><h3 id="推理成本昂贵"><a href="#推理成本昂贵" class="headerlink" title="推理成本昂贵"></a>推理成本昂贵</h3><p>即使训练出来，线上部署和大规模调用也不是小问题。</p><h2 id="对后续研究的启发"><a href="#对后续研究的启发" class="headerlink" title="对后续研究的启发"></a>对后续研究的启发</h2><p>我觉得 GPT-3 留下的真正问题不是“还能不能更大”，而是：</p><ul><li>模型规模和数据规模之间如何更高效地匹配</li><li>如何把大模型变成稳定可控的工程系统</li><li>是否能通过更好的检索、路由、蒸馏把能力分发到更低成本的模型上</li></ul><p>这也是为什么后面越来越多工作会沿着下面几个方向走：</p><ul><li>scaling law</li><li>模型压缩与蒸馏</li><li>prompt &#x2F; instruction 学习</li><li>检索增强</li><li>工具调用</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>GPT-3 让我最深的感受是：<strong>语言模型开始从“一个 NLP 模块”，变成“通用智能接口”的雏形</strong>。</p><p>后面如果继续沿着这个方向演化，AI 系统的重点就不再只是网络结构，而会转向：</p><ul><li>数据</li><li>规模</li><li>推理成本</li><li>系统编排</li><li>人机交互方式</li></ul><p>这条路线，可能会定义未来很多年的 AI 产品形态。</p>]]>
@@ -344,90 +432,5 @@
     </summary>
     <title>Flutter 布局(三)</title>
     <updated>2026-04-15T04:32:10.142Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="Flutter" scheme="https://seniorzhai.github.io/categories/Flutter/"/>
-    <category term="Android" scheme="https://seniorzhai.github.io/tags/Android/"/>
-    <category term="iOS" scheme="https://seniorzhai.github.io/tags/iOS/"/>
-    <content>
-      <![CDATA[<p>弹性布局允许子 Widget 按照比例分配父容器，类似前端的 FlexBox</p><span id="more"></span><h2 id="Flex"><a href="#Flex" class="headerlink" title="Flex"></a>Flex</h2><p>Flex 可以沿着水平或垂直方向排列子 Widget，其实 Row 和 Column 都继承自 Flex，Flex 功能会更强大一些。</p><ul><li>direction: 设置主方向 Axis.horizontal、Axis.vertical</li></ul><h2 id="Expanded"><a href="#Expanded" class="headerlink" title="Expanded"></a>Expanded</h2><p>通过<code>flex</code>弹性系数，让 Flex 安排空间，如果 Flex 中有多个 Expanded 且 flex 大于 0，Flex 会按比例分配空间</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2019/05/25/Flutter-%E5%B8%83%E5%B1%80(%E4%BA%8C)/</id>
-    <link href="https://seniorzhai.github.io/2019/05/25/Flutter-%E5%B8%83%E5%B1%80(%E4%BA%8C)/"/>
-    <published>2019-05-25T15:37:36.000Z</published>
-    <summary>
-      <![CDATA[<p>弹性布局允许子 Widget 按照比例分配父容器，类似前端的 FlexBox</p>]]>
-    </summary>
-    <title>Flutter 布局(二)</title>
-    <updated>2026-04-15T04:32:10.142Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="Flutter" scheme="https://seniorzhai.github.io/categories/Flutter/"/>
-    <category term="Android" scheme="https://seniorzhai.github.io/tags/Android/"/>
-    <category term="iOS" scheme="https://seniorzhai.github.io/tags/iOS/"/>
-    <content>
-      <![CDATA[<p>布局类的 Widget 包含一个活多个子 Widget，不同的布局会用不同方式对子 Widget 进行排版</p><span id="more"></span><table><thead><tr><th align="left">Widget</th><th align="left">Element</th><th align="left">作用</th></tr></thead><tbody><tr><td align="left">LeafRenderObjectWidget</td><td align="left">LeafRenderObjectElement</td><td align="left">没有子 Widget 的 Widget(Text、Image……)</td></tr><tr><td align="left">SingleChildRenderObjectWidget</td><td align="left">SingleChildRenderObjectElement</td><td align="left">包含一个 Widget(ConstrainedBox、DecoratedBox……)</td></tr><tr><td align="left">MultiChildRenderObjectWidget</td><td align="left">MultiChildRenderObjectElement</td><td align="left">拥有多个子 Widget(Row、Column……)</td></tr></tbody></table><p>布局类就是直接、间接继承<code>MultiChildRenderObjectWidget</code>的 Widget，它们一般都会有一个 children 属性接收子 Widget。</p><h2 id="线性布局-Row-Column"><a href="#线性布局-Row-Column" class="headerlink" title="线性布局 Row Column"></a>线性布局 Row Column</h2><p>沿水平或垂直方向排列子 Widget 的布局 Widget</p><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><ul><li>主轴 与主方向同方向</li><li>纵轴 与主方向垂直</li></ul><h4 id="Row"><a href="#Row" class="headerlink" title="Row"></a>Row</h4><ul><li>textDirection 水平布局顺序 (从左到右或者从右到左)</li><li>mainAxisSize 主轴占用的空间，默认占据所有空间(MainAxisSize.max)</li><li>mainAxisAlignment 水平方向占据空间的排列方式</li><li>verticalDirection 纵轴对齐方式（从上到下或者从下到上）</li><li>crossAxisAlignment 纵轴对齐方式</li><li>children 子 Widgets 数组</li></ul><h4 id="Column"><a href="#Column" class="headerlink" title="Column"></a>Column</h4><p>与 Row 正好垂直，纵向布局</p><blockquote><p>如果 Row 嵌套 Row，Column 嵌套 Column，如果父 Row(Column)占据最大空间，子 Row(Column)会占据实际大小(mainAxisSize 无效)</p></blockquote>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2019/05/25/Flutter-%E5%B8%83%E5%B1%80(%E4%B8%80)/</id>
-    <link href="https://seniorzhai.github.io/2019/05/25/Flutter-%E5%B8%83%E5%B1%80(%E4%B8%80)/"/>
-    <published>2019-05-25T15:07:36.000Z</published>
-    <summary>
-      <![CDATA[<p>布局类的 Widget 包含一个活多个子 Widget，不同的布局会用不同方式对子 Widget 进行排版</p>]]>
-    </summary>
-    <title>Flutter 布局(一)</title>
-    <updated>2026-04-15T04:32:10.142Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="Flutter" scheme="https://seniorzhai.github.io/categories/Flutter/"/>
-    <category term="Android" scheme="https://seniorzhai.github.io/tags/Android/"/>
-    <category term="iOS" scheme="https://seniorzhai.github.io/tags/iOS/"/>
-    <category term="flare" scheme="https://seniorzhai.github.io/tags/flare/"/>
-    <content>
-      <![CDATA[<p>运行<a href="https://github.com/2d-inc/HistoryOfEverything">HistoryOfEverything</a>项目时，报错</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Try changing the type of the parameter, or casting the argument to &#x27;Uint16List&#x27;.</span><br><span class="line">    indices: _indices, textureCoordinates: _uvBuffer);</span><br></pre></td></tr></table></figure><span id="more"></span><p>将此<a href="https://github.com/2d-inc/Nima-Flutter/blob/85493feedee43aae7421f1c9cca76d853b1cb2da/lib/nima.dart#L20">这里</a>和<a href="https://github.com/2d-inc/Nima-Flutter/blob/85493feedee43aae7421f1c9cca76d853b1cb2da/lib/nima.dart#L65">这里</a>的<code>Int32List</code>修改为<code>Uint16List</code></p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2019/05/23/2d-inc-History-%E8%BF%90%E8%A1%8Cbug/</id>
-    <link href="https://seniorzhai.github.io/2019/05/23/2d-inc-History-%E8%BF%90%E8%A1%8Cbug/"/>
-    <published>2019-05-23T05:17:23.000Z</published>
-    <summary>
-      <![CDATA[<p>运行<a href="https://github.com/2d-inc/HistoryOfEverything">HistoryOfEverything</a>项目时，报错</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Try changing the type of the parameter, or casting the argument to &#x27;Uint16List&#x27;.</span><br><span class="line">    indices: _indices, textureCoordinates: _uvBuffer);</span><br></pre></td></tr></table></figure>]]>
-    </summary>
-    <title>2d-inc History 运行 bug</title>
-    <updated>2026-04-15T04:32:10.131Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="Flutter" scheme="https://seniorzhai.github.io/categories/Flutter/"/>
-    <category term="Android" scheme="https://seniorzhai.github.io/tags/Android/"/>
-    <category term="iOS" scheme="https://seniorzhai.github.io/tags/iOS/"/>
-    <category term="desktop" scheme="https://seniorzhai.github.io/tags/desktop/"/>
-    <content>
-      <![CDATA[<span id="more"></span><h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2><p>在 Android 项目中调用 Flutter，<code>flutter</code>将作为一个<code>Module</code>被元工程引用，为了方便管理，我将<code>flutter</code>项目的工程和<code>Android</code>工程放在同一层级<br>创建<code>flutter module</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter create -t module flutter_demo</span><br></pre></td></tr></table></figure><p>在 Android 工程项目中的<code>settings.gradle</code>中添加</p><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">setBinding(<span class="keyword">new</span> Binding([gradle: <span class="keyword">this</span>]))</span><br><span class="line">evaluate(<span class="keyword">new</span> <span class="keyword">File</span>(</span><br><span class="line">        settingsDir,</span><br><span class="line">        <span class="string">&#x27;../flutter_demo/.android/include_flutter.groovy&#x27;</span>))</span><br></pre></td></tr></table></figure><p>在需要引用的 App Module 添加依赖</p><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">dependencies</span> &#123;</span><br><span class="line">  implementation <span class="keyword">project</span>(<span class="string">&#x27;:flutter&#x27;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>注意：需要将 App 的 sdk:minSdkVersion 和 flutter 的设置一致，同时需要 flutter android 工程中可能还在引用 support 的包，可以升级为 androidx.appcompat</p></blockquote><p><a href="https://github.com/SeniorZhai/Hybrid">示例</a></p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2019/05/19/Flutter-%E5%BC%95%E5%85%A5%E5%88%B0%E7%8E%B0%E6%9C%89%E9%A1%B9%E7%9B%AE/</id>
-    <link href="https://seniorzhai.github.io/2019/05/19/Flutter-%E5%BC%95%E5%85%A5%E5%88%B0%E7%8E%B0%E6%9C%89%E9%A1%B9%E7%9B%AE/"/>
-    <published>2019-05-19T09:07:55.000Z</published>
-    <summary>
-      <![CDATA[<span id="more"></span>
-
-<h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2><p>在 Android 项目中调用 Flutter，<]]>
-    </summary>
-    <title>Flutter 引入到现有项目</title>
-    <updated>2026-04-15T04:32:10.143Z</updated>
   </entry>
 </feed>
