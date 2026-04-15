@@ -12,7 +12,7 @@
   <rights>All rights reserved 2026, Dear宅学长</rights>
   <subtitle>苟利国家生死以，起因福祸趋避之</subtitle>
   <title>SeniorZhai's blog</title>
-  <updated>2026-04-15T10:37:40.689Z</updated>
+  <updated>2026-04-15T10:46:51.975Z</updated>
   <entry>
     <author>
       <name>Dear宅学长</name>
@@ -20,20 +20,20 @@
     </author>
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
-    <category term="Collaboration" scheme="https://seniorzhai.github.io/tags/Collaboration/"/>
-    <category term="Expert" scheme="https://seniorzhai.github.io/tags/Expert/"/>
+    <category term="Inference" scheme="https://seniorzhai.github.io/tags/Inference/"/>
+    <category term="Cost" scheme="https://seniorzhai.github.io/tags/Cost/"/>
+    <category term="Operations" scheme="https://seniorzhai.github.io/tags/Operations/"/>
     <content>
-      <![CDATA[<p>每当 AI 能力往前走一步，外界最常见的讨论总会回到“谁会被取代”。但如果把视角放在真实工作流里，我越来越觉得，AI 更可能先做的不是直接取代专家，而是重排分工。很多职业的价值不会一下消失，而是从亲手完成每个细节，转向定义目标、判断结果、处理例外和承担责任。</p><span id="more"></span><h2 id="为什么“完全替代”通常不是第一步"><a href="#为什么“完全替代”通常不是第一步" class="headerlink" title="为什么“完全替代”通常不是第一步"></a>为什么“完全替代”通常不是第一步</h2><p>真实世界的工作往往包含大量隐性判断、跨情境协调和责任承担。模型可以帮助完成其中很多局部任务，但要把整条链路完全替代，难度要高得多。</p><h2 id="更可能先发生的变化"><a href="#更可能先发生的变化" class="headerlink" title="更可能先发生的变化"></a>更可能先发生的变化</h2><h3 id="1-初稿与预处理被自动化"><a href="#1-初稿与预处理被自动化" class="headerlink" title="1. 初稿与预处理被自动化"></a>1. 初稿与预处理被自动化</h3><p>资料整理、草稿生成、候选方案列举，这些高重复、低责任密度的工作很适合先交给 AI 系统处理。</p><h3 id="2-专家的精力会转向判断与修正"><a href="#2-专家的精力会转向判断与修正" class="headerlink" title="2. 专家的精力会转向判断与修正"></a>2. 专家的精力会转向判断与修正</h3><p>当生成成本下降，真正稀缺的会变成判断能力：哪些结果可信、哪些风险被忽略、哪些结论需要补证据。</p><h3 id="3-工作门槛可能重新分层"><a href="#3-工作门槛可能重新分层" class="headerlink" title="3. 工作门槛可能重新分层"></a>3. 工作门槛可能重新分层</h3><p>一些原本需要熟练技能才能进入的岗位，会因为 AI 辅助而降低入门难度；但高水平岗位对审查、整合和责任能力的要求会更高。</p><h3 id="4-团队协作结构会变化"><a href="#4-团队协作结构会变化" class="headerlink" title="4. 团队协作结构会变化"></a>4. 团队协作结构会变化</h3><p>未来很多团队的组织方式，可能不再是“更多执行人”，而是“更少但更强的判断者 + 一套高频协作的 AI 系统”。</p><h2 id="关键不是效率，而是责任边界"><a href="#关键不是效率，而是责任边界" class="headerlink" title="关键不是效率，而是责任边界"></a>关键不是效率，而是责任边界</h2><p>AI 能帮忙，不代表责任也自动转移。无论是代码、财务、医疗还是内容生产，最后谁来确认、谁来签字、谁来承受后果，这些问题都决定了协作模式如何真正落地。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我更倾向于把 AI 看成一种分工重组力量，而不是简单替代力量。它会先吞掉流程里的重复性环节，把人的价值推向定义问题、约束系统、判断结果和承担责任的部分。真正被重塑的，可能不是岗位名字，而是岗位内部的工作结构。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，推荐系统重构会比更强模型更早创造差异。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么这个变化会出现"><a href="#为什么这个变化会出现" class="headerlink" title="为什么这个变化会出现"></a>为什么这个变化会出现</h2><p>推荐系统重构之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="先改变用户体验什么"><a href="#先改变用户体验什么" class="headerlink" title="先改变用户体验什么"></a>先改变用户体验什么</h2><p>对用户来说，最直观的变化不是模型名字，而是整个流程是不是更顺、更稳、更省心。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。推荐系统重构一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>它最先落地的地方，通常不是最宏大的场景，而是目标明确、反馈清晰、结果可验证的流程。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="团队现在应该补哪块能力"><a href="#团队现在应该补哪块能力" class="headerlink" title="团队现在应该补哪块能力"></a>团队现在应该补哪块能力</h2><p>与其等市场完全成熟，不如先把数据接口、评估指标和回滚机制准备好。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>推荐系统重构会比更强模型更早创造差异，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2021/06/26/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-32-AI%E5%8D%8F%E4%BD%9C%E4%B8%8D%E4%BC%9A%E5%8F%96%E4%BB%A3%E4%B8%93%E5%AE%B6%E8%80%8C%E4%BC%9A%E9%87%8D%E6%8E%92%E5%88%86%E5%B7%A5/</id>
-    <link href="https://seniorzhai.github.io/2021/06/26/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-32-AI%E5%8D%8F%E4%BD%9C%E4%B8%8D%E4%BC%9A%E5%8F%96%E4%BB%A3%E4%B8%93%E5%AE%B6%E8%80%8C%E4%BC%9A%E9%87%8D%E6%8E%92%E5%88%86%E5%B7%A5/"/>
-    <published>2021-06-26T12:30:00.000Z</published>
+    <id>https://seniorzhai.github.io/2026/04/11/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-282-%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E9%87%8D%E6%9E%84%E4%BC%9A%E6%AF%94%E6%9B%B4%E5%BC%BA%E6%A8%A1%E5%9E%8B%E6%9B%B4%E6%97%A9%E5%88%9B%E9%80%A0%E5%B7%AE%E5%BC%82/</id>
+    <link href="https://seniorzhai.github.io/2026/04/11/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-282-%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E9%87%8D%E6%9E%84%E4%BC%9A%E6%AF%94%E6%9B%B4%E5%BC%BA%E6%A8%A1%E5%9E%8B%E6%9B%B4%E6%97%A9%E5%88%9B%E9%80%A0%E5%B7%AE%E5%BC%82/"/>
+    <published>2026-04-11T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<p>每当 AI 能力往前走一步，外界最常见的讨论总会回到“谁会被取代”。但如果把视角放在真实工作流里，我越来越觉得，AI 更可能先做的不是直接取代专家，而是重排分工。很多职业的价值不会一下消失，而是从亲手完成每个细节，转向定义目标、判断结果、处理例外和承担责任。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，推荐系统重构会比更强模型更早创造差异。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
     </summary>
-    <title>AI研究周报(三十二)：AI协作不会取代专家而会重排分工</title>
-    <updated>2026-04-15T10:37:40.689Z</updated>
+    <title>AI研究周报(二百八十二)：推荐系统重构会比更强模型更早创造差异</title>
+    <updated>2026-04-15T10:46:51.975Z</updated>
   </entry>
   <entry>
     <author>
@@ -43,19 +43,19 @@
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
     <category term="Retrieval" scheme="https://seniorzhai.github.io/tags/Retrieval/"/>
-    <category term="Knowledge Base" scheme="https://seniorzhai.github.io/tags/Knowledge-Base/"/>
+    <category term="Knowledge" scheme="https://seniorzhai.github.io/tags/Knowledge/"/>
     <category term="Enterprise" scheme="https://seniorzhai.github.io/tags/Enterprise/"/>
     <content>
-      <![CDATA[<p>过去企业做知识库，常常更关注“有没有沉淀内容”：文档有没有上传、FAQ 有没有归档、流程有没有写清楚。但在模型系统逐渐进入企业之后，我觉得知识库的价值会被重新评估，而且重估的焦点不在存量本身，而在检索层。不是知道多少，而是能不能在对的时刻把对的内容调出来。</p><span id="more"></span><h2 id="为什么存储不再是核心难点"><a href="#为什么存储不再是核心难点" class="headerlink" title="为什么存储不再是核心难点"></a>为什么存储不再是核心难点</h2><p>把资料放进系统里已经不是难事，真正难的是：当用户提出一个具体问题时，系统能否找到最相关、最新、可信的那部分内容，并且组织成当前任务可用的答案。</p><h2 id="检索层会决定知识库上限"><a href="#检索层会决定知识库上限" class="headerlink" title="检索层会决定知识库上限"></a>检索层会决定知识库上限</h2><h3 id="1-召回质量决定答案底座"><a href="#1-召回质量决定答案底座" class="headerlink" title="1. 召回质量决定答案底座"></a>1. 召回质量决定答案底座</h3><p>如果拿到的上下文本身就偏了，后面的总结和生成再强也只是建立在错误材料上。</p><h3 id="2-权限与范围控制会变得更关键"><a href="#2-权限与范围控制会变得更关键" class="headerlink" title="2. 权限与范围控制会变得更关键"></a>2. 权限与范围控制会变得更关键</h3><p>企业知识并不是完全公开的。谁能看到什么、不同部门如何隔离、敏感信息如何过滤，都会直接影响系统可用性。</p><h3 id="3-时效性会影响可信度"><a href="#3-时效性会影响可信度" class="headerlink" title="3. 时效性会影响可信度"></a>3. 时效性会影响可信度</h3><p>企业流程和产品信息变化很快，旧资料如果频繁被召回，知识库很容易从资产变成噪声源。</p><h3 id="4-结构化索引会带来复利"><a href="#4-结构化索引会带来复利" class="headerlink" title="4. 结构化索引会带来复利"></a>4. 结构化索引会带来复利</h3><p>如果文档之间有明确的主题、版本、责任人和关联关系，检索效果通常会显著优于纯文本堆积。</p><h2 id="企业会重新理解“写文档”这件事"><a href="#企业会重新理解“写文档”这件事" class="headerlink" title="企业会重新理解“写文档”这件事"></a>企业会重新理解“写文档”这件事</h2><p>以前写文档更多是为了归档和协作，未来还会多一层含义：为了让模型系统能更好地理解和调用。也就是说，文档质量会直接影响 AI 系统质量。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>企业知识库的价值，未来不只是“是否存在”，而是“是否可检索、可过滤、可追溯、可持续更新”。当模型成为新的交互层，检索层就会变成知识系统真正的核心竞争力。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，推荐系统重构会倒逼团队重写系统边界。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么行业会走到这一步"><a href="#为什么行业会走到这一步" class="headerlink" title="为什么行业会走到这一步"></a>为什么行业会走到这一步</h2><p>推荐系统重构之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="这个变量会如何影响商业化"><a href="#这个变量会如何影响商业化" class="headerlink" title="这个变量会如何影响商业化"></a>这个变量会如何影响商业化</h2><p>它带来的价值往往不是一次惊艳输出，而是把重复摩擦持续削平。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。推荐系统重构一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>当系统开始接管更多步骤，评估标准就会从“能不能做”变成“能不能稳定做”。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="产品设计上需要提前准备什么"><a href="#产品设计上需要提前准备什么" class="headerlink" title="产品设计上需要提前准备什么"></a>产品设计上需要提前准备什么</h2><p>很多差异不会体现在演示里，而会体现在规模化使用后的稳定性和可管理性上。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>推荐系统重构会倒逼团队重写系统边界，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2021/06/19/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-31-%E4%BC%81%E4%B8%9A%E7%9F%A5%E8%AF%86%E5%BA%93%E7%9A%84%E4%BB%B7%E5%80%BC%E4%BC%9A%E5%9C%A8%E6%A3%80%E7%B4%A2%E5%B1%82%E8%A2%AB%E9%87%8D%E4%BC%B0/</id>
-    <link href="https://seniorzhai.github.io/2021/06/19/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-31-%E4%BC%81%E4%B8%9A%E7%9F%A5%E8%AF%86%E5%BA%93%E7%9A%84%E4%BB%B7%E5%80%BC%E4%BC%9A%E5%9C%A8%E6%A3%80%E7%B4%A2%E5%B1%82%E8%A2%AB%E9%87%8D%E4%BC%B0/"/>
-    <published>2021-06-19T12:30:00.000Z</published>
+    <id>https://seniorzhai.github.io/2026/04/04/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-281-%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E9%87%8D%E6%9E%84%E4%BC%9A%E5%80%92%E9%80%BC%E5%9B%A2%E9%98%9F%E9%87%8D%E5%86%99%E7%B3%BB%E7%BB%9F%E8%BE%B9%E7%95%8C/</id>
+    <link href="https://seniorzhai.github.io/2026/04/04/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-281-%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E9%87%8D%E6%9E%84%E4%BC%9A%E5%80%92%E9%80%BC%E5%9B%A2%E9%98%9F%E9%87%8D%E5%86%99%E7%B3%BB%E7%BB%9F%E8%BE%B9%E7%95%8C/"/>
+    <published>2026-04-04T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<p>过去企业做知识库，常常更关注“有没有沉淀内容”：文档有没有上传、FAQ 有没有归档、流程有没有写清楚。但在模型系统逐渐进入企业之后，我觉得知识库的价值会被重新评估，而且重估的焦点不在存量本身，而在检索层。不是知道多少，而是能不能在对的时刻把对的内容调出来。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，推荐系统重构会倒逼团队重写系统边界。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
     </summary>
-    <title>AI研究周报(三十一)：企业知识库的价值会在检索层被重估</title>
-    <updated>2026-04-15T10:37:40.890Z</updated>
+    <title>AI研究周报(二百八十一)：推荐系统重构会倒逼团队重写系统边界</title>
+    <updated>2026-04-15T10:46:51.975Z</updated>
   </entry>
   <entry>
     <author>
@@ -64,20 +64,20 @@
     </author>
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Prompting" scheme="https://seniorzhai.github.io/tags/Prompting/"/>
-    <category term="Product Design" scheme="https://seniorzhai.github.io/tags/Product-Design/"/>
     <category term="UX" scheme="https://seniorzhai.github.io/tags/UX/"/>
+    <category term="Interaction" scheme="https://seniorzhai.github.io/tags/Interaction/"/>
+    <category term="Software" scheme="https://seniorzhai.github.io/tags/Software/"/>
     <content>
-      <![CDATA[<p>很多人刚接触大模型时，会把提示工程理解成一种“写咒语”的技巧：换几个词、调一下语气、加一段约束，输出就不同了。但如果把视角放大一点，我越来越觉得，提示工程迟早不会停留在技巧层，而会演化成产品设计能力。因为真正重要的，不是某一条 prompt 写得巧不巧，而是系统如何稳定地把用户意图转成可控结果。</p><span id="more"></span><h2 id="为什么它本质上是产品问题"><a href="#为什么它本质上是产品问题" class="headerlink" title="为什么它本质上是产品问题"></a>为什么它本质上是产品问题</h2><p>用户并不关心 prompt 长什么样，他们关心的是：系统能不能理解自己、结果是否稳定、失败时是否可修正。只要进入真实产品环境，提示就不再是单次文本，而是整个交互流程的一部分。</p><h2 id="提示工程会演化成哪些设计工作"><a href="#提示工程会演化成哪些设计工作" class="headerlink" title="提示工程会演化成哪些设计工作"></a>提示工程会演化成哪些设计工作</h2><h3 id="1-目标澄清"><a href="#1-目标澄清" class="headerlink" title="1. 目标澄清"></a>1. 目标澄清</h3><p>很多模型错误不是因为能力不够，而是因为任务目标本来就含糊。产品需要在交互前端帮助用户把目标说清楚。</p><h3 id="2-上下文组织"><a href="#2-上下文组织" class="headerlink" title="2. 上下文组织"></a>2. 上下文组织</h3><p>同样的模型，对不同上下文结构会给出完全不同的结果。哪些信息先给、哪些后给、哪些保持长期记忆，本质上都是设计问题。</p><h3 id="3-结果约束"><a href="#3-结果约束" class="headerlink" title="3. 结果约束"></a>3. 结果约束</h3><p>当系统要输出代码、文档、分析或决策建议时，格式、语气、风险边界都需要被明确约束，而不是靠用户每次重新提醒。</p><h3 id="4-失败恢复"><a href="#4-失败恢复" class="headerlink" title="4. 失败恢复"></a>4. 失败恢复</h3><p>真正可用的 AI 产品，不是第一次就永远答对，而是在答偏时能快速纠正、回滚和重试。这决定了交互是否能持续。</p><h2 id="技巧会商品化，设计能力不会"><a href="#技巧会商品化，设计能力不会" class="headerlink" title="技巧会商品化，设计能力不会"></a>技巧会商品化，设计能力不会</h2><p>单条 prompt 的技巧很容易被复制、总结和模板化，但围绕具体场景建立稳定体验的能力很难直接抄走。谁更理解任务、用户和容错机制，谁就更能把模型能力变成真正可交付的产品体验。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>提示工程如果只被理解成写提示词，很快就会显得狭窄。它更像是模型时代的交互设计：如何组织上下文、约束输出、引导目标、处理失败。未来真正有价值的，不是 prompt 本身，而是围绕 prompt 构建出来的产品系统。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，推荐系统重构会先成为产品层的新分水岭。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么旧做法开始不够用了"><a href="#为什么旧做法开始不够用了" class="headerlink" title="为什么旧做法开始不够用了"></a>为什么旧做法开始不够用了</h2><p>推荐系统重构之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="新系统会先在哪些环节体现优势"><a href="#新系统会先在哪些环节体现优势" class="headerlink" title="新系统会先在哪些环节体现优势"></a>新系统会先在哪些环节体现优势</h2><p>当这类能力变成默认配置，软件的竞争方式也会随之改变。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。推荐系统重构一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>很多团队以为问题在模型，其实真正卡住的是接口、责任和组织配合。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="团队该怎么降低试错成本"><a href="#团队该怎么降低试错成本" class="headerlink" title="团队该怎么降低试错成本"></a>团队该怎么降低试错成本</h2><p>短期看这是功能升级，长期看更像一次组织方式和软件边界的重写。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>推荐系统重构会先成为产品层的新分水岭，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2021/06/12/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-30-%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E4%BC%9A%E5%85%88%E6%BC%94%E5%8C%96%E6%88%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E8%83%BD%E5%8A%9B/</id>
-    <link href="https://seniorzhai.github.io/2021/06/12/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-30-%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E4%BC%9A%E5%85%88%E6%BC%94%E5%8C%96%E6%88%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E8%83%BD%E5%8A%9B/"/>
-    <published>2021-06-12T12:30:00.000Z</published>
+    <id>https://seniorzhai.github.io/2026/03/28/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-280-%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E9%87%8D%E6%9E%84%E4%BC%9A%E5%85%88%E6%88%90%E4%B8%BA%E4%BA%A7%E5%93%81%E5%B1%82%E7%9A%84%E6%96%B0%E5%88%86%E6%B0%B4%E5%B2%AD/</id>
+    <link href="https://seniorzhai.github.io/2026/03/28/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-280-%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E9%87%8D%E6%9E%84%E4%BC%9A%E5%85%88%E6%88%90%E4%B8%BA%E4%BA%A7%E5%93%81%E5%B1%82%E7%9A%84%E6%96%B0%E5%88%86%E6%B0%B4%E5%B2%AD/"/>
+    <published>2026-03-28T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<p>很多人刚接触大模型时，会把提示工程理解成一种“写咒语”的技巧：换几个词、调一下语气、加一段约束，输出就不同了。但如果把视角放大一点，我越来越觉得，提示工程迟早不会停留在技巧层，而会演化成产品设计能力。因为真正重要的，不是某一条 prompt 写得巧不巧，而是系统如何稳定地把用户意图转成可控结果。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，推荐系统重构会先成为产品层的新分水岭。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
     </summary>
-    <title>AI研究周报(三十)：提示工程会先演化成产品设计能力</title>
-    <updated>2026-04-15T10:37:40.941Z</updated>
+    <title>AI研究周报(二百八十)：推荐系统重构会先成为产品层的新分水岭</title>
+    <updated>2026-04-15T10:46:51.975Z</updated>
   </entry>
   <entry>
     <author>
@@ -86,20 +86,20 @@
     </author>
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Product" scheme="https://seniorzhai.github.io/tags/Product/"/>
-    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
-    <category term="Interface" scheme="https://seniorzhai.github.io/tags/Interface/"/>
+    <category term="Infrastructure" scheme="https://seniorzhai.github.io/tags/Infrastructure/"/>
+    <category term="Platform" scheme="https://seniorzhai.github.io/tags/Platform/"/>
+    <category term="Tooling" scheme="https://seniorzhai.github.io/tags/Tooling/"/>
     <content>
-      <![CDATA[<p>过去的软件边界，大多是围绕功能页面和固定流程建立的：搜索在一个入口里，编辑在一个界面里，分析在另一个模块里。但当模型开始承担理解、生成、改写和调度任务之后，我越来越觉得，很多传统软件的边界会被“模型接口”重新切开。用户接触的，不再只是一个个功能块，而是一个能根据意图调用不同能力的统一入口。</p><span id="more"></span><h2 id="为什么边界会开始松动"><a href="#为什么边界会开始松动" class="headerlink" title="为什么边界会开始松动"></a>为什么边界会开始松动</h2><p>传统软件擅长把流程固化成菜单、按钮和表单，但这也意味着它对“非标准意图”不够友好。模型接口的价值在于，它能把用户模糊的目标翻译成可执行动作，因此原本分散在多个功能页里的操作，开始有机会被收拢到同一个交互层。</p><h2 id="模型接口会先改写哪些环节"><a href="#模型接口会先改写哪些环节" class="headerlink" title="模型接口会先改写哪些环节"></a>模型接口会先改写哪些环节</h2><h3 id="1-搜索与操作的分界会变弱"><a href="#1-搜索与操作的分界会变弱" class="headerlink" title="1. 搜索与操作的分界会变弱"></a>1. 搜索与操作的分界会变弱</h3><p>以前搜索只是找到信息，操作要靠用户自己继续点击；以后搜索框本身可能就能完成总结、筛选、生成和执行。</p><h3 id="2-表单会被更自然的意图输入替代"><a href="#2-表单会被更自然的意图输入替代" class="headerlink" title="2. 表单会被更自然的意图输入替代"></a>2. 表单会被更自然的意图输入替代</h3><p>很多业务系统要求用户理解字段和流程，但模型接口更适合从自然语言里提取结构化参数，再映射到后台动作。</p><h3 id="3-多工具之间会出现统一调度层"><a href="#3-多工具之间会出现统一调度层" class="headerlink" title="3. 多工具之间会出现统一调度层"></a>3. 多工具之间会出现统一调度层</h3><p>文档、表格、客服、数据面板过去是分开的；模型一旦能跨工具调用，这些边界就会被更高一层的任务接口覆盖。</p><h2 id="这不意味着传统界面会消失"><a href="#这不意味着传统界面会消失" class="headerlink" title="这不意味着传统界面会消失"></a>这不意味着传统界面会消失</h2><p>我不觉得按钮和页面会被完全取代。对高频、低风险、强确定性的操作，传统 UI 依然高效。但在探索式、组合式、需要理解上下文的任务里，模型接口会变成更自然的入口。</p><h2 id="产品设计会发生什么变化"><a href="#产品设计会发生什么变化" class="headerlink" title="产品设计会发生什么变化"></a>产品设计会发生什么变化</h2><p>产品团队可能不再只设计页面流转，而是同时设计“意图如何被识别”“任务如何被拆解”“错误如何被回退”。也就是说，交互设计会逐渐扩展成任务编排设计。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>模型接口真正改变的，不只是输入方式，而是软件能力被组织和暴露的方式。很多原本由功能边界定义的软件，未来可能会先被统一的任务入口覆盖，再由底层系统去完成真实执行。这会是软件形态一次很深的变化。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会先在窄场景里形成真正壁垒。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="这个趋势背后的压力来自哪里"><a href="#这个趋势背后的压力来自哪里" class="headerlink" title="这个趋势背后的压力来自哪里"></a>这个趋势背后的压力来自哪里</h2><p>AI 搜索结果页之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="它会如何重排产品结构"><a href="#它会如何重排产品结构" class="headerlink" title="它会如何重排产品结构"></a>它会如何重排产品结构</h2><p>真正重要的不是多一个按钮，而是产品能不能把分散动作串成连续结果。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。AI 搜索结果页一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>如果只强调生成，不处理交接、追踪和回滚，这类能力很快就会暴露上限。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="哪些动作值得尽早布局"><a href="#哪些动作值得尽早布局" class="headerlink" title="哪些动作值得尽早布局"></a>哪些动作值得尽早布局</h2><p>谁先把这件事做成日常基础设施，谁就更容易把零散试验变成复利。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>AI 搜索结果页会先在窄场景里形成真正壁垒，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2021/06/05/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-29-%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%8F%A3%E4%BC%9A%E5%90%9E%E6%8E%89%E4%BC%A0%E7%BB%9F%E8%BD%AF%E4%BB%B6%E7%9A%84%E9%83%A8%E5%88%86%E8%BE%B9%E7%95%8C/</id>
-    <link href="https://seniorzhai.github.io/2021/06/05/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-29-%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%8F%A3%E4%BC%9A%E5%90%9E%E6%8E%89%E4%BC%A0%E7%BB%9F%E8%BD%AF%E4%BB%B6%E7%9A%84%E9%83%A8%E5%88%86%E8%BE%B9%E7%95%8C/"/>
-    <published>2021-06-05T12:30:00.000Z</published>
+    <id>https://seniorzhai.github.io/2026/03/21/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-279-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E5%85%88%E5%9C%A8%E7%AA%84%E5%9C%BA%E6%99%AF%E9%87%8C%E5%BD%A2%E6%88%90%E7%9C%9F%E6%AD%A3%E5%A3%81%E5%9E%92/</id>
+    <link href="https://seniorzhai.github.io/2026/03/21/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-279-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E5%85%88%E5%9C%A8%E7%AA%84%E5%9C%BA%E6%99%AF%E9%87%8C%E5%BD%A2%E6%88%90%E7%9C%9F%E6%AD%A3%E5%A3%81%E5%9E%92/"/>
+    <published>2026-03-21T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<p>过去的软件边界，大多是围绕功能页面和固定流程建立的：搜索在一个入口里，编辑在一个界面里，分析在另一个模块里。但当模型开始承担理解、生成、改写和调度任务之后，我越来越觉得，很多传统软件的边界会被“模型接口”重新切开。用户接触的，不再只是一个个功能块，而是一个能根据意图调用不同能力的统一入口。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会先在窄场景里形成真正壁垒。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
     </summary>
-    <title>AI研究周报(二十九)：模型接口会吞掉传统软件的部分边界</title>
-    <updated>2026-04-15T10:37:40.696Z</updated>
+    <title>AI研究周报(二百七十九)：AI 搜索结果页会先在窄场景里形成真正壁垒</title>
+    <updated>2026-04-15T10:46:51.975Z</updated>
   </entry>
   <entry>
     <author>
@@ -108,240 +108,86 @@
     </author>
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Product" scheme="https://seniorzhai.github.io/tags/Product/"/>
-    <category term="System" scheme="https://seniorzhai.github.io/tags/System/"/>
-    <category term="Moat" scheme="https://seniorzhai.github.io/tags/Moat/"/>
-    <content>
-      <![CDATA[<p>当模型能力快速提升时，外界很容易把竞争焦点都放在模型本身：谁参数更大，谁效果更强，谁最先接入新能力。但如果这种能力逐渐商品化，真正能长期拉开差距的，很可能不再是“模型是不是最强”，而是“系统是不是更完整”。我越来越觉得，AI 产品的护城河会慢慢从模型能力转向系统能力。</p><span id="more"></span><h2 id="为什么单纯拼模型很难形成长期壁垒"><a href="#为什么单纯拼模型很难形成长期壁垒" class="headerlink" title="为什么单纯拼模型很难形成长期壁垒"></a>为什么单纯拼模型很难形成长期壁垒</h2><p>模型更新速度太快了。今天领先的能力，过一段时间就可能被更多供应方追上。如果一个产品的价值几乎完全建立在底层模型领先上，那它的优势往往也会非常脆弱。</p><h2 id="系统能力包含什么"><a href="#系统能力包含什么" class="headerlink" title="系统能力包含什么"></a>系统能力包含什么</h2><h3 id="1-更稳定的工作流"><a href="#1-更稳定的工作流" class="headerlink" title="1. 更稳定的工作流"></a>1. 更稳定的工作流</h3><p>用户真正感知到的，不只是回答是否聪明，还包括系统是否稳定、是否可预期、是否能在复杂流程中少出错。</p><h3 id="2-更贴近场景的数据循环"><a href="#2-更贴近场景的数据循环" class="headerlink" title="2. 更贴近场景的数据循环"></a>2. 更贴近场景的数据循环</h3><p>谁更理解自己的用户、任务和反馈，谁就更容易把通用模型变成适合具体场景的系统。</p><h3 id="3-更完整的工具与接口整合"><a href="#3-更完整的工具与接口整合" class="headerlink" title="3. 更完整的工具与接口整合"></a>3. 更完整的工具与接口整合</h3><p>模型只是中枢，真正让它产生业务价值的，是周围的检索、权限、记忆、审计、回退和协作机制。</p><h3 id="4-更可信的评测与治理"><a href="#4-更可信的评测与治理" class="headerlink" title="4. 更可信的评测与治理"></a>4. 更可信的评测与治理</h3><p>当 AI 进入实际业务，错误并不是简单的体验问题，而会变成成本、风险和责任问题。能不能把这些风险纳入系统治理，本身就是壁垒的一部分。</p><h2 id="这会改变产品竞争方式"><a href="#这会改变产品竞争方式" class="headerlink" title="这会改变产品竞争方式"></a>这会改变产品竞争方式</h2><p>未来优秀的 AI 产品，未必在每次 benchmark 上都第一，但会在真实任务里表现得更稳、更快、更可控。它们赢的不是某一个瞬时指标，而是整套系统让用户放心持续依赖。</p><h2 id="对团队的启发"><a href="#对团队的启发" class="headerlink" title="对团队的启发"></a>对团队的启发</h2><p>如果只盯着模型本身，团队很容易陷入被动追赶；但如果从系统角度思考，就会开始重视流程编排、反馈闭环、知识组织、权限控制和验证机制。这些东西不如模型参数显眼，却更接近长期竞争力。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>模型能力依然重要，它决定了系统的上限。但当基础能力越来越容易获得，真正的护城河会逐渐转向系统工程：谁能把模型接进更稳定、更可控、更贴近场景的产品闭环里，谁就更可能留下来。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/05/29/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-28-AI%E4%BA%A7%E5%93%81%E7%9A%84%E6%8A%A4%E5%9F%8E%E6%B2%B3%E4%BC%9A%E4%BB%8E%E6%A8%A1%E5%9E%8B%E8%83%BD%E5%8A%9B%E8%BD%AC%E5%90%91%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B/</id>
-    <link href="https://seniorzhai.github.io/2021/05/29/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-28-AI%E4%BA%A7%E5%93%81%E7%9A%84%E6%8A%A4%E5%9F%8E%E6%B2%B3%E4%BC%9A%E4%BB%8E%E6%A8%A1%E5%9E%8B%E8%83%BD%E5%8A%9B%E8%BD%AC%E5%90%91%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B/"/>
-    <published>2021-05-29T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>当模型能力快速提升时，外界很容易把竞争焦点都放在模型本身：谁参数更大，谁效果更强，谁最先接入新能力。但如果这种能力逐渐商品化，真正能长期拉开差距的，很可能不再是“模型是不是最强”，而是“系统是不是更完整”。我越来越觉得，AI 产品的护城河会慢慢从模型能力转向系统能力。</p>]]>
-    </summary>
-    <title>AI研究周报(二十八)：AI产品的护城河会从模型能力转向系统能力</title>
-    <updated>2026-04-15T10:28:02.353Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Context" scheme="https://seniorzhai.github.io/tags/Context/"/>
-    <category term="Memory" scheme="https://seniorzhai.github.io/tags/Memory/"/>
-    <category term="Reasoning" scheme="https://seniorzhai.github.io/tags/Reasoning/"/>
-    <content>
-      <![CDATA[<p>一提到长上下文，大家最直接的理解通常是“模型一次能读更多东西了”。这当然是表层收益，但我觉得更重要的问题不是记住多少，而是如何组织这些信息。上下文窗口变长之后，系统真正被考验的，不是存储能力，而是能不能把大量信息按任务需要重新排序、筛选和调用。</p><span id="more"></span><h2 id="为什么“读得下”不等于“用得好”"><a href="#为什么“读得下”不等于“用得好”" class="headerlink" title="为什么“读得下”不等于“用得好”"></a>为什么“读得下”不等于“用得好”</h2><p>把一堆文本塞进窗口，并不自动等于模型能有效利用。信息越多，噪声也越多。如果没有好的组织机制，长上下文只会让注意力更分散，让关键线索被埋没。</p><h2 id="长上下文真正有价值的地方"><a href="#长上下文真正有价值的地方" class="headerlink" title="长上下文真正有价值的地方"></a>长上下文真正有价值的地方</h2><h3 id="1-任务状态可以被连续保留"><a href="#1-任务状态可以被连续保留" class="headerlink" title="1. 任务状态可以被连续保留"></a>1. 任务状态可以被连续保留</h3><p>很多复杂任务需要跨多轮维持状态，比如代码修改、长文写作、项目协作。更长的上下文让系统不必频繁丢失现场。</p><h3 id="2-相关材料可以被一起比较"><a href="#2-相关材料可以被一起比较" class="headerlink" title="2. 相关材料可以被一起比较"></a>2. 相关材料可以被一起比较</h3><p>过去需要多次检索、人工拼接的内容，现在可以放在一个统一视野里处理，这对综合判断非常关键。</p><h3 id="3-推理链条可以更完整"><a href="#3-推理链条可以更完整" class="headerlink" title="3. 推理链条可以更完整"></a>3. 推理链条可以更完整</h3><p>当中间约束、已有结论和外部资料都能同时保留，模型更有机会形成稳定的连续推理，而不是每轮都重新起步。</p><h2 id="真正的门槛是信息编排"><a href="#真正的门槛是信息编排" class="headerlink" title="真正的门槛是信息编排"></a>真正的门槛是信息编排</h2><p>未来长上下文系统要做好，关键可能不只是模型本身，还包括：</p><ul><li>如何对输入做分层摘要</li><li>如何根据目标动态重排材料</li><li>如何区分背景、证据和当前动作</li><li>如何在长链条里持续更新重点</li></ul><p>也就是说，记忆能力最终会和信息架构能力绑定在一起。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我越来越相信，长上下文不是简单的容量竞赛。真正有价值的系统，不只是能装下更多内容，而是能把大量内容组织成对当前任务真正有用的工作记忆。做到这一点，长上下文才会从参数指标变成生产力能力。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/05/22/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-27-%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87%E4%B8%8D%E6%98%AF%E8%AE%B0%E5%BE%97%E6%9B%B4%E5%A4%9A%E8%80%8C%E6%98%AF%E7%BB%84%E7%BB%87%E5%BE%97%E6%9B%B4%E5%A5%BD/</id>
-    <link href="https://seniorzhai.github.io/2021/05/22/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-27-%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87%E4%B8%8D%E6%98%AF%E8%AE%B0%E5%BE%97%E6%9B%B4%E5%A4%9A%E8%80%8C%E6%98%AF%E7%BB%84%E7%BB%87%E5%BE%97%E6%9B%B4%E5%A5%BD/"/>
-    <published>2021-05-22T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>一提到长上下文，大家最直接的理解通常是“模型一次能读更多东西了”。这当然是表层收益，但我觉得更重要的问题不是记住多少，而是如何组织这些信息。上下文窗口变长之后，系统真正被考验的，不是存储能力，而是能不能把大量信息按任务需要重新排序、筛选和调用。</p>]]>
-    </summary>
-    <title>AI研究周报(二十七)：长上下文不是记得更多而是组织得更好</title>
-    <updated>2026-04-15T10:26:50.143Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
-    <category term="Developer Tools" scheme="https://seniorzhai.github.io/tags/Developer-Tools/"/>
-    <category term="Code" scheme="https://seniorzhai.github.io/tags/Code/"/>
-    <content>
-      <![CDATA[<p>如果要问哪些行业软件最早会被模型能力深度重塑，我会把开发者工具排在很前面。原因不复杂：开发工作天然是文本密集、结构清晰、反馈快速的。代码、文档、报错、命令行输出，本身就构成了模型非常适合处理的一类环境，所以开发者工具很可能成为第一批被“模型原生化”的软件形态。</p><span id="more"></span><h2 id="为什么开发者场景特别适合"><a href="#为什么开发者场景特别适合" class="headerlink" title="为什么开发者场景特别适合"></a>为什么开发者场景特别适合</h2><h3 id="1-输入输出都高度结构化"><a href="#1-输入输出都高度结构化" class="headerlink" title="1. 输入输出都高度结构化"></a>1. 输入输出都高度结构化</h3><p>代码不是随意文本，很多任务都有明确语法和上下文边界，这让模型更容易产生可校验的结果。</p><h3 id="2-反馈回路非常短"><a href="#2-反馈回路非常短" class="headerlink" title="2. 反馈回路非常短"></a>2. 反馈回路非常短</h3><p>写完代码能立刻编译、测试、运行，错了也能马上看到报错。对于模型系统来说，这种快速反馈非常珍贵。</p><h3 id="3-工具链已经数字化"><a href="#3-工具链已经数字化" class="headerlink" title="3. 工具链已经数字化"></a>3. 工具链已经数字化</h3><p>编辑器、版本控制、测试框架、CI、文档系统，本来就是可被调用的工具集合。模型接入这些工具之后，就能从“建议器”逐渐变成“执行器”。</p><h2 id="会先被改写的部分有哪些"><a href="#会先被改写的部分有哪些" class="headerlink" title="会先被改写的部分有哪些"></a>会先被改写的部分有哪些</h2><ul><li>代码补全与重构建议</li><li>报错解释与修复路径推荐</li><li>文档检索与 API 使用示例生成</li><li>测试样例生成与回归检查</li><li>多文件修改和重复性工程操作</li></ul><h2 id="真正的变化不只是效率提升"><a href="#真正的变化不只是效率提升" class="headerlink" title="真正的变化不只是效率提升"></a>真正的变化不只是效率提升</h2><p>更深的变化在于，开发者工具的交互方式可能会变。很多过去必须手工点击、复制、搜索、比对的动作，未来会被更自然的意图表达替代。你不是在操作十几个小功能，而是在和一个懂代码上下文的系统协作。</p><h2 id="这对团队意味着什么"><a href="#这对团队意味着什么" class="headerlink" title="这对团队意味着什么"></a>这对团队意味着什么</h2><p>一方面，工程效率会提升；另一方面，代码评审、验证和责任边界会变得更重要。因为当修改速度显著加快，真正的瓶颈就会转移到“如何保证正确性”和“如何管理变更风险”。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我觉得开发者工具之所以会被模型优先重写，不只是因为程序员愿意尝鲜，而是因为这类工作同时具备结构化输入、可执行工具和快速反馈三大条件。它几乎就是模型能力最适合落地的试验场。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/05/15/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-26-%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E4%BC%9A%E5%85%88%E8%A2%AB%E6%A8%A1%E5%9E%8B%E9%87%8D%E5%86%99/</id>
-    <link href="https://seniorzhai.github.io/2021/05/15/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-26-%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E4%BC%9A%E5%85%88%E8%A2%AB%E6%A8%A1%E5%9E%8B%E9%87%8D%E5%86%99/"/>
-    <published>2021-05-15T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>如果要问哪些行业软件最早会被模型能力深度重塑，我会把开发者工具排在很前面。原因不复杂：开发工作天然是文本密集、结构清晰、反馈快速的。代码、文档、报错、命令行输出，本身就构成了模型非常适合处理的一类环境，所以开发者工具很可能成为第一批被“模型原生化”的软件形态。</p>]]>
-    </summary>
-    <title>AI研究周报(二十六)：开发者工具会先被模型重写</title>
-    <updated>2026-04-15T10:26:50.126Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Data" scheme="https://seniorzhai.github.io/tags/Data/"/>
-    <category term="Feedback" scheme="https://seniorzhai.github.io/tags/Feedback/"/>
-    <category term="Flywheel" scheme="https://seniorzhai.github.io/tags/Flywheel/"/>
-    <content>
-      <![CDATA[<p>过去一段时间，大家讨论模型竞争力时，往往会先看预训练规模：参数有多大，语料有多少，训练跑了多久。但如果模型逐渐进入真实业务，我觉得长期优势未必只来自那一次超大规模训练，而会越来越多地来自后续的数据飞轮。谁能持续拿到高质量反馈、形成更新闭环，谁的系统就更容易越用越强。</p><span id="more"></span><h2 id="为什么单次预训练不再足够"><a href="#为什么单次预训练不再足够" class="headerlink" title="为什么单次预训练不再足够"></a>为什么单次预训练不再足够</h2><p>预训练当然重要，它决定了模型的初始上限和泛化基础。但一旦多个团队都能接触到相近级别的基础模型，差异就不会只体现在底座上，而会体现在谁更快把真实世界里的使用信号重新吸收到系统里。</p><h2 id="数据飞轮的核心是什么"><a href="#数据飞轮的核心是什么" class="headerlink" title="数据飞轮的核心是什么"></a>数据飞轮的核心是什么</h2><h3 id="1-从使用中获得新样本"><a href="#1-从使用中获得新样本" class="headerlink" title="1. 从使用中获得新样本"></a>1. 从使用中获得新样本</h3><p>真正有价值的数据，很多并不在公开语料里，而是在用户交互、任务执行、失败案例和人工修正中不断出现。</p><h3 id="2-从反馈中提炼结构信号"><a href="#2-从反馈中提炼结构信号" class="headerlink" title="2. 从反馈中提炼结构信号"></a>2. 从反馈中提炼结构信号</h3><p>不是所有数据都值得直接拿去训练。更关键的是，团队能不能把原始交互转化成可用于优化的偏好、错误类型、场景标签和质量标准。</p><h3 id="3-从更新中重新提升体验"><a href="#3-从更新中重新提升体验" class="headerlink" title="3. 从更新中重新提升体验"></a>3. 从更新中重新提升体验</h3><p>飞轮成立的前提，是优化结果能重新体现在产品体验上。只有用户真的感受到变好，新的互动才会继续产生，系统才会进入正循环。</p><h2 id="这会带来什么变化"><a href="#这会带来什么变化" class="headerlink" title="这会带来什么变化"></a>这会带来什么变化</h2><p>未来竞争可能不再只是“谁先训练出更大的模型”，而是“谁更早建立起围绕场景的数据循环”。这意味着产品、运营、标注、评测和训练团队之间会变得更加耦合。</p><h2 id="风险也很明显"><a href="#风险也很明显" class="headerlink" title="风险也很明显"></a>风险也很明显</h2><ul><li>飞轮可能把错误偏差一并放大</li><li>数据质量控制会成为核心门槛</li><li>隐私和合规要求会更严格</li><li>系统如果没有评测护栏，更新可能越快越不稳</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我越来越觉得，基础模型像起跑线，而数据飞轮更像耐力系统。真正能拉开长期差距的，不只是一次性的预训练投入，而是能否把真实使用、反馈理解和持续优化稳稳连成闭环。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/05/08/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-25-%E6%95%B0%E6%8D%AE%E9%A3%9E%E8%BD%AE%E4%BC%9A%E5%8F%96%E4%BB%A3%E5%8D%95%E6%AC%A1%E9%A2%84%E8%AE%AD%E7%BB%83%E6%88%90%E4%B8%BA%E4%BC%98%E5%8A%BF%E6%9D%A5%E6%BA%90/</id>
-    <link href="https://seniorzhai.github.io/2021/05/08/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-25-%E6%95%B0%E6%8D%AE%E9%A3%9E%E8%BD%AE%E4%BC%9A%E5%8F%96%E4%BB%A3%E5%8D%95%E6%AC%A1%E9%A2%84%E8%AE%AD%E7%BB%83%E6%88%90%E4%B8%BA%E4%BC%98%E5%8A%BF%E6%9D%A5%E6%BA%90/"/>
-    <published>2021-05-08T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>过去一段时间，大家讨论模型竞争力时，往往会先看预训练规模：参数有多大，语料有多少，训练跑了多久。但如果模型逐渐进入真实业务，我觉得长期优势未必只来自那一次超大规模训练，而会越来越多地来自后续的数据飞轮。谁能持续拿到高质量反馈、形成更新闭环，谁的系统就更容易越用越强。</p>]]>
-    </summary>
-    <title>AI研究周报(二十五)：数据飞轮会取代单次预训练成为优势来源</title>
-    <updated>2026-04-15T10:26:50.134Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Evaluation" scheme="https://seniorzhai.github.io/tags/Evaluation/"/>
-    <category term="Benchmark" scheme="https://seniorzhai.github.io/tags/Benchmark/"/>
-    <category term="Product" scheme="https://seniorzhai.github.io/tags/Product/"/>
-    <content>
-      <![CDATA[<p>AI 研究里，排行榜一直有很强的吸引力。一个新模型出来，大家首先关心的是在某个 benchmark 上高了几个点。但如果把目光放到真正的应用场景，会发现一个越来越明显的问题：排行榜给出的往往只是局部信号，而不是完整任务结果。评测真正要回答的，不只是“模型分数多高”，而是“这套系统能不能把事情做完”。</p><span id="more"></span><h2 id="为什么传统-benchmark-开始不够用"><a href="#为什么传统-benchmark-开始不够用" class="headerlink" title="为什么传统 benchmark 开始不够用"></a>为什么传统 benchmark 开始不够用</h2><p>很多基准测试建立在静态数据集上，输入固定、输出固定、打分方式固定。这种方式非常适合推动研究进展，也便于横向比较。但当模型进入复杂业务后，任务常常是多轮、多步骤、带工具调用、依赖上下文的，单个样本上的准确率已经很难反映最终体验。</p><h2 id="评测会朝什么方向演化"><a href="#评测会朝什么方向演化" class="headerlink" title="评测会朝什么方向演化"></a>评测会朝什么方向演化</h2><h3 id="1-从单步回答转向端到端任务"><a href="#1-从单步回答转向端到端任务" class="headerlink" title="1. 从单步回答转向端到端任务"></a>1. 从单步回答转向端到端任务</h3><p>系统不是只需要“答对一句话”，而是要完成一次搜索、一次总结、一次生成并校验的完整过程。</p><h3 id="2-从离线分数转向线上表现"><a href="#2-从离线分数转向线上表现" class="headerlink" title="2. 从离线分数转向线上表现"></a>2. 从离线分数转向线上表现</h3><p>有些问题只会在真实使用里暴露，比如时延、稳定性、异常恢复、用户理解成本。这些都不是排行榜上几行数字能说明白的。</p><h3 id="3-从通用指标转向场景指标"><a href="#3-从通用指标转向场景指标" class="headerlink" title="3. 从通用指标转向场景指标"></a>3. 从通用指标转向场景指标</h3><p>在不同产品里，“好”的定义差别很大。客服场景重视一致性，内容场景重视创造力，自动化场景重视成功率与可回退性。评测体系也必须跟着任务目标变化。</p><h2 id="任务闭环为什么更关键"><a href="#任务闭环为什么更关键" class="headerlink" title="任务闭环为什么更关键"></a>任务闭环为什么更关键</h2><p>我很认同一个趋势：未来评测会越来越像运营系统的一部分，而不只是研究论文的附录。模型上线之后，系统是否真的提高完成率、减少人工、缩短时延、降低返工，这些闭环指标才决定技术是否产生价值。</p><h2 id="这会倒逼什么变化"><a href="#这会倒逼什么变化" class="headerlink" title="这会倒逼什么变化"></a>这会倒逼什么变化</h2><ul><li>benchmark 会和真实工作流结合得更紧</li><li>评测集会持续更新，而不是一次性冻结</li><li>人类评审会重新变得重要</li><li>工具调用、流程编排和异常处理也会进入评分范围</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>排行榜不会消失，它依然是研究交流的重要语言。但我觉得下一阶段更有价值的评测，不再只是比较谁高几个点，而是看谁能在真实任务里稳定跑完闭环。到了那时，评测才会真正接近产品世界里的“有效”。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/05/01/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-24-%E8%AF%84%E6%B5%8B%E5%9F%BA%E5%87%86%E4%BC%9A%E4%BB%8E%E6%8E%92%E8%A1%8C%E6%A6%9C%E8%BD%AC%E5%90%91%E4%BB%BB%E5%8A%A1%E9%97%AD%E7%8E%AF/</id>
-    <link href="https://seniorzhai.github.io/2021/05/01/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-24-%E8%AF%84%E6%B5%8B%E5%9F%BA%E5%87%86%E4%BC%9A%E4%BB%8E%E6%8E%92%E8%A1%8C%E6%A6%9C%E8%BD%AC%E5%90%91%E4%BB%BB%E5%8A%A1%E9%97%AD%E7%8E%AF/"/>
-    <published>2021-05-01T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>AI 研究里，排行榜一直有很强的吸引力。一个新模型出来，大家首先关心的是在某个 benchmark 上高了几个点。但如果把目光放到真正的应用场景，会发现一个越来越明显的问题：排行榜给出的往往只是局部信号，而不是完整任务结果。评测真正要回答的，不只是“模型分数多高”，而是“这套系统能不能把事情做完”。</p>]]>
-    </summary>
-    <title>AI研究周报(二十四)：评测基准会从排行榜转向任务闭环</title>
-    <updated>2026-04-15T10:23:49.369Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Open Source" scheme="https://seniorzhai.github.io/tags/Open-Source/"/>
-    <category term="Model" scheme="https://seniorzhai.github.io/tags/Model/"/>
-    <category term="Iteration" scheme="https://seniorzhai.github.io/tags/Iteration/"/>
-    <content>
-      <![CDATA[<p>如果说闭源大模型代表了能力边界，那么开源模型更像是在重写实验节奏。很多团队真正需要的，不一定是拿到最强模型的访问权，而是能否快速试验、快速改造、快速验证。只要开源模型的质量跨过某个门槛，它带来的最大价值就不只是“便宜”，而是把实验速度重新拉回到团队自己手里。</p><span id="more"></span><h2 id="为什么实验速度这么重要"><a href="#为什么实验速度这么重要" class="headerlink" title="为什么实验速度这么重要"></a>为什么实验速度这么重要</h2><p>在产品探索期，最贵的往往不是一次推理调用，而是反复等待。等待外部接口、等待配额、等待能力开放、等待价格下降，这些都会直接拖慢团队试错速度。</p><p>开源模型的意义在于，很多变量可以重新内化：参数怎么改、提示怎么包、数据怎么加、部署怎么配，不再完全受制于外部平台。</p><h2 id="开源模型会改变哪些事情"><a href="#开源模型会改变哪些事情" class="headerlink" title="开源模型会改变哪些事情"></a>开源模型会改变哪些事情</h2><h3 id="1-原型验证会更快"><a href="#1-原型验证会更快" class="headerlink" title="1. 原型验证会更快"></a>1. 原型验证会更快</h3><p>团队可以在本地或私有环境里快速做 Demo，不用每一步都绕过外部服务的限制。</p><h3 id="2-垂直适配会更主动"><a href="#2-垂直适配会更主动" class="headerlink" title="2. 垂直适配会更主动"></a>2. 垂直适配会更主动</h3><p>有些场景不需要通用最强能力，只需要在特定任务上更稳。开源路线给了团队做裁剪、微调和流程重组的空间。</p><h3 id="3-工程与研究的边界会靠近"><a href="#3-工程与研究的边界会靠近" class="headerlink" title="3. 工程与研究的边界会靠近"></a>3. 工程与研究的边界会靠近</h3><p>以前研究人员试一个方向，工程团队要很久之后才能真正接手；而当模型可控度提高，研究结论可以更快进入产品实验。</p><h2 id="但开源不等于简单"><a href="#但开源不等于简单" class="headerlink" title="但开源不等于简单"></a>但开源不等于简单</h2><p>真正把模型拿到手之后，问题才刚开始：</p><ul><li>算力和部署成本是否可承受</li><li>推理框架是否成熟</li><li>评测体系是否足够贴近业务</li><li>数据和微调流程是否可靠</li><li>团队有没有长期维护模型栈的能力</li></ul><p>所以开源模型的优势，并不是“零门槛”，而是给有工程能力的团队更多主导权。</p><h2 id="未来可能出现的分工"><a href="#未来可能出现的分工" class="headerlink" title="未来可能出现的分工"></a>未来可能出现的分工</h2><p>我猜未来相当长一段时间里，闭源和开源会并存：前者推动能力上限，后者推动实验扩散。真正跑得快的团队，不一定只押一边，而是会根据场景在两种路线之间灵活切换。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>开源模型最重要的影响，不只是降低成本，而是把实验节奏、系统控制权和产品迭代速度重新交还给团队内部。一旦这种节奏建立起来，很多过去“等技术成熟再说”的事情，就会提前进入实践阶段。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/04/24/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-23-%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B%E4%BC%9A%E6%8A%8A%E5%AE%9E%E9%AA%8C%E9%80%9F%E5%BA%A6%E6%8B%89%E5%9B%9E%E5%9B%A2%E9%98%9F%E5%86%85%E9%83%A8/</id>
-    <link href="https://seniorzhai.github.io/2021/04/24/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-23-%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B%E4%BC%9A%E6%8A%8A%E5%AE%9E%E9%AA%8C%E9%80%9F%E5%BA%A6%E6%8B%89%E5%9B%9E%E5%9B%A2%E9%98%9F%E5%86%85%E9%83%A8/"/>
-    <published>2021-04-24T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>如果说闭源大模型代表了能力边界，那么开源模型更像是在重写实验节奏。很多团队真正需要的，不一定是拿到最强模型的访问权，而是能否快速试验、快速改造、快速验证。只要开源模型的质量跨过某个门槛，它带来的最大价值就不只是“便宜”，而是把实验速度重新拉回到团队自己手里。</p>]]>
-    </summary>
-    <title>AI研究周报(二十三)：开源模型会把实验速度拉回团队内部</title>
-    <updated>2026-04-15T10:23:31.593Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Multimodal" scheme="https://seniorzhai.github.io/tags/Multimodal/"/>
-    <category term="Representation" scheme="https://seniorzhai.github.io/tags/Representation/"/>
-    <category term="Interface" scheme="https://seniorzhai.github.io/tags/Interface/"/>
-    <content>
-      <![CDATA[<p>过去很长时间里，视觉、语言、语音往往各自发展：图像模型解决图像问题，语言模型解决文本问题，语音系统也有自己独立的一套管线。但随着多模态应用越来越多，一个更底层的需求开始变得明显——系统需要一种更统一的表示方式，才能支撑跨模态理解与交互。</p><span id="more"></span><h2 id="为什么统一表示会变得重要"><a href="#为什么统一表示会变得重要" class="headerlink" title="为什么统一表示会变得重要"></a>为什么统一表示会变得重要</h2><p>如果不同模态之间始终只是“先分别理解，再做浅层拼接”，系统很容易在复杂任务上失去一致性。比如一个产品既要看图、又要听语音、还要理解文字指令，那么这些输入最终必须在某种共享语义空间里被组织起来，否则协同能力会很弱。</p><h2 id="多模态产品会提出什么新要求"><a href="#多模态产品会提出什么新要求" class="headerlink" title="多模态产品会提出什么新要求"></a>多模态产品会提出什么新要求</h2><h3 id="1-不同输入需要对齐到同一个语义层"><a href="#1-不同输入需要对齐到同一个语义层" class="headerlink" title="1. 不同输入需要对齐到同一个语义层"></a>1. 不同输入需要对齐到同一个语义层</h3><p>用户不会关心底层模型分成几套，他们只希望系统能理解“我说的这句话、我上传的这张图、我圈出来的这个区域”其实是在表达同一件事。</p><h3 id="2-输出不只是生成内容，而是生成动作"><a href="#2-输出不只是生成内容，而是生成动作" class="headerlink" title="2. 输出不只是生成内容，而是生成动作"></a>2. 输出不只是生成内容，而是生成动作</h3><p>当系统既能看、又能说、又能操作界面时，多模态就不再只是展示能力，而会逐渐变成交互接口本身。</p><h3 id="3-上下文会跨模态流动"><a href="#3-上下文会跨模态流动" class="headerlink" title="3. 上下文会跨模态流动"></a>3. 上下文会跨模态流动</h3><p>一段语音解释、一张截图、一句补充文本，未来很可能会被当作同一个连续上下文来处理。这要求模型内部表征足够统一，否则记忆与推理会被切碎。</p><h2 id="统一表示不是简单拼接特征"><a href="#统一表示不是简单拼接特征" class="headerlink" title="统一表示不是简单拼接特征"></a>统一表示不是简单拼接特征</h2><p>真正难的地方在于：不同模态的数据结构、噪声形态和时间尺度都不同。统一表示不应该只是把它们硬塞进同一个向量空间，而是要让系统学会保留各自特性，同时在更高层建立可迁移的语义关联。</p><h2 id="这对研究和工程意味着什么"><a href="#这对研究和工程意味着什么" class="headerlink" title="这对研究和工程意味着什么"></a>这对研究和工程意味着什么</h2><ul><li>预训练目标会更强调跨模态对齐</li><li>数据集构造会更重视真实交互而不是静态配对</li><li>模型结构会更关注共享骨干与模态适配层的平衡</li><li>产品设计会开始围绕“自然输入”而不是单一表单展开</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我越来越觉得，多模态的关键不只是“支持更多输入类型”，而是借由更多输入类型逼着系统建立统一表示。只有底层语义空间真正打通，多模态交互才会从几个功能点，长成一种新的计算接口。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/04/17/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-22-%E5%A4%9A%E6%A8%A1%E6%80%81%E4%BA%A4%E4%BA%92%E4%BC%9A%E5%80%92%E9%80%BC%E7%BB%9F%E4%B8%80%E8%A1%A8%E7%A4%BA/</id>
-    <link href="https://seniorzhai.github.io/2021/04/17/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-22-%E5%A4%9A%E6%A8%A1%E6%80%81%E4%BA%A4%E4%BA%92%E4%BC%9A%E5%80%92%E9%80%BC%E7%BB%9F%E4%B8%80%E8%A1%A8%E7%A4%BA/"/>
-    <published>2021-04-17T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>过去很长时间里，视觉、语言、语音往往各自发展：图像模型解决图像问题，语言模型解决文本问题，语音系统也有自己独立的一套管线。但随着多模态应用越来越多，一个更底层的需求开始变得明显——系统需要一种更统一的表示方式，才能支撑跨模态理解与交互。</p>]]>
-    </summary>
-    <title>AI研究周报(二十二)：多模态交互会倒逼统一表示</title>
-    <updated>2026-04-15T10:23:12.989Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Agent" scheme="https://seniorzhai.github.io/tags/Agent/"/>
-    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
-    <category term="Productivity" scheme="https://seniorzhai.github.io/tags/Productivity/"/>
-    <content>
-      <![CDATA[<p>大家谈到“AI 代理”时，很容易直接想象一个能自主完成复杂任务的通用助手。但如果把视角拉回真实业务，我反而觉得代理能力最先落地的地方，不会是无边界的开放世界，而是那些步骤清晰、上下文稳定、反馈明确的窄流程。</p><span id="more"></span><h2 id="为什么窄流程更适合代理先落地"><a href="#为什么窄流程更适合代理先落地" class="headerlink" title="为什么窄流程更适合代理先落地"></a>为什么窄流程更适合代理先落地</h2><p>代理系统真正难的，不只是生成文本，而是要持续理解目标、拆解步骤、调用工具、根据反馈修正路径。这个链条越长，变量越多，失误概率就越高。</p><p>而在窄流程里，任务边界通常更清楚：输入格式固定、执行步骤相对标准、结果也容易校验。模型只要把这些局部环节串起来，就已经能形成可见的生产力。</p><h2 id="哪些场景会先出现效果"><a href="#哪些场景会先出现效果" class="headerlink" title="哪些场景会先出现效果"></a>哪些场景会先出现效果</h2><h3 id="1-有明确-SOP-的知识工作"><a href="#1-有明确-SOP-的知识工作" class="headerlink" title="1. 有明确 SOP 的知识工作"></a>1. 有明确 SOP 的知识工作</h3><p>比如整理报告、汇总会议纪要、根据固定模板生成初稿。这类任务不要求模型完全自主决策，但很适合让模型承担流程中的重复部分。</p><h3 id="2-带工具调用的轻自动化"><a href="#2-带工具调用的轻自动化" class="headerlink" title="2. 带工具调用的轻自动化"></a>2. 带工具调用的轻自动化</h3><p>当模型可以稳定地查询文档、读写表格、调用内部接口时，它就不再只是“回答问题”，而是在参与执行流程。</p><h3 id="3-可回放、可校验的任务链"><a href="#3-可回放、可校验的任务链" class="headerlink" title="3. 可回放、可校验的任务链"></a>3. 可回放、可校验的任务链</h3><p>如果每一步都有日志、有中间结果、有明确的成功条件，那么代理系统就更容易被监控和修正。</p><h2 id="真正的门槛在哪里"><a href="#真正的门槛在哪里" class="headerlink" title="真正的门槛在哪里"></a>真正的门槛在哪里</h2><p>很多人以为代理能力的核心是“模型够不够聪明”，但在实际落地里，更大的门槛常常是流程工程。</p><ul><li>任务如何被拆成足够清晰的子步骤</li><li>工具接口是否稳定</li><li>中间状态如何保存</li><li>失败之后怎样回退与重试</li><li>人类应该在什么节点介入</li></ul><p>这些问题决定了代理到底是一个可控系统，还是一个看起来很聪明但不稳定的演示。</p><h2 id="这会如何影响产品形态"><a href="#这会如何影响产品形态" class="headerlink" title="这会如何影响产品形态"></a>这会如何影响产品形态</h2><p>我感觉未来一段时间，代理不会先以“万能助手”的形态大规模进入产品，而会以“流程插件”的方式渗透进已有工作流。用户未必意识到自己在使用代理，但会明显感受到某些流程变快了、少点了、能自动跑了。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>代理能力当然会继续朝更开放的方向发展，但真正先变成生产力的，往往不是最宏大的愿景，而是最容易被约束、验证和复用的窄流程。能先把这些场景跑通，才有机会逐步向更复杂的任务扩展。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/04/10/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-21-%E4%BB%A3%E7%90%86%E8%83%BD%E5%8A%9B%E4%BC%9A%E5%85%88%E5%9C%A8%E7%AA%84%E6%B5%81%E7%A8%8B%E9%87%8C%E5%8F%98%E6%88%90%E7%94%9F%E4%BA%A7%E5%8A%9B/</id>
-    <link href="https://seniorzhai.github.io/2021/04/10/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-21-%E4%BB%A3%E7%90%86%E8%83%BD%E5%8A%9B%E4%BC%9A%E5%85%88%E5%9C%A8%E7%AA%84%E6%B5%81%E7%A8%8B%E9%87%8C%E5%8F%98%E6%88%90%E7%94%9F%E4%BA%A7%E5%8A%9B/"/>
-    <published>2021-04-10T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>大家谈到“AI 代理”时，很容易直接想象一个能自主完成复杂任务的通用助手。但如果把视角拉回真实业务，我反而觉得代理能力最先落地的地方，不会是无边界的开放世界，而是那些步骤清晰、上下文稳定、反馈明确的窄流程。</p>]]>
-    </summary>
-    <title>AI研究周报(二十一)：代理能力会先在窄流程里变成生产力</title>
-    <updated>2026-04-15T10:22:55.073Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Alignment" scheme="https://seniorzhai.github.io/tags/Alignment/"/>
-    <category term="Human Feedback" scheme="https://seniorzhai.github.io/tags/Human-Feedback/"/>
-    <category term="Training" scheme="https://seniorzhai.github.io/tags/Training/"/>
-    <content>
-      <![CDATA[<p>过去很多机器学习系统里，人类的角色主要体现在“标注数据”这一步：人负责给样本打标签，模型负责拟合这些标签。但随着模型能力变强、任务开放度提高，这种关系正在变化。人类反馈不再只是静态监督，而越来越像训练回路的一部分。</p><span id="more"></span><h2 id="为什么静态标签开始不够了"><a href="#为什么静态标签开始不够了" class="headerlink" title="为什么静态标签开始不够了"></a>为什么静态标签开始不够了</h2><p>很多开放任务并不存在唯一标准答案。尤其在生成、对话、辅助决策这些场景里，“更好”往往不是一个固定标签，而是偏好、体验和上下文共同决定的结果。</p><p>这时如果还只依赖传统标签，模型往往学不到真正重要的那部分质量。</p><h2 id="人类反馈会如何进入训练闭环"><a href="#人类反馈会如何进入训练闭环" class="headerlink" title="人类反馈会如何进入训练闭环"></a>人类反馈会如何进入训练闭环</h2><h3 id="1-从单点标注走向比较判断"><a href="#1-从单点标注走向比较判断" class="headerlink" title="1. 从单点标注走向比较判断"></a>1. 从单点标注走向比较判断</h3><p>与其让人给一个绝对分数，很多时候比较两个结果哪个更好，反而更稳定、更接近真实偏好。</p><h3 id="2-从离线数据走向持续修正"><a href="#2-从离线数据走向持续修正" class="headerlink" title="2. 从离线数据走向持续修正"></a>2. 从离线数据走向持续修正</h3><p>模型上线之后，真实交互里的反馈会不断暴露问题，这些信号本身就应该被重新吸收到训练系统里。</p><h3 id="3-从“监督模型”走向“塑造行为”"><a href="#3-从“监督模型”走向“塑造行为”" class="headerlink" title="3. 从“监督模型”走向“塑造行为”"></a>3. 从“监督模型”走向“塑造行为”</h3><p>人类反馈的价值，不只是告诉模型答案是什么，更是告诉模型什么样的行为模式更符合使用目标。</p><h2 id="这件事的意义"><a href="#这件事的意义" class="headerlink" title="这件事的意义"></a>这件事的意义</h2><p>如果这个方向继续发展，未来模型训练会更像一个持续调校系统，而不是一次性喂完数据就结束。这样一来，模型能力、产品体验和用户反馈之间的关系会更紧密。</p><h2 id="潜在问题"><a href="#潜在问题" class="headerlink" title="潜在问题"></a>潜在问题</h2><ul><li>反馈本身会有偏差</li><li>不同用户偏好可能互相冲突</li><li>如何把反馈稳定地转化为训练信号并不简单</li><li>一旦反馈回路设计不好，也可能强化错误行为</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我觉得人类反馈真正重要的地方，不在“人参与了训练”这句话，而在于它让模型训练从静态拟合走向动态校正。后面的很多对齐和产品化能力，可能都会建立在这类回路之上。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/04/03/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-20-%E4%BA%BA%E7%B1%BB%E5%8F%8D%E9%A6%88%E4%BC%9A%E4%BB%8E%E6%A0%87%E7%AD%BE%E5%8F%98%E6%88%90%E8%AE%AD%E7%BB%83%E5%9B%9E%E8%B7%AF/</id>
-    <link href="https://seniorzhai.github.io/2021/04/03/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-20-%E4%BA%BA%E7%B1%BB%E5%8F%8D%E9%A6%88%E4%BC%9A%E4%BB%8E%E6%A0%87%E7%AD%BE%E5%8F%98%E6%88%90%E8%AE%AD%E7%BB%83%E5%9B%9E%E8%B7%AF/"/>
-    <published>2021-04-03T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>过去很多机器学习系统里，人类的角色主要体现在“标注数据”这一步：人负责给样本打标签，模型负责拟合这些标签。但随着模型能力变强、任务开放度提高，这种关系正在变化。人类反馈不再只是静态监督，而越来越像训练回路的一部分。</p>]]>
-    </summary>
-    <title>AI研究周报(二十)：人类反馈会从标签变成训练回路</title>
-    <updated>2026-04-15T06:47:36.656Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Open Source" scheme="https://seniorzhai.github.io/tags/Open-Source/"/>
-    <category term="Model Ecosystem" scheme="https://seniorzhai.github.io/tags/Model-Ecosystem/"/>
-    <category term="Community" scheme="https://seniorzhai.github.io/tags/Community/"/>
-    <content>
-      <![CDATA[<p>这几年看 AI 发展，一个越来越明显的趋势是：除了大公司主导的闭源系统，开放模型和社区生态也在逐步积累势能。虽然在很多关键节点上，领先成果仍然更容易先出现在封闭体系里，但开放生态的价值正在变得越来越清楚。</p><span id="more"></span><h2 id="为什么开放生态重要"><a href="#为什么开放生态重要" class="headerlink" title="为什么开放生态重要"></a>为什么开放生态重要</h2><p>开放不只是“免费可用”，更重要的是它能形成更快的扩散、复现和改进循环。一个能力一旦进入社区，就会迅速被拆解、适配、重组，然后扩散到更多场景。</p><p>这会带来两个效果：</p><ul><li>研究创新的传播速度变快</li><li>工程落地的门槛被持续拉低</li></ul><h2 id="社区为什么能放大技术势能"><a href="#社区为什么能放大技术势能" class="headerlink" title="社区为什么能放大技术势能"></a>社区为什么能放大技术势能</h2><h3 id="1-复现会变成再创造"><a href="#1-复现会变成再创造" class="headerlink" title="1. 复现会变成再创造"></a>1. 复现会变成再创造</h3><p>很多技术在论文里只是原型，但进入开放社区后，会被变成脚本、框架、模板、教程和可复用组件。</p><h3 id="2-需求来自更多样的场景"><a href="#2-需求来自更多样的场景" class="headerlink" title="2. 需求来自更多样的场景"></a>2. 需求来自更多样的场景</h3><p>大公司常常只优先做大市场，而社区会把技术带到长尾场景里。长尾恰恰是很多新机会出现的地方。</p><h3 id="3-人才和知识流动更快"><a href="#3-人才和知识流动更快" class="headerlink" title="3. 人才和知识流动更快"></a>3. 人才和知识流动更快</h3><p>开放生态会降低学习门槛，让更多开发者参与改进，这种网络效应长期看非常强。</p><h2 id="开放生态也有现实限制"><a href="#开放生态也有现实限制" class="headerlink" title="开放生态也有现实限制"></a>开放生态也有现实限制</h2><ul><li>训练资源门槛仍然高</li><li>高质量数据不容易开放</li><li>商业产品会保留部分关键能力</li><li>社区项目往往在维护稳定性上吃亏</li></ul><p>所以开放生态未必在所有层面都领先，但它会越来越像一股持续累积的底层力量。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我觉得未来 AI 的竞争格局，不会只是几家闭源平台之间的竞赛，也会是平台力量和开放生态之间的长期互动。谁能持续吸引开发者、沉淀工具链、形成社区复利，谁就能在后续浪潮里拥有更深的势能。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/03/27/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-19-%E5%BC%80%E6%94%BE%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%80%81%E5%BC%80%E5%A7%8B%E7%A7%AF%E7%B4%AF%E5%8A%BF%E8%83%BD/</id>
-    <link href="https://seniorzhai.github.io/2021/03/27/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-19-%E5%BC%80%E6%94%BE%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%80%81%E5%BC%80%E5%A7%8B%E7%A7%AF%E7%B4%AF%E5%8A%BF%E8%83%BD/"/>
-    <published>2021-03-27T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>这几年看 AI 发展，一个越来越明显的趋势是：除了大公司主导的闭源系统，开放模型和社区生态也在逐步积累势能。虽然在很多关键节点上，领先成果仍然更容易先出现在封闭体系里，但开放生态的价值正在变得越来越清楚。</p>]]>
-    </summary>
-    <title>AI研究周报(十九)：开放模型生态开始积累势能</title>
-    <updated>2026-04-15T06:47:33.999Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Agent" scheme="https://seniorzhai.github.io/tags/Agent/"/>
-    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
     <category term="Automation" scheme="https://seniorzhai.github.io/tags/Automation/"/>
+    <category term="Enterprise" scheme="https://seniorzhai.github.io/tags/Enterprise/"/>
+    <category term="Agents" scheme="https://seniorzhai.github.io/tags/Agents/"/>
     <content>
-      <![CDATA[<p>关于 AI 的未来，经常会听到一个很吸引人的愿景：一个足够聪明的代理，理解目标、拆解任务、调用工具、持续执行，像真正的数字员工一样工作。这个方向当然成立，但如果从落地路径看，我更相信先大规模出现的，不会是全能代理，而是工作流自动化。</p><span id="more"></span><h2 id="为什么不是一步到位的通用代理"><a href="#为什么不是一步到位的通用代理" class="headerlink" title="为什么不是一步到位的通用代理"></a>为什么不是一步到位的通用代理</h2><p>通用代理意味着模型要在开放环境里稳定规划、执行、纠错，还要承担很高的可靠性要求。这件事难度极大，不只是模型能力问题，还有环境、工具接口、异常处理和责任边界问题。</p><p>相比之下，工作流自动化的边界更清楚：</p><ul><li>输入输出更明确</li><li>工具集合更有限</li><li>目标更容易验证</li><li>人可以保留关键决策点</li></ul><p>因此它更容易先形成稳定产品。</p><h2 id="自动化工作流为什么更现实"><a href="#自动化工作流为什么更现实" class="headerlink" title="自动化工作流为什么更现实"></a>自动化工作流为什么更现实</h2><h3 id="1-业务里天然就有流程"><a href="#1-业务里天然就有流程" class="headerlink" title="1. 业务里天然就有流程"></a>1. 业务里天然就有流程</h3><p>大量实际工作不是开放式创造，而是结构化流程：整理资料、提取信息、生成草稿、汇总结论、触发后续动作。这非常适合模型参与。</p><h3 id="2-更容易建立验收标准"><a href="#2-更容易建立验收标准" class="headerlink" title="2. 更容易建立验收标准"></a>2. 更容易建立验收标准</h3><p>只要流程节点清楚，就能定义检查条件，而不是把所有结果都交给主观判断。</p><h3 id="3-更适合人与模型协作"><a href="#3-更适合人与模型协作" class="headerlink" title="3. 更适合人与模型协作"></a>3. 更适合人与模型协作</h3><p>在很多场景里，模型并不需要完全取代人，只要把重复环节自动化，就已经能带来很大增益。</p><h2 id="未来会怎么演化"><a href="#未来会怎么演化" class="headerlink" title="未来会怎么演化"></a>未来会怎么演化</h2><p>我觉得路径大概会是：</p><ul><li>先有一批半自动工作流</li><li>再出现能跨多个节点协同的系统</li><li>最后才逐步逼近更通用的代理能力</li></ul><p>也就是说，代理能力不会突然降临，而是先以“流程自动化”的形式进入真实世界。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>如果把 AI 看作生产力工具，那么它最先改变的，往往不是最浪漫的那一层，而是最重复、最流程化、最容易验证的部分。工作流自动化，很可能就是通往更强代理系统之前的主战场。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会让中后台能力重新浮到台前。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么这层能力越来越关键"><a href="#为什么这层能力越来越关键" class="headerlink" title="为什么这层能力越来越关键"></a>为什么这层能力越来越关键</h2><p>AI 搜索结果页之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="它最先改写哪些工作流"><a href="#它最先改写哪些工作流" class="headerlink" title="它最先改写哪些工作流"></a>它最先改写哪些工作流</h2><p>一旦这层能力成熟，很多过去需要人手补位的环节，会开始被系统化吸收。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。AI 搜索结果页一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>在真实业务里，只有能接进现有权限、数据和审批结构的能力，才算真正可用。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="什么样的组织会先受益"><a href="#什么样的组织会先受益" class="headerlink" title="什么样的组织会先受益"></a>什么样的组织会先受益</h2><p>真正值得提前建设的，不只是接入能力，而是把能力变成可运营资产的那层结构。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>AI 搜索结果页会让中后台能力重新浮到台前，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2021/03/20/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-18-%E5%B7%A5%E4%BD%9C%E6%B5%81%E8%87%AA%E5%8A%A8%E5%8C%96%E4%BC%9A%E5%85%88%E4%BA%8E%E9%80%9A%E7%94%A8%E4%BB%A3%E7%90%86%E8%90%BD%E5%9C%B0/</id>
-    <link href="https://seniorzhai.github.io/2021/03/20/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-18-%E5%B7%A5%E4%BD%9C%E6%B5%81%E8%87%AA%E5%8A%A8%E5%8C%96%E4%BC%9A%E5%85%88%E4%BA%8E%E9%80%9A%E7%94%A8%E4%BB%A3%E7%90%86%E8%90%BD%E5%9C%B0/"/>
-    <published>2021-03-20T12:30:00.000Z</published>
+    <id>https://seniorzhai.github.io/2026/03/14/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-278-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E8%AE%A9%E4%B8%AD%E5%90%8E%E5%8F%B0%E8%83%BD%E5%8A%9B%E9%87%8D%E6%96%B0%E6%B5%AE%E5%88%B0%E5%8F%B0%E5%89%8D/</id>
+    <link href="https://seniorzhai.github.io/2026/03/14/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-278-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E8%AE%A9%E4%B8%AD%E5%90%8E%E5%8F%B0%E8%83%BD%E5%8A%9B%E9%87%8D%E6%96%B0%E6%B5%AE%E5%88%B0%E5%8F%B0%E5%89%8D/"/>
+    <published>2026-03-14T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<p>关于 AI 的未来，经常会听到一个很吸引人的愿景：一个足够聪明的代理，理解目标、拆解任务、调用工具、持续执行，像真正的数字员工一样工作。这个方向当然成立，但如果从落地路径看，我更相信先大规模出现的，不会是全能代理，而是工作流自动化。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会让中后台能力重新浮到台前。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
     </summary>
-    <title>AI研究周报(十八)：工作流自动化会先于通用代理落地</title>
-    <updated>2026-04-15T06:47:31.244Z</updated>
+    <title>AI研究周报(二百七十八)：AI 搜索结果页会让中后台能力重新浮到台前</title>
+    <updated>2026-04-15T10:46:51.975Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Product" scheme="https://seniorzhai.github.io/tags/Product/"/>
+    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
+    <category term="System" scheme="https://seniorzhai.github.io/tags/System/"/>
+    <content>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会把竞争点从功能数量转向协同质量。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么这个变化会出现"><a href="#为什么这个变化会出现" class="headerlink" title="为什么这个变化会出现"></a>为什么这个变化会出现</h2><p>AI 搜索结果页之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="先改变用户体验什么"><a href="#先改变用户体验什么" class="headerlink" title="先改变用户体验什么"></a>先改变用户体验什么</h2><p>对用户来说，最直观的变化不是模型名字，而是整个流程是不是更顺、更稳、更省心。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。AI 搜索结果页一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>它最先落地的地方，通常不是最宏大的场景，而是目标明确、反馈清晰、结果可验证的流程。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="团队现在应该补哪块能力"><a href="#团队现在应该补哪块能力" class="headerlink" title="团队现在应该补哪块能力"></a>团队现在应该补哪块能力</h2><p>与其等市场完全成熟，不如先把数据接口、评估指标和回滚机制准备好。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>AI 搜索结果页会把竞争点从功能数量转向协同质量，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2026/03/07/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-277-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E6%8A%8A%E7%AB%9E%E4%BA%89%E7%82%B9%E4%BB%8E%E5%8A%9F%E8%83%BD%E6%95%B0%E9%87%8F%E8%BD%AC%E5%90%91%E5%8D%8F%E5%90%8C%E8%B4%A8%E9%87%8F/</id>
+    <link href="https://seniorzhai.github.io/2026/03/07/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-277-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E6%8A%8A%E7%AB%9E%E4%BA%89%E7%82%B9%E4%BB%8E%E5%8A%9F%E8%83%BD%E6%95%B0%E9%87%8F%E8%BD%AC%E5%90%91%E5%8D%8F%E5%90%8C%E8%B4%A8%E9%87%8F/"/>
+    <published>2026-03-07T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会把竞争点从功能数量转向协同质量。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
+    </summary>
+    <title>AI研究周报(二百七十七)：AI 搜索结果页会把竞争点从功能数量转向协同质量</title>
+    <updated>2026-04-15T10:46:51.975Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
+    <category term="Collaboration" scheme="https://seniorzhai.github.io/tags/Collaboration/"/>
+    <category term="Design" scheme="https://seniorzhai.github.io/tags/Design/"/>
+    <content>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会迫使公司重新定义交付物。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么行业会走到这一步"><a href="#为什么行业会走到这一步" class="headerlink" title="为什么行业会走到这一步"></a>为什么行业会走到这一步</h2><p>AI 搜索结果页之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="这个变量会如何影响商业化"><a href="#这个变量会如何影响商业化" class="headerlink" title="这个变量会如何影响商业化"></a>这个变量会如何影响商业化</h2><p>它带来的价值往往不是一次惊艳输出，而是把重复摩擦持续削平。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。AI 搜索结果页一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>当系统开始接管更多步骤，评估标准就会从“能不能做”变成“能不能稳定做”。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="产品设计上需要提前准备什么"><a href="#产品设计上需要提前准备什么" class="headerlink" title="产品设计上需要提前准备什么"></a>产品设计上需要提前准备什么</h2><p>很多差异不会体现在演示里，而会体现在规模化使用后的稳定性和可管理性上。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>AI 搜索结果页会迫使公司重新定义交付物，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2026/02/28/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-276-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E8%BF%AB%E4%BD%BF%E5%85%AC%E5%8F%B8%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E4%BA%A4%E4%BB%98%E7%89%A9/</id>
+    <link href="https://seniorzhai.github.io/2026/02/28/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-276-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E8%BF%AB%E4%BD%BF%E5%85%AC%E5%8F%B8%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E4%BA%A4%E4%BB%98%E7%89%A9/"/>
+    <published>2026-02-28T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会迫使公司重新定义交付物。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
+    </summary>
+    <title>AI研究周报(二百七十六)：AI 搜索结果页会迫使公司重新定义交付物</title>
+    <updated>2026-04-15T10:46:51.975Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Governance" scheme="https://seniorzhai.github.io/tags/Governance/"/>
+    <category term="Platform" scheme="https://seniorzhai.github.io/tags/Platform/"/>
+    <category term="Security" scheme="https://seniorzhai.github.io/tags/Security/"/>
+    <content>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会把传统流程重新拆开再组合。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么旧做法开始不够用了"><a href="#为什么旧做法开始不够用了" class="headerlink" title="为什么旧做法开始不够用了"></a>为什么旧做法开始不够用了</h2><p>AI 搜索结果页之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="新系统会先在哪些环节体现优势"><a href="#新系统会先在哪些环节体现优势" class="headerlink" title="新系统会先在哪些环节体现优势"></a>新系统会先在哪些环节体现优势</h2><p>当这类能力变成默认配置，软件的竞争方式也会随之改变。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。AI 搜索结果页一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>很多团队以为问题在模型，其实真正卡住的是接口、责任和组织配合。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="团队该怎么降低试错成本"><a href="#团队该怎么降低试错成本" class="headerlink" title="团队该怎么降低试错成本"></a>团队该怎么降低试错成本</h2><p>短期看这是功能升级，长期看更像一次组织方式和软件边界的重写。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>AI 搜索结果页会把传统流程重新拆开再组合，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2026/02/21/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-275-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E6%8A%8A%E4%BC%A0%E7%BB%9F%E6%B5%81%E7%A8%8B%E9%87%8D%E6%96%B0%E6%8B%86%E5%BC%80%E5%86%8D%E7%BB%84%E5%90%88/</id>
+    <link href="https://seniorzhai.github.io/2026/02/21/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-275-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E6%8A%8A%E4%BC%A0%E7%BB%9F%E6%B5%81%E7%A8%8B%E9%87%8D%E6%96%B0%E6%8B%86%E5%BC%80%E5%86%8D%E7%BB%84%E5%90%88/"/>
+    <published>2026-02-21T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会把传统流程重新拆开再组合。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
+    </summary>
+    <title>AI研究周报(二百七十五)：AI 搜索结果页会把传统流程重新拆开再组合</title>
+    <updated>2026-04-15T10:46:51.975Z</updated>
   </entry>
   <entry>
     <author>
@@ -351,19 +197,19 @@
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
     <category term="Inference" scheme="https://seniorzhai.github.io/tags/Inference/"/>
-    <category term="Product" scheme="https://seniorzhai.github.io/tags/Product/"/>
     <category term="Cost" scheme="https://seniorzhai.github.io/tags/Cost/"/>
+    <category term="Operations" scheme="https://seniorzhai.github.io/tags/Operations/"/>
     <content>
-      <![CDATA[<p>大模型讨论里，大家最先关注的通常是训练：参数多大、数据多少、算力多强。但如果把视角放到真正可用的产品层，会发现另一个变量正在变得越来越关键——推理成本。模型不是训练完就结束，真正进入业务后，成本、时延和吞吐会反过来决定产品长什么样。</p><span id="more"></span><h2 id="为什么推理成本的重要性在上升"><a href="#为什么推理成本的重要性在上升" class="headerlink" title="为什么推理成本的重要性在上升"></a>为什么推理成本的重要性在上升</h2><p>训练是一次性重投入，推理却是持续性支出。只要系统真的被大量用户使用，每一次调用都会变成长期账单。因此模型能不能跑得起、回得够快、撑得住峰值，往往比离线分数高一点更重要。</p><h2 id="产品会怎么被成本重塑"><a href="#产品会怎么被成本重塑" class="headerlink" title="产品会怎么被成本重塑"></a>产品会怎么被成本重塑</h2><h3 id="1-功能边界会被重新划线"><a href="#1-功能边界会被重新划线" class="headerlink" title="1. 功能边界会被重新划线"></a>1. 功能边界会被重新划线</h3><p>不是所有看起来“能做”的能力都适合直接上线。有些能力在研究场景里很好，但在高频产品里会因为时延或成本被迫降级。</p><h3 id="2-用户体验会受到直接影响"><a href="#2-用户体验会受到直接影响" class="headerlink" title="2. 用户体验会受到直接影响"></a>2. 用户体验会受到直接影响</h3><p>用户未必懂模型结构，但一定能感受到慢不慢、稳不稳、值不值得等。推理效率本质上就是体验的一部分。</p><h3 id="3-系统架构会出现分层"><a href="#3-系统架构会出现分层" class="headerlink" title="3. 系统架构会出现分层"></a>3. 系统架构会出现分层</h3><p>未来产品里，很可能不是一个模型包打天下，而是轻量模型、缓存策略、检索模块和重型生成模型一起组成系统。谁负责快，谁负责准，谁负责最后一跳，需要被重新设计。</p><h2 id="这会带来什么研究方向"><a href="#这会带来什么研究方向" class="headerlink" title="这会带来什么研究方向"></a>这会带来什么研究方向</h2><ul><li>更高效的推理框架</li><li>更适合部署的模型结构</li><li>缓存、蒸馏、裁剪、量化等工程手段</li><li>面向场景的级联式系统设计</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我越来越觉得，推理成本不是工程末节，而是产品化时代的结构变量。未来很多 AI 产品的形态，不会只由“模型能做什么”决定，也会由“模型能以什么代价持续做这件事”决定。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会让软件形态先发生变化。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="这个趋势背后的压力来自哪里"><a href="#这个趋势背后的压力来自哪里" class="headerlink" title="这个趋势背后的压力来自哪里"></a>这个趋势背后的压力来自哪里</h2><p>AI 搜索结果页之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="它会如何重排产品结构"><a href="#它会如何重排产品结构" class="headerlink" title="它会如何重排产品结构"></a>它会如何重排产品结构</h2><p>真正重要的不是多一个按钮，而是产品能不能把分散动作串成连续结果。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。AI 搜索结果页一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>如果只强调生成，不处理交接、追踪和回滚，这类能力很快就会暴露上限。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="哪些动作值得尽早布局"><a href="#哪些动作值得尽早布局" class="headerlink" title="哪些动作值得尽早布局"></a>哪些动作值得尽早布局</h2><p>谁先把这件事做成日常基础设施，谁就更容易把零散试验变成复利。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>AI 搜索结果页会让软件形态先发生变化，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2021/03/13/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-17-%E6%8E%A8%E7%90%86%E6%88%90%E6%9C%AC%E5%BC%80%E5%A7%8B%E5%8F%8D%E8%BF%87%E6%9D%A5%E5%A1%91%E9%80%A0%E4%BA%A7%E5%93%81/</id>
-    <link href="https://seniorzhai.github.io/2021/03/13/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-17-%E6%8E%A8%E7%90%86%E6%88%90%E6%9C%AC%E5%BC%80%E5%A7%8B%E5%8F%8D%E8%BF%87%E6%9D%A5%E5%A1%91%E9%80%A0%E4%BA%A7%E5%93%81/"/>
-    <published>2021-03-13T12:30:00.000Z</published>
+    <id>https://seniorzhai.github.io/2026/02/14/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-274-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E8%AE%A9%E8%BD%AF%E4%BB%B6%E5%BD%A2%E6%80%81%E5%85%88%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96/</id>
+    <link href="https://seniorzhai.github.io/2026/02/14/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-274-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E8%AE%A9%E8%BD%AF%E4%BB%B6%E5%BD%A2%E6%80%81%E5%85%88%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96/"/>
+    <published>2026-02-14T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<p>大模型讨论里，大家最先关注的通常是训练：参数多大、数据多少、算力多强。但如果把视角放到真正可用的产品层，会发现另一个变量正在变得越来越关键——推理成本。模型不是训练完就结束，真正进入业务后，成本、时延和吞吐会反过来决定产品长什么样。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会让软件形态先发生变化。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
     </summary>
-    <title>AI研究周报(十七)：推理成本开始反过来塑造产品</title>
-    <updated>2026-04-15T06:47:28.772Z</updated>
+    <title>AI研究周报(二百七十四)：AI 搜索结果页会让软件形态先发生变化</title>
+    <updated>2026-04-15T10:46:51.975Z</updated>
   </entry>
   <entry>
     <author>
@@ -372,20 +218,152 @@
     </author>
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Data" scheme="https://seniorzhai.github.io/tags/Data/"/>
+    <category term="Retrieval" scheme="https://seniorzhai.github.io/tags/Retrieval/"/>
+    <category term="Knowledge" scheme="https://seniorzhai.github.io/tags/Knowledge/"/>
+    <category term="Enterprise" scheme="https://seniorzhai.github.io/tags/Enterprise/"/>
+    <content>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会比更强模型更早创造差异。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么这层能力越来越关键"><a href="#为什么这层能力越来越关键" class="headerlink" title="为什么这层能力越来越关键"></a>为什么这层能力越来越关键</h2><p>AI 搜索结果页之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="它最先改写哪些工作流"><a href="#它最先改写哪些工作流" class="headerlink" title="它最先改写哪些工作流"></a>它最先改写哪些工作流</h2><p>一旦这层能力成熟，很多过去需要人手补位的环节，会开始被系统化吸收。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。AI 搜索结果页一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>在真实业务里，只有能接进现有权限、数据和审批结构的能力，才算真正可用。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="什么样的组织会先受益"><a href="#什么样的组织会先受益" class="headerlink" title="什么样的组织会先受益"></a>什么样的组织会先受益</h2><p>真正值得提前建设的，不只是接入能力，而是把能力变成可运营资产的那层结构。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>AI 搜索结果页会比更强模型更早创造差异，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2026/02/07/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-273-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E6%AF%94%E6%9B%B4%E5%BC%BA%E6%A8%A1%E5%9E%8B%E6%9B%B4%E6%97%A9%E5%88%9B%E9%80%A0%E5%B7%AE%E5%BC%82/</id>
+    <link href="https://seniorzhai.github.io/2026/02/07/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-273-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E6%AF%94%E6%9B%B4%E5%BC%BA%E6%A8%A1%E5%9E%8B%E6%9B%B4%E6%97%A9%E5%88%9B%E9%80%A0%E5%B7%AE%E5%BC%82/"/>
+    <published>2026-02-07T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会比更强模型更早创造差异。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
+    </summary>
+    <title>AI研究周报(二百七十三)：AI 搜索结果页会比更强模型更早创造差异</title>
+    <updated>2026-04-15T10:46:51.975Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="UX" scheme="https://seniorzhai.github.io/tags/UX/"/>
+    <category term="Interaction" scheme="https://seniorzhai.github.io/tags/Interaction/"/>
+    <category term="Software" scheme="https://seniorzhai.github.io/tags/Software/"/>
+    <content>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会倒逼团队重写系统边界。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么这个变化会出现"><a href="#为什么这个变化会出现" class="headerlink" title="为什么这个变化会出现"></a>为什么这个变化会出现</h2><p>AI 搜索结果页之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="先改变用户体验什么"><a href="#先改变用户体验什么" class="headerlink" title="先改变用户体验什么"></a>先改变用户体验什么</h2><p>对用户来说，最直观的变化不是模型名字，而是整个流程是不是更顺、更稳、更省心。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。AI 搜索结果页一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>它最先落地的地方，通常不是最宏大的场景，而是目标明确、反馈清晰、结果可验证的流程。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="团队现在应该补哪块能力"><a href="#团队现在应该补哪块能力" class="headerlink" title="团队现在应该补哪块能力"></a>团队现在应该补哪块能力</h2><p>与其等市场完全成熟，不如先把数据接口、评估指标和回滚机制准备好。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>AI 搜索结果页会倒逼团队重写系统边界，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2026/01/31/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-272-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E5%80%92%E9%80%BC%E5%9B%A2%E9%98%9F%E9%87%8D%E5%86%99%E7%B3%BB%E7%BB%9F%E8%BE%B9%E7%95%8C/</id>
+    <link href="https://seniorzhai.github.io/2026/01/31/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-272-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E5%80%92%E9%80%BC%E5%9B%A2%E9%98%9F%E9%87%8D%E5%86%99%E7%B3%BB%E7%BB%9F%E8%BE%B9%E7%95%8C/"/>
+    <published>2026-01-31T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会倒逼团队重写系统边界。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
+    </summary>
+    <title>AI研究周报(二百七十二)：AI 搜索结果页会倒逼团队重写系统边界</title>
+    <updated>2026-04-15T10:46:51.975Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Infrastructure" scheme="https://seniorzhai.github.io/tags/Infrastructure/"/>
+    <category term="Platform" scheme="https://seniorzhai.github.io/tags/Platform/"/>
+    <category term="Tooling" scheme="https://seniorzhai.github.io/tags/Tooling/"/>
+    <content>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会先成为产品层的新分水岭。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么行业会走到这一步"><a href="#为什么行业会走到这一步" class="headerlink" title="为什么行业会走到这一步"></a>为什么行业会走到这一步</h2><p>AI 搜索结果页之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="这个变量会如何影响商业化"><a href="#这个变量会如何影响商业化" class="headerlink" title="这个变量会如何影响商业化"></a>这个变量会如何影响商业化</h2><p>它带来的价值往往不是一次惊艳输出，而是把重复摩擦持续削平。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。AI 搜索结果页一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>当系统开始接管更多步骤，评估标准就会从“能不能做”变成“能不能稳定做”。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="产品设计上需要提前准备什么"><a href="#产品设计上需要提前准备什么" class="headerlink" title="产品设计上需要提前准备什么"></a>产品设计上需要提前准备什么</h2><p>很多差异不会体现在演示里，而会体现在规模化使用后的稳定性和可管理性上。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>AI 搜索结果页会先成为产品层的新分水岭，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2026/01/24/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-271-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E5%85%88%E6%88%90%E4%B8%BA%E4%BA%A7%E5%93%81%E5%B1%82%E7%9A%84%E6%96%B0%E5%88%86%E6%B0%B4%E5%B2%AD/</id>
+    <link href="https://seniorzhai.github.io/2026/01/24/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-271-AI%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E9%A1%B5%E4%BC%9A%E5%85%88%E6%88%90%E4%B8%BA%E4%BA%A7%E5%93%81%E5%B1%82%E7%9A%84%E6%96%B0%E5%88%86%E6%B0%B4%E5%B2%AD/"/>
+    <published>2026-01-24T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这段时间我越来越觉得，AI 搜索结果页会先成为产品层的新分水岭。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
+    </summary>
+    <title>AI研究周报(二百七十一)：AI 搜索结果页会先成为产品层的新分水岭</title>
+    <updated>2026-04-15T10:46:51.974Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Automation" scheme="https://seniorzhai.github.io/tags/Automation/"/>
+    <category term="Enterprise" scheme="https://seniorzhai.github.io/tags/Enterprise/"/>
+    <category term="Agents" scheme="https://seniorzhai.github.io/tags/Agents/"/>
+    <content>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会先在窄场景里形成真正壁垒。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么旧做法开始不够用了"><a href="#为什么旧做法开始不够用了" class="headerlink" title="为什么旧做法开始不够用了"></a>为什么旧做法开始不够用了</h2><p>设计协作助手之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="新系统会先在哪些环节体现优势"><a href="#新系统会先在哪些环节体现优势" class="headerlink" title="新系统会先在哪些环节体现优势"></a>新系统会先在哪些环节体现优势</h2><p>当这类能力变成默认配置，软件的竞争方式也会随之改变。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。设计协作助手一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>很多团队以为问题在模型，其实真正卡住的是接口、责任和组织配合。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="团队该怎么降低试错成本"><a href="#团队该怎么降低试错成本" class="headerlink" title="团队该怎么降低试错成本"></a>团队该怎么降低试错成本</h2><p>短期看这是功能升级，长期看更像一次组织方式和软件边界的重写。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>设计协作助手会先在窄场景里形成真正壁垒，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2026/01/17/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-270-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E5%85%88%E5%9C%A8%E7%AA%84%E5%9C%BA%E6%99%AF%E9%87%8C%E5%BD%A2%E6%88%90%E7%9C%9F%E6%AD%A3%E5%A3%81%E5%9E%92/</id>
+    <link href="https://seniorzhai.github.io/2026/01/17/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-270-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E5%85%88%E5%9C%A8%E7%AA%84%E5%9C%BA%E6%99%AF%E9%87%8C%E5%BD%A2%E6%88%90%E7%9C%9F%E6%AD%A3%E5%A3%81%E5%9E%92/"/>
+    <published>2026-01-17T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会先在窄场景里形成真正壁垒。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
+    </summary>
+    <title>AI研究周报(二百七十)：设计协作助手会先在窄场景里形成真正壁垒</title>
+    <updated>2026-04-15T10:46:51.974Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Product" scheme="https://seniorzhai.github.io/tags/Product/"/>
+    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
+    <category term="System" scheme="https://seniorzhai.github.io/tags/System/"/>
+    <content>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会让中后台能力重新浮到台前。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="这个趋势背后的压力来自哪里"><a href="#这个趋势背后的压力来自哪里" class="headerlink" title="这个趋势背后的压力来自哪里"></a>这个趋势背后的压力来自哪里</h2><p>设计协作助手之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="它会如何重排产品结构"><a href="#它会如何重排产品结构" class="headerlink" title="它会如何重排产品结构"></a>它会如何重排产品结构</h2><p>真正重要的不是多一个按钮，而是产品能不能把分散动作串成连续结果。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。设计协作助手一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>如果只强调生成，不处理交接、追踪和回滚，这类能力很快就会暴露上限。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="哪些动作值得尽早布局"><a href="#哪些动作值得尽早布局" class="headerlink" title="哪些动作值得尽早布局"></a>哪些动作值得尽早布局</h2><p>谁先把这件事做成日常基础设施，谁就更容易把零散试验变成复利。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>设计协作助手会让中后台能力重新浮到台前，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2026/01/10/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-269-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E8%AE%A9%E4%B8%AD%E5%90%8E%E5%8F%B0%E8%83%BD%E5%8A%9B%E9%87%8D%E6%96%B0%E6%B5%AE%E5%88%B0%E5%8F%B0%E5%89%8D/</id>
+    <link href="https://seniorzhai.github.io/2026/01/10/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-269-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E8%AE%A9%E4%B8%AD%E5%90%8E%E5%8F%B0%E8%83%BD%E5%8A%9B%E9%87%8D%E6%96%B0%E6%B5%AE%E5%88%B0%E5%8F%B0%E5%89%8D/"/>
+    <published>2026-01-10T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会让中后台能力重新浮到台前。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
+    </summary>
+    <title>AI研究周报(二百六十九)：设计协作助手会让中后台能力重新浮到台前</title>
+    <updated>2026-04-15T10:46:51.974Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
+    <category term="Collaboration" scheme="https://seniorzhai.github.io/tags/Collaboration/"/>
+    <category term="Design" scheme="https://seniorzhai.github.io/tags/Design/"/>
+    <content>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会把竞争点从功能数量转向协同质量。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么这层能力越来越关键"><a href="#为什么这层能力越来越关键" class="headerlink" title="为什么这层能力越来越关键"></a>为什么这层能力越来越关键</h2><p>设计协作助手之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="它最先改写哪些工作流"><a href="#它最先改写哪些工作流" class="headerlink" title="它最先改写哪些工作流"></a>它最先改写哪些工作流</h2><p>一旦这层能力成熟，很多过去需要人手补位的环节，会开始被系统化吸收。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。设计协作助手一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>在真实业务里，只有能接进现有权限、数据和审批结构的能力，才算真正可用。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="什么样的组织会先受益"><a href="#什么样的组织会先受益" class="headerlink" title="什么样的组织会先受益"></a>什么样的组织会先受益</h2><p>真正值得提前建设的，不只是接入能力，而是把能力变成可运营资产的那层结构。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>设计协作助手会把竞争点从功能数量转向协同质量，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2026/01/03/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-268-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E6%8A%8A%E7%AB%9E%E4%BA%89%E7%82%B9%E4%BB%8E%E5%8A%9F%E8%83%BD%E6%95%B0%E9%87%8F%E8%BD%AC%E5%90%91%E5%8D%8F%E5%90%8C%E8%B4%A8%E9%87%8F/</id>
+    <link href="https://seniorzhai.github.io/2026/01/03/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-268-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E6%8A%8A%E7%AB%9E%E4%BA%89%E7%82%B9%E4%BB%8E%E5%8A%9F%E8%83%BD%E6%95%B0%E9%87%8F%E8%BD%AC%E5%90%91%E5%8D%8F%E5%90%8C%E8%B4%A8%E9%87%8F/"/>
+    <published>2026-01-03T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会把竞争点从功能数量转向协同质量。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
+    </summary>
+    <title>AI研究周报(二百六十八)：设计协作助手会把竞争点从功能数量转向协同质量</title>
+    <updated>2026-04-15T10:46:51.974Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
     <category term="Governance" scheme="https://seniorzhai.github.io/tags/Governance/"/>
-    <category term="Training" scheme="https://seniorzhai.github.io/tags/Training/"/>
+    <category term="Platform" scheme="https://seniorzhai.github.io/tags/Platform/"/>
+    <category term="Security" scheme="https://seniorzhai.github.io/tags/Security/"/>
     <content>
-      <![CDATA[<p>如果只看论文标题，很容易以为模型进步主要来自更大的网络、更强的算力和更巧妙的训练技巧。但最近越往后看，越能感觉到另一个变量的重要性正在抬头：数据治理。模型能学到什么、会偏向什么、在哪些场景里失真，越来越不是单纯的结构问题，而是数据问题。</p><span id="more"></span><h2 id="为什么数据治理正在变成核心问题"><a href="#为什么数据治理正在变成核心问题" class="headerlink" title="为什么数据治理正在变成核心问题"></a>为什么数据治理正在变成核心问题</h2><p>早期模型规模还不够大时，很多缺陷会被解释成“模型能力不足”。但当模型越来越强之后，很多问题开始显得不像能力不够，而像训练材料本身就有偏差、噪声或结构性缺口。</p><p>这意味着，数据不再只是原料，而更像决定模型上限的组成部分。</p><h2 id="数据治理具体在治理什么"><a href="#数据治理具体在治理什么" class="headerlink" title="数据治理具体在治理什么"></a>数据治理具体在治理什么</h2><h3 id="1-数据质量"><a href="#1-数据质量" class="headerlink" title="1. 数据质量"></a>1. 数据质量</h3><p>噪声、重复、错误标注、失真内容都会直接影响学习结果。规模放大后，这些问题不会自然消失，只会被更系统地吸收进去。</p><h3 id="2-数据分布"><a href="#2-数据分布" class="headerlink" title="2. 数据分布"></a>2. 数据分布</h3><p>模型看过什么、没看过什么，会深刻影响它对现实世界的理解方式。分布偏差往往比单条错误更难处理。</p><h3 id="3-数据来源与合法性"><a href="#3-数据来源与合法性" class="headerlink" title="3. 数据来源与合法性"></a>3. 数据来源与合法性</h3><p>随着模型应用变广，训练数据的版权、隐私、授权和可追溯性问题也会越来越难回避。</p><h3 id="4-数据更新机制"><a href="#4-数据更新机制" class="headerlink" title="4. 数据更新机制"></a>4. 数据更新机制</h3><p>静态数据集很难长期支撑动态世界。知识变化、语言变化、任务变化都要求数据治理具备持续性。</p><h2 id="为什么这会影响模型上限"><a href="#为什么这会影响模型上限" class="headerlink" title="为什么这会影响模型上限"></a>为什么这会影响模型上限</h2><h3 id="因为模型最终是在压缩数据世界"><a href="#因为模型最终是在压缩数据世界" class="headerlink" title="因为模型最终是在压缩数据世界"></a>因为模型最终是在压缩数据世界</h3><p>再强的训练算法，也只能在给定数据分布中学习。如果数据世界本身结构混乱、覆盖失衡，那么模型再大也很难真正补齐。</p><h3 id="因为很多“能力问题”其实是数据问题"><a href="#因为很多“能力问题”其实是数据问题" class="headerlink" title="因为很多“能力问题”其实是数据问题"></a>因为很多“能力问题”其实是数据问题</h3><p>有时模型回答差，不一定是推理不行，而是训练时根本没学到足够可靠的对应模式。</p><h3 id="因为未来竞争会转向数据系统能力"><a href="#因为未来竞争会转向数据系统能力" class="headerlink" title="因为未来竞争会转向数据系统能力"></a>因为未来竞争会转向数据系统能力</h3><p>当基础模型能力逐渐靠近时，谁能更好地构建、清洗、追踪和更新数据，谁就更容易做出更稳的系统。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我觉得后面的 AI 竞争，不会只是模型架构竞赛，也会是数据治理能力竞赛。模型的上限并不只由参数决定，同样也由它被什么数据塑造、又如何被持续修正所决定。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会迫使公司重新定义交付物。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么这个变化会出现"><a href="#为什么这个变化会出现" class="headerlink" title="为什么这个变化会出现"></a>为什么这个变化会出现</h2><p>设计协作助手之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="先改变用户体验什么"><a href="#先改变用户体验什么" class="headerlink" title="先改变用户体验什么"></a>先改变用户体验什么</h2><p>对用户来说，最直观的变化不是模型名字，而是整个流程是不是更顺、更稳、更省心。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。设计协作助手一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>它最先落地的地方，通常不是最宏大的场景，而是目标明确、反馈清晰、结果可验证的流程。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="团队现在应该补哪块能力"><a href="#团队现在应该补哪块能力" class="headerlink" title="团队现在应该补哪块能力"></a>团队现在应该补哪块能力</h2><p>与其等市场完全成熟，不如先把数据接口、评估指标和回滚机制准备好。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>设计协作助手会迫使公司重新定义交付物，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2021/03/06/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-16-%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E4%BC%9A%E6%88%90%E4%B8%BA%E6%A8%A1%E5%9E%8B%E4%B8%8A%E9%99%90%E7%9A%84%E4%B8%80%E9%83%A8%E5%88%86/</id>
-    <link href="https://seniorzhai.github.io/2021/03/06/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-16-%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E4%BC%9A%E6%88%90%E4%B8%BA%E6%A8%A1%E5%9E%8B%E4%B8%8A%E9%99%90%E7%9A%84%E4%B8%80%E9%83%A8%E5%88%86/"/>
-    <published>2021-03-06T12:30:00.000Z</published>
+    <id>https://seniorzhai.github.io/2025/12/27/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-267-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E8%BF%AB%E4%BD%BF%E5%85%AC%E5%8F%B8%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E4%BA%A4%E4%BB%98%E7%89%A9/</id>
+    <link href="https://seniorzhai.github.io/2025/12/27/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-267-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E8%BF%AB%E4%BD%BF%E5%85%AC%E5%8F%B8%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E4%BA%A4%E4%BB%98%E7%89%A9/"/>
+    <published>2025-12-27T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<p>如果只看论文标题，很容易以为模型进步主要来自更大的网络、更强的算力和更巧妙的训练技巧。但最近越往后看，越能感觉到另一个变量的重要性正在抬头：数据治理。模型能学到什么、会偏向什么、在哪些场景里失真，越来越不是单纯的结构问题，而是数据问题。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会迫使公司重新定义交付物。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
     </summary>
-    <title>AI研究周报(十六)：数据治理会成为模型上限的一部分</title>
-    <updated>2026-04-15T06:32:12.875Z</updated>
+    <title>AI研究周报(二百六十七)：设计协作助手会迫使公司重新定义交付物</title>
+    <updated>2026-04-15T10:46:51.974Z</updated>
   </entry>
   <entry>
     <author>
@@ -394,20 +372,20 @@
     </author>
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Evaluation" scheme="https://seniorzhai.github.io/tags/Evaluation/"/>
-    <category term="Benchmark" scheme="https://seniorzhai.github.io/tags/Benchmark/"/>
-    <category term="User Experience" scheme="https://seniorzhai.github.io/tags/User-Experience/"/>
+    <category term="Inference" scheme="https://seniorzhai.github.io/tags/Inference/"/>
+    <category term="Cost" scheme="https://seniorzhai.github.io/tags/Cost/"/>
+    <category term="Operations" scheme="https://seniorzhai.github.io/tags/Operations/"/>
     <content>
-      <![CDATA[<p>最近越看大模型和生成系统的发展，越觉得一个老问题正在变得更棘手：我们到底该怎么评价一个模型好不好？过去 benchmark 分数很好用，因为任务边界清晰、目标明确。但模型越来越开放、越来越通用之后，只看分数显然不够了。</p><span id="more"></span><h2 id="为什么传统评测开始吃力"><a href="#为什么传统评测开始吃力" class="headerlink" title="为什么传统评测开始吃力"></a>为什么传统评测开始吃力</h2><p>在分类、检索、翻译等明确任务里，分数非常有效，因为正确答案相对清楚，评价标准也容易统一。但开放式生成不同：</p><ul><li>一个问题可能有多个合理答案</li><li>好答案不只是“对”，还要“有帮助”</li><li>用户在意的往往是整体体验，而不是某个单点指标</li></ul><p>这让模型评测越来越像在衡量“交互质量”，而不只是“任务命中率”。</p><h2 id="分数依然重要，但不再够用"><a href="#分数依然重要，但不再够用" class="headerlink" title="分数依然重要，但不再够用"></a>分数依然重要，但不再够用</h2><p>我并不觉得 benchmark 会失效。它仍然是理解模型能力边界的重要工具。但问题是，它更适合测能力上限，不一定适合测真实使用质量。</p><p>举个例子：一个模型在标准任务上分数更高，却可能在真实对话里更啰嗦、更不稳定、更难控制。对用户来说，这些感受非常真实，但很难在单一指标里被完整表达。</p><h2 id="评测正在发生的转向"><a href="#评测正在发生的转向" class="headerlink" title="评测正在发生的转向"></a>评测正在发生的转向</h2><h3 id="1-从离线指标转向交互观察"><a href="#1-从离线指标转向交互观察" class="headerlink" title="1. 从离线指标转向交互观察"></a>1. 从离线指标转向交互观察</h3><p>越来越多场景需要看模型连续多轮表现，而不只是一次输入输出。</p><h3 id="2-从标准答案转向偏好比较"><a href="#2-从标准答案转向偏好比较" class="headerlink" title="2. 从标准答案转向偏好比较"></a>2. 从标准答案转向偏好比较</h3><p>有些任务里，与其问“哪一个对”，不如问“用户更喜欢哪一个”。这会让人类偏好评估变得更重要。</p><h3 id="3-从通用能力转向场景适配"><a href="#3-从通用能力转向场景适配" class="headerlink" title="3. 从通用能力转向场景适配"></a>3. 从通用能力转向场景适配</h3><p>未来的评测不会只有一个总分，而会更关注：在某种具体工作流里，这个模型到底有没有帮助。</p><h2 id="评测难题在哪里"><a href="#评测难题在哪里" class="headerlink" title="评测难题在哪里"></a>评测难题在哪里</h2><h3 id="主观性更强"><a href="#主观性更强" class="headerlink" title="主观性更强"></a>主观性更强</h3><p>只要引入用户体验，就难免带来主观差异。</p><h3 id="成本更高"><a href="#成本更高" class="headerlink" title="成本更高"></a>成本更高</h3><p>人工评测、对比实验、多轮交互测试都比自动打分更贵。</p><h3 id="容易被“刷分”"><a href="#容易被“刷分”" class="headerlink" title="容易被“刷分”"></a>容易被“刷分”</h3><p>一旦某类评测固定下来，系统就可能被专门优化去迎合指标，而不是真正改善体验。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我越来越相信，未来模型评测会像产品评测，而不只是算法评测。分数当然还会留着，但真正决定系统价值的，可能是用户在真实使用中的感受：是否稳定、是否有帮助、是否值得信任。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会把传统流程重新拆开再组合。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么行业会走到这一步"><a href="#为什么行业会走到这一步" class="headerlink" title="为什么行业会走到这一步"></a>为什么行业会走到这一步</h2><p>设计协作助手之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="这个变量会如何影响商业化"><a href="#这个变量会如何影响商业化" class="headerlink" title="这个变量会如何影响商业化"></a>这个变量会如何影响商业化</h2><p>它带来的价值往往不是一次惊艳输出，而是把重复摩擦持续削平。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。设计协作助手一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>当系统开始接管更多步骤，评估标准就会从“能不能做”变成“能不能稳定做”。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="产品设计上需要提前准备什么"><a href="#产品设计上需要提前准备什么" class="headerlink" title="产品设计上需要提前准备什么"></a>产品设计上需要提前准备什么</h2><p>很多差异不会体现在演示里，而会体现在规模化使用后的稳定性和可管理性上。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>设计协作助手会把传统流程重新拆开再组合，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2021/02/27/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-15-%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E4%BB%8E%E5%88%86%E6%95%B0%E8%B5%B0%E5%90%91%E4%BD%93%E9%AA%8C/</id>
-    <link href="https://seniorzhai.github.io/2021/02/27/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-15-%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E4%BB%8E%E5%88%86%E6%95%B0%E8%B5%B0%E5%90%91%E4%BD%93%E9%AA%8C/"/>
-    <published>2021-02-27T12:30:00.000Z</published>
+    <id>https://seniorzhai.github.io/2025/12/20/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-266-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E6%8A%8A%E4%BC%A0%E7%BB%9F%E6%B5%81%E7%A8%8B%E9%87%8D%E6%96%B0%E6%8B%86%E5%BC%80%E5%86%8D%E7%BB%84%E5%90%88/</id>
+    <link href="https://seniorzhai.github.io/2025/12/20/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-266-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E6%8A%8A%E4%BC%A0%E7%BB%9F%E6%B5%81%E7%A8%8B%E9%87%8D%E6%96%B0%E6%8B%86%E5%BC%80%E5%86%8D%E7%BB%84%E5%90%88/"/>
+    <published>2025-12-20T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<p>最近越看大模型和生成系统的发展，越觉得一个老问题正在变得更棘手：我们到底该怎么评价一个模型好不好？过去 benchmark 分数很好用，因为任务边界清晰、目标明确。但模型越来越开放、越来越通用之后，只看分数显然不够了。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会把传统流程重新拆开再组合。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
     </summary>
-    <title>AI研究周报(十五)：模型评测从分数走向体验</title>
-    <updated>2026-04-15T06:32:12.864Z</updated>
+    <title>AI研究周报(二百六十六)：设计协作助手会把传统流程重新拆开再组合</title>
+    <updated>2026-04-15T10:46:51.974Z</updated>
   </entry>
   <entry>
     <author>
@@ -416,20 +394,20 @@
     </author>
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Language Model" scheme="https://seniorzhai.github.io/tags/Language-Model/"/>
-    <category term="Instruction Following" scheme="https://seniorzhai.github.io/tags/Instruction-Following/"/>
-    <category term="Human-Computer Interaction" scheme="https://seniorzhai.github.io/tags/Human-Computer-Interaction/"/>
+    <category term="Retrieval" scheme="https://seniorzhai.github.io/tags/Retrieval/"/>
+    <category term="Knowledge" scheme="https://seniorzhai.github.io/tags/Knowledge/"/>
+    <category term="Enterprise" scheme="https://seniorzhai.github.io/tags/Enterprise/"/>
     <content>
-      <![CDATA[<p>过去我们使用模型，常常像在调一个脾气古怪的系统：得知道任务格式、知道 prompt 怎么写、知道模型在哪些表达上更容易出结果。但最近越来越能感觉到，另一个方向正在出现——不是让人适应模型，而是让模型更自然地理解人的指令。</p><span id="more"></span><h2 id="为什么“指令跟随”重要"><a href="#为什么“指令跟随”重要" class="headerlink" title="为什么“指令跟随”重要"></a>为什么“指令跟随”重要</h2><p>模型能力越来越强之后，一个现实问题开始凸显：能力不等于可用性。一个模型就算会很多任务，如果每次都要专家精细设计输入，它依然很难真正普及。</p><p>指令跟随的意义，在于把复杂模型的能力，包装成更贴近自然交互的接口。用户只需要表达意图，不需要理解底层实现细节。</p><h2 id="这是接口层的变化"><a href="#这是接口层的变化" class="headerlink" title="这是接口层的变化"></a>这是接口层的变化</h2><p>我觉得这件事常常被低估。很多人会把它理解成“prompt 技巧更好了”，但其实它更像是交互范式变化：</p><ul><li>从任务特定接口转向自然语言接口</li><li>从固定输入格式转向意图表达</li><li>从专家使用转向更广泛用户使用</li></ul><p>这不是小优化，而是模型进入真实世界的重要门槛。</p><h2 id="为什么现在开始变得可行"><a href="#为什么现在开始变得可行" class="headerlink" title="为什么现在开始变得可行"></a>为什么现在开始变得可行</h2><h3 id="1-预训练模型的泛化能力够强了"><a href="#1-预训练模型的泛化能力够强了" class="headerlink" title="1. 预训练模型的泛化能力够强了"></a>1. 预训练模型的泛化能力够强了</h3><p>如果底座模型不够强，所谓指令跟随就只是模板匹配。但现在模型知识面和语言能力都在提高，它已经有机会把“指令”理解成任务描述，而不只是关键词。</p><h3 id="2-示例驱动效果明显"><a href="#2-示例驱动效果明显" class="headerlink" title="2. 示例驱动效果明显"></a>2. 示例驱动效果明显</h3><p>少样本提示已经说明，模型可以从少量演示里快速抓住任务形式。这为更系统化的指令学习提供了信号。</p><h3 id="3-用户需求在倒逼接口升级"><a href="#3-用户需求在倒逼接口升级" class="headerlink" title="3. 用户需求在倒逼接口升级"></a>3. 用户需求在倒逼接口升级</h3><p>模型一旦走出实验室，就不能只服务研究人员。更自然、更低门槛的交互方式会成为强需求。</p><h2 id="当前的问题"><a href="#当前的问题" class="headerlink" title="当前的问题"></a>当前的问题</h2><h3 id="跟随并不等于真正理解"><a href="#跟随并不等于真正理解" class="headerlink" title="跟随并不等于真正理解"></a>跟随并不等于真正理解</h3><p>模型有时只是学会了“看起来像在服从指令”，但并不稳定，换一种表述方式就可能退化。</p><h3 id="指令空间非常大"><a href="#指令空间非常大" class="headerlink" title="指令空间非常大"></a>指令空间非常大</h3><p>人的表达方式极其多样，要覆盖真实世界里的指令分布，并不容易。</p><h3 id="可控性和开放性需要平衡"><a href="#可控性和开放性需要平衡" class="headerlink" title="可控性和开放性需要平衡"></a>可控性和开放性需要平衡</h3><p>越开放的接口越好用，但也越容易暴露安全、偏见和误用问题。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我觉得未来模型竞争，不只是比谁更会做任务，也比谁能把能力包装成更自然的接口。指令跟随的真正价值，是让模型从“一个很强的系统”变成“一个更容易被人使用的系统”。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会让软件形态先发生变化。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么旧做法开始不够用了"><a href="#为什么旧做法开始不够用了" class="headerlink" title="为什么旧做法开始不够用了"></a>为什么旧做法开始不够用了</h2><p>设计协作助手之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="新系统会先在哪些环节体现优势"><a href="#新系统会先在哪些环节体现优势" class="headerlink" title="新系统会先在哪些环节体现优势"></a>新系统会先在哪些环节体现优势</h2><p>当这类能力变成默认配置，软件的竞争方式也会随之改变。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。设计协作助手一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>很多团队以为问题在模型，其实真正卡住的是接口、责任和组织配合。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="团队该怎么降低试错成本"><a href="#团队该怎么降低试错成本" class="headerlink" title="团队该怎么降低试错成本"></a>团队该怎么降低试错成本</h2><p>短期看这是功能升级，长期看更像一次组织方式和软件边界的重写。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>设计协作助手会让软件形态先发生变化，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2021/02/20/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-14-%E6%8C%87%E4%BB%A4%E8%B7%9F%E9%9A%8F%E6%AD%A3%E5%9C%A8%E6%88%90%E4%B8%BA%E6%96%B0%E6%8E%A5%E5%8F%A3/</id>
-    <link href="https://seniorzhai.github.io/2021/02/20/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-14-%E6%8C%87%E4%BB%A4%E8%B7%9F%E9%9A%8F%E6%AD%A3%E5%9C%A8%E6%88%90%E4%B8%BA%E6%96%B0%E6%8E%A5%E5%8F%A3/"/>
-    <published>2021-02-20T12:30:00.000Z</published>
+    <id>https://seniorzhai.github.io/2025/12/13/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-265-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E8%AE%A9%E8%BD%AF%E4%BB%B6%E5%BD%A2%E6%80%81%E5%85%88%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96/</id>
+    <link href="https://seniorzhai.github.io/2025/12/13/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-265-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E8%AE%A9%E8%BD%AF%E4%BB%B6%E5%BD%A2%E6%80%81%E5%85%88%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96/"/>
+    <published>2025-12-13T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<p>过去我们使用模型，常常像在调一个脾气古怪的系统：得知道任务格式、知道 prompt 怎么写、知道模型在哪些表达上更容易出结果。但最近越来越能感觉到，另一个方向正在出现——不是让人适应模型，而是让模型更自然地理解人的指令。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会让软件形态先发生变化。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
     </summary>
-    <title>AI研究周报(十四)：指令跟随正在成为新接口</title>
-    <updated>2026-04-15T06:32:12.896Z</updated>
+    <title>AI研究周报(二百六十五)：设计协作助手会让软件形态先发生变化</title>
+    <updated>2026-04-15T10:46:51.974Z</updated>
   </entry>
   <entry>
     <author>
@@ -438,19 +416,41 @@
     </author>
     <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
     <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Multimodal" scheme="https://seniorzhai.github.io/tags/Multimodal/"/>
-    <category term="Vision-Language" scheme="https://seniorzhai.github.io/tags/Vision-Language/"/>
-    <category term="Foundation Model" scheme="https://seniorzhai.github.io/tags/Foundation-Model/"/>
+    <category term="UX" scheme="https://seniorzhai.github.io/tags/UX/"/>
+    <category term="Interaction" scheme="https://seniorzhai.github.io/tags/Interaction/"/>
+    <category term="Software" scheme="https://seniorzhai.github.io/tags/Software/"/>
     <content>
-      <![CDATA[<p>回头看这一阶段的 AI 进展，会发现一个很明显的变化：图像、文本、语音这些模态，已经不再只是各做各的任务了。越来越多工作开始尝试把不同模态放进同一套学习框架里。这件事表面上像是“能力扩展”，但我觉得本质上是在搭建未来通用模型的基础设施。</p><span id="more"></span><h2 id="为什么多模态会变成必经之路"><a href="#为什么多模态会变成必经之路" class="headerlink" title="为什么多模态会变成必经之路"></a>为什么多模态会变成必经之路</h2><p>真实世界本来就不是单模态的。人理解世界时，会同时利用语言、视觉、声音、动作线索。相比之下，单模态模型虽然在某些 benchmark 上已经很强，但它们理解世界的方式仍然是割裂的。</p><p>如果希望模型更像一个通用接口，它就很难只会读文本，或者只会看图片。多模态不是锦上添花，而更像走向通用智能过程中的结构性要求。</p><h2 id="这一阶段最重要的变化"><a href="#这一阶段最重要的变化" class="headerlink" title="这一阶段最重要的变化"></a>这一阶段最重要的变化</h2><h3 id="1-统一表示的观念变强了"><a href="#1-统一表示的观念变强了" class="headerlink" title="1. 统一表示的观念变强了"></a>1. 统一表示的观念变强了</h3><p>以前不同模态各有各的特征工程和网络结构。现在越来越多研究开始追求：能不能把文本和图像映射到同一个语义空间里？</p><p>一旦统一表示可行，很多跨模态任务就不再需要为每个任务单独造一套系统。</p><h3 id="2-预训练思想在跨模态上复制成功"><a href="#2-预训练思想在跨模态上复制成功" class="headerlink" title="2. 预训练思想在跨模态上复制成功"></a>2. 预训练思想在跨模态上复制成功</h3><p>语言模型和视觉模型都已经证明了大规模预训练的价值。现在这个范式开始向多模态迁移：先通过大规模弱标注或自然配对数据学表示，再在下游任务上适配。</p><h3 id="3-模型能力边界正在重新定义"><a href="#3-模型能力边界正在重新定义" class="headerlink" title="3. 模型能力边界正在重新定义"></a>3. 模型能力边界正在重新定义</h3><p>过去我们问“这个模型会分类吗”“会翻译吗”，以后更可能问“它能不能在模态之间迁移理解”。这是更高一层的问题。</p><h2 id="为什么说它是基础设施"><a href="#为什么说它是基础设施" class="headerlink" title="为什么说它是基础设施"></a>为什么说它是基础设施</h2><p>我觉得多模态最关键的地方，不在某个单点 demo 多惊艳，而在于它会改变后面很多系统设计：</p><ul><li>搜索不再局限于文本关键词</li><li>内容生成不再局限于单一介质</li><li>交互方式会更自然</li><li>训练数据组织方式也会被重写</li></ul><p>一旦底层表示和训练范式稳定下来，后续应用会非常多。</p><h2 id="当前的难点"><a href="#当前的难点" class="headerlink" title="当前的难点"></a>当前的难点</h2><h3 id="数据质量不均匀"><a href="#数据质量不均匀" class="headerlink" title="数据质量不均匀"></a>数据质量不均匀</h3><p>多模态数据看起来海量，但真正高质量、语义对齐好的数据并没有想象中那么容易拿到。</p><h3 id="对齐比分类更难"><a href="#对齐比分类更难" class="headerlink" title="对齐比分类更难"></a>对齐比分类更难</h3><p>单模态里只要标签对就行，但跨模态里不仅要“是什么”，还要“是不是对应得上”。这个难度更高。</p><h3 id="评估体系还在早期"><a href="#评估体系还在早期" class="headerlink" title="评估体系还在早期"></a>评估体系还在早期</h3><p>很多多模态系统看起来很聪明，但到底是在理解，还是在利用数据偏差，目前仍然很难完全说清。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>多模态的意义，不只是把几种模型拼起来，而是在重新定义模型与世界之间的信息接口。我越来越觉得，谁能把多模态基础设施做扎实，谁就更可能站到下一阶段通用模型浪潮的前面。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会比更强模型更早创造差异。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="这个趋势背后的压力来自哪里"><a href="#这个趋势背后的压力来自哪里" class="headerlink" title="这个趋势背后的压力来自哪里"></a>这个趋势背后的压力来自哪里</h2><p>设计协作助手之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="它会如何重排产品结构"><a href="#它会如何重排产品结构" class="headerlink" title="它会如何重排产品结构"></a>它会如何重排产品结构</h2><p>真正重要的不是多一个按钮，而是产品能不能把分散动作串成连续结果。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。设计协作助手一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>如果只强调生成，不处理交接、追踪和回滚，这类能力很快就会暴露上限。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="哪些动作值得尽早布局"><a href="#哪些动作值得尽早布局" class="headerlink" title="哪些动作值得尽早布局"></a>哪些动作值得尽早布局</h2><p>谁先把这件事做成日常基础设施，谁就更容易把零散试验变成复利。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>设计协作助手会比更强模型更早创造差异，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2021/02/13/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-13-%E5%A4%9A%E6%A8%A1%E6%80%81%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%BC%80%E5%A7%8B%E6%88%90%E5%BD%A2/</id>
-    <link href="https://seniorzhai.github.io/2021/02/13/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-13-%E5%A4%9A%E6%A8%A1%E6%80%81%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%BC%80%E5%A7%8B%E6%88%90%E5%BD%A2/"/>
-    <published>2021-02-13T12:30:00.000Z</published>
+    <id>https://seniorzhai.github.io/2025/12/06/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-264-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E6%AF%94%E6%9B%B4%E5%BC%BA%E6%A8%A1%E5%9E%8B%E6%9B%B4%E6%97%A9%E5%88%9B%E9%80%A0%E5%B7%AE%E5%BC%82/</id>
+    <link href="https://seniorzhai.github.io/2025/12/06/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-264-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E6%AF%94%E6%9B%B4%E5%BC%BA%E6%A8%A1%E5%9E%8B%E6%9B%B4%E6%97%A9%E5%88%9B%E9%80%A0%E5%B7%AE%E5%BC%82/"/>
+    <published>2025-12-06T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<p>回头看这一阶段的 AI 进展，会发现一个很明显的变化：图像、文本、语音这些模态，已经不再只是各做各的任务了。越来越多工作开始尝试把不同模态放进同一套学习框架里。这件事表面上像是“能力扩展”，但我觉得本质上是在搭建未来通用模型的基础设施。</p>]]>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会比更强模型更早创造差异。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
     </summary>
-    <title>AI研究周报(十三)：多模态基础设施开始成形</title>
-    <updated>2026-04-15T06:32:12.881Z</updated>
+    <title>AI研究周报(二百六十四)：设计协作助手会比更强模型更早创造差异</title>
+    <updated>2026-04-15T10:46:51.974Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Infrastructure" scheme="https://seniorzhai.github.io/tags/Infrastructure/"/>
+    <category term="Platform" scheme="https://seniorzhai.github.io/tags/Platform/"/>
+    <category term="Tooling" scheme="https://seniorzhai.github.io/tags/Tooling/"/>
+    <content>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会倒逼团队重写系统边界。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p><span id="more"></span><h2 id="为什么这层能力越来越关键"><a href="#为什么这层能力越来越关键" class="headerlink" title="为什么这层能力越来越关键"></a>为什么这层能力越来越关键</h2><p>设计协作助手之所以会被越来越多团队认真对待，不只是因为它听起来新，而是因为旧系统已经很难消化新的复杂度。模型能力一旦普及，真正稀缺的就不再是“能不能调用”，而是“能不能把调用变成稳定结果”。</p><h2 id="它最先改写哪些工作流"><a href="#它最先改写哪些工作流" class="headerlink" title="它最先改写哪些工作流"></a>它最先改写哪些工作流</h2><p>一旦这层能力成熟，很多过去需要人手补位的环节，会开始被系统化吸收。</p><h3 id="1-入口会被重写"><a href="#1-入口会被重写" class="headerlink" title="1. 入口会被重写"></a>1. 入口会被重写</h3><p>很多过去分散在多个页面、多个角色之间的动作，会被重新收敛到更自然的交互入口里。设计协作助手一旦成熟，用户对软件的期待也会从“给我工具”转向“直接帮我推进结果”。</p><h3 id="2-中间层会变得更重要"><a href="#2-中间层会变得更重要" class="headerlink" title="2. 中间层会变得更重要"></a>2. 中间层会变得更重要</h3><p>在真实业务里，只有能接进现有权限、数据和审批结构的能力，才算真正可用。</p><h3 id="3-管理方式会跟着变化"><a href="#3-管理方式会跟着变化" class="headerlink" title="3. 管理方式会跟着变化"></a>3. 管理方式会跟着变化</h3><p>一旦系统承担更多决策与生成动作，组织就必须更重视权限、审计、监控和纠错。真正可持续的产品，不会只追求更炫的输出，而会补齐背后的治理结构。</p><h2 id="什么样的组织会先受益"><a href="#什么样的组织会先受益" class="headerlink" title="什么样的组织会先受益"></a>什么样的组织会先受益</h2><p>真正值得提前建设的，不只是接入能力，而是把能力变成可运营资产的那层结构。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>设计协作助手会倒逼团队重写系统边界，本质上不是单点功能升级，而是软件如何组织能力的一次变化。当大家都能接近同样的模型时，谁更会把这层能力嵌进工作流、嵌进系统边界、嵌进管理机制里，谁就更容易形成真正的长期优势。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2025/11/29/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-263-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E5%80%92%E9%80%BC%E5%9B%A2%E9%98%9F%E9%87%8D%E5%86%99%E7%B3%BB%E7%BB%9F%E8%BE%B9%E7%95%8C/</id>
+    <link href="https://seniorzhai.github.io/2025/11/29/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-263-%E8%AE%BE%E8%AE%A1%E5%8D%8F%E4%BD%9C%E5%8A%A9%E6%89%8B%E4%BC%9A%E5%80%92%E9%80%BC%E5%9B%A2%E9%98%9F%E9%87%8D%E5%86%99%E7%B3%BB%E7%BB%9F%E8%BE%B9%E7%95%8C/"/>
+    <published>2025-11-29T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>这段时间我越来越觉得，设计协作助手会倒逼团队重写系统边界。很多讨论还停留在模型强不强，但真正决定产品差异的，往往是这层能力会不会被稳定地组织进系统里。只要它开始进入真实场景，软件边界、团队分工和商业化方式都会被一起带动。</p>]]>
+    </summary>
+    <title>AI研究周报(二百六十三)：设计协作助手会倒逼团队重写系统边界</title>
+    <updated>2026-04-15T10:46:51.974Z</updated>
   </entry>
 </feed>
