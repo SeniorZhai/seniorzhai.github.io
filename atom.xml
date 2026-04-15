@@ -12,84 +12,95 @@
   <rights>All rights reserved 2026, Dear宅学长</rights>
   <subtitle>苟利国家生死以，起因福祸趋避之</subtitle>
   <title>SeniorZhai's blog</title>
-  <updated>2026-04-15T05:02:34.740Z</updated>
+  <updated>2026-04-15T05:08:41.385Z</updated>
   <entry>
     <author>
       <name>Dear宅学长</name>
       <email>developer.zhaitao@gmail.com</email>
     </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Self-Supervised" scheme="https://seniorzhai.github.io/tags/Self-Supervised/"/>
+    <category term="SimCLR" scheme="https://seniorzhai.github.io/tags/SimCLR/"/>
+    <category term="MoCo" scheme="https://seniorzhai.github.io/tags/MoCo/"/>
+    <category term="BYOL" scheme="https://seniorzhai.github.io/tags/BYOL/"/>
     <content>
-      <![CDATA[<pre><code> 1|title: AI研究周报(一)：大模型缩放与 GPT-3 2|date: 2020-11-21 20:30:00 3|categories: [AI] 4|tags: [AI, GPT-3, Transformer, Scaling] 5|--- 6|这段时间重新系统看了一轮大模型研究，最强烈的感受是：模型能力的提升，很多时候不是来自某一个花哨技巧，而是来自规模、数据和训练稳定性的共同作用。 7|&lt;!--more--&gt; 8| 9|## GPT-3 带来的直接冲击10|11|GPT-3 最让人震撼的并不是“参数更多”这句话本身，而是它把 **预训练语言模型的上限** 往前推了一大截。12|13|过去大家更习惯于这样的范式：14|15|1. 预训练一个通用模型16|2. 在下游任务上做 finetune17|3. 针对不同任务维护不同模型18|19|而 GPT-3 展现的是另一条路线：**通过足够大的模型规模，让模型在 prompt 条件下直接完成任务**。也就是说，模型在很多场景下不再必须依赖专门的任务头和复杂的微调流程。20|21|## 几个值得记住的结论22|23|### 1. 模型规模本身就是能力来源24|25|从小模型到大模型，收益并不是线性增加的体验，而像是不断跨过某些“能力阈值”。参数上来以后，模型开始表现出：26|27|- 更强的上下文学习能力28|- 更好的语言流畅度29|- 更自然的任务迁移能力30|- 更强的少样本甚至零样本效果31|32|这意味着工程上不能只盯着网络结构微调，**训练规模也是核心变量**。33|34|### 2. Prompt 开始变成新的接口层35|36|以前模型接口更像 `input -&gt; classifier`，现在越来越像：37|38|- 给模型任务说明39|- 给几个样例40|- 让它直接续写或完成41|42|这让“怎么写 prompt”从一个临时技巧，逐步变成一种新的系统设计能力。模型能力越强，prompt 的表达空间就越大。43|44|### 3. Few-shot 让通用模型更像平台45|46|few-shot 的价值在于：47|48|- 降低下游任务接入门槛49|- 减少任务级训练成本50|- 统一模型服务入口51|52|对于工程团队来说，这种能力意味着未来的 AI 系统可能会从“一个任务一个模型”，逐渐转向“一个大模型服务多个任务”。53|54|## 还没有被解决的问题55|56|当然，GPT-3 并不是没有问题。57|58|### 训练成本极高59|60|大模型的训练资源门槛非常高，普通团队很难完整复现。61|62|### 可控性不足63|64|生成效果虽然惊艳，但稳定性、事实正确性和风格一致性依旧存在问题。65|66|### 推理成本昂贵67|68|即使训练出来，线上部署和大规模调用也不是小问题。69|70|## 对后续研究的启发71|72|我觉得 GPT-3 留下的真正问题不是“还能不能更大”，而是：73|74|- 模型规模和数据规模之间如何更高效地匹配75|- 如何把大模型变成稳定可控的工程系统76|- 是否能通过更好的检索、路由、蒸馏把能力分发到更低成本的模型上77|78|这也是为什么后面越来越多工作会沿着下面几个方向走：79|80|- scaling law81|- 模型压缩与蒸馏82|- prompt / instruction 学习83|- 检索增强84|- 工具调用85|86|## 小结87|88|GPT-3 让我最深的感受是：**语言模型开始从“一个 NLP 模块”，变成“通用智能接口”的雏形**。89|90|后面如果继续沿着这个方向演化，AI 系统的重点就不再只是网络结构，而会转向：91|92|- 数据93|- 规模94|- 推理成本95|- 系统编排96|- 人机交互方式97|98|这条路线，可能会定义未来很多年的 AI 产品形态。99|</code></pre><h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>]]>
+      <![CDATA[<p>如果说监督学习依赖昂贵标注，那么自监督学习最吸引人的地方，就是它试图把“数据本身”变成监督信号。最近重新回顾 SimCLR、MoCo、BYOL 这些工作，会发现表示学习的主线已经越来越清晰了。</p><span id="more"></span><h2 id="为什么自监督学习重要"><a href="#为什么自监督学习重要" class="headerlink" title="为什么自监督学习重要"></a>为什么自监督学习重要</h2><p>很多真实业务都面临同一个问题：</p><ul><li>原始数据很多</li><li>高质量标注很少</li><li>标注成本高且迭代慢</li></ul><p>这时候如果模型只能依赖全监督训练，数据利用率其实非常低。自监督学习的价值就在于：<strong>先学一个尽量通用的表示，再把少量标注数据用在真正关键的地方。</strong></p><h2 id="几条代表性的路线"><a href="#几条代表性的路线" class="headerlink" title="几条代表性的路线"></a>几条代表性的路线</h2><h3 id="SimCLR：把对比学习做得足够干净"><a href="#SimCLR：把对比学习做得足够干净" class="headerlink" title="SimCLR：把对比学习做得足够干净"></a>SimCLR：把对比学习做得足够干净</h3><p>SimCLR 的思路很直接：</p><ul><li>对同一张图做不同增强</li><li>把它们视作正样本对</li><li>不同图片之间形成负样本</li><li>通过对比损失拉近正样本、拉远负样本</li></ul><p>它的贡献之一是把一套看起来复杂的表示学习流程，整理成了比较清晰的最小范式。</p><h3 id="MoCo：用队列把负样本规模做起来"><a href="#MoCo：用队列把负样本规模做起来" class="headerlink" title="MoCo：用队列把负样本规模做起来"></a>MoCo：用队列把负样本规模做起来</h3><p>MoCo 的关键点是动量编码器和动态字典。它解决的是对比学习里一个很现实的问题：<strong>如何稳定地拿到大量高质量负样本</strong>。</p><p>这让训练不必极端依赖超大 batch size，工程上更容易落地。</p><h3 id="BYOL：不靠负样本也能学"><a href="#BYOL：不靠负样本也能学" class="headerlink" title="BYOL：不靠负样本也能学"></a>BYOL：不靠负样本也能学</h3><p>BYOL 很有意思，因为它让大家开始重新思考：对比学习是否真的一定依赖负样本？</p><p>它通过 online &#x2F; target network 的结构和动量更新机制，在没有显式负样本的情况下仍然学到了有效表示。</p><p>这说明表示学习真正关键的可能不只是“拉开谁和谁的距离”，还包括：</p><ul><li>结构约束</li><li>视角一致性</li><li>预测目标设计</li></ul><h2 id="这些工作的共同方向"><a href="#这些工作的共同方向" class="headerlink" title="这些工作的共同方向"></a>这些工作的共同方向</h2><p>虽然实现细节不同，但这几类方法都在说明一件事：</p><h3 id="1-数据增强本身就是任务定义"><a href="#1-数据增强本身就是任务定义" class="headerlink" title="1. 数据增强本身就是任务定义"></a>1. 数据增强本身就是任务定义</h3><p>自监督里，增强策略不只是数据处理，而是在定义“什么是语义不变性”。</p><h3 id="2-表示质量比下游头部更重要"><a href="#2-表示质量比下游头部更重要" class="headerlink" title="2. 表示质量比下游头部更重要"></a>2. 表示质量比下游头部更重要</h3><p>如果 backbone 学到的特征足够通用，下游只用很简单的线性分类器也能拿到不错结果。</p><h3 id="3-预训练正在从-NLP-扩散到更多模态"><a href="#3-预训练正在从-NLP-扩散到更多模态" class="headerlink" title="3. 预训练正在从 NLP 扩散到更多模态"></a>3. 预训练正在从 NLP 扩散到更多模态</h3><p>语言有语言模型，视觉也正在形成自己的通用预训练路线。未来音频、视频、多模态大概率也会继续沿着这个方向发展。</p><h2 id="工程上的现实意义"><a href="#工程上的现实意义" class="headerlink" title="工程上的现实意义"></a>工程上的现实意义</h2><p>对于业务团队来说，自监督学习并不只是学术热点，它直接影响：</p><ul><li>冷启动阶段的效果</li><li>小样本任务的性能上限</li><li>标注成本投入策略</li><li>模型迁移复用能力</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我越来越觉得，自监督学习是 AI 里非常底层的一条主线。它的目标不是替代所有监督学习，而是让模型先把世界的结构学会一部分，再用更少的人类标注去完成具体任务。</p><p>从长期看，这种路线和大模型预训练其实是同一个方向：<strong>先学通用表示，再做任务适配。</strong></p><h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2026/04/15/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-01-%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%BC%A9%E6%94%BE%E4%B8%8EGPT-3/</id>
-    <link href="https://seniorzhai.github.io/2026/04/15/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-01-%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%BC%A9%E6%94%BE%E4%B8%8EGPT-3/"/>
-    <published>2026-04-15T04:58:10.069Z</published>
+    <id>https://seniorzhai.github.io/2020/12/12/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-04-%E8%87%AA%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E6%96%B0%E8%B6%8B%E5%8A%BF/</id>
+    <link href="https://seniorzhai.github.io/2020/12/12/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-04-%E8%87%AA%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E6%96%B0%E8%B6%8B%E5%8A%BF/"/>
+    <published>2020-12-12T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<pre><code> 1|title: AI研究周报(一)：大模型缩放与 GPT-3
- 2|date: 2020-11-21 20:30:00
- 3|categories: [AI]
- 4|tags: [AI, GPT-3, Transformer, Scaling]
- 5|-]]>
+      <![CDATA[<p>如果说监督学习依赖昂贵标注，那么自监督学习最吸引人的地方，就是它试图把“数据本身”变成监督信号。最近重新回顾 SimCLR、MoCo、BYOL 这些工作，会发现表示学习的主线已经越来越清晰了。</p>]]>
     </summary>
-    <updated>2026-04-15T05:02:34.740Z</updated>
+    <title>AI研究周报(四)：自监督学习的新趋势</title>
+    <updated>2026-04-15T05:08:41.385Z</updated>
   </entry>
   <entry>
     <author>
       <name>Dear宅学长</name>
       <email>developer.zhaitao@gmail.com</email>
     </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Transformer" scheme="https://seniorzhai.github.io/tags/Transformer/"/>
+    <category term="DETR" scheme="https://seniorzhai.github.io/tags/DETR/"/>
+    <category term="Detection" scheme="https://seniorzhai.github.io/tags/Detection/"/>
     <content>
-      <![CDATA[<pre><code> 1|title: AI研究周报(二)：Vision Transformer 的意义 2|date: 2020-11-28 20:30:00 3|categories: [AI] 4|tags: [AI, ViT, Transformer, Vision] 5|--- 6|Transformer 在 NLP 里已经证明了自己，但把它直接搬到视觉领域，最开始其实并不让人完全放心。图像毕竟和文本不一样，卷积网络长期以来在视觉任务里几乎是默认答案。 7|&lt;!--more--&gt; 8| 9|## ViT 的核心想法10|11|Vision Transformer 做了一件非常直接的事情：12|13|1. 把一张图切成固定大小的 patch14|2. 把每个 patch 当成一个 token15|3. 加上位置编码16|4. 送进标准 Transformer Encoder17|18|这个做法的冲击在于，它说明了 **卷积并不一定是视觉任务不可替代的归纳偏置**。19|20|## 为什么这个思路重要21|22|### 1. 视觉与语言的建模方式正在统一23|24|如果文本可以被表示成 token 序列，图像也可以被表示成 patch 序列，那么很多过去分裂的建模方式就开始收敛：25|26|- NLP 用 Transformer27|- Vision 也能用 Transformer28|- 多模态就有了更自然的统一接口29|30|这会让未来图文、视频、音频等多模态模型更容易共享同一套主干结构。31|32|### 2. 全局建模能力更自然33|34|CNN 在处理局部模式上很强，但要建模长距离依赖，往往需要不断堆层或者借助额外模块。35|36|Transformer 的 self-attention 则天然具备全局交互能力，任何 patch 都可以直接和其他 patch 建立联系。37|38|这对于下面这些任务都很重要：39|40|- 场景理解41|- 关系建模42|- 复杂目标交互43|- 跨区域语义聚合44|45|### 3. 预训练的重要性更高了46|47|ViT 也提醒了一件事：**当我们拿掉卷积的强归纳偏置以后，模型会更加依赖大规模数据预训练**。48|49|也就是说，模型更通用了，但也更“吃数据”。50|51|## 需要看到的现实问题52|53|### 数据需求高54|55|ViT 在大数据集上效果很好，但在数据量不足时未必比 CNN 更稳。56|57|### 计算成本高58|59|attention 的代价会随着 token 数量增长得很快，高分辨率输入时尤其明显。60|61|### 工程生态还不成熟62|63|卷积网络在部署、蒸馏、移动端优化上已经很成熟，而视觉 Transformer 相关工具链还处在早期。64|65|## 我更关心的两个方向66|67|### 更高效的视觉 Transformer68|69|未来一定会有人继续做：70|71|- 分层结构72|- 稀疏注意力73|- 局部窗口注意力74|- 更低成本的 patch 表示75|76|目标很明确：把 Transformer 的表达能力和 CNN 的工程效率结合起来。77|78|### 视觉与语言的统一预训练79|80|一旦视觉端也全面 token 化，多模态预训练就会更加顺滑。图像、文本甚至视频都可以被表示成统一的序列建模问题。81|82|## 小结83|84|ViT 的意义不只是把分类精度再抬高一点，而是让大家开始认真思考：85|86|- 视觉是不是也能走“预训练大模型”路线87|- 多模态模型是不是应该共享统一主干88|- 归纳偏置和通用性之间，最佳平衡点在哪里89|90|从长期看，这篇工作更像是一块路标，它告诉我们：**Transformer 不是 NLP 的专属结构，它可能是一种更普适的表示学习框架。**91|</code></pre><h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>]]>
+      <![CDATA[<p>目标检测这个方向长期都在和各种手工设计纠缠：anchor、NMS、正负样本分配、候选框筛选，每一步都有大量经验参数。DETR 的出现，第一次让我觉得这个方向有机会被重新整理。</p><span id="more"></span><h2 id="DETR-在做什么"><a href="#DETR-在做什么" class="headerlink" title="DETR 在做什么"></a>DETR 在做什么</h2><p>DETR 可以理解为：</p><ul><li>用 CNN 提取图像特征</li><li>用 Transformer 编码全局信息</li><li>通过固定数量的 object queries 直接预测目标集合</li><li>使用 bipartite matching 进行端到端训练</li></ul><p>这里最关键的一点是：<strong>把检测问题重新表述成集合预测问题</strong>。</p><h2 id="传统检测器为什么复杂"><a href="#传统检测器为什么复杂" class="headerlink" title="传统检测器为什么复杂"></a>传统检测器为什么复杂</h2><p>传统方案里往往包含很多“必要但不优雅”的步骤：</p><ul><li>预设大量 anchor</li><li>调很多 IoU 阈值</li><li>做 NMS 去重</li><li>根据不同尺度设计特征融合结构</li></ul><p>这些设计让模型能工作，但也增加了：</p><ul><li>实现复杂度</li><li>调参成本</li><li>系统不可解释性</li></ul><h2 id="DETR-的亮点"><a href="#DETR-的亮点" class="headerlink" title="DETR 的亮点"></a>DETR 的亮点</h2><h3 id="1-目标检测第一次变得更像序列建模问题"><a href="#1-目标检测第一次变得更像序列建模问题" class="headerlink" title="1. 目标检测第一次变得更像序列建模问题"></a>1. 目标检测第一次变得更像序列建模问题</h3><p>DETR 把图像特征和 query 结合起来，直接输出一组结果，每个 query 对应一个潜在目标。这和以前“密集分类 + 回归”的思路差别很大。</p><h3 id="2-去掉了-NMS"><a href="#2-去掉了-NMS" class="headerlink" title="2. 去掉了 NMS"></a>2. 去掉了 NMS</h3><p>NMS 在工程里很常见，但它本质上是后处理。DETR 通过一对一匹配约束，使模型学会只输出一组不重复的结果，直接把这一步内化进训练目标。</p><h3 id="3-全局关系建模更充分"><a href="#3-全局关系建模更充分" class="headerlink" title="3. 全局关系建模更充分"></a>3. 全局关系建模更充分</h3><p>检测任务里很多难点来自目标之间的上下文关系，比如遮挡、重叠、小目标与场景语义。Transformer 的全局注意力在这里有天然优势。</p><h2 id="现在还不够完美的地方"><a href="#现在还不够完美的地方" class="headerlink" title="现在还不够完美的地方"></a>现在还不够完美的地方</h2><h3 id="收敛速度慢"><a href="#收敛速度慢" class="headerlink" title="收敛速度慢"></a>收敛速度慢</h3><p>这是 DETR 最明显的问题之一。相比传统检测器，训练轮数通常更高。</p><h3 id="小目标效果仍需改进"><a href="#小目标效果仍需改进" class="headerlink" title="小目标效果仍需改进"></a>小目标效果仍需改进</h3><p>在高分辨率、密集目标、小目标场景下，原始 DETR 的表现并不总是最优。</p><h3 id="工程替换成本不低"><a href="#工程替换成本不低" class="headerlink" title="工程替换成本不低"></a>工程替换成本不低</h3><p>虽然概念上更优雅，但如果线上系统围绕传统检测栈已经非常成熟，迁移也不是一键完成。</p><h2 id="这篇工作最重要的地方"><a href="#这篇工作最重要的地方" class="headerlink" title="这篇工作最重要的地方"></a>这篇工作最重要的地方</h2><p>我觉得 DETR 最有价值的不是当下马上替换掉所有检测器，而是它改变了问题的表达方式：</p><ul><li>检测不一定非要靠 anchor</li><li>NMS 不是天然不可移除</li><li>目标检测可以用更统一的端到端范式去描述</li></ul><p>研究里这种“重新定义问题”的工作，长期影响往往比单纯刷点更大。</p><h2 id="对后续工作的启发"><a href="#对后续工作的启发" class="headerlink" title="对后续工作的启发"></a>对后续工作的启发</h2><p>后面很自然会有人继续补 DETR 的短板：</p><ul><li>提升训练效率</li><li>改善多尺度建模</li><li>强化小目标检测</li><li>做更高效的 query 设计</li></ul><p>如果这些问题能逐步解决，那么检测领域很可能会沿着“更少手工规则、更强端到端能力”的方向走。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>DETR 给我的感觉像是：<strong>终于有人认真挑战了目标检测领域那套越来越厚重的工程习惯</strong>。</p><p>它未必是终点，但它证明了一件事：很多看起来理所当然的检测组件，其实并不是不可替代的。</p><h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2026/04/15/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-02-Vision-Transformer/</id>
-    <link href="https://seniorzhai.github.io/2026/04/15/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-02-Vision-Transformer/"/>
-    <published>2026-04-15T04:58:10.069Z</published>
+    <id>https://seniorzhai.github.io/2020/12/05/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-03-DETR%E4%B8%8E%E7%AB%AF%E5%88%B0%E7%AB%AF%E6%A3%80%E6%B5%8B/</id>
+    <link href="https://seniorzhai.github.io/2020/12/05/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-03-DETR%E4%B8%8E%E7%AB%AF%E5%88%B0%E7%AB%AF%E6%A3%80%E6%B5%8B/"/>
+    <published>2020-12-05T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<pre><code> 1|title: AI研究周报(二)：Vision Transformer 的意义
- 2|date: 2020-11-28 20:30:00
- 3|categories: [AI]
- 4|tags: [AI, ViT, Transformer, Visio]]>
+      <![CDATA[<p>目标检测这个方向长期都在和各种手工设计纠缠：anchor、NMS、正负样本分配、候选框筛选，每一步都有大量经验参数。DETR 的出现，第一次让我觉得这个方向有机会被重新整理。</p>]]>
     </summary>
-    <updated>2026-04-15T05:02:37.266Z</updated>
+    <title>AI研究周报(三)：DETR 与端到端目标检测</title>
+    <updated>2026-04-15T05:08:41.409Z</updated>
   </entry>
   <entry>
     <author>
       <name>Dear宅学长</name>
       <email>developer.zhaitao@gmail.com</email>
     </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Transformer" scheme="https://seniorzhai.github.io/tags/Transformer/"/>
+    <category term="ViT" scheme="https://seniorzhai.github.io/tags/ViT/"/>
+    <category term="Vision" scheme="https://seniorzhai.github.io/tags/Vision/"/>
     <content>
-      <![CDATA[<pre><code> 1|title: AI研究周报(三)：DETR 与端到端目标检测 2|date: 2020-12-05 20:30:00 3|categories: [AI] 4|tags: [AI, DETR, Detection, Transformer] 5|--- 6|目标检测这个方向长期都在和各种手工设计纠缠：anchor、NMS、正负样本分配、候选框筛选，每一步都有大量经验参数。DETR 的出现，第一次让我觉得这个方向有机会被重新整理。 7|&lt;!--more--&gt; 8| 9|## DETR 在做什么10|11|DETR 可以理解为：12|13|- 用 CNN 提取图像特征14|- 用 Transformer 编码全局信息15|- 通过固定数量的 object queries 直接预测目标集合16|- 使用 bipartite matching 进行端到端训练17|18|这里最关键的一点是：**把检测问题重新表述成集合预测问题**。19|20|## 传统检测器为什么复杂21|22|传统方案里往往包含很多“必要但不优雅”的步骤：23|24|- 预设大量 anchor25|- 调很多 IoU 阈值26|- 做 NMS 去重27|- 根据不同尺度设计特征融合结构28|29|这些设计让模型能工作，但也增加了：30|31|- 实现复杂度32|- 调参成本33|- 系统不可解释性34|35|## DETR 的亮点36|37|### 1. 目标检测第一次变得更像序列建模问题38|39|DETR 把图像特征和 query 结合起来，直接输出一组结果，每个 query 对应一个潜在目标。这和以前“密集分类 + 回归”的思路差别很大。40|41|### 2. 去掉了 NMS42|43|NMS 在工程里很常见，但它本质上是后处理。DETR 通过一对一匹配约束，使模型学会只输出一组不重复的结果，直接把这一步内化进训练目标。44|45|### 3. 全局关系建模更充分46|47|检测任务里很多难点来自目标之间的上下文关系，比如遮挡、重叠、小目标与场景语义。Transformer 的全局注意力在这里有天然优势。48|49|## 现在还不够完美的地方50|51|### 收敛速度慢52|53|这是 DETR 最明显的问题之一。相比传统检测器，训练轮数通常更高。54|55|### 小目标效果仍需改进56|57|在高分辨率、密集目标、小目标场景下，原始 DETR 的表现并不总是最优。58|59|### 工程替换成本不低60|61|虽然概念上更优雅，但如果线上系统围绕传统检测栈已经非常成熟，迁移也不是一键完成。62|63|## 这篇工作最重要的地方64|65|我觉得 DETR 最有价值的不是当下马上替换掉所有检测器，而是它改变了问题的表达方式：66|67|- 检测不一定非要靠 anchor68|- NMS 不是天然不可移除69|- 目标检测可以用更统一的端到端范式去描述70|71|研究里这种“重新定义问题”的工作，长期影响往往比单纯刷点更大。72|73|## 对后续工作的启发74|75|后面很自然会有人继续补 DETR 的短板：76|77|- 提升训练效率78|- 改善多尺度建模79|- 强化小目标检测80|- 做更高效的 query 设计81|82|如果这些问题能逐步解决，那么检测领域很可能会沿着“更少手工规则、更强端到端能力”的方向走。83|84|## 小结85|86|DETR 给我的感觉像是：**终于有人认真挑战了目标检测领域那套越来越厚重的工程习惯**。87|88|它未必是终点，但它证明了一件事：很多看起来理所当然的检测组件，其实并不是不可替代的。89|</code></pre><h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>]]>
+      <![CDATA[<p>Transformer 在 NLP 里已经证明了自己，但把它直接搬到视觉领域，最开始其实并不让人完全放心。图像毕竟和文本不一样，卷积网络长期以来在视觉任务里几乎是默认答案。</p><span id="more"></span><h2 id="ViT-的核心想法"><a href="#ViT-的核心想法" class="headerlink" title="ViT 的核心想法"></a>ViT 的核心想法</h2><p>Vision Transformer 做了一件非常直接的事情：</p><ol><li>把一张图切成固定大小的 patch</li><li>把每个 patch 当成一个 token</li><li>加上位置编码</li><li>送进标准 Transformer Encoder</li></ol><p>这个做法的冲击在于，它说明了 <strong>卷积并不一定是视觉任务不可替代的归纳偏置</strong>。</p><h2 id="为什么这个思路重要"><a href="#为什么这个思路重要" class="headerlink" title="为什么这个思路重要"></a>为什么这个思路重要</h2><h3 id="1-视觉与语言的建模方式正在统一"><a href="#1-视觉与语言的建模方式正在统一" class="headerlink" title="1. 视觉与语言的建模方式正在统一"></a>1. 视觉与语言的建模方式正在统一</h3><p>如果文本可以被表示成 token 序列，图像也可以被表示成 patch 序列，那么很多过去分裂的建模方式就开始收敛：</p><ul><li>NLP 用 Transformer</li><li>Vision 也能用 Transformer</li><li>多模态就有了更自然的统一接口</li></ul><p>这会让未来图文、视频、音频等多模态模型更容易共享同一套主干结构。</p><h3 id="2-全局建模能力更自然"><a href="#2-全局建模能力更自然" class="headerlink" title="2. 全局建模能力更自然"></a>2. 全局建模能力更自然</h3><p>CNN 在处理局部模式上很强，但要建模长距离依赖，往往需要不断堆层或者借助额外模块。</p><p>Transformer 的 self-attention 则天然具备全局交互能力，任何 patch 都可以直接和其他 patch 建立联系。</p><p>这对于下面这些任务都很重要：</p><ul><li>场景理解</li><li>关系建模</li><li>复杂目标交互</li><li>跨区域语义聚合</li></ul><h3 id="3-预训练的重要性更高了"><a href="#3-预训练的重要性更高了" class="headerlink" title="3. 预训练的重要性更高了"></a>3. 预训练的重要性更高了</h3><p>ViT 也提醒了一件事：<strong>当我们拿掉卷积的强归纳偏置以后，模型会更加依赖大规模数据预训练</strong>。</p><p>也就是说，模型更通用了，但也更“吃数据”。</p><h2 id="需要看到的现实问题"><a href="#需要看到的现实问题" class="headerlink" title="需要看到的现实问题"></a>需要看到的现实问题</h2><h3 id="数据需求高"><a href="#数据需求高" class="headerlink" title="数据需求高"></a>数据需求高</h3><p>ViT 在大数据集上效果很好，但在数据量不足时未必比 CNN 更稳。</p><h3 id="计算成本高"><a href="#计算成本高" class="headerlink" title="计算成本高"></a>计算成本高</h3><p>attention 的代价会随着 token 数量增长得很快，高分辨率输入时尤其明显。</p><h3 id="工程生态还不成熟"><a href="#工程生态还不成熟" class="headerlink" title="工程生态还不成熟"></a>工程生态还不成熟</h3><p>卷积网络在部署、蒸馏、移动端优化上已经很成熟，而视觉 Transformer 相关工具链还处在早期。</p><h2 id="我更关心的两个方向"><a href="#我更关心的两个方向" class="headerlink" title="我更关心的两个方向"></a>我更关心的两个方向</h2><h3 id="更高效的视觉-Transformer"><a href="#更高效的视觉-Transformer" class="headerlink" title="更高效的视觉 Transformer"></a>更高效的视觉 Transformer</h3><p>未来一定会有人继续做：</p><ul><li>分层结构</li><li>稀疏注意力</li><li>局部窗口注意力</li><li>更低成本的 patch 表示</li></ul><p>目标很明确：把 Transformer 的表达能力和 CNN 的工程效率结合起来。</p><h3 id="视觉与语言的统一预训练"><a href="#视觉与语言的统一预训练" class="headerlink" title="视觉与语言的统一预训练"></a>视觉与语言的统一预训练</h3><p>一旦视觉端也全面 token 化，多模态预训练就会更加顺滑。图像、文本甚至视频都可以被表示成统一的序列建模问题。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>ViT 的意义不只是把分类精度再抬高一点，而是让大家开始认真思考：</p><ul><li>视觉是不是也能走“预训练大模型”路线</li><li>多模态模型是不是应该共享统一主干</li><li>归纳偏置和通用性之间，最佳平衡点在哪里</li></ul><p>从长期看，这篇工作更像是一块路标，它告诉我们：<strong>Transformer 不是 NLP 的专属结构，它可能是一种更普适的表示学习框架。</strong></p><h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2026/04/15/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-03-DETR%E4%B8%8E%E7%AB%AF%E5%88%B0%E7%AB%AF%E6%A3%80%E6%B5%8B/</id>
-    <link href="https://seniorzhai.github.io/2026/04/15/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-03-DETR%E4%B8%8E%E7%AB%AF%E5%88%B0%E7%AB%AF%E6%A3%80%E6%B5%8B/"/>
-    <published>2026-04-15T04:58:10.069Z</published>
+    <id>https://seniorzhai.github.io/2020/11/28/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-02-Vision-Transformer/</id>
+    <link href="https://seniorzhai.github.io/2020/11/28/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-02-Vision-Transformer/"/>
+    <published>2020-11-28T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<pre><code> 1|title: AI研究周报(三)：DETR 与端到端目标检测
- 2|date: 2020-12-05 20:30:00
- 3|categories: [AI]
- 4|tags: [AI, DETR, Detection, Transformer]
- 5]]>
+      <![CDATA[<p>Transformer 在 NLP 里已经证明了自己，但把它直接搬到视觉领域，最开始其实并不让人完全放心。图像毕竟和文本不一样，卷积网络长期以来在视觉任务里几乎是默认答案。</p>]]>
     </summary>
-    <updated>2026-04-15T05:02:39.838Z</updated>
+    <title>AI研究周报(二)：Vision Transformer 的意义</title>
+    <updated>2026-04-15T05:08:41.387Z</updated>
   </entry>
   <entry>
     <author>
       <name>Dear宅学长</name>
       <email>developer.zhaitao@gmail.com</email>
     </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="GPT-3" scheme="https://seniorzhai.github.io/tags/GPT-3/"/>
+    <category term="Transformer" scheme="https://seniorzhai.github.io/tags/Transformer/"/>
+    <category term="Scaling" scheme="https://seniorzhai.github.io/tags/Scaling/"/>
     <content>
-      <![CDATA[<pre><code> 1|title: AI研究周报(四)：自监督学习的新趋势 2|date: 2020-12-12 20:30:00 3|categories: [AI] 4|tags: [AI, Self-Supervised, SimCLR, MoCo, BYOL] 5|--- 6|如果说监督学习依赖昂贵标注，那么自监督学习最吸引人的地方，就是它试图把“数据本身”变成监督信号。最近重新回顾 SimCLR、MoCo、BYOL 这些工作，会发现表示学习的主线已经越来越清晰了。 7|&lt;!--more--&gt; 8| 9|## 为什么自监督学习重要10|11|很多真实业务都面临同一个问题：12|13|- 原始数据很多14|- 高质量标注很少15|- 标注成本高且迭代慢16|17|这时候如果模型只能依赖全监督训练，数据利用率其实非常低。自监督学习的价值就在于：**先学一个尽量通用的表示，再把少量标注数据用在真正关键的地方。**18|19|## 几条代表性的路线20|21|### SimCLR：把对比学习做得足够干净22|23|SimCLR 的思路很直接：24|25|- 对同一张图做不同增强26|- 把它们视作正样本对27|- 不同图片之间形成负样本28|- 通过对比损失拉近正样本、拉远负样本29|30|它的贡献之一是把一套看起来复杂的表示学习流程，整理成了比较清晰的最小范式。31|32|### MoCo：用队列把负样本规模做起来33|34|MoCo 的关键点是动量编码器和动态字典。它解决的是对比学习里一个很现实的问题：**如何稳定地拿到大量高质量负样本**。35|36|这让训练不必极端依赖超大 batch size，工程上更容易落地。37|38|### BYOL：不靠负样本也能学39|40|BYOL 很有意思，因为它让大家开始重新思考：对比学习是否真的一定依赖负样本？41|42|它通过 online / target network 的结构和动量更新机制，在没有显式负样本的情况下仍然学到了有效表示。43|44|这说明表示学习真正关键的可能不只是“拉开谁和谁的距离”，还包括：45|46|- 结构约束47|- 视角一致性48|- 预测目标设计49|50|## 这些工作的共同方向51|52|虽然实现细节不同，但这几类方法都在说明一件事：53|54|### 1. 数据增强本身就是任务定义55|56|自监督里，增强策略不只是数据处理，而是在定义“什么是语义不变性”。57|58|### 2. 表示质量比下游头部更重要59|60|如果 backbone 学到的特征足够通用，下游只用很简单的线性分类器也能拿到不错结果。61|62|### 3. 预训练正在从 NLP 扩散到更多模态63|64|语言有语言模型，视觉也正在形成自己的通用预训练路线。未来音频、视频、多模态大概率也会继续沿着这个方向发展。65|66|## 工程上的现实意义67|68|对于业务团队来说，自监督学习并不只是学术热点，它直接影响：69|70|- 冷启动阶段的效果71|- 小样本任务的性能上限72|- 标注成本投入策略73|- 模型迁移复用能力74|75|## 小结76|77|我越来越觉得，自监督学习是 AI 里非常底层的一条主线。它的目标不是替代所有监督学习，而是让模型先把世界的结构学会一部分，再用更少的人类标注去完成具体任务。78|79|从长期看，这种路线和大模型预训练其实是同一个方向：**先学通用表示，再做任务适配。**80|</code></pre><h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>]]>
+      <![CDATA[<p>这段时间重新系统看了一轮大模型研究，最强烈的感受是：模型能力的提升，很多时候不是来自某一个花哨技巧，而是来自规模、数据和训练稳定性的共同作用。</p><span id="more"></span><h2 id="GPT-3-带来的直接冲击"><a href="#GPT-3-带来的直接冲击" class="headerlink" title="GPT-3 带来的直接冲击"></a>GPT-3 带来的直接冲击</h2><p>GPT-3 最让人震撼的并不是“参数更多”这句话本身，而是它把 <strong>预训练语言模型的上限</strong> 往前推了一大截。</p><p>过去大家更习惯于这样的范式：</p><ol><li>预训练一个通用模型</li><li>在下游任务上做 finetune</li><li>针对不同任务维护不同模型</li></ol><p>而 GPT-3 展现的是另一条路线：<strong>通过足够大的模型规模，让模型在 prompt 条件下直接完成任务</strong>。也就是说，模型在很多场景下不再必须依赖专门的任务头和复杂的微调流程。</p><h2 id="几个值得记住的结论"><a href="#几个值得记住的结论" class="headerlink" title="几个值得记住的结论"></a>几个值得记住的结论</h2><h3 id="1-模型规模本身就是能力来源"><a href="#1-模型规模本身就是能力来源" class="headerlink" title="1. 模型规模本身就是能力来源"></a>1. 模型规模本身就是能力来源</h3><p>从小模型到大模型，收益并不是线性增加的体验，而像是不断跨过某些“能力阈值”。参数上来以后，模型开始表现出：</p><ul><li>更强的上下文学习能力</li><li>更好的语言流畅度</li><li>更自然的任务迁移能力</li><li>更强的少样本甚至零样本效果</li></ul><p>这意味着工程上不能只盯着网络结构微调，<strong>训练规模也是核心变量</strong>。</p><h3 id="2-Prompt-开始变成新的接口层"><a href="#2-Prompt-开始变成新的接口层" class="headerlink" title="2. Prompt 开始变成新的接口层"></a>2. Prompt 开始变成新的接口层</h3><p>以前模型接口更像 <code>input -&gt; classifier</code>，现在越来越像：</p><ul><li>给模型任务说明</li><li>给几个样例</li><li>让它直接续写或完成</li></ul><p>这让“怎么写 prompt”从一个临时技巧，逐步变成一种新的系统设计能力。模型能力越强，prompt 的表达空间就越大。</p><h3 id="3-Few-shot-让通用模型更像平台"><a href="#3-Few-shot-让通用模型更像平台" class="headerlink" title="3. Few-shot 让通用模型更像平台"></a>3. Few-shot 让通用模型更像平台</h3><p>few-shot 的价值在于：</p><ul><li>降低下游任务接入门槛</li><li>减少任务级训练成本</li><li>统一模型服务入口</li></ul><p>对于工程团队来说，这种能力意味着未来的 AI 系统可能会从“一个任务一个模型”，逐渐转向“一个大模型服务多个任务”。</p><h2 id="还没有被解决的问题"><a href="#还没有被解决的问题" class="headerlink" title="还没有被解决的问题"></a>还没有被解决的问题</h2><p>当然，GPT-3 并不是没有问题。</p><h3 id="训练成本极高"><a href="#训练成本极高" class="headerlink" title="训练成本极高"></a>训练成本极高</h3><p>大模型的训练资源门槛非常高，普通团队很难完整复现。</p><h3 id="可控性不足"><a href="#可控性不足" class="headerlink" title="可控性不足"></a>可控性不足</h3><p>生成效果虽然惊艳，但稳定性、事实正确性和风格一致性依旧存在问题。</p><h3 id="推理成本昂贵"><a href="#推理成本昂贵" class="headerlink" title="推理成本昂贵"></a>推理成本昂贵</h3><p>即使训练出来，线上部署和大规模调用也不是小问题。</p><h2 id="对后续研究的启发"><a href="#对后续研究的启发" class="headerlink" title="对后续研究的启发"></a>对后续研究的启发</h2><p>我觉得 GPT-3 留下的真正问题不是“还能不能更大”，而是：</p><ul><li>模型规模和数据规模之间如何更高效地匹配</li><li>如何把大模型变成稳定可控的工程系统</li><li>是否能通过更好的检索、路由、蒸馏把能力分发到更低成本的模型上</li></ul><p>这也是为什么后面越来越多工作会沿着下面几个方向走：</p><ul><li>scaling law</li><li>模型压缩与蒸馏</li><li>prompt &#x2F; instruction 学习</li><li>检索增强</li><li>工具调用</li></ul><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>GPT-3 让我最深的感受是：<strong>语言模型开始从“一个 NLP 模块”，变成“通用智能接口”的雏形</strong>。</p><p>后面如果继续沿着这个方向演化，AI 系统的重点就不再只是网络结构，而会转向：</p><ul><li>数据</li><li>规模</li><li>推理成本</li><li>系统编排</li><li>人机交互方式</li></ul><p>这条路线，可能会定义未来很多年的 AI 产品形态。</p><h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>]]>
     </content>
-    <id>https://seniorzhai.github.io/2026/04/15/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-04-%E8%87%AA%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E6%96%B0%E8%B6%8B%E5%8A%BF/</id>
-    <link href="https://seniorzhai.github.io/2026/04/15/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-04-%E8%87%AA%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E6%96%B0%E8%B6%8B%E5%8A%BF/"/>
-    <published>2026-04-15T04:58:10.069Z</published>
+    <id>https://seniorzhai.github.io/2020/11/21/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-01-%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%BC%A9%E6%94%BE%E4%B8%8EGPT-3/</id>
+    <link href="https://seniorzhai.github.io/2020/11/21/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-01-%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%BC%A9%E6%94%BE%E4%B8%8EGPT-3/"/>
+    <published>2020-11-21T12:30:00.000Z</published>
     <summary>
-      <![CDATA[<pre><code> 1|title: AI研究周报(四)：自监督学习的新趋势
- 2|date: 2020-12-12 20:30:00
- 3|categories: [AI]
- 4|tags: [AI, Self-Supervised, SimCLR, MoCo, BYOL]]]>
+      <![CDATA[<p>这段时间重新系统看了一轮大模型研究，最强烈的感受是：模型能力的提升，很多时候不是来自某一个花哨技巧，而是来自规模、数据和训练稳定性的共同作用。</p>]]>
     </summary>
-    <updated>2026-04-15T05:02:42.049Z</updated>
+    <title>AI研究周报(一)：大模型缩放与 GPT-3</title>
+    <updated>2026-04-15T05:08:41.416Z</updated>
   </entry>
   <entry>
     <author>
