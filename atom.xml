@@ -12,7 +12,95 @@
   <rights>All rights reserved 2026, Dear宅学长</rights>
   <subtitle>苟利国家生死以，起因福祸趋避之</subtitle>
   <title>SeniorZhai's blog</title>
-  <updated>2026-04-15T10:28:02.353Z</updated>
+  <updated>2026-04-15T10:37:40.689Z</updated>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
+    <category term="Collaboration" scheme="https://seniorzhai.github.io/tags/Collaboration/"/>
+    <category term="Expert" scheme="https://seniorzhai.github.io/tags/Expert/"/>
+    <content>
+      <![CDATA[<p>每当 AI 能力往前走一步，外界最常见的讨论总会回到“谁会被取代”。但如果把视角放在真实工作流里，我越来越觉得，AI 更可能先做的不是直接取代专家，而是重排分工。很多职业的价值不会一下消失，而是从亲手完成每个细节，转向定义目标、判断结果、处理例外和承担责任。</p><span id="more"></span><h2 id="为什么“完全替代”通常不是第一步"><a href="#为什么“完全替代”通常不是第一步" class="headerlink" title="为什么“完全替代”通常不是第一步"></a>为什么“完全替代”通常不是第一步</h2><p>真实世界的工作往往包含大量隐性判断、跨情境协调和责任承担。模型可以帮助完成其中很多局部任务，但要把整条链路完全替代，难度要高得多。</p><h2 id="更可能先发生的变化"><a href="#更可能先发生的变化" class="headerlink" title="更可能先发生的变化"></a>更可能先发生的变化</h2><h3 id="1-初稿与预处理被自动化"><a href="#1-初稿与预处理被自动化" class="headerlink" title="1. 初稿与预处理被自动化"></a>1. 初稿与预处理被自动化</h3><p>资料整理、草稿生成、候选方案列举，这些高重复、低责任密度的工作很适合先交给 AI 系统处理。</p><h3 id="2-专家的精力会转向判断与修正"><a href="#2-专家的精力会转向判断与修正" class="headerlink" title="2. 专家的精力会转向判断与修正"></a>2. 专家的精力会转向判断与修正</h3><p>当生成成本下降，真正稀缺的会变成判断能力：哪些结果可信、哪些风险被忽略、哪些结论需要补证据。</p><h3 id="3-工作门槛可能重新分层"><a href="#3-工作门槛可能重新分层" class="headerlink" title="3. 工作门槛可能重新分层"></a>3. 工作门槛可能重新分层</h3><p>一些原本需要熟练技能才能进入的岗位，会因为 AI 辅助而降低入门难度；但高水平岗位对审查、整合和责任能力的要求会更高。</p><h3 id="4-团队协作结构会变化"><a href="#4-团队协作结构会变化" class="headerlink" title="4. 团队协作结构会变化"></a>4. 团队协作结构会变化</h3><p>未来很多团队的组织方式，可能不再是“更多执行人”，而是“更少但更强的判断者 + 一套高频协作的 AI 系统”。</p><h2 id="关键不是效率，而是责任边界"><a href="#关键不是效率，而是责任边界" class="headerlink" title="关键不是效率，而是责任边界"></a>关键不是效率，而是责任边界</h2><p>AI 能帮忙，不代表责任也自动转移。无论是代码、财务、医疗还是内容生产，最后谁来确认、谁来签字、谁来承受后果，这些问题都决定了协作模式如何真正落地。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我更倾向于把 AI 看成一种分工重组力量，而不是简单替代力量。它会先吞掉流程里的重复性环节，把人的价值推向定义问题、约束系统、判断结果和承担责任的部分。真正被重塑的，可能不是岗位名字，而是岗位内部的工作结构。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2021/06/26/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-32-AI%E5%8D%8F%E4%BD%9C%E4%B8%8D%E4%BC%9A%E5%8F%96%E4%BB%A3%E4%B8%93%E5%AE%B6%E8%80%8C%E4%BC%9A%E9%87%8D%E6%8E%92%E5%88%86%E5%B7%A5/</id>
+    <link href="https://seniorzhai.github.io/2021/06/26/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-32-AI%E5%8D%8F%E4%BD%9C%E4%B8%8D%E4%BC%9A%E5%8F%96%E4%BB%A3%E4%B8%93%E5%AE%B6%E8%80%8C%E4%BC%9A%E9%87%8D%E6%8E%92%E5%88%86%E5%B7%A5/"/>
+    <published>2021-06-26T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>每当 AI 能力往前走一步，外界最常见的讨论总会回到“谁会被取代”。但如果把视角放在真实工作流里，我越来越觉得，AI 更可能先做的不是直接取代专家，而是重排分工。很多职业的价值不会一下消失，而是从亲手完成每个细节，转向定义目标、判断结果、处理例外和承担责任。</p>]]>
+    </summary>
+    <title>AI研究周报(三十二)：AI协作不会取代专家而会重排分工</title>
+    <updated>2026-04-15T10:37:40.689Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Retrieval" scheme="https://seniorzhai.github.io/tags/Retrieval/"/>
+    <category term="Knowledge Base" scheme="https://seniorzhai.github.io/tags/Knowledge-Base/"/>
+    <category term="Enterprise" scheme="https://seniorzhai.github.io/tags/Enterprise/"/>
+    <content>
+      <![CDATA[<p>过去企业做知识库，常常更关注“有没有沉淀内容”：文档有没有上传、FAQ 有没有归档、流程有没有写清楚。但在模型系统逐渐进入企业之后，我觉得知识库的价值会被重新评估，而且重估的焦点不在存量本身，而在检索层。不是知道多少，而是能不能在对的时刻把对的内容调出来。</p><span id="more"></span><h2 id="为什么存储不再是核心难点"><a href="#为什么存储不再是核心难点" class="headerlink" title="为什么存储不再是核心难点"></a>为什么存储不再是核心难点</h2><p>把资料放进系统里已经不是难事，真正难的是：当用户提出一个具体问题时，系统能否找到最相关、最新、可信的那部分内容，并且组织成当前任务可用的答案。</p><h2 id="检索层会决定知识库上限"><a href="#检索层会决定知识库上限" class="headerlink" title="检索层会决定知识库上限"></a>检索层会决定知识库上限</h2><h3 id="1-召回质量决定答案底座"><a href="#1-召回质量决定答案底座" class="headerlink" title="1. 召回质量决定答案底座"></a>1. 召回质量决定答案底座</h3><p>如果拿到的上下文本身就偏了，后面的总结和生成再强也只是建立在错误材料上。</p><h3 id="2-权限与范围控制会变得更关键"><a href="#2-权限与范围控制会变得更关键" class="headerlink" title="2. 权限与范围控制会变得更关键"></a>2. 权限与范围控制会变得更关键</h3><p>企业知识并不是完全公开的。谁能看到什么、不同部门如何隔离、敏感信息如何过滤，都会直接影响系统可用性。</p><h3 id="3-时效性会影响可信度"><a href="#3-时效性会影响可信度" class="headerlink" title="3. 时效性会影响可信度"></a>3. 时效性会影响可信度</h3><p>企业流程和产品信息变化很快，旧资料如果频繁被召回，知识库很容易从资产变成噪声源。</p><h3 id="4-结构化索引会带来复利"><a href="#4-结构化索引会带来复利" class="headerlink" title="4. 结构化索引会带来复利"></a>4. 结构化索引会带来复利</h3><p>如果文档之间有明确的主题、版本、责任人和关联关系，检索效果通常会显著优于纯文本堆积。</p><h2 id="企业会重新理解“写文档”这件事"><a href="#企业会重新理解“写文档”这件事" class="headerlink" title="企业会重新理解“写文档”这件事"></a>企业会重新理解“写文档”这件事</h2><p>以前写文档更多是为了归档和协作，未来还会多一层含义：为了让模型系统能更好地理解和调用。也就是说，文档质量会直接影响 AI 系统质量。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>企业知识库的价值，未来不只是“是否存在”，而是“是否可检索、可过滤、可追溯、可持续更新”。当模型成为新的交互层，检索层就会变成知识系统真正的核心竞争力。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2021/06/19/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-31-%E4%BC%81%E4%B8%9A%E7%9F%A5%E8%AF%86%E5%BA%93%E7%9A%84%E4%BB%B7%E5%80%BC%E4%BC%9A%E5%9C%A8%E6%A3%80%E7%B4%A2%E5%B1%82%E8%A2%AB%E9%87%8D%E4%BC%B0/</id>
+    <link href="https://seniorzhai.github.io/2021/06/19/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-31-%E4%BC%81%E4%B8%9A%E7%9F%A5%E8%AF%86%E5%BA%93%E7%9A%84%E4%BB%B7%E5%80%BC%E4%BC%9A%E5%9C%A8%E6%A3%80%E7%B4%A2%E5%B1%82%E8%A2%AB%E9%87%8D%E4%BC%B0/"/>
+    <published>2021-06-19T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>过去企业做知识库，常常更关注“有没有沉淀内容”：文档有没有上传、FAQ 有没有归档、流程有没有写清楚。但在模型系统逐渐进入企业之后，我觉得知识库的价值会被重新评估，而且重估的焦点不在存量本身，而在检索层。不是知道多少，而是能不能在对的时刻把对的内容调出来。</p>]]>
+    </summary>
+    <title>AI研究周报(三十一)：企业知识库的价值会在检索层被重估</title>
+    <updated>2026-04-15T10:37:40.890Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Prompting" scheme="https://seniorzhai.github.io/tags/Prompting/"/>
+    <category term="Product Design" scheme="https://seniorzhai.github.io/tags/Product-Design/"/>
+    <category term="UX" scheme="https://seniorzhai.github.io/tags/UX/"/>
+    <content>
+      <![CDATA[<p>很多人刚接触大模型时，会把提示工程理解成一种“写咒语”的技巧：换几个词、调一下语气、加一段约束，输出就不同了。但如果把视角放大一点，我越来越觉得，提示工程迟早不会停留在技巧层，而会演化成产品设计能力。因为真正重要的，不是某一条 prompt 写得巧不巧，而是系统如何稳定地把用户意图转成可控结果。</p><span id="more"></span><h2 id="为什么它本质上是产品问题"><a href="#为什么它本质上是产品问题" class="headerlink" title="为什么它本质上是产品问题"></a>为什么它本质上是产品问题</h2><p>用户并不关心 prompt 长什么样，他们关心的是：系统能不能理解自己、结果是否稳定、失败时是否可修正。只要进入真实产品环境，提示就不再是单次文本，而是整个交互流程的一部分。</p><h2 id="提示工程会演化成哪些设计工作"><a href="#提示工程会演化成哪些设计工作" class="headerlink" title="提示工程会演化成哪些设计工作"></a>提示工程会演化成哪些设计工作</h2><h3 id="1-目标澄清"><a href="#1-目标澄清" class="headerlink" title="1. 目标澄清"></a>1. 目标澄清</h3><p>很多模型错误不是因为能力不够，而是因为任务目标本来就含糊。产品需要在交互前端帮助用户把目标说清楚。</p><h3 id="2-上下文组织"><a href="#2-上下文组织" class="headerlink" title="2. 上下文组织"></a>2. 上下文组织</h3><p>同样的模型，对不同上下文结构会给出完全不同的结果。哪些信息先给、哪些后给、哪些保持长期记忆，本质上都是设计问题。</p><h3 id="3-结果约束"><a href="#3-结果约束" class="headerlink" title="3. 结果约束"></a>3. 结果约束</h3><p>当系统要输出代码、文档、分析或决策建议时，格式、语气、风险边界都需要被明确约束，而不是靠用户每次重新提醒。</p><h3 id="4-失败恢复"><a href="#4-失败恢复" class="headerlink" title="4. 失败恢复"></a>4. 失败恢复</h3><p>真正可用的 AI 产品，不是第一次就永远答对，而是在答偏时能快速纠正、回滚和重试。这决定了交互是否能持续。</p><h2 id="技巧会商品化，设计能力不会"><a href="#技巧会商品化，设计能力不会" class="headerlink" title="技巧会商品化，设计能力不会"></a>技巧会商品化，设计能力不会</h2><p>单条 prompt 的技巧很容易被复制、总结和模板化，但围绕具体场景建立稳定体验的能力很难直接抄走。谁更理解任务、用户和容错机制，谁就更能把模型能力变成真正可交付的产品体验。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>提示工程如果只被理解成写提示词，很快就会显得狭窄。它更像是模型时代的交互设计：如何组织上下文、约束输出、引导目标、处理失败。未来真正有价值的，不是 prompt 本身，而是围绕 prompt 构建出来的产品系统。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2021/06/12/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-30-%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E4%BC%9A%E5%85%88%E6%BC%94%E5%8C%96%E6%88%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E8%83%BD%E5%8A%9B/</id>
+    <link href="https://seniorzhai.github.io/2021/06/12/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-30-%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E4%BC%9A%E5%85%88%E6%BC%94%E5%8C%96%E6%88%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E8%83%BD%E5%8A%9B/"/>
+    <published>2021-06-12T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>很多人刚接触大模型时，会把提示工程理解成一种“写咒语”的技巧：换几个词、调一下语气、加一段约束，输出就不同了。但如果把视角放大一点，我越来越觉得，提示工程迟早不会停留在技巧层，而会演化成产品设计能力。因为真正重要的，不是某一条 prompt 写得巧不巧，而是系统如何稳定地把用户意图转成可控结果。</p>]]>
+    </summary>
+    <title>AI研究周报(三十)：提示工程会先演化成产品设计能力</title>
+    <updated>2026-04-15T10:37:40.941Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Dear宅学长</name>
+      <email>developer.zhaitao@gmail.com</email>
+    </author>
+    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
+    <category term="Product" scheme="https://seniorzhai.github.io/tags/Product/"/>
+    <category term="Workflow" scheme="https://seniorzhai.github.io/tags/Workflow/"/>
+    <category term="Interface" scheme="https://seniorzhai.github.io/tags/Interface/"/>
+    <content>
+      <![CDATA[<p>过去的软件边界，大多是围绕功能页面和固定流程建立的：搜索在一个入口里，编辑在一个界面里，分析在另一个模块里。但当模型开始承担理解、生成、改写和调度任务之后，我越来越觉得，很多传统软件的边界会被“模型接口”重新切开。用户接触的，不再只是一个个功能块，而是一个能根据意图调用不同能力的统一入口。</p><span id="more"></span><h2 id="为什么边界会开始松动"><a href="#为什么边界会开始松动" class="headerlink" title="为什么边界会开始松动"></a>为什么边界会开始松动</h2><p>传统软件擅长把流程固化成菜单、按钮和表单，但这也意味着它对“非标准意图”不够友好。模型接口的价值在于，它能把用户模糊的目标翻译成可执行动作，因此原本分散在多个功能页里的操作，开始有机会被收拢到同一个交互层。</p><h2 id="模型接口会先改写哪些环节"><a href="#模型接口会先改写哪些环节" class="headerlink" title="模型接口会先改写哪些环节"></a>模型接口会先改写哪些环节</h2><h3 id="1-搜索与操作的分界会变弱"><a href="#1-搜索与操作的分界会变弱" class="headerlink" title="1. 搜索与操作的分界会变弱"></a>1. 搜索与操作的分界会变弱</h3><p>以前搜索只是找到信息，操作要靠用户自己继续点击；以后搜索框本身可能就能完成总结、筛选、生成和执行。</p><h3 id="2-表单会被更自然的意图输入替代"><a href="#2-表单会被更自然的意图输入替代" class="headerlink" title="2. 表单会被更自然的意图输入替代"></a>2. 表单会被更自然的意图输入替代</h3><p>很多业务系统要求用户理解字段和流程，但模型接口更适合从自然语言里提取结构化参数，再映射到后台动作。</p><h3 id="3-多工具之间会出现统一调度层"><a href="#3-多工具之间会出现统一调度层" class="headerlink" title="3. 多工具之间会出现统一调度层"></a>3. 多工具之间会出现统一调度层</h3><p>文档、表格、客服、数据面板过去是分开的；模型一旦能跨工具调用，这些边界就会被更高一层的任务接口覆盖。</p><h2 id="这不意味着传统界面会消失"><a href="#这不意味着传统界面会消失" class="headerlink" title="这不意味着传统界面会消失"></a>这不意味着传统界面会消失</h2><p>我不觉得按钮和页面会被完全取代。对高频、低风险、强确定性的操作，传统 UI 依然高效。但在探索式、组合式、需要理解上下文的任务里，模型接口会变成更自然的入口。</p><h2 id="产品设计会发生什么变化"><a href="#产品设计会发生什么变化" class="headerlink" title="产品设计会发生什么变化"></a>产品设计会发生什么变化</h2><p>产品团队可能不再只设计页面流转，而是同时设计“意图如何被识别”“任务如何被拆解”“错误如何被回退”。也就是说，交互设计会逐渐扩展成任务编排设计。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>模型接口真正改变的，不只是输入方式，而是软件能力被组织和暴露的方式。很多原本由功能边界定义的软件，未来可能会先被统一的任务入口覆盖，再由底层系统去完成真实执行。这会是软件形态一次很深的变化。</p>]]>
+    </content>
+    <id>https://seniorzhai.github.io/2021/06/05/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-29-%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%8F%A3%E4%BC%9A%E5%90%9E%E6%8E%89%E4%BC%A0%E7%BB%9F%E8%BD%AF%E4%BB%B6%E7%9A%84%E9%83%A8%E5%88%86%E8%BE%B9%E7%95%8C/</id>
+    <link href="https://seniorzhai.github.io/2021/06/05/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-29-%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%8F%A3%E4%BC%9A%E5%90%9E%E6%8E%89%E4%BC%A0%E7%BB%9F%E8%BD%AF%E4%BB%B6%E7%9A%84%E9%83%A8%E5%88%86%E8%BE%B9%E7%95%8C/"/>
+    <published>2021-06-05T12:30:00.000Z</published>
+    <summary>
+      <![CDATA[<p>过去的软件边界，大多是围绕功能页面和固定流程建立的：搜索在一个入口里，编辑在一个界面里，分析在另一个模块里。但当模型开始承担理解、生成、改写和调度任务之后，我越来越觉得，很多传统软件的边界会被“模型接口”重新切开。用户接触的，不再只是一个个功能块，而是一个能根据意图调用不同能力的统一入口。</p>]]>
+    </summary>
+    <title>AI研究周报(二十九)：模型接口会吞掉传统软件的部分边界</title>
+    <updated>2026-04-15T10:37:40.696Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Dear宅学长</name>
@@ -364,93 +452,5 @@
     </summary>
     <title>AI研究周报(十三)：多模态基础设施开始成形</title>
     <updated>2026-04-15T06:32:12.881Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Language Model" scheme="https://seniorzhai.github.io/tags/Language-Model/"/>
-    <category term="Code Generation" scheme="https://seniorzhai.github.io/tags/Code-Generation/"/>
-    <category term="Programming" scheme="https://seniorzhai.github.io/tags/Programming/"/>
-    <content>
-      <![CDATA[<p>过去我们会把代码生成看作一个有点偏门的方向：自动补全、模板生成、简单翻译。但随着语言模型能力上升，再回头看这条线，会发现它正在从“辅助功能”逐渐走向更核心的位置。代码，天然就是一种结构化语言，而这正好非常适合大模型发挥。</p><span id="more"></span><h2 id="为什么代码是理想场景"><a href="#为什么代码是理想场景" class="headerlink" title="为什么代码是理想场景"></a>为什么代码是理想场景</h2><p>和自然语言相比，代码有几个非常鲜明的特点：</p><ul><li>结构清晰</li><li>语法严格</li><li>局部依赖强</li><li>可以运行验证</li></ul><p>这些特征意味着，代码任务既适合语言模型建模，也更容易形成自动反馈回路。模型写得对不对，很多时候可以通过编译、测试、执行直接验证。</p><h2 id="这条线为什么会加速"><a href="#这条线为什么会加速" class="headerlink" title="这条线为什么会加速"></a>这条线为什么会加速</h2><h3 id="1-高质量训练数据天然丰富"><a href="#1-高质量训练数据天然丰富" class="headerlink" title="1. 高质量训练数据天然丰富"></a>1. 高质量训练数据天然丰富</h3><p>公开代码仓库为模型提供了大量成体系的语言材料，而且这些材料往往包含注释、命名、结构约定和模块关系。</p><h3 id="2-反馈闭环更明确"><a href="#2-反馈闭环更明确" class="headerlink" title="2. 反馈闭环更明确"></a>2. 反馈闭环更明确</h3><p>自然语言生成常常缺乏清晰的自动正确性信号，但代码不一样。能否运行、测试是否通过、静态检查是否报错，都可以作为反馈。</p><h3 id="3-商业价值更直接"><a href="#3-商业价值更直接" class="headerlink" title="3. 商业价值更直接"></a>3. 商业价值更直接</h3><p>如果模型能显著提升开发效率，那它很快就会进入真实工作流，而不只是停留在实验演示里。</p><h2 id="我觉得最值得关注的点"><a href="#我觉得最值得关注的点" class="headerlink" title="我觉得最值得关注的点"></a>我觉得最值得关注的点</h2><h3 id="从补全到协作"><a href="#从补全到协作" class="headerlink" title="从补全到协作"></a>从补全到协作</h3><p>未来代码模型的价值不只是补全下一行，而是逐步参与：</p><ul><li>理解现有工程</li><li>根据注释生成函数</li><li>辅助测试编写</li><li>做局部重构</li><li>解释复杂代码</li></ul><h3 id="工具链整合会比单模型更重要"><a href="#工具链整合会比单模型更重要" class="headerlink" title="工具链整合会比单模型更重要"></a>工具链整合会比单模型更重要</h3><p>真正有价值的不是一个孤立模型，而是它能不能和 IDE、测试、版本控制、构建系统结合起来。</p><h3 id="可验证性会让代码场景成为-AI-落地前沿"><a href="#可验证性会让代码场景成为-AI-落地前沿" class="headerlink" title="可验证性会让代码场景成为 AI 落地前沿"></a>可验证性会让代码场景成为 AI 落地前沿</h3><p>因为可以跑测试、做静态检查、看差异结果，代码场景比很多别的生成任务更容易形成可靠工作流。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我越来越相信，代码会成为大模型落地最重要的一条主线之一。它既有明确反馈，又有高频需求，还有天然的工具环境。一旦模型能力继续提升，程序员与模型之间的关系，可能会从“用工具”逐渐变成“协作开发”。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/02/06/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-12-%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%9E%8B%E5%BC%80%E5%A7%8B%E8%BF%9B%E5%85%A5%E4%B8%BB%E7%BA%BF/</id>
-    <link href="https://seniorzhai.github.io/2021/02/06/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-12-%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%9E%8B%E5%BC%80%E5%A7%8B%E8%BF%9B%E5%85%A5%E4%B8%BB%E7%BA%BF/"/>
-    <published>2021-02-06T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>过去我们会把代码生成看作一个有点偏门的方向：自动补全、模板生成、简单翻译。但随着语言模型能力上升，再回头看这条线，会发现它正在从“辅助功能”逐渐走向更核心的位置。代码，天然就是一种结构化语言，而这正好非常适合大模型发挥。</p>]]>
-    </summary>
-    <title>AI研究周报(十二)：代码模型开始进入主线</title>
-    <updated>2026-04-15T05:52:37.043Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Language Model" scheme="https://seniorzhai.github.io/tags/Language-Model/"/>
-    <category term="Retrieval" scheme="https://seniorzhai.github.io/tags/Retrieval/"/>
-    <category term="Knowledge" scheme="https://seniorzhai.github.io/tags/Knowledge/"/>
-    <content>
-      <![CDATA[<p>语言模型越大，知识似乎记得越多，但与此同时也会出现另一个问题：参数里“记住”的知识很难随时更新，也不容易追踪来源。最近再看检索结合生成这条思路，会觉得它特别像一个即将爆发的方向——模型不必把一切都死记在参数里，而可以在需要时去查。</p><span id="more"></span><h2 id="为什么仅靠参数记忆不够"><a href="#为什么仅靠参数记忆不够" class="headerlink" title="为什么仅靠参数记忆不够"></a>为什么仅靠参数记忆不够</h2><p>如果一个系统需要回答大量事实性、时效性或领域性问题，那么纯靠参数记忆会遇到几个现实障碍：</p><ul><li>更新成本高</li><li>知识来源不透明</li><li>容易幻觉式拼接</li><li>细分领域覆盖不稳定</li></ul><p>模型越强，这个问题反而越值得正视。因为用户会更自然地期待它“知道一切”。</p><h2 id="检索增强的直觉"><a href="#检索增强的直觉" class="headerlink" title="检索增强的直觉"></a>检索增强的直觉</h2><p>一个更合理的思路是：</p><ol><li>先根据问题去外部知识库里检索相关内容</li><li>再让生成模型基于这些内容组织答案</li></ol><p>这样做的好处是，模型不需要把所有信息都压进参数里，而是把参数能力更多用在理解、选择、整合和表达上。</p><h2 id="这条路线为什么值得看"><a href="#这条路线为什么值得看" class="headerlink" title="这条路线为什么值得看"></a>这条路线为什么值得看</h2><h3 id="1-知识可更新性更强"><a href="#1-知识可更新性更强" class="headerlink" title="1. 知识可更新性更强"></a>1. 知识可更新性更强</h3><p>当外部知识源可以单独维护时，系统更新成本会远低于重新训练整个大模型。</p><h3 id="2-可追溯性会更好"><a href="#2-可追溯性会更好" class="headerlink" title="2. 可追溯性会更好"></a>2. 可追溯性会更好</h3><p>如果回答建立在检索到的材料上，那么至少可以一定程度上回答“这个结论从哪里来”。</p><h3 id="3-更适合企业和垂直场景"><a href="#3-更适合企业和垂直场景" class="headerlink" title="3. 更适合企业和垂直场景"></a>3. 更适合企业和垂直场景</h3><p>很多真实业务并不需要一个无所不知的模型，而是需要一个能可靠访问企业知识和领域文档的系统。</p><h2 id="当前的挑战"><a href="#当前的挑战" class="headerlink" title="当前的挑战"></a>当前的挑战</h2><h3 id="检索质量直接决定上限"><a href="#检索质量直接决定上限" class="headerlink" title="检索质量直接决定上限"></a>检索质量直接决定上限</h3><p>如果取回来的材料本身就不相关，后面的生成再强也很难救回来。</p><h3 id="检索与生成之间如何协同还不成熟"><a href="#检索与生成之间如何协同还不成熟" class="headerlink" title="检索与生成之间如何协同还不成熟"></a>检索与生成之间如何协同还不成熟</h3><p>是先检索再生成，还是生成中动态检索，还是多轮检索迭代，目前都还有很多探索空间。</p><h3 id="外部知识并不自动等于可信答案"><a href="#外部知识并不自动等于可信答案" class="headerlink" title="外部知识并不自动等于可信答案"></a>外部知识并不自动等于可信答案</h3><p>模型依旧可能误读材料、拼接错误结论或过度自信表达。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我觉得“检索增强生成”背后的真正意义，是重新划分了模型与知识库的边界。模型未必要自己记住所有事实，它更重要的角色，可能是成为一个会思考、会检索、会组织信息的接口。这条路线后面大概率会越来越重要。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/01/30/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-11-%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA%E7%94%9F%E6%88%90%E7%9A%84%E5%89%8D%E5%A4%9C/</id>
-    <link href="https://seniorzhai.github.io/2021/01/30/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-11-%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA%E7%94%9F%E6%88%90%E7%9A%84%E5%89%8D%E5%A4%9C/"/>
-    <published>2021-01-30T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>语言模型越大，知识似乎记得越多，但与此同时也会出现另一个问题：参数里“记住”的知识很难随时更新，也不容易追踪来源。最近再看检索结合生成这条思路，会觉得它特别像一个即将爆发的方向——模型不必把一切都死记在参数里，而可以在需要时去查。</p>]]>
-    </summary>
-    <title>AI研究周报(十一)：检索增强生成的前夜</title>
-    <updated>2026-04-15T05:52:37.446Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Alignment" scheme="https://seniorzhai.github.io/tags/Alignment/"/>
-    <category term="Language Model" scheme="https://seniorzhai.github.io/tags/Language-Model/"/>
-    <category term="Human Feedback" scheme="https://seniorzhai.github.io/tags/Human-Feedback/"/>
-    <content>
-      <![CDATA[<p>最近再回看语言模型的发展，会发现一个趋势已经越来越明显：模型变强之后，问题不再只是“会不会生成”，而是“会生成什么、按谁的偏好生成、如何更稳定地生成”。虽然 RLHF 这个名字还没有真正成为行业主旋律，但“让模型更贴近人类偏好”这件事，其实已经在冒头。</p><span id="more"></span><h2 id="为什么对齐问题会越来越重要"><a href="#为什么对齐问题会越来越重要" class="headerlink" title="为什么对齐问题会越来越重要"></a>为什么对齐问题会越来越重要</h2><p>当模型只是在小范围任务里做分类或补全时，很多输出偏差还能被任务边界掩盖。但一旦模型变成开放式生成系统，问题就会快速放大：</p><ul><li>输出不稳定</li><li>风格不受控</li><li>偏见容易暴露</li><li>错误内容更像真的</li></ul><p>模型越通用，这些问题就越不可能靠后处理彻底解决。</p><h2 id="早期信号来自哪里"><a href="#早期信号来自哪里" class="headerlink" title="早期信号来自哪里"></a>早期信号来自哪里</h2><p>我觉得至少有几类现象已经很说明问题：</p><h3 id="1-纯最大似然训练不等于“人类喜欢”"><a href="#1-纯最大似然训练不等于“人类喜欢”" class="headerlink" title="1. 纯最大似然训练不等于“人类喜欢”"></a>1. 纯最大似然训练不等于“人类喜欢”</h3><p>模型能学会复现数据分布，但未必学会什么回答更有帮助、更安全、更符合指令。</p><h3 id="2-Prompt-工程开始承担控制责任"><a href="#2-Prompt-工程开始承担控制责任" class="headerlink" title="2. Prompt 工程开始承担控制责任"></a>2. Prompt 工程开始承担控制责任</h3><p>很多时候，大家通过更细的提示词、更多的上下文约束来控制输出。某种程度上，这说明模型本身还没有足够稳地学会服从期望。</p><h3 id="3-人工评估的重要性在上升"><a href="#3-人工评估的重要性在上升" class="headerlink" title="3. 人工评估的重要性在上升"></a>3. 人工评估的重要性在上升</h3><p>一些开放式任务里，自动指标越来越难充分描述真实体验。人类反馈开始成为不可回避的一环。</p><h2 id="这件事意味着什么"><a href="#这件事意味着什么" class="headerlink" title="这件事意味着什么"></a>这件事意味着什么</h2><h3 id="对齐会成为独立研发方向"><a href="#对齐会成为独立研发方向" class="headerlink" title="对齐会成为独立研发方向"></a>对齐会成为独立研发方向</h3><p>以后模型训练不太可能只分成“预训练”和“微调”两层，而是会出现更明确的人类偏好建模环节。</p><h3 id="数据质量将比数据量更关键"><a href="#数据质量将比数据量更关键" class="headerlink" title="数据质量将比数据量更关键"></a>数据质量将比数据量更关键</h3><p>如果目标是让模型学会更符合人类意图的输出，那么什么样的反馈被收集、如何标注、如何定义偏好，都会变成核心问题。</p><h3 id="评估体系也得跟着变"><a href="#评估体系也得跟着变" class="headerlink" title="评估体系也得跟着变"></a>评估体系也得跟着变</h3><p>传统 benchmark 可以测能力，但不一定能测“是否更符合人类使用场景”。未来评估会更像一套综合体系，而不只是单个分数。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我现在越来越觉得，大模型的发展不会只沿着“更大、更强”一条轴推进。另一条同样重要的轴，是“更可控、更可靠、更符合人类预期”。今天看似零散的对齐信号，后面很可能会汇成主线。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/01/23/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-10-RLHF%E4%B9%8B%E5%89%8D%E7%9A%84%E5%AF%B9%E9%BD%90%E4%BF%A1%E5%8F%B7/</id>
-    <link href="https://seniorzhai.github.io/2021/01/23/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-10-RLHF%E4%B9%8B%E5%89%8D%E7%9A%84%E5%AF%B9%E9%BD%90%E4%BF%A1%E5%8F%B7/"/>
-    <published>2021-01-23T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>最近再回看语言模型的发展，会发现一个趋势已经越来越明显：模型变强之后，问题不再只是“会不会生成”，而是“会生成什么、按谁的偏好生成、如何更稳定地生成”。虽然 RLHF 这个名字还没有真正成为行业主旋律，但“让模型更贴近人类偏好”这件事，其实已经在冒头。</p>]]>
-    </summary>
-    <title>AI研究周报(十)：RLHF 之前的对齐信号</title>
-    <updated>2026-04-15T05:52:37.460Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Dear宅学长</name>
-      <email>developer.zhaitao@gmail.com</email>
-    </author>
-    <category term="AI" scheme="https://seniorzhai.github.io/categories/AI/"/>
-    <category term="AI" scheme="https://seniorzhai.github.io/tags/AI/"/>
-    <category term="Transformer" scheme="https://seniorzhai.github.io/tags/Transformer/"/>
-    <category term="Sparse Attention" scheme="https://seniorzhai.github.io/tags/Sparse-Attention/"/>
-    <category term="Long Context" scheme="https://seniorzhai.github.io/tags/Long-Context/"/>
-    <content>
-      <![CDATA[<p>随着大模型参数越来越大，一个更现实的问题开始浮出来：就算模型本身足够强，如果它一次只能高成本地处理有限上下文，那么很多真实任务依然会被卡住。最近回看稀疏注意力这一批工作，会感觉它们其实是在回答一个很工程、但也很核心的问题：Transformer 怎么才能看得更远。</p><span id="more"></span><h2 id="为什么长上下文是硬问题"><a href="#为什么长上下文是硬问题" class="headerlink" title="为什么长上下文是硬问题"></a>为什么长上下文是硬问题</h2><p>标准自注意力的复杂度会随着序列长度快速上升。序列一长，显存、算力、推理时延都会变得难以接受。这意味着很多看起来理所当然的场景，实际上都很昂贵：</p><ul><li>长文档理解</li><li>多轮对话记忆</li><li>长代码补全</li><li>视频与时间序列建模</li></ul><p>如果不能降低长序列成本，Transformer 的通用性就会受到很大限制。</p><h2 id="稀疏注意力在做什么"><a href="#稀疏注意力在做什么" class="headerlink" title="稀疏注意力在做什么"></a>稀疏注意力在做什么</h2><p>这类方法的核心思路其实很直观：不是每个 token 都必须看所有 token。可以根据结构设计，只让它关注一部分更重要的位置，比如：</p><ul><li>局部窗口</li><li>固定跳跃连接</li><li>全局 token</li><li>分层或块状注意力</li></ul><p>这样做的目标不是完全复制全连接注意力，而是在可接受成本下，保留足够强的建模能力。</p><h2 id="这条路线为什么重要"><a href="#这条路线为什么重要" class="headerlink" title="这条路线为什么重要"></a>这条路线为什么重要</h2><h3 id="1-它决定了模型能否进入更真实的任务"><a href="#1-它决定了模型能否进入更真实的任务" class="headerlink" title="1. 它决定了模型能否进入更真实的任务"></a>1. 它决定了模型能否进入更真实的任务</h3><p>很多任务不是短句分类，而是必须处理大量上下文。谁能更便宜地处理长序列，谁就更有机会进入真正复杂的生产环境。</p><h3 id="2-它在提醒我们“计算结构”同样是创新点"><a href="#2-它在提醒我们“计算结构”同样是创新点" class="headerlink" title="2. 它在提醒我们“计算结构”同样是创新点"></a>2. 它在提醒我们“计算结构”同样是创新点</h3><p>这几年大家容易把注意力放在参数规模和数据规模上，但稀疏注意力说明，计算图设计本身也能决定模型上限。</p><h3 id="3-它为后续系统优化铺路"><a href="#3-它为后续系统优化铺路" class="headerlink" title="3. 它为后续系统优化铺路"></a>3. 它为后续系统优化铺路</h3><p>如果研究界能逐步总结出哪些注意力连接是必要的、哪些是冗余的，那么后面无论是训练系统还是推理系统，都会有更清晰的优化抓手。</p><h2 id="当前局限"><a href="#当前局限" class="headerlink" title="当前局限"></a>当前局限</h2><h3 id="稀疏模式往往依赖先验假设"><a href="#稀疏模式往往依赖先验假设" class="headerlink" title="稀疏模式往往依赖先验假设"></a>稀疏模式往往依赖先验假设</h3><p>不同任务适合的稀疏结构可能不一样。一个结构在长文里有效，不一定在代码或多模态序列里同样有效。</p><h3 id="理论与工程之间还有距离"><a href="#理论与工程之间还有距离" class="headerlink" title="理论与工程之间还有距离"></a>理论与工程之间还有距离</h3><p>纸面复杂度下降，不代表真实硬件上一定更快。很多稀疏操作在工程实现上反而不如密集矩阵友好。</p><h3 id="效果与效率常常要交换"><a href="#效果与效率常常要交换" class="headerlink" title="效果与效率常常要交换"></a>效果与效率常常要交换</h3><p>上下文拉长了，但如果表达能力明显下降，最终依然不一定划算。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>我觉得稀疏注意力最大的价值，不是某一篇论文给出了终局答案，而是把“长上下文能力”正式推成了主战场。未来模型能不能真的读长文、记长历史、写长代码，很大程度上取决于这条路线能走多远。</p>]]>
-    </content>
-    <id>https://seniorzhai.github.io/2021/01/16/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-09-%E7%A8%80%E7%96%8F%E6%B3%A8%E6%84%8F%E5%8A%9B%E4%B8%8E%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87/</id>
-    <link href="https://seniorzhai.github.io/2021/01/16/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-09-%E7%A8%80%E7%96%8F%E6%B3%A8%E6%84%8F%E5%8A%9B%E4%B8%8E%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87/"/>
-    <published>2021-01-16T12:30:00.000Z</published>
-    <summary>
-      <![CDATA[<p>随着大模型参数越来越大，一个更现实的问题开始浮出来：就算模型本身足够强，如果它一次只能高成本地处理有限上下文，那么很多真实任务依然会被卡住。最近回看稀疏注意力这一批工作，会感觉它们其实是在回答一个很工程、但也很核心的问题：Transformer 怎么才能看得更远。</p>]]>
-    </summary>
-    <title>AI研究周报(九)：稀疏注意力与长上下文</title>
-    <updated>2026-04-15T05:52:37.463Z</updated>
   </entry>
 </feed>
