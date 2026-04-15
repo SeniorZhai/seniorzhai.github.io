@@ -83,6 +83,581 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2026/04/15/AI研究周报-01-大模型缩放与GPT-3/" title="" itemprop="url"></a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2026-04-15T04:58:10.069Z" itemprop="datePublished"> 发表于 2026-04-15</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <pre><code> 1|title: AI研究周报(一)：大模型缩放与 GPT-3
+ 2|date: 2020-11-21 20:30:00
+ 3|categories: [AI]
+ 4|tags: [AI, GPT-3, Transformer, Scaling]
+ 5|---
+ 6|这段时间重新系统看了一轮大模型研究，最强烈的感受是：模型能力的提升，很多时候不是来自某一个花哨技巧，而是来自规模、数据和训练稳定性的共同作用。
+ 7|&lt;!--more--&gt;
+ 8|
+ 9|## GPT-3 带来的直接冲击
+10|
+11|GPT-3 最让人震撼的并不是“参数更多”这句话本身，而是它把 **预训练语言模型的上限** 往前推了一大截。
+12|
+13|过去大家更习惯于这样的范式：
+14|
+15|1. 预训练一个通用模型
+16|2. 在下游任务上做 finetune
+17|3. 针对不同任务维护不同模型
+18|
+19|而 GPT-3 展现的是另一条路线：**通过足够大的模型规模，让模型在 prompt 条件下直接完成任务**。也就是说，模型在很多场景下不再必须依赖专门的任务头和复杂的微调流程。
+20|
+21|## 几个值得记住的结论
+22|
+23|### 1. 模型规模本身就是能力来源
+24|
+25|从小模型到大模型，收益并不是线性增加的体验，而像是不断跨过某些“能力阈值”。参数上来以后，模型开始表现出：
+26|
+27|- 更强的上下文学习能力
+28|- 更好的语言流畅度
+29|- 更自然的任务迁移能力
+30|- 更强的少样本甚至零样本效果
+31|
+32|这意味着工程上不能只盯着网络结构微调，**训练规模也是核心变量**。
+33|
+34|### 2. Prompt 开始变成新的接口层
+35|
+36|以前模型接口更像 `input -&gt; classifier`，现在越来越像：
+37|
+38|- 给模型任务说明
+39|- 给几个样例
+40|- 让它直接续写或完成
+41|
+42|这让“怎么写 prompt”从一个临时技巧，逐步变成一种新的系统设计能力。模型能力越强，prompt 的表达空间就越大。
+43|
+44|### 3. Few-shot 让通用模型更像平台
+45|
+46|few-shot 的价值在于：
+47|
+48|- 降低下游任务接入门槛
+49|- 减少任务级训练成本
+50|- 统一模型服务入口
+51|
+52|对于工程团队来说，这种能力意味着未来的 AI 系统可能会从“一个任务一个模型”，逐渐转向“一个大模型服务多个任务”。
+53|
+54|## 还没有被解决的问题
+55|
+56|当然，GPT-3 并不是没有问题。
+57|
+58|### 训练成本极高
+59|
+60|大模型的训练资源门槛非常高，普通团队很难完整复现。
+61|
+62|### 可控性不足
+63|
+64|生成效果虽然惊艳，但稳定性、事实正确性和风格一致性依旧存在问题。
+65|
+66|### 推理成本昂贵
+67|
+68|即使训练出来，线上部署和大规模调用也不是小问题。
+69|
+70|## 对后续研究的启发
+71|
+72|我觉得 GPT-3 留下的真正问题不是“还能不能更大”，而是：
+73|
+74|- 模型规模和数据规模之间如何更高效地匹配
+75|- 如何把大模型变成稳定可控的工程系统
+76|- 是否能通过更好的检索、路由、蒸馏把能力分发到更低成本的模型上
+77|
+78|这也是为什么后面越来越多工作会沿着下面几个方向走：
+79|
+80|- scaling law
+81|- 模型压缩与蒸馏
+82|- prompt / instruction 学习
+83|- 检索增强
+84|- 工具调用
+85|
+86|## 小结
+87|
+88|GPT-3 让我最深的感受是：**语言模型开始从“一个 NLP 模块”，变成“通用智能接口”的雏形**。
+89|
+90|后面如果继续沿着这个方向演化，AI 系统的重点就不再只是网络结构，而会转向：
+91|
+92|- 数据
+93|- 规模
+94|- 推理成本
+95|- 系统编排
+96|- 人机交互方式
+97|
+98|这条路线，可能会定义未来很多年的 AI 产品形态。
+99|
+</code></pre>
+<h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2026/04/15/AI研究周报-01-大模型缩放与GPT-3/#comments" class="ds-thread-count comments-count-link" data-thread-key="2026/04/15/AI研究周报-01-大模型缩放与GPT-3/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2026/04/15/AI研究周报-02-Vision-Transformer/" title="" itemprop="url"></a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2026-04-15T04:58:10.069Z" itemprop="datePublished"> 发表于 2026-04-15</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <pre><code> 1|title: AI研究周报(二)：Vision Transformer 的意义
+ 2|date: 2020-11-28 20:30:00
+ 3|categories: [AI]
+ 4|tags: [AI, ViT, Transformer, Vision]
+ 5|---
+ 6|Transformer 在 NLP 里已经证明了自己，但把它直接搬到视觉领域，最开始其实并不让人完全放心。图像毕竟和文本不一样，卷积网络长期以来在视觉任务里几乎是默认答案。
+ 7|&lt;!--more--&gt;
+ 8|
+ 9|## ViT 的核心想法
+10|
+11|Vision Transformer 做了一件非常直接的事情：
+12|
+13|1. 把一张图切成固定大小的 patch
+14|2. 把每个 patch 当成一个 token
+15|3. 加上位置编码
+16|4. 送进标准 Transformer Encoder
+17|
+18|这个做法的冲击在于，它说明了 **卷积并不一定是视觉任务不可替代的归纳偏置**。
+19|
+20|## 为什么这个思路重要
+21|
+22|### 1. 视觉与语言的建模方式正在统一
+23|
+24|如果文本可以被表示成 token 序列，图像也可以被表示成 patch 序列，那么很多过去分裂的建模方式就开始收敛：
+25|
+26|- NLP 用 Transformer
+27|- Vision 也能用 Transformer
+28|- 多模态就有了更自然的统一接口
+29|
+30|这会让未来图文、视频、音频等多模态模型更容易共享同一套主干结构。
+31|
+32|### 2. 全局建模能力更自然
+33|
+34|CNN 在处理局部模式上很强，但要建模长距离依赖，往往需要不断堆层或者借助额外模块。
+35|
+36|Transformer 的 self-attention 则天然具备全局交互能力，任何 patch 都可以直接和其他 patch 建立联系。
+37|
+38|这对于下面这些任务都很重要：
+39|
+40|- 场景理解
+41|- 关系建模
+42|- 复杂目标交互
+43|- 跨区域语义聚合
+44|
+45|### 3. 预训练的重要性更高了
+46|
+47|ViT 也提醒了一件事：**当我们拿掉卷积的强归纳偏置以后，模型会更加依赖大规模数据预训练**。
+48|
+49|也就是说，模型更通用了，但也更“吃数据”。
+50|
+51|## 需要看到的现实问题
+52|
+53|### 数据需求高
+54|
+55|ViT 在大数据集上效果很好，但在数据量不足时未必比 CNN 更稳。
+56|
+57|### 计算成本高
+58|
+59|attention 的代价会随着 token 数量增长得很快，高分辨率输入时尤其明显。
+60|
+61|### 工程生态还不成熟
+62|
+63|卷积网络在部署、蒸馏、移动端优化上已经很成熟，而视觉 Transformer 相关工具链还处在早期。
+64|
+65|## 我更关心的两个方向
+66|
+67|### 更高效的视觉 Transformer
+68|
+69|未来一定会有人继续做：
+70|
+71|- 分层结构
+72|- 稀疏注意力
+73|- 局部窗口注意力
+74|- 更低成本的 patch 表示
+75|
+76|目标很明确：把 Transformer 的表达能力和 CNN 的工程效率结合起来。
+77|
+78|### 视觉与语言的统一预训练
+79|
+80|一旦视觉端也全面 token 化，多模态预训练就会更加顺滑。图像、文本甚至视频都可以被表示成统一的序列建模问题。
+81|
+82|## 小结
+83|
+84|ViT 的意义不只是把分类精度再抬高一点，而是让大家开始认真思考：
+85|
+86|- 视觉是不是也能走“预训练大模型”路线
+87|- 多模态模型是不是应该共享统一主干
+88|- 归纳偏置和通用性之间，最佳平衡点在哪里
+89|
+90|从长期看，这篇工作更像是一块路标，它告诉我们：**Transformer 不是 NLP 的专属结构，它可能是一种更普适的表示学习框架。**
+91|
+</code></pre>
+<h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2026/04/15/AI研究周报-02-Vision-Transformer/#comments" class="ds-thread-count comments-count-link" data-thread-key="2026/04/15/AI研究周报-02-Vision-Transformer/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2026/04/15/AI研究周报-03-DETR与端到端检测/" title="" itemprop="url"></a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2026-04-15T04:58:10.069Z" itemprop="datePublished"> 发表于 2026-04-15</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <pre><code> 1|title: AI研究周报(三)：DETR 与端到端目标检测
+ 2|date: 2020-12-05 20:30:00
+ 3|categories: [AI]
+ 4|tags: [AI, DETR, Detection, Transformer]
+ 5|---
+ 6|目标检测这个方向长期都在和各种手工设计纠缠：anchor、NMS、正负样本分配、候选框筛选，每一步都有大量经验参数。DETR 的出现，第一次让我觉得这个方向有机会被重新整理。
+ 7|&lt;!--more--&gt;
+ 8|
+ 9|## DETR 在做什么
+10|
+11|DETR 可以理解为：
+12|
+13|- 用 CNN 提取图像特征
+14|- 用 Transformer 编码全局信息
+15|- 通过固定数量的 object queries 直接预测目标集合
+16|- 使用 bipartite matching 进行端到端训练
+17|
+18|这里最关键的一点是：**把检测问题重新表述成集合预测问题**。
+19|
+20|## 传统检测器为什么复杂
+21|
+22|传统方案里往往包含很多“必要但不优雅”的步骤：
+23|
+24|- 预设大量 anchor
+25|- 调很多 IoU 阈值
+26|- 做 NMS 去重
+27|- 根据不同尺度设计特征融合结构
+28|
+29|这些设计让模型能工作，但也增加了：
+30|
+31|- 实现复杂度
+32|- 调参成本
+33|- 系统不可解释性
+34|
+35|## DETR 的亮点
+36|
+37|### 1. 目标检测第一次变得更像序列建模问题
+38|
+39|DETR 把图像特征和 query 结合起来，直接输出一组结果，每个 query 对应一个潜在目标。这和以前“密集分类 + 回归”的思路差别很大。
+40|
+41|### 2. 去掉了 NMS
+42|
+43|NMS 在工程里很常见，但它本质上是后处理。DETR 通过一对一匹配约束，使模型学会只输出一组不重复的结果，直接把这一步内化进训练目标。
+44|
+45|### 3. 全局关系建模更充分
+46|
+47|检测任务里很多难点来自目标之间的上下文关系，比如遮挡、重叠、小目标与场景语义。Transformer 的全局注意力在这里有天然优势。
+48|
+49|## 现在还不够完美的地方
+50|
+51|### 收敛速度慢
+52|
+53|这是 DETR 最明显的问题之一。相比传统检测器，训练轮数通常更高。
+54|
+55|### 小目标效果仍需改进
+56|
+57|在高分辨率、密集目标、小目标场景下，原始 DETR 的表现并不总是最优。
+58|
+59|### 工程替换成本不低
+60|
+61|虽然概念上更优雅，但如果线上系统围绕传统检测栈已经非常成熟，迁移也不是一键完成。
+62|
+63|## 这篇工作最重要的地方
+64|
+65|我觉得 DETR 最有价值的不是当下马上替换掉所有检测器，而是它改变了问题的表达方式：
+66|
+67|- 检测不一定非要靠 anchor
+68|- NMS 不是天然不可移除
+69|- 目标检测可以用更统一的端到端范式去描述
+70|
+71|研究里这种“重新定义问题”的工作，长期影响往往比单纯刷点更大。
+72|
+73|## 对后续工作的启发
+74|
+75|后面很自然会有人继续补 DETR 的短板：
+76|
+77|- 提升训练效率
+78|- 改善多尺度建模
+79|- 强化小目标检测
+80|- 做更高效的 query 设计
+81|
+82|如果这些问题能逐步解决，那么检测领域很可能会沿着“更少手工规则、更强端到端能力”的方向走。
+83|
+84|## 小结
+85|
+86|DETR 给我的感觉像是：**终于有人认真挑战了目标检测领域那套越来越厚重的工程习惯**。
+87|
+88|它未必是终点，但它证明了一件事：很多看起来理所当然的检测组件，其实并不是不可替代的。
+89|
+</code></pre>
+<h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2026/04/15/AI研究周报-03-DETR与端到端检测/#comments" class="ds-thread-count comments-count-link" data-thread-key="2026/04/15/AI研究周报-03-DETR与端到端检测/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2026/04/15/AI研究周报-04-自监督学习新趋势/" title="" itemprop="url"></a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2026-04-15T04:58:10.069Z" itemprop="datePublished"> 发表于 2026-04-15</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <pre><code> 1|title: AI研究周报(四)：自监督学习的新趋势
+ 2|date: 2020-12-12 20:30:00
+ 3|categories: [AI]
+ 4|tags: [AI, Self-Supervised, SimCLR, MoCo, BYOL]
+ 5|---
+ 6|如果说监督学习依赖昂贵标注，那么自监督学习最吸引人的地方，就是它试图把“数据本身”变成监督信号。最近重新回顾 SimCLR、MoCo、BYOL 这些工作，会发现表示学习的主线已经越来越清晰了。
+ 7|&lt;!--more--&gt;
+ 8|
+ 9|## 为什么自监督学习重要
+10|
+11|很多真实业务都面临同一个问题：
+12|
+13|- 原始数据很多
+14|- 高质量标注很少
+15|- 标注成本高且迭代慢
+16|
+17|这时候如果模型只能依赖全监督训练，数据利用率其实非常低。自监督学习的价值就在于：**先学一个尽量通用的表示，再把少量标注数据用在真正关键的地方。**
+18|
+19|## 几条代表性的路线
+20|
+21|### SimCLR：把对比学习做得足够干净
+22|
+23|SimCLR 的思路很直接：
+24|
+25|- 对同一张图做不同增强
+26|- 把它们视作正样本对
+27|- 不同图片之间形成负样本
+28|- 通过对比损失拉近正样本、拉远负样本
+29|
+30|它的贡献之一是把一套看起来复杂的表示学习流程，整理成了比较清晰的最小范式。
+31|
+32|### MoCo：用队列把负样本规模做起来
+33|
+34|MoCo 的关键点是动量编码器和动态字典。它解决的是对比学习里一个很现实的问题：**如何稳定地拿到大量高质量负样本**。
+35|
+36|这让训练不必极端依赖超大 batch size，工程上更容易落地。
+37|
+38|### BYOL：不靠负样本也能学
+39|
+40|BYOL 很有意思，因为它让大家开始重新思考：对比学习是否真的一定依赖负样本？
+41|
+42|它通过 online / target network 的结构和动量更新机制，在没有显式负样本的情况下仍然学到了有效表示。
+43|
+44|这说明表示学习真正关键的可能不只是“拉开谁和谁的距离”，还包括：
+45|
+46|- 结构约束
+47|- 视角一致性
+48|- 预测目标设计
+49|
+50|## 这些工作的共同方向
+51|
+52|虽然实现细节不同，但这几类方法都在说明一件事：
+53|
+54|### 1. 数据增强本身就是任务定义
+55|
+56|自监督里，增强策略不只是数据处理，而是在定义“什么是语义不变性”。
+57|
+58|### 2. 表示质量比下游头部更重要
+59|
+60|如果 backbone 学到的特征足够通用，下游只用很简单的线性分类器也能拿到不错结果。
+61|
+62|### 3. 预训练正在从 NLP 扩散到更多模态
+63|
+64|语言有语言模型，视觉也正在形成自己的通用预训练路线。未来音频、视频、多模态大概率也会继续沿着这个方向发展。
+65|
+66|## 工程上的现实意义
+67|
+68|对于业务团队来说，自监督学习并不只是学术热点，它直接影响：
+69|
+70|- 冷启动阶段的效果
+71|- 小样本任务的性能上限
+72|- 标注成本投入策略
+73|- 模型迁移复用能力
+74|
+75|## 小结
+76|
+77|我越来越觉得，自监督学习是 AI 里非常底层的一条主线。它的目标不是替代所有监督学习，而是让模型先把世界的结构学会一部分，再用更少的人类标注去完成具体任务。
+78|
+79|从长期看，这种路线和大模型预训练其实是同一个方向：**先学通用表示，再做任务适配。**
+80|
+</code></pre>
+<h2 id="时效性说明"><a href="#时效性说明" class="headerlink" title="时效性说明"></a>时效性说明</h2><p>本文按文章标注日期对应的研究阶段进行整理，主要反映当时我对相关方向的观察与判断。AI 研究进展非常快，文中部分结论、对比关系或工程判断，后续可能已经被新的论文、模型能力或产业实践更新。阅读时建议结合当前时间点交叉判断。</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2026/04/15/AI研究周报-04-自监督学习新趋势/#comments" class="ds-thread-count comments-count-link" data-thread-key="2026/04/15/AI研究周报-04-自监督学习新趋势/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2020/11/14/Contour/" title="Contour" itemprop="url">Contour</a>
   </h1>
   <p class="article-author">By
@@ -460,271 +1035,6 @@
 
 
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2019/06/07/Dart-基础/" title="Dart 基本" itemprop="url">Dart 基本</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2019-06-07T06:11:21.000Z" itemprop="datePublished"> 发表于 2019-06-07</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h2 id="内置的类型"><a href="#内置的类型" class="headerlink" title="内置的类型"></a>内置的类型</h2><ul>
-<li>numbers</li>
-<li>strings</li>
-<li>booleans</li>
-<li>lists</li>
-<li>maps</li>
-<li>runes</li>
-<li>symbols
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2019/06/07/Dart-%E5%9F%BA%E7%A1%80/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Flutter/">Flutter</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/dart/">dart</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2019/06/07/Dart-基础/#comments" class="ds-thread-count comments-count-link" data-thread-key="2019/06/07/Dart-基础/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2019/05/30/Flex-box/" title="Flex box" itemprop="url">Flex box</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2019-05-30T08:16:51.000Z" itemprop="datePublished"> 发表于 2019-05-30</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <span id="more"></span>
-
-<p><img src="/./img/19053001.png"></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/layout/">layout</a><a href="/tags/Flex/">Flex</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2019/05/30/Flex-box/#comments" class="ds-thread-count comments-count-link" data-thread-key="2019/05/30/Flex-box/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2019/05/29/Vue-slot/" title="Vue slot" itemprop="url">Vue slot</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2019-05-29T07:10:38.000Z" itemprop="datePublished"> 发表于 2019-05-29</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>Slot 是一种父组件与子组件通信的一种方式</p>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2019/05/29/Vue-slot/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Vue/">Vue</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Vue/">Vue</a><a href="/tags/slot/">slot</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2019/05/29/Vue-slot/#comments" class="ds-thread-count comments-count-link" data-thread-key="2019/05/29/Vue-slot/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2019/05/26/Flutter-容器/" title="Flutter 容器" itemprop="url">Flutter 容器</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2019-05-26T05:47:36.000Z" itemprop="datePublished"> 发表于 2019-05-26</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>容器 Widget 通常只接受一个子 Widget，他们直接过着间接的继承 SingleChildRenderObjectWidget</p>
-<p>容器 Widget 一般用于包装子 Widget，添加一些修饰、变换、限制等</p>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2019/05/26/Flutter-%E5%AE%B9%E5%99%A8/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Flutter/">Flutter</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Android/">Android</a><a href="/tags/iOS/">iOS</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2019/05/26/Flutter-容器/#comments" class="ds-thread-count comments-count-link" data-thread-key="2019/05/26/Flutter-容器/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix">
     <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/43/">43</a><a class="extend next" rel="next" href="/page/2/">Next&lt;span&gt;&lt;&#x2F;span&gt;</a>
@@ -830,7 +1140,7 @@
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">36</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">42</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">24</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/04/">四月 2026</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">36</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">42</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">24</span></li></ul>
   </div>
 
 

@@ -83,6 +83,341 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2015/08/16/常用的Gradle命令/" title="常用的Gradle命令" itemprop="url">常用的Gradle命令</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2015-08-16T03:44:16.000Z" itemprop="datePublished"> 发表于 2015-08-16</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>在Android Studio的Android项目中，都会有一个gradlew文件，代表<code>gradle wrapper</code><br>在使用命令编译时，也使用<code>./gradlew</code>，使用本地的配置和环境编译</p>
+        
+        
+        <p class="article-more-link">
+          
+            <a href="/2015/08/16/%E5%B8%B8%E7%94%A8%E7%9A%84Gradle%E5%91%BD%E4%BB%A4/#more">Read More</a>
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Android/">Android</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/gradle/">gradle</a><a href="/tags/gradlew/">gradlew</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2015/08/16/常用的Gradle命令/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/08/16/常用的Gradle命令/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/08/16/Data-Binding（一）/" title="Data Binding（一）" itemprop="url">Data Binding（一）</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2015-08-16T01:20:21.000Z" itemprop="datePublished"> 发表于 2015-08-16</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>在iOS有个概念叫KVO，它提供一致机制，当制定对象的属性被修改时，会发出一条通知。这样每次被观察的对象的属性被修改后，KVO就会自动通知响应的观察者。<br>Google推出的Data Binding也可以帮我们实现这一点。</p>
+        
+        
+        <p class="article-more-link">
+          
+            <a href="/2015/08/16/Data-Binding%EF%BC%88%E4%B8%80%EF%BC%89/#more">Read More</a>
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Android/">Android</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/KVO/">KVO</a><a href="/tags/数据绑定/">数据绑定</a><a href="/tags/MVVM/">MVVM</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2015/08/16/Data-Binding（一）/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/08/16/Data-Binding（一）/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/08/12/Android-Lint工具/" title="Android Lint工具" itemprop="url">Android Lint工具</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2015-08-12T09:51:04.000Z" itemprop="datePublished"> 发表于 2015-08-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <span id="more"></span>
+<p>Android Lint是SDK Tools 16(ADT 16)之后Google提供的新工具，它是一个代码扫描工具，能够帮助我们识别代码结构存在的问题，比如：</p>
+<ol>
+<li>无效布局，多重嵌套等</li>
+<li>未使用的冗余资源文件</li>
+<li>国际化的问题(未翻译的文本)</li>
+<li>数组资源大小不一致</li>
+<li>图标缺失、重复、错误尺寸</li>
+<li>AndroidManifest.xml中的错误</li>
+</ol>
+<h2 id="Lint"><a href="#Lint" class="headerlink" title="Lint"></a>Lint</h2><p>Lint工具在<code>/AndroidSDK/tools/</code>文件夹下</p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ul>
+<li><code>lint &lt;project directory&gt;</code> lint命令后添加工程目录</li>
+<li><code>lint --html &lt;project directory&gt;</code> 生成html格式的报告</li>
+<li><code>lint --simplehtml &lt;project directory&gt;</code> 生成简单html格式的报告</li>
+<li><code>lint --xml &lt;project directory&gt;</code> 生成xml格式的报告</li>
+<li><code>lint --check &quot;UnusedResources&quot; &lt;project directory&gt;</code> 清理冗余资源文件</li>
+<li><code>lint --show</code>可获得详细问题列表<ul>
+<li>AdapterViewChildren 确保没有在XML文件中定义它的子view</li>
+<li>OnClick 确保XML文件声明的OnClick的调用函数在代码中实际存在</li>
+<li>SuspiciousImport 可疑import的检查</li>
+<li>UsesMinSdkAttributes 检查是否在AndroidManifest.xml文件中定义了minimum SDK 和 target SDK这两个属性</li>
+<li>WrongViewCast View强转换的检查</li>
+<li>MissingRegistered 检查manifest文件中声明的类实际是否存在于工程或工程的libraries中</li>
+<li>NamespaceTypo 命名空间拼写检查</li>
+<li>Proguard 混淆配置检查</li>
+<li>ScrollViewCount 检查ScrollViews是否只有一个child</li>
+<li>……</li>
+</ul>
+</li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Android/">Android</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Lint/">Lint</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2015/08/12/Android-Lint工具/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/08/12/Android-Lint工具/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/08/10/自定义属性汇总/" title="自定义属性汇总" itemprop="url">自定义属性汇总</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2015-08-10T06:45:43.000Z" itemprop="datePublished"> 发表于 2015-08-10</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <span id="more"></span>
+<h2 id="自定义属性类型"><a href="#自定义属性类型" class="headerlink" title="自定义属性类型"></a>自定义属性类型</h2><h3 id="1-reference"><a href="#1-reference" class="headerlink" title="1.reference"></a>1.reference</h3><ul>
+<li>资源类型</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">&quot;backimg&quot;</span> <span class="attr">format</span>=<span class="string">&quot;reference&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-color"><a href="#2-color" class="headerlink" title="2.color"></a>2.color</h3><ul>
+<li>颜色类型</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">&quot;textColor&quot;</span> <span class="attr">format</span>=<span class="string">&quot;color&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-boolean"><a href="#3-boolean" class="headerlink" title="3.boolean"></a>3.boolean</h3><ul>
+<li>布尔类型</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">&quot;focusable&quot;</span> <span class="attr">format</span>=<span class="string">&quot;boolean&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-dimension"><a href="#4-dimension" class="headerlink" title="4.dimension"></a>4.dimension</h3><ul>
+<li>尺寸类型</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">&quot;layout_width&quot;</span> <span class="attr">format</span>=<span class="string">&quot;dimension&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-float"><a href="#5-float" class="headerlink" title="5.float"></a>5.float</h3><ul>
+<li>浮点类类型</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">&quot;toAlpha&quot;</span> <span class="attr">format</span>=<span class="string">&quot;float&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-integer"><a href="#6-integer" class="headerlink" title="6.integer"></a>6.integer</h3><ul>
+<li>整数类型</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">&quot;visible&quot;</span> <span class="attr">format</span>=<span class="string">&quot;integer&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="7-string"><a href="#7-string" class="headerlink" title="7.string"></a>7.string</h3><ul>
+<li>字符串类型</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">&quot;key&quot;</span> <span class="attr">format</span>=<span class="string">&quot;string&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="8-fraction"><a href="#8-fraction" class="headerlink" title="8.fraction"></a>8.fraction</h3><ul>
+<li>百分比类型</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">&quot;pivotX&quot;</span> <span class="attr">format</span>=<span class="string">&quot;fraction&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="9-enum"><a href="#9-enum" class="headerlink" title="9.enum"></a>9.enum</h3><ul>
+<li>枚举类型</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">&quot;orientation&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">enum</span> <span class="attr">name</span>=<span class="string">&quot;horizontal&quot;</span> <span class="attr">value</span>=<span class="string">&quot;0&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">enum</span> <span class="attr">name</span>=<span class="string">&quot;vertical&quot;</span> <span class="attr">value</span>=<span class="string">&quot;1&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">attr</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="10-flag"><a href="#10-flag" class="headerlink" title="10.flag"></a>10.flag</h3><ul>
+<li>标记类型(可以与或运算)</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">&quot;mode&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">flag</span> <span class="attr">name</span>=<span class="string">&quot;stateVisible&quot;</span> <span class="attr">value</span>=<span class="string">&quot;0x01&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">flag</span> <span class="attr">name</span>=<span class="string">&quot;statePan&quot;</span> <span class="attr">value</span>=<span class="string">&quot;0x10&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">attr</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>属性可以同时指定多个类型值</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">attr</span> <span class="attr">name</span>=<span class="string">&quot;background&quot;</span> <span class="attr">format</span>=<span class="string">&quot;referce|color&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Android/">Android</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/属性/">属性</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2015/08/10/自定义属性汇总/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/08/10/自定义属性汇总/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2015/08/09/Swift闭包表达式/" title="Swift闭包表达式" itemprop="url">Swift闭包表达式</a>
   </h1>
   <p class="article-author">By
@@ -466,262 +801,6 @@
 
 
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/07/14/JavaSpcript-strict/" title="JavaSpcript-strict" itemprop="url">JavaSpcript-strict</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2015-07-14T07:30:22.000Z" itemprop="datePublished"> 发表于 2015-07-14</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>JavaScript在设计之初不强制变量需要<code>var</code>申明</p>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/07/14/JavaSpcript-strict/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/node-js/">node.js</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/设计缺陷/">设计缺陷</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/07/14/JavaSpcript-strict/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/07/14/JavaSpcript-strict/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/07/13/Android引导功能的实现/" title="Android引导功能的实现" itemprop="url">Android引导功能的实现</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2015-07-13T08:04:29.000Z" itemprop="datePublished"> 发表于 2015-07-13</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><a href="https://github.com/worker8/TourGuide">TourGuide</a>是一个能够实现Android View上引导动画的库</p>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/07/13/Android%E5%BC%95%E5%AF%BC%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Android/">Android</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/引导/">引导</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/07/13/Android引导功能的实现/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/07/13/Android引导功能的实现/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/06/24/魅族手机连接Mac的问题/" title="魅族手机连接Mac的问题" itemprop="url">魅族手机连接Mac的问题</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2015-06-24T06:12:55.000Z" itemprop="datePublished"> 发表于 2015-06-24</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>部分三星、魅族的手机，连接Mac时，执行<code>adb devices</code>不能发现设备</p>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/06/24/%E9%AD%85%E6%97%8F%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5Mac%E7%9A%84%E9%97%AE%E9%A2%98/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Android/">Android</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Mac/">Mac</a><a href="/tags/魅族/">魅族</a><a href="/tags/连接/">连接</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/06/24/魅族手机连接Mac的问题/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/06/24/魅族手机连接Mac的问题/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/06/19/红杏公益代理——妈妈再也不用当心我翻不了墙了/" title="红杏公益代理——妈妈再也不用当心我翻不了墙了" itemprop="url">红杏公益代理——妈妈再也不用当心我翻不了墙了</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2015-06-19T10:20:17.000Z" itemprop="datePublished"> 发表于 2015-06-19</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>虽然我不是红杏的用户（因为我们公司有翻墙路由我会乱说），但是红杏应该有很多人在使用。最近红杏开放了一个公益代理，专门为开发者开放。<br>从今以后更新Android SDK，使用Android Studio就可以飞起来啦。网络再也不是借口和障碍了。</p>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/06/19/%E7%BA%A2%E6%9D%8F%E5%85%AC%E7%9B%8A%E4%BB%A3%E7%90%86%E2%80%94%E2%80%94%E5%A6%88%E5%A6%88%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E5%BD%93%E5%BF%83%E6%88%91%E7%BF%BB%E4%B8%8D%E4%BA%86%E5%A2%99%E4%BA%86/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Android/">Android</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/翻墙/">翻墙</a><a href="/tags/妈妈再也不用担心系列/">妈妈再也不用担心系列</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/06/19/红杏公益代理——妈妈再也不用当心我翻不了墙了/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/06/19/红杏公益代理——妈妈再也不用当心我翻不了墙了/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix">
     <a class="extend prev" rel="prev" href="/page/7/">&lt;span&gt;&lt;&#x2F;span&gt;Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/43/">43</a><a class="extend next" rel="next" href="/page/9/">Next&lt;span&gt;&lt;&#x2F;span&gt;</a>
@@ -827,7 +906,7 @@
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">36</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">42</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">24</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/04/">四月 2026</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">36</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">42</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">24</span></li></ul>
   </div>
 
 

@@ -83,6 +83,264 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2019/05/16/Flutter-desktop迁移到原有项目/" title="Flutter desktop 迁移到原有项目" itemprop="url">Flutter desktop 迁移到原有项目</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2019-05-16T07:55:28.000Z" itemprop="datePublished"> 发表于 2019-05-16</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>Flutter create 现在还不支持 desktop，想要在原有的 Flutter 项目支持 Desktop，需要以下步骤</p>
+        
+        
+        <p class="article-more-link">
+          
+            <a href="/2019/05/16/Flutter-desktop%E8%BF%81%E7%A7%BB%E5%88%B0%E5%8E%9F%E6%9C%89%E9%A1%B9%E7%9B%AE/#more">Read More</a>
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Flutter/">Flutter</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Android/">Android</a><a href="/tags/iOS/">iOS</a><a href="/tags/desktop/">desktop</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2019/05/16/Flutter-desktop迁移到原有项目/#comments" class="ds-thread-count comments-count-link" data-thread-key="2019/05/16/Flutter-desktop迁移到原有项目/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/05/16/Flutter-desktop-运行/" title="Flutter desktop 运行" itemprop="url">Flutter desktop 运行</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2019-05-16T03:31:41.000Z" itemprop="datePublished"> 发表于 2019-05-16</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>在 Google io 2019 上，官方正式宣布<a href="https://developers.googleblog.com/2019/05/Flutter-io19.html?m=1">Flutter</a>支持全平台</p>
+        
+        
+        <p class="article-more-link">
+          
+            <a href="/2019/05/16/Flutter-desktop-%E8%BF%90%E8%A1%8C/#more">Read More</a>
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Flutter/">Flutter</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Android/">Android</a><a href="/tags/iOS/">iOS</a><a href="/tags/desktop/">desktop</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2019/05/16/Flutter-desktop-运行/#comments" class="ds-thread-count comments-count-link" data-thread-key="2019/05/16/Flutter-desktop-运行/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/12/03/Room-tips/" title="Room tips" itemprop="url">Room tips</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2018-12-03T03:48:50.000Z" itemprop="datePublished"> 发表于 2018-12-03</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <span id="more"></span>
+<p>避免接受到不相关的LiveData回调<br>首先我们要知道Room的实现机制</p>
+<ol>
+<li>使用<code>triggers</code>监听到了表的增删改查</li>
+<li>Room创建了一个<a href="https://developer.android.com/reference/android/arch/persistence/room/InvalidationTracker">InvalidationTracker</a>观察表是否发生改变</li>
+<li>当<a href="https://developer.android.com/reference/android/arch/persistence/room/InvalidationTracker.Observer.html#onInvalidated%28java.util.Set%3Cjava.lang.String%3E%29">InvalidationTracker.Observer#onInvalidated</a>调用，通知Observer重新查询</li>
+</ol>
+<p>Room只知道你的表发送了变化，但是不知道具体发生了什么变化，而且并不知道这些变化观察者是否关心。Room本身并不保存数据所以它也无法判断，观察者要的数据要否变化。</p>
+<p>所以在实际使用中你需要自己过滤掉不需要的通知</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Dao</span></span><br><span class="line">abstrat <span class="keyword">class</span> <span class="title class_">UserDao</span> : BaseDao&lt;User&gt;() &#123;</span><br><span class="line">    <span class="meta">@Query(&quot;SELECT * FROM Users WHERE userid = :id&quot;)</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">abstract</span> fun <span class="title function_">getUserById</span><span class="params">(id : String)</span> : Flowable&lt;User&gt;</span><br><span class="line"></span><br><span class="line">    fun getDistinctUserBy</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2018/12/03/Room-tips/#comments" class="ds-thread-count comments-count-link" data-thread-key="2018/12/03/Room-tips/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/11/28/命令行运行Kotlin/" title="命令行运行Kotlin" itemprop="url">命令行运行Kotlin</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2018-11-28T12:36:23.000Z" itemprop="datePublished"> 发表于 2018-11-28</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <span id="more"></span>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">brew update</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">brew install kotlin</span></span><br></pre></td></tr></table></figure>
+<p>运行</p>
+<figure class="highlight kt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Hello.kt</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">main</span><span class="params">(args : <span class="type">Array</span>&lt;<span class="type">String</span>&gt;)</span></span> &#123;</span><br><span class="line">    println(<span class="string">&quot;Hello world!&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kotlinc hello.kt -include-runtime -d Hello.jar</span><br><span class="line">java -jar Hello.jar</span><br></pre></td></tr></table></figure>
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Kotlin/">Kotlin</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Android/">Android</a><a href="/tags/Kotlin/">Kotlin</a><a href="/tags/Coroutine/">Coroutine</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2018/11/28/命令行运行Kotlin/#comments" class="ds-thread-count comments-count-link" data-thread-key="2018/11/28/命令行运行Kotlin/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2018/09/04/OpenCV-contrib/" title="OpenCV contrib" itemprop="url">OpenCV contrib</a>
   </h1>
   <p class="article-author">By
@@ -464,372 +722,6 @@
 
 
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/02/28/vim常用命令/" title="vim常用命令" itemprop="url">vim常用命令</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2017-02-28T08:43:01.000Z" itemprop="datePublished"> 发表于 2017-02-28</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <span id="more"></span>
-<p><code>/&lt;关键字&gt;</code><br><code>:&lt;行号&gt;</code><br><code>dd</code>剪切<br><code>yy</code>复制<br><code>p</code>粘贴<br><code>u</code>撤销<br><code>ctrl+r</code>重做<br><code>w</code> 保存<br><code>wq</code>保存退出<br><code>q!</code>退出</p>
-<p>find + xargs + grep</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">find -name Activity.java</span><br><span class="line">find -name &#x27;*.java&#x27;</span><br><span class="line">find -name &#x27;*.java&#x27; | xarfs grep &#x27;extends[ \t\n]+ActiviyManagerNative&#x27;</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Android.mk</span><br><span class="line">LOCAL_SHARED_LIBRARIES := libutils</span><br><span class="line"></span><br><span class="line">#include &lt;utils/Call.Stack.h&gt;</span><br><span class="line"></span><br><span class="line">CallStack stack;</span><br><span class="line">stack.update();</span><br><span class="line">stack.log(&quot;tag&quot;);</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ninja: build stopped: subcommand failed.</span><br><span class="line">build/core/ninja.mk:148: recipe for target &#x27;ninja_wrapper&#x27; failed</span><br><span class="line">make: *** [ninja_wrapper] Error 1</span><br><span class="line"></span><br><span class="line">/******/</span><br><span class="line">cd external/doclava &amp;&amp; mm -B USE_NINJA=false</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/unistd.h:733:6: note: &#x27;syscall&#x27; has been explicitly marked deprecated here</span><br><span class="line">int      syscall(int, ...);</span><br><span class="line">         ^</span><br><span class="line">1 error generated.</span><br><span class="line">[  1% 408/31742] host C++: libc++abi &lt;...xternal/libcxxabi/src/cxa_demangle.cpp</span><br><span class="line">ninja: build stopped: subcommand failed.</span><br><span class="line">make: *** [ninja_wrapper] Error</span><br></pre></td></tr></table></figure>
-
-<p>去到&#x2F;Applications&#x2F;XCode.app&#x2F;Contents&#x2F;Developer&#x2F;Platforms&#x2F;MacOSX.platform&#x2F;Developer&#x2F;SDKs，发现MacOSX10.11.sdk已经被删除，只剩下MacOSX10.12.sdk，所以首先要去下载10.11的SDK。可以去MacOSX-SDKs下载MacOSX10.11.sdk，解压拷贝到&#x2F;Applications&#x2F;XCode.app&#x2F;Contents&#x2F;Developer&#x2F;Platforms&#x2F;MacOSX.platform&#x2F;Developer&#x2F;SDKs。为了避免下次升级的时候再被删除，可以放到~&#x2F;Document&#x2F;MacOSX10.11.sdk，再给它创建一个软链接：</p>
-<p>1<br>$ ln -s ~&#x2F;Document&#x2F;MacOSX10.11.sdk &#x2F;Applications&#x2F;XCode.app&#x2F;Contents&#x2F;Developer&#x2F;Platforms&#x2F;MacOSX.platform&#x2F;Developer&#x2F;SDKs&#x2F;MacOSX10.11.sdk<br>然后确保AOSP源码下build&#x2F;core&#x2F;combo&#x2F;mac_version.mk文件中<br>mac_sdk_versions_supported :&#x3D; 10.9 10.10 10.11<br>后面不要写10.12。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Unsupported curl, please use a curl not based on SecureTransport</span><br><span class="line">Jack server installation not found</span><br><span class="line">Unsupported curl, please use a curl not based on SecureTransport</span><br><span class="line">Unsupported curl, please use a curl not based on SecureTransport</span><br><span class="line">[  4% 842/20846] host C++: dexdump2 &lt;= art/dexdump/dexdump.cc</span><br><span class="line">ninja: build stopped: subcommand failed.</span><br><span class="line">make: *** [ninja_wrapper] Error 1</span><br><span class="line"></span><br><span class="line">#### make failed to build some targets (01:37 (mm:ss)) ####</span><br></pre></td></tr></table></figure>
-
-<p>首先下载curl源码，然后执行</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./configure --prefix=/usr/local/curl --with-ssl=/usr/local/Cellar/openssl/1.0.2d_1</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
-<p>jack-admin kill-server<br>jack-admin uninstall-server<br>cd prebuilts&#x2F;sdk&#x2F;tools<br>jack-admin install-server jack-launcher.jar  jack-server-4.7.ALPHA.jar</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Android/">Android</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/vim/">vim</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2017/02/28/vim常用命令/#comments" class="ds-thread-count comments-count-link" data-thread-key="2017/02/28/vim常用命令/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/02/20/Docker入门/" title="Docker 入门" itemprop="url">Docker 入门</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2017-02-20T08:43:01.000Z" itemprop="datePublished"> 发表于 2017-02-20</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <span id="more"></span>
-
-<h1 id="镜像"><a href="#镜像" class="headerlink" title="镜像"></a>镜像</h1><h2 id="查看镜像信息"><a href="#查看镜像信息" class="headerlink" title="查看镜像信息"></a>查看镜像信息</h2><p><code>docker images</code>命令可以列出本地主机上已有的镜像</p>
-<ul>
-<li>PEPOSITORY 仓库</li>
-<li>TAG 标签信息</li>
-<li>ID 唯一 ID</li>
-<li>CREATED 创建时间</li>
-<li>VIRTUAL SIZE 镜像大下<br><code>docker inspect</code>命令可以获取该奖项的详细信息<br>返回一个 JSON 格式的消息，如果只要其中一项内容时，可以使用<code>-f</code>指定参数。<br>例如镜像的<code>Architecture</code>信息</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker inspect -f &#123;&#123;&quot;.Architecture&quot;&#125;&#125; ID</span><br></pre></td></tr></table></figure>
-
-<h2 id="搜寻镜像"><a href="#搜寻镜像" class="headerlink" title="搜寻镜像"></a>搜寻镜像</h2><p>使用<code>docker search</code>命令可以搜索远端仓库共享的镜像，默认搜索 Docker Hub</p>
-<h2 id="删除镜像"><a href="#删除镜像" class="headerlink" title="删除镜像"></a>删除镜像</h2><p>使用<code>docker rmi</code>命令可以删除镜像，命令后可以使标签或 ID</p>
-<h2 id="查看所有容器"><a href="#查看所有容器" class="headerlink" title="查看所有容器"></a>查看所有容器</h2><p><code>docker ps -a</code>命令可以看到本机上存在的所有容器</p>
-<h2 id="创建镜像"><a href="#创建镜像" class="headerlink" title="创建镜像"></a>创建镜像</h2><h3 id="基于已有的镜像的容器创建"><a href="#基于已有的镜像的容器创建" class="headerlink" title="基于已有的镜像的容器创建"></a>基于已有的镜像的容器创建</h3><p>docker commit 命令 主要选项包括</p>
-<ul>
-<li><code>-a</code> <code>--author=&quot;&quot;</code> 作者信息</li>
-<li><code>-m</code> <code>--message=&quot;&quot;</code> 提交信息</li>
-<li><code>-p</code> <code>--pause==true</code> 提交时暂停容器运行</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker commit -m &quot;message&quot; -a &quot;author&quot; id name</span><br></pre></td></tr></table></figure>
-
-<h3 id="基于本地模板导入"><a href="#基于本地模板导入" class="headerlink" title="基于本地模板导入"></a>基于本地模板导入</h3><p>从一个操作西永模板文件导入一个镜像，推介使用<a href="https://openvz.org/Download/template/precreated">OPENVZ</a>下载模板</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ubuntu-14.04-x86_64-minimal.tar.gz | docler import - ubuntu:14.04</span><br></pre></td></tr></table></figure>
-
-<h3 id="存出和载入镜像"><a href="#存出和载入镜像" class="headerlink" title="存出和载入镜像"></a>存出和载入镜像</h3><h4 id="存入镜像"><a href="#存入镜像" class="headerlink" title="存入镜像"></a>存入镜像</h4><p>使用<code>docker save</code>命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker save -o ubuntu_14.tar unbuntu:14.04</span><br></pre></td></tr></table></figure>
-
-<h3 id="载入镜像"><a href="#载入镜像" class="headerlink" title="载入镜像"></a>载入镜像</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker load --input unbuntu_14.tar</span><br></pre></td></tr></table></figure>
-
-<h3 id="上传镜像"><a href="#上传镜像" class="headerlink" title="上传镜像"></a>上传镜像</h3><p>doker push 命令可以上传镜像到仓库，默认上传到 DockerHub 上</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker tag test:latest user/test:latest</span><br><span class="line">docker push user/test:latest</span><br></pre></td></tr></table></figure>
-
-<h1 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h1><p>容器是镜像的一个运行实例，带有额外可写的文件层 ##创建容器<br><code>docker create</code>新建一个停止状态的容器，可以使用<code>docker start</code>命令启动它</p>
-<h2 id="新建并启动容器"><a href="#新建并启动容器" class="headerlink" title="新建并启动容器"></a>新建并启动容器</h2><p><code>docker run</code></p>
-<h2 id="使用特权"><a href="#使用特权" class="headerlink" title="使用特权"></a>使用特权</h2><p>–privileged</p>
-<h2 id="使用-Dokerfile-创建镜像"><a href="#使用-Dokerfile-创建镜像" class="headerlink" title="使用 Dokerfile 创建镜像"></a>使用 Dokerfile 创建镜像</h2><p>Docker 可以使用文本文件 Dockerfile 来描述镜像从而创建镜像</p>
-<h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><p>Dockerfile 由命令语句组成，支持<code>#</code>开头的注释<br>一般而言，Dockerfile 分为四部分：基础信息、维护者信息、镜像操作指令和容器启动时执行指令</p>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第一行必须是指定基础镜像</span></span><br><span class="line"><span class="keyword">FROM</span> ubuntu</span><br><span class="line"><span class="comment"># 维护者信息</span></span><br><span class="line"><span class="keyword">MAINTAINER</span> <span class="keyword">user</span> <span class="keyword">user</span>@email.com</span><br><span class="line"><span class="comment"># 镜像指令</span></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> <span class="built_in">echo</span> <span class="string">&quot;test message&quot;</span> &gt;&gt; /etc/test.txt</span></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> apt-get update &amp;&amp; apt-get install -y nginx</span></span><br><span class="line"><span class="comment"># 容器启动时执行指令</span></span><br><span class="line"><span class="keyword">CMD</span><span class="language-bash"> /usr/sbin/nginx</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><h3 id="1-FROM"><a href="#1-FROM" class="headerlink" title="1.FROM"></a>1.FROM</h3><p>FROM <image>:<tag><br>指定基础镜像</p>
-<h3 id="2-MAINTAINER"><a href="#2-MAINTAINER" class="headerlink" title="2.MAINTAINER"></a>2.MAINTAINER</h3><p>MAINTAINER <name> 指定维护者信息</p>
-<h3 id="3-RUN"><a href="#3-RUN" class="headerlink" title="3.RUN"></a>3.RUN</h3><p>RUN <command></p>
-<blockquote>
-<p>RUN echo “root:Docker!” | chpasswd</p>
-</blockquote>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Docker/">Docker</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/入门/">入门</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2017/02/20/Docker入门/#comments" class="ds-thread-count comments-count-link" data-thread-key="2017/02/20/Docker入门/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/12/22/RN环境配置/" title="RN环境配置" itemprop="url">RN环境配置</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2016-12-22T08:56:43.000Z" itemprop="datePublished"> 发表于 2016-12-22</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <span id="more"></span>
-<h1 id="必需的软件"><a href="#必需的软件" class="headerlink" title="必需的软件"></a>必需的软件</h1><h2 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h2><p>Mac系统的包管理器</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
-
-<h2 id="react-native-cli"><a href="#react-native-cli" class="headerlink" title="react-native-cli"></a>react-native-cli</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g react-native-cli</span><br></pre></td></tr></table></figure>
-
-<h1 id="非必需软件"><a href="#非必需软件" class="headerlink" title="非必需软件"></a>非必需软件</h1><h2 id="Watchman"><a href="#Watchman" class="headerlink" title="Watchman"></a>Watchman</h2><p>监视文件系统变更的工具</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install watchman</span><br></pre></td></tr></table></figure>
-
-<h2 id="Flow"><a href="#Flow" class="headerlink" title="Flow"></a>Flow</h2><p>静态的JS类型检查工具</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install flow</span><br></pre></td></tr></table></figure>
-
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">react-native init FirstProject</span><br><span class="line">cd FirstProject</span><br><span class="line">react-native run-ios</span><br></pre></td></tr></table></figure>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/ReactNative/">ReactNative</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/环境配置/">环境配置</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2016/12/22/RN环境配置/#comments" class="ds-thread-count comments-count-link" data-thread-key="2016/12/22/RN环境配置/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/12/07/Android与so/" title="Android 与 so" itemprop="url">Android 与 so</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2016-12-07T09:25:41.000Z" itemprop="datePublished"> 发表于 2016-12-07</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <span id="more"></span>
-
-<h2 id="ABI"><a href="#ABI" class="headerlink" title="ABI"></a>ABI</h2><p>ABI（Application Binary Interface）应用二进制借口，定义了 CPU 能够执行的二进制文件的格式规范。<br>Android 支持的 CPU 架构众多，ABI 包括<code>armeabi</code>、<code>armeabi-v7a</code>、<code>arm64-v8a</code>、<code>x86</code>、<code>x86_64</code>、<code>mips</code>、<code>mips64</code></p>
-<blockquote>
-<p><a href="https://developer.android.com/ndk/guides/abis.html#sa">https://developer.android.com/ndk/guides/abis.html#sa</a></p>
-</blockquote>
-<p>so (shared object)是机器可以直接运行的二进制代码，买个 App 的 so 被打包在 apk 文件的<code>lib/</code>目录下</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">lib</span><br><span class="line">|</span><br><span class="line">├── armeabi</span><br><span class="line">│   └── libmath.so</span><br><span class="line">├── armeabi-v7a</span><br><span class="line">│   └── libmath.so</span><br><span class="line">├── mips</span><br><span class="line">│   └── libmath.so</span><br><span class="line">└── x86</span><br><span class="line">    └── libmath.so</span><br></pre></td></tr></table></figure>
-
-<p>使用下面命令可以查看 apk 支持的 abi</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">appt dump bading app.apk | grep abi</span><br></pre></td></tr></table></figure>
-
-<h2 id="制定-ABI-生产-so"><a href="#制定-ABI-生产-so" class="headerlink" title="制定 ABI 生产 so"></a>制定 ABI 生产 so</h2><p>在<code>Application.mk</code>文件中指定<code>APP_ABI</code>参数</p>
-<h2 id="Android-系统的-ABI-支持"><a href="#Android-系统的-ABI-支持" class="headerlink" title="Android 系统的 ABI 支持"></a>Android 系统的 ABI 支持</h2><ul>
-<li>primary ABI 当前系统使用的 ABI</li>
-<li>secondary ABI 当前系统支持的其他 ABI<br>一般情况手机不止支持一个 ABI</li>
-</ul>
-<h3 id="查看-ABI"><a href="#查看-ABI" class="headerlink" title="查看 ABI"></a>查看 ABI</h3><ul>
-<li><code>/system/build.prop</code>中制定了支持的 ABI 类型，可以在 adb shell 中查看</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getprop | grep abilist</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>使用<code>Build.BUPPORTED_ABIS</code>可以获取当前设备支持的 ABI 列表</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Build.SUPPORTED_ABIS;</span><br></pre></td></tr></table></figure>
-
-<p>在 apk 安装过程时，Package Manager 会扫描整个 apk 寻找符合下面文件路径格式动态链接库</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lib/&lt;primary-abi&gt;/lib&lt;name&gt;.so</span><br></pre></td></tr></table></figure>
-
-<p><code>primary-abi</code>是上面表中的 abi 的值，<code>name</code>对应的是<code>Android.mk</code>中定义的<code>LOCAL_MODULE</code>的值<br>如果没有当前<code>primary-abi</code>的 so，Package Manager 会尝试寻找合适<code>secondary-abi</code>的 so 文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lib/&lt;secondary-abi&gt;/lib&lt;name&gt;.so</span><br></pre></td></tr></table></figure>
-
-<p>有合适的 so 文件后，包管理会在改 ABI 文件下的所有 so 库全部拷贝到应用的 data 目录下<code>data/data/&lt;package_name&gt;/lib/</code></p>
-<p>在代码调用 so 时，如果 ABI 文件夹下没有提供 so 文件，运行时会遇到<code>java.lang.UnsatisfiedLinkError</code></p>
-<h2 id="加载-so"><a href="#加载-so" class="headerlink" title="加载 so"></a>加载 so</h2><p><code>System.loadLibrary</code>之传入<code>Android.mk</code>中定义的<code>LOCAL_MODULE</code>的值<br><code>System.load</code>这个方法可以动态的加载非 apk 内置的 so，甚至动态下载的 so，但是不能加载 SD 卡中的 so</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.load(&quot;/data/data/&lt;package-name/dir/libmath.so&quot;)</span><br></pre></td></tr></table></figure>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Android/">Android</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/ndk/">ndk</a><a href="/tags/so/">so</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2016/12/07/Android与so/#comments" class="ds-thread-count comments-count-link" data-thread-key="2016/12/07/Android与so/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix">
     <a class="extend prev" rel="prev" href="/page/2/">&lt;span&gt;&lt;&#x2F;span&gt;Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/43/">43</a><a class="extend next" rel="next" href="/page/4/">Next&lt;span&gt;&lt;&#x2F;span&gt;</a>
@@ -935,7 +827,7 @@
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">36</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">42</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">24</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/04/">四月 2026</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">36</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">42</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">24</span></li></ul>
   </div>
 
 

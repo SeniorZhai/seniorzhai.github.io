@@ -83,6 +83,312 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2015/03/19/AndroidStudio上使用NDK/" title="AndroidStudio上使用NDK" itemprop="url">AndroidStudio上使用NDK</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2015-03-19T05:29:22.000Z" itemprop="datePublished"> 发表于 2015-03-19</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <span id="more"></span>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li>下载NDK</li>
+<li>配置环境变量，在<code>~/.bash_profile</code>文件下添加</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash"> 根据自己存放的位置指定</span></span><br><span class="line">export NDK_ROOT=/Users/UserName/Documents/Android/android-ndk-r10</span><br><span class="line">export PATH=$NDK_ROOT:$PATH</span><br></pre></td></tr></table></figure>
+
+<h2 id="新建一个项目"><a href="#新建一个项目" class="headerlink" title="新建一个项目"></a>新建一个项目</h2><p>创建一个<code>MathKit</code>类<br><img src="/img/15031901.png"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MathKit</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">square</span><span class="params">(<span class="type">int</span> num)</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">static</span> &#123;</span><br><span class="line">		System.loadLibrary(<span class="string">&quot;JniDemo&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在命令行中进入目录，使用<code>javah</code>命令生成.h文件<br><img src="/img/15031902.png"><br>将.h文件存放至jni文件夹下，并新建.cpp文件<br><img src="/img/15031903.png"><br>根据头文件，编写cpp文件</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;com_zoe_ndkdemo_jni_MathKit.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function">JNIEXPORT jint JNICALL <span class="title">Java_com_zoe_ndkdemo_jni_MathKit_square</span></span></span><br><span class="line"><span class="function">  <span class="params">(JNIEnv * env, jclass cls, jint num)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num * num;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>在<code>local.properties</code>文件添加ndk路径</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ndk.dir=/Users/UserName/Documents/Android/android-ndk-r10</span><br></pre></td></tr></table></figure>
+<p>在app项目中的build.gradle中的<code>defaultConfig</code>中添加</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ndk &#123;</span><br><span class="line">	moduleName &quot;JniDemo&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>之后就可以在代码中调用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> TextView textView;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onCreate</span><span class="params">(Bundle savedInstanceState)</span> &#123;</span><br><span class="line">   <span class="built_in">super</span>.onCreate(savedInstanceState);</span><br><span class="line">   setContentView(R.layout.activity_main);</span><br><span class="line">   textView = (TextView) findViewById(R.id.text);</span><br><span class="line">   textView.setText(<span class="string">&quot;2*2=&quot;</span>+ MathKit.square(<span class="number">2</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>示例</strong>：<a href="https://github.com/SeniorZhai/NdkDemo">https://github.com/SeniorZhai/NdkDemo</a></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Android/">Android</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/AndroidStudio/">AndroidStudio</a><a href="/tags/ndk/">ndk</a><a href="/tags/mac/">mac</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2015/03/19/AndroidStudio上使用NDK/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/03/19/AndroidStudio上使用NDK/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/03/18/理解StrongReferce、SoftReference、WeakReference、PhantomReference/" title="理解StrongReferce、SoftReference、WeakReference、PhantomReference" itemprop="url">理解StrongReferce、SoftReference、WeakReference、PhantomReference</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2015-03-18T08:22:58.000Z" itemprop="datePublished"> 发表于 2015-03-18</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>JDK 1.2版本引入了强、软、弱、虚引用的概念</p>
+        
+        
+        <p class="article-more-link">
+          
+            <a href="/2015/03/18/%E7%90%86%E8%A7%A3StrongReferce%E3%80%81SoftReference%E3%80%81WeakReference%E3%80%81PhantomReference/#more">Read More</a>
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Android/">Android</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/引用/">引用</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2015/03/18/理解StrongReferce、SoftReference、WeakReference、PhantomReference/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/03/18/理解StrongReferce、SoftReference、WeakReference、PhantomReference/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/03/17/Android-Shape的使用/" title="Android Shape的使用" itemprop="url">Android Shape的使用</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2015-03-17T07:20:02.000Z" itemprop="datePublished"> 发表于 2015-03-17</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <span id="more"></span>
+<ul>
+<li>shape<br>  android:shape[“rectagle”|”oval”|”line”|”ring”]<ul>
+<li>rectagle 矩形</li>
+<li>oval椭圆</li>
+<li>line水平直线</li>
+<li>ring环形</li>
+</ul>
+</li>
+<li>gradient 渐变<ul>
+<li>android:startColor 起始颜色</li>
+<li>android:endColor 结束颜色</li>
+<li>android:angle 渐变角度，0从上到下，90从左到右，数值必须为45的倍数，默认为0</li>
+<li>android:type 渐变样式 line线性渐变，radial环形渐变，sweep扫描渐变</li>
+</ul>
+</li>
+<li>solid 填充颜色<ul>
+<li>android:color 填充颜色</li>
+</ul>
+</li>
+<li>stroke 描边<ul>
+<li>android:width 描边的宽度</li>
+<li>android:color 描边的颜色</li>
+<li>android:dashWidth 间隔线的宽度</li>
+<li>android:dashGap 间隔线的间隔</li>
+</ul>
+</li>
+<li>corners  圆角<ul>
+<li>android:radius 圆角的半径，值越大越圆</li>
+<li>android:topRightRadius 右上角半径</li>
+<li>android:bottomLeftRadius 左下角半径</li>
+<li>android:topLeftRadius 右上角半径</li>
+<li>android:bottomRightRadius 右下角半径</li>
+</ul>
+</li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Android/">Android</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/shape/">shape</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2015/03/17/Android-Shape的使用/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/03/17/Android-Shape的使用/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/03/16/androidannotations(二)/" title="androidannotations(二)" itemprop="url">androidannotations(二)</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
+		
+  <p class="article-time">
+    <time datetime="2015-03-16T13:30:45.000Z" itemprop="datePublished"> 发表于 2015-03-16</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p><a href="https://github.com/excilys/androidannotations">androidannotations</a>是一款Android注入框架，可以方便我们编程，减少代码量(变相减少了错误的可能)，让我们可以更多的把精力放在逻辑处理上。</p>
+        
+        
+        <p class="article-more-link">
+          
+            <a href="/2015/03/16/androidannotations(%E4%BA%8C)/#more">Read More</a>
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Android/">Android</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/注入/">注入</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2015/03/16/androidannotations(二)/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/03/16/androidannotations(二)/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2015/03/11/TimingLogger/" title="TimingLogger" itemprop="url">TimingLogger</a>
   </h1>
   <p class="article-author">By
@@ -509,262 +815,6 @@
 
 
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/02/28/androidannotations(一)/" title="androidannotations(一)" itemprop="url">androidannotations(一)</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2015-02-28T13:30:45.000Z" itemprop="datePublished"> 发表于 2015-02-28</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><a href="https://github.com/excilys/androidannotations">androidannotations</a>是一款Android注入框架，可以方便我们编程，减少代码量(变相减少了错误的可能)，让我们可以更多的把精力放在逻辑处理上。</p>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/02/28/androidannotations(%E4%B8%80)/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Android/">Android</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/注入/">注入</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/02/28/androidannotations(一)/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/02/28/androidannotations(一)/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/02/28/Android开发贴士/" title="Android开发贴士" itemprop="url">Android开发贴士</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2015-02-28T02:26:01.000Z" itemprop="datePublished"> 发表于 2015-02-28</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>转至<a href="http://blog.danlew.net/2014/03/30/android-tips-round-up-part-1/">http://blog.danlew.net/2014/03/30/android-tips-round-up-part-1/</a></p>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/02/28/Android%E5%BC%80%E5%8F%91%E8%B4%B4%E5%A3%AB/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Android/">Android</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Tips/">Tips</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/02/28/Android开发贴士/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/02/28/Android开发贴士/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/02/28/AndroidStudio图标插件/" title="AndroidStudio图标插件" itemprop="url">AndroidStudio图标插件</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2015-02-28T01:34:56.000Z" itemprop="datePublished"> 发表于 2015-02-28</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><a href="https://github.com/konifar/android-material-design-icon-generator-plugin">Android Material Design Icon Generator Plugin</a>是一款帮助我们设置Material风格图标的插件</p>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/02/28/AndroidStudio%E5%9B%BE%E6%A0%87%E6%8F%92%E4%BB%B6/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Android/">Android</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/AndroidStudio/">AndroidStudio</a><a href="/tags/Material/">Material</a><a href="/tags/icon/">icon</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/02/28/AndroidStudio图标插件/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/02/28/AndroidStudio图标插件/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/02/27/NanoTasks/" title="NanoTasks" itemprop="url">NanoTasks</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Dear宅学长" target="_blank" itemprop="author">Dear宅学长</a>
-		
-  <p class="article-time">
-    <time datetime="2015-02-27T03:25:57.000Z" itemprop="datePublished"> 发表于 2015-02-27</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><a href="https://github.com/fabiendevos/nanotasks">NanoTasks</a>是一款轻量级的Android异步任务工具类，是<code>AsyncTask</code>的替代品。</p>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/02/27/NanoTasks/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Android/">Android</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/异步/">异步</a><a href="/tags/Async/">Async</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/02/27/NanoTasks/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/02/27/NanoTasks/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix">
     <a class="extend prev" rel="prev" href="/page/11/">&lt;span&gt;&lt;&#x2F;span&gt;Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/43/">43</a><a class="extend next" rel="next" href="/page/13/">Next&lt;span&gt;&lt;&#x2F;span&gt;</a>
@@ -870,7 +920,7 @@
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">36</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">42</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">24</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/04/">四月 2026</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">17</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">36</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">42</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">20</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/02/">二月 2014</a><span class="archive-list-count">24</span></li></ul>
   </div>
 
 
