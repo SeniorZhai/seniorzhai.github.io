@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seniorzhai.github.io/2021/02/20/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-14-%E6%8C%87%E4%BB%A4%E8%B7%9F%E9%9A%8F%E6%AD%A3%E5%9C%A8%E6%88%90%E4%B8%BA%E6%96%B0%E6%8E%A5%E5%8F%A3/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2021/02/13/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-13-%E5%A4%9A%E6%A8%A1%E6%80%81%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%BC%80%E5%A7%8B%E6%88%90%E5%BD%A2/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2021/03/06/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-16-%E6%95%B0%E6%8D%AE%E6%B2%BB%E7%90%86%E4%BC%9A%E6%88%90%E4%B8%BA%E6%A8%A1%E5%9E%8B%E4%B8%8A%E9%99%90%E7%9A%84%E4%B8%80%E9%83%A8%E5%88%86/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2021/02/27/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-15-%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B%E4%BB%8E%E5%88%86%E6%95%B0%E8%B5%B0%E5%90%91%E4%BD%93%E9%AA%8C/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2021/01/16/AI%E7%A0%94%E7%A9%B6%E5%91%A8%E6%8A%A5-09-%E7%A8%80%E7%96%8F%E6%B3%A8%E6%84%8F%E5%8A%9B%E4%B8%8E%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -119,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/09/10/%E9%A2%9C%E8%89%B2%E6%90%AD%E9%85%8D/</loc>
+    <loc>https://seniorzhai.github.io/2020/11/01/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80(%E4%B8%80)/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -137,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2020/11/01/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80(%E4%B8%80)/</loc>
+    <loc>https://seniorzhai.github.io/2015/06/24/%E9%AD%85%E6%97%8F%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5Mac%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -146,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/06/24/%E9%AD%85%E6%97%8F%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5Mac%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://seniorzhai.github.io/2014/09/10/%E9%A2%9C%E8%89%B2%E6%90%AD%E9%85%8D/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -173,7 +209,25 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/05/23/%E8%A1%A8%E6%A0%BC(UITableView)%E5%92%8C%E8%A1%A8%E6%A0%BC%E6%8E%A7%E5%88%B6%E5%99%A8(UITableViewController)/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2015/08/05/%E8%8E%B7%E5%8F%96NavBar%E9%AB%98%E5%BA%A6%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/02/17/%E8%A7%86%E5%9B%BE%E6%8E%A7%E5%88%B6%E5%99%A8%E4%B8%8E%E9%80%9A%E7%9F%A5/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -191,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/17/%E8%A7%86%E5%9B%BE%E6%8E%A7%E5%88%B6%E5%99%A8%E4%B8%8E%E9%80%9A%E7%9F%A5/</loc>
+    <loc>https://seniorzhai.github.io/2014/12/22/%E8%AE%A9AndroidSDK%E9%A3%9E/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -218,34 +272,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/23/%E8%BF%9B%E5%BA%A6%E6%9D%A1/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/12/22/%E8%AE%A9AndroidSDK%E9%A3%9E/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/01/19/%E9%85%8D%E7%BD%AEWebStorm%E6%94%AF%E6%8C%81node-js%E5%92%8CExpress/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/02/09/%E9%93%BE%E6%8E%A5mongodb/</loc>
+    <loc>https://seniorzhai.github.io/2014/12/25/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -263,7 +290,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/12/25/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</loc>
+    <loc>https://seniorzhai.github.io/2015/01/19/%E9%85%8D%E7%BD%AEWebStorm%E6%94%AF%E6%8C%81node-js%E5%92%8CExpress/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -272,7 +299,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/05/23/%E8%A1%A8%E6%A0%BC(UITableView)%E5%92%8C%E8%A1%A8%E6%A0%BC%E6%8E%A7%E5%88%B6%E5%99%A8(UITableViewController)/</loc>
+    <loc>https://seniorzhai.github.io/2014/02/23/%E8%BF%9B%E5%BA%A6%E6%9D%A1/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -281,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/14/%E7%9B%B8%E6%9C%BA%E5%8A%9F%E8%83%BD/</loc>
+    <loc>https://seniorzhai.github.io/2015/02/09/%E9%93%BE%E6%8E%A5mongodb/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -299,25 +326,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/11/%E7%9C%8B%E7%9D%80%E8%88%92%E6%9C%8D%E5%8F%9112%E7%A7%8D%E7%95%8C%E9%9D%A2%E9%A2%9C%E8%89%B2/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2015/03/18/%E7%90%86%E8%A7%A3StrongReferce%E3%80%81SoftReference%E3%80%81WeakReference%E3%80%81PhantomReference/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/09/23/%E7%A9%BF%E8%B6%8A%E5%B0%81%E9%94%81%E7%BA%BF/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -335,16 +344,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/26/%E7%BC%96%E8%BE%91%E8%A1%A8%E6%A0%BC/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/06/17/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E5%BD%A2Shape/</loc>
+    <loc>https://seniorzhai.github.io/2014/09/23/%E7%A9%BF%E8%B6%8A%E5%B0%81%E9%94%81%E7%BA%BF/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -362,25 +362,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/04/16/%E7%BB%99AS%E4%B8%80%E4%B8%AAMeterial-template%E6%A8%A1%E6%9D%BF/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2015/06/19/%E7%BA%A2%E6%9D%8F%E5%85%AC%E7%9B%8A%E4%BB%A3%E7%90%86%E2%80%94%E2%80%94%E5%A6%88%E5%A6%88%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E5%BD%93%E5%BF%83%E6%88%91%E7%BF%BB%E4%B8%8D%E4%BA%86%E5%A2%99%E4%BA%86/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/07/14/%E8%87%AA%E5%AE%9A%E4%B9%89ProgressBar/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -407,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/03/31/%E6%8E%89%E6%B8%A3%E5%A4%A9%E7%9A%84%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E5%BA%93Fresco/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/14/%E7%9B%B8%E6%9C%BA%E5%8A%9F%E8%83%BD/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -416,7 +398,52 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2016/08/07/%E6%91%84%E5%BD%B1%E9%A2%84%E5%A4%84%E7%90%86/</loc>
+    <loc>https://seniorzhai.github.io/2014/02/26/%E7%BC%96%E8%BE%91%E8%A1%A8%E6%A0%BC/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/04/16/%E7%BB%99AS%E4%B8%80%E4%B8%AAMeterial-template%E6%A8%A1%E6%9D%BF/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/07/14/%E8%87%AA%E5%AE%9A%E4%B9%89ProgressBar/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/08/11/%E7%9C%8B%E7%9D%80%E8%88%92%E6%9C%8D%E5%8F%9112%E7%A7%8D%E7%95%8C%E9%9D%A2%E9%A2%9C%E8%89%B2/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/06/17/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E5%BD%A2Shape/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/08/13/%E6%8E%A7%E5%88%B6%E7%9B%B8%E6%9C%BA%E7%A1%AC%E4%BB%B6/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -426,6 +453,24 @@
   
   <url>
     <loc>https://seniorzhai.github.io/2014/07/10/%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/03/31/%E6%8E%89%E6%B8%A3%E5%A4%A9%E7%9A%84%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E5%BA%93Fresco/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/02/27/%E6%96%87%E4%BB%B6IO/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -461,15 +506,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/27/%E6%96%87%E4%BB%B6IO/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2014/12/09/%E6%A8%A1%E7%B3%8A%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -488,6 +524,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/09/18/%E7%8E%AF%E4%BF%A1SDK(%E4%B8%80)/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2015/04/15/%E6%AF%94%E8%BE%83%E9%80%9A%E7%94%A8%E7%9A%84%E9%80%82%E9%85%8D%E5%99%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -497,25 +542,16 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2016/08/07/%E6%91%84%E5%BD%B1%E9%A2%84%E5%A4%84%E7%90%86/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2015/11/30/%E7%89%9B%E9%80%BC%E5%88%B0%E5%A4%A9%E4%B8%8A%E7%9A%84Atom%E6%8F%92%E4%BB%B6/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/08/13/%E6%8E%A7%E5%88%B6%E7%9B%B8%E6%9C%BA%E7%A1%AC%E4%BB%B6/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/09/18/%E7%8E%AF%E4%BF%A1SDK(%E4%B8%80)/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -569,6 +605,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/08/26/%E6%82%B2%E5%89%A7%E7%9A%84%E5%BC%80%E5%A7%8B/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/02/18/%E5%B8%B8%E7%94%A8UIView%E7%BB%84%E4%BB%B6/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -596,25 +641,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/26/%E6%82%B2%E5%89%A7%E7%9A%84%E5%BC%80%E5%A7%8B/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2014/09/15/%E6%88%91%E7%9C%BC%E4%B8%AD%E7%9A%84REST%E5%AE%A2%E6%88%B7%E7%AB%AF(%E4%B8%80)/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/01/06/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -632,6 +659,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2015/01/06/%E5%B8%B8%E8%A7%81%E7%9A%84%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2015/07/17/%E6%89%8B%E5%8A%A8%E5%AF%BC%E5%85%A5%E6%9C%AC%E5%9C%B0support%E5%8C%85/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -641,7 +677,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/27/%E5%8D%95%E9%80%89ListView/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/01/%E5%8F%8B%E7%9B%9F%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -668,25 +704,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/01/%E5%8F%8B%E7%9B%9F%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2018/11/28/%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8CKotlin/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/11/05/%E5%8F%AF%E8%A7%86%E5%8C%96%E9%BB%91%E5%AE%A2%E6%94%BB%E5%87%BB/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -713,6 +731,33 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2015/01/08/%E5%9C%A8Android%E4%B8%8A%E4%BD%BF%E7%94%A8NoSQL%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/08/27/%E5%8D%95%E9%80%89ListView/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/07/09/%E5%9B%BE%E7%89%87%E9%80%89%E5%8F%96/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/09/30/%E5%9C%A8Chrome%E4%B8%8A%E4%BD%BF%E7%94%A8Markdown/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -731,7 +776,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/07/09/%E5%9B%BE%E7%89%87%E9%80%89%E5%8F%96/</loc>
+    <loc>https://seniorzhai.github.io/2014/11/05/%E5%8F%AF%E8%A7%86%E5%8C%96%E9%BB%91%E5%AE%A2%E6%94%BB%E5%87%BB/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -749,61 +794,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/01/08/%E5%9C%A8Android%E4%B8%8A%E4%BD%BF%E7%94%A8NoSQL%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/01/07/%E5%81%B7%E6%87%92%E7%9A%84findViewById/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2016/03/10/%E4%BD%BF%E7%94%A8jadx/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/07/30/%E5%88%A4%E6%96%ADListView%E6%98%AF%E5%90%A6%E5%9C%A8%E9%A1%B6%E7%AB%AF%E6%88%96%E8%80%85%E5%9C%A8%E5%BA%95%E9%83%A8/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/07/09/%E5%86%99%E5%9C%A8%E5%86%B3%E8%B5%9B%E4%B9%8B%E5%89%8D/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/02/26/%E5%88%9B%E5%BB%BACocos2d-X%E5%B7%A5%E7%A8%8B/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/04/01/%E5%88%86%E8%BE%A8%E7%8E%87%E9%80%82%E9%85%8D/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -830,7 +821,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/18/%E5%88%A9%E7%94%A8%E4%BB%A3%E7%90%86/</loc>
+    <loc>https://seniorzhai.github.io/2014/07/30/%E5%88%A4%E6%96%ADListView%E6%98%AF%E5%90%A6%E5%9C%A8%E9%A1%B6%E7%AB%AF%E6%88%96%E8%80%85%E5%9C%A8%E5%BA%95%E9%83%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -839,7 +830,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/03/03/%E5%8A%A8%E7%94%BB/</loc>
+    <loc>https://seniorzhai.github.io/2014/04/01/%E5%88%86%E8%BE%A8%E7%8E%87%E9%80%82%E9%85%8D/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -848,7 +839,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/06/%E5%8A%A0%E5%AF%86%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
+    <loc>https://seniorzhai.github.io/2014/02/26/%E5%88%9B%E5%BB%BACocos2d-X%E5%B7%A5%E7%A8%8B/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -857,7 +848,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/05/04/%E5%8A%A8%E7%94%BB%E5%BC%95%E6%93%8EPop%E4%BB%8B%E7%BB%8D/</loc>
+    <loc>https://seniorzhai.github.io/2014/07/09/%E5%86%99%E5%9C%A8%E5%86%B3%E8%B5%9B%E4%B9%8B%E5%89%8D/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -884,7 +875,79 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2015/01/07/%E5%81%B7%E6%87%92%E7%9A%84findViewById/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/03/03/%E5%8A%A8%E7%94%BB/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/02/18/%E5%88%A9%E7%94%A8%E4%BB%A3%E7%90%86/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/05/04/%E5%8A%A8%E7%94%BB%E5%BC%95%E6%93%8EPop%E4%BB%8B%E7%BB%8D/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/08/06/%E5%8A%A0%E5%AF%86%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2015/02/25/typeof%E5%92%8Cinstanceof/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/02/22/xib%E6%96%87%E4%BB%B6%E6%B3%A8%E6%84%8F%E7%82%B9/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/12/18/%E4%B8%80%E5%8F%A5%E8%AF%9D%E8%A7%A3%E9%87%8A%EF%BC%9F%E5%92%8C%EF%BC%81/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/03/24/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BC%93%E5%AD%98%E7%B1%BB/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -911,7 +974,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/03/19/%E4%BD%BF%E7%94%A8Cocosd-console%E5%88%9B%E5%BB%BA%E8%BF%90%E8%A1%8C%E5%B7%A5%E7%A8%8B/</loc>
+    <loc>https://seniorzhai.github.io/2014/10/14/volley%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -920,7 +983,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/07/07/%E4%BD%BF%E7%94%A8ContentProvider%E7%AE%A1%E7%90%86App%E6%95%B0%E6%8D%AE/</loc>
+    <loc>https://seniorzhai.github.io/2014/03/19/%E4%BD%BF%E7%94%A8Cocosd-console%E5%88%9B%E5%BB%BA%E8%BF%90%E8%A1%8C%E5%B7%A5%E7%A8%8B/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -938,16 +1001,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/22/xib%E6%96%87%E4%BB%B6%E6%B3%A8%E6%84%8F%E7%82%B9/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2017/02/28/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://seniorzhai.github.io/2015/03/05/%E4%BD%BF%E7%94%A8Mongoose/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -965,16 +1019,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/03/24/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BC%93%E5%AD%98%E7%B1%BB/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/03/05/%E4%BD%BF%E7%94%A8Mongoose/</loc>
+    <loc>https://seniorzhai.github.io/2014/07/07/%E4%BD%BF%E7%94%A8ContentProvider%E7%AE%A1%E7%90%86App%E6%95%B0%E6%8D%AE/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -992,25 +1037,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/12/18/%E4%B8%80%E5%8F%A5%E8%AF%9D%E8%A7%A3%E9%87%8A%EF%BC%9F%E5%92%8C%EF%BC%81/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/10/14/volley%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/01/16/node-js%E5%8C%85/</loc>
+    <loc>https://seniorzhai.github.io/2017/02/28/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1037,7 +1064,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/01/17/node%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <loc>https://seniorzhai.github.io/2015/01/16/node-js%E5%8C%85/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1047,6 +1074,33 @@
   
   <url>
     <loc>https://seniorzhai.github.io/2014/07/01/node.js%E5%85%A5%E9%97%A8(%E4%BA%8C)/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/01/17/node%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/01/17/node%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/03/05/npm%E9%95%9C%E5%83%8F/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1082,25 +1136,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/11/19/sp%E4%B8%8Epx%E7%9A%84%E6%8D%A2%E7%AE%97/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2015/04/23/swift-fallthrough%E5%85%B3%E9%94%AE%E5%AD%97/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/01/17/node%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1118,16 +1154,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/03/05/npm%E9%95%9C%E5%83%8F/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/08/31/git%E5%9B%9E%E9%80%80/</loc>
+    <loc>https://seniorzhai.github.io/2014/11/19/sp%E4%B8%8Epx%E7%9A%84%E6%8D%A2%E7%AE%97/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1145,7 +1172,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2016/08/25/guard%E5%92%8Cdefer/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/31/git%E5%9B%9E%E9%80%80/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1163,34 +1190,16 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2016/08/25/guard%E5%92%8Cdefer/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/02/26/iOS%E5%BA%94%E7%94%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/11/04/iPhone%E7%95%8C%E9%9D%A2%E9%80%82%E9%85%8D%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/09/22/iOS%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/03/31/jQuery%E4%B8%89%E8%AF%86/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1226,7 +1235,34 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2015/03/31/jQuery%E4%B8%89%E8%AF%86/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/11/04/iPhone%E7%95%8C%E9%9D%A2%E9%80%82%E9%85%8D%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2015/03/30/jQuery%E5%88%9D%E8%AF%86/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/09/22/iOS%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1244,34 +1280,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/05/26/Xcode%E6%8F%92%E4%BB%B6-Extend-Plug-in/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/03/12/Xcode%E6%8F%92%E4%BB%B6%E7%AE%A1%E7%90%86%E5%A4%A7%E5%B8%88Alcartraz/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/02/28/androidannotations(%E4%B8%80)/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/11/27/android-async-http/</loc>
+    <loc>https://seniorzhai.github.io/2014/12/29/XML%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1289,16 +1298,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/03/16/androidannotations(%E4%BA%8C)/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2018/07/24/electron%E5%88%9D%E8%AF%86/</loc>
+    <loc>https://seniorzhai.github.io/2014/11/27/android-async-http/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1316,7 +1316,16 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/04/08/autoresizingMask/</loc>
+    <loc>https://seniorzhai.github.io/2014/03/12/Xcode%E6%8F%92%E4%BB%B6%E7%AE%A1%E7%90%86%E5%A4%A7%E5%B8%88Alcartraz/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/03/16/androidannotations(%E4%BA%8C)/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1343,7 +1352,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/12/29/XML%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/</loc>
+    <loc>https://seniorzhai.github.io/2015/02/28/androidannotations(%E4%B8%80)/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1352,7 +1361,25 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/21/UIImageView-UIAlertView-UIActionSheet/</loc>
+    <loc>https://seniorzhai.github.io/2014/05/26/Xcode%E6%8F%92%E4%BB%B6-Extend-Plug-in/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/04/08/autoresizingMask/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2018/07/24/electron%E5%88%9D%E8%AF%86/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1370,25 +1397,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/22/UITextView%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%8E%A7%E4%BB%B6/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/02/24/UITabBarController/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/02/17/UIView/</loc>
+    <loc>https://seniorzhai.github.io/2016/04/25/UIStackView%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1406,43 +1415,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2016/01/10/View%E7%9A%84%E4%B8%80%E4%BA%9B%E9%87%8D%E8%A6%81%E6%96%B9%E6%B3%95/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2016/04/25/UIStackView%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2019/05/29/Vue-slot/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/11/19/WebSpider/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/05/07/Volley/</loc>
+    <loc>https://seniorzhai.github.io/2014/02/24/UITabBarController/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1460,7 +1433,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/08/09/Swift%E9%97%AD%E5%8C%85%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    <loc>https://seniorzhai.github.io/2019/05/29/Vue-slot/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1469,7 +1442,61 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/06/13/SwipRefreshLayout/</loc>
+    <loc>https://seniorzhai.github.io/2014/02/21/UIImageView-UIAlertView-UIActionSheet/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2016/01/10/View%E7%9A%84%E4%B8%80%E4%BA%9B%E9%87%8D%E8%A6%81%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/02/22/UITextView%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%8E%A7%E4%BB%B6/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/05/07/Volley/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/02/17/UIView/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/11/19/WebSpider/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/08/09/Swift%E9%97%AD%E5%8C%85%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1487,25 +1514,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/07/10/Swift%E7%AC%94%E8%AE%B0(%E4%B8%89)/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/11/16/TextView%E5%B1%9E%E6%80%A7%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/08/14/TabBarView/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/20/SwipeView/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1523,34 +1532,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/20/UIControl/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/04/30/UIGestureRecognizer/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/01/07/ToolBar%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/08/20/SwipeView/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/14/TabBarView/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1568,7 +1550,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/18/Sprite%E7%B2%BE%E7%81%B5%E7%B1%BB/</loc>
+    <loc>https://seniorzhai.github.io/2015/01/07/ToolBar%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1577,7 +1559,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/08/SockMonitor%E5%92%8C%E5%B0%8F%E7%B1%B3%E5%8A%A9%E6%89%8B%E9%85%8D%E5%90%88%E6%8A%93%E5%8C%85/</loc>
+    <loc>https://seniorzhai.github.io/2014/11/16/TextView%E5%B1%9E%E6%80%A7%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1586,7 +1568,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/09/28/Sublime-Text%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
+    <loc>https://seniorzhai.github.io/2014/02/20/UIControl/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1595,7 +1577,25 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/11/13/SublimeText%E6%8F%92%E4%BB%B6%E5%8D%B8%E8%BD%BD/</loc>
+    <loc>https://seniorzhai.github.io/2014/06/13/SwipRefreshLayout/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/04/30/UIGestureRecognizer/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/07/10/Swift%E7%AC%94%E8%AE%B0(%E4%B8%89)/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1613,6 +1613,24 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2015/05/13/SuperAgent%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/11/13/SublimeText%E6%8F%92%E4%BB%B6%E5%8D%B8%E8%BD%BD/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/11/05/Swift%E4%B8%8D%E5%8F%AF%E9%94%99%E8%BF%87%E7%9A%8410%E5%A4%A7%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -1622,7 +1640,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/10/26/Swift%E4%B8%8EOC%E4%B8%ADnil%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/18/Sprite%E7%B2%BE%E7%81%B5%E7%B1%BB/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1631,7 +1649,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/05/13/SuperAgent%E4%BD%BF%E7%94%A8/</loc>
+    <loc>https://seniorzhai.github.io/2014/09/28/Sublime-Text%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1649,7 +1667,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/08/26/Swift%E7%89%88Masonry-SnapKit%E5%B8%83%E5%B1%80%E6%A1%86%E6%9E%B6/</loc>
+    <loc>https://seniorzhai.github.io/2014/10/26/Swift%E4%B8%8EOC%E4%B8%ADnil%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1667,6 +1685,24 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/08/08/SockMonitor%E5%92%8C%E5%B0%8F%E7%B1%B3%E5%8A%A9%E6%89%8B%E9%85%8D%E5%90%88%E6%8A%93%E5%8C%85/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/08/26/Swift%E7%89%88Masonry-SnapKit%E5%B8%83%E5%B1%80%E6%A1%86%E6%9E%B6/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2015/03/20/Selector/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -1676,7 +1712,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/09/01/Serializable%E5%92%8CParcelable%E5%AE%9E%E7%8E%B0%E5%BA%8F%E5%88%97%E5%8C%96/</loc>
+    <loc>https://seniorzhai.github.io/2015/02/13/SelectorChapek%E6%8F%92%E4%BB%B6/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1685,7 +1721,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/06/23/SQLite/</loc>
+    <loc>https://seniorzhai.github.io/2014/09/01/Serializable%E5%92%8CParcelable%E5%AE%9E%E7%8E%B0%E5%BA%8F%E5%88%97%E5%8C%96/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1704,15 +1740,6 @@
   
   <url>
     <loc>https://seniorzhai.github.io/2014/06/19/Service/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/10/10/Shell(%E4%B8%80)/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1748,7 +1775,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/04/08/Shutdown/</loc>
+    <loc>https://seniorzhai.github.io/2014/06/23/SQLite/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1757,7 +1784,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/02/13/SelectorChapek%E6%8F%92%E4%BB%B6/</loc>
+    <loc>https://seniorzhai.github.io/2014/10/10/Shell(%E4%B8%80)/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1767,6 +1794,33 @@
   
   <url>
     <loc>https://seniorzhai.github.io/2014/12/31/SizeClass/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/04/08/Shutdown/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/11/24/ReactNative-%E6%A0%B7%E5%BC%8F/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/03/04/ReactiveCocoa%E6%A1%86%E6%9E%B6/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1793,15 +1847,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/01/06/RecyclerView%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2015/06/19/RecyclerView%E5%A4%9AItem%E7%9A%84%E6%83%85%E5%86%B5/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -1811,7 +1856,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/03/04/ReactiveCocoa%E6%A1%86%E6%9E%B6/</loc>
+    <loc>https://seniorzhai.github.io/2015/01/06/RecyclerView%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1820,16 +1865,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/11/24/ReactNative-%E6%A0%B7%E5%BC%8F/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/08/08/ResourceUtils/</loc>
+    <loc>https://seniorzhai.github.io/2020/11/09/Rive/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1856,7 +1892,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/11/08/RippleEffect/</loc>
+    <loc>https://seniorzhai.github.io/2014/04/01/SONFillAnimation/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1874,7 +1910,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2020/11/09/Rive/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/08/ResourceUtils/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1883,16 +1919,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/04/01/SONFillAnimation/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/12/04/Python%E6%A0%87%E8%AF%86%E7%AC%A6%E3%80%81%E4%BF%9D%E7%95%99%E5%AD%97%E7%AC%A6/</loc>
+    <loc>https://seniorzhai.github.io/2014/11/08/RippleEffect/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1910,15 +1937,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/09/27/Python%E9%81%8D%E5%8E%86/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2014/12/05/Python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -1928,7 +1946,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/26/Quartz-2D%E7%BB%98%E5%9B%BE/</loc>
+    <loc>https://seniorzhai.github.io/2014/12/04/Python%E6%A0%87%E8%AF%86%E7%AC%A6%E3%80%81%E4%BF%9D%E7%95%99%E5%AD%97%E7%AC%A6/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1946,7 +1964,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2016/01/23/ReactNative-Flex/</loc>
+    <loc>https://seniorzhai.github.io/2014/02/26/Quartz-2D%E7%BB%98%E5%9B%BE/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1964,7 +1982,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/08/RandomUtils%E9%9A%8F%E6%9C%BA%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
+    <loc>https://seniorzhai.github.io/2016/01/23/ReactNative-Flex/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -1974,6 +1992,24 @@
   
   <url>
     <loc>https://seniorzhai.github.io/2015/09/24/ReactNative-%E5%A6%82%E4%BD%95%E5%BC%80%E5%A7%8B/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/04/27/RDVTabBarController%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/08/08/RandomUtils%E9%9A%8F%E6%9C%BA%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2000,16 +2036,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/04/27/RDVTabBarController%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/06/16/Python-%E4%BA%94---%E6%A8%A1%E5%9D%97/</loc>
+    <loc>https://seniorzhai.github.io/2014/09/27/Python%E9%81%8D%E5%8E%86/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2027,16 +2054,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/10/11/Python-%E5%85%AB---%E6%96%87%E4%BB%B6IO/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/06/18/Python-%E5%85%AD---%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</loc>
+    <loc>https://seniorzhai.github.io/2014/06/16/Python-%E4%BA%94---%E6%A8%A1%E5%9D%97/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2054,7 +2072,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/10/10/Python%E4%B8%AD%E7%9A%84yield/</loc>
+    <loc>https://seniorzhai.github.io/2014/06/14/Python-%E5%9B%9B---%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2063,7 +2081,16 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/10/13/Python%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84Post%E8%AF%B7%E6%B1%82/</loc>
+    <loc>https://seniorzhai.github.io/2014/10/11/Python-%E5%85%AB---%E6%96%87%E4%BB%B6IO/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/10/10/Python%E4%B8%AD%E7%9A%84yield/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2081,6 +2108,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/06/18/Python-%E5%85%AD---%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/09/26/Python%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -2090,7 +2126,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/06/14/Python-%E5%9B%9B---%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</loc>
+    <loc>https://seniorzhai.github.io/2014/10/13/Python%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84Post%E8%AF%B7%E6%B1%82/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2108,7 +2144,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/08/PixelUtils/</loc>
+    <loc>https://seniorzhai.github.io/2014/04/08/PendulemView/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2117,7 +2153,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/04/08/PendulemView/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/08/PixelUtils/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2135,15 +2171,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2016/04/11/ProGuard%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2015/08/04/PreferenceActivity%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -2153,25 +2180,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/06/13/Python-%E4%B8%89---%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/06/12/Python-%E4%B8%80---%E5%9F%BA%E7%A1%80/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/10/11/Python-%E4%B9%9D---%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/</loc>
+    <loc>https://seniorzhai.github.io/2016/04/11/ProGuard%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2189,25 +2198,34 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/06/12/Python-%E4%B8%80---%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/06/13/Python-%E4%B8%89---%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/10/11/Python-%E4%B9%9D---%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/08/08/PreferencesUtils/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/02/27/NanoTasks/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/08/15/NiftyDialogEffects/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2225,7 +2243,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/03/08/Objective-C%E5%9D%97%E8%AF%AD%E6%B3%95/</loc>
+    <loc>https://seniorzhai.github.io/2015/02/27/NanoTasks/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2243,16 +2261,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/28/Objective-C%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2018/09/04/OpenCV-contrib/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/15/NiftyDialogEffects/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2270,6 +2279,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/03/08/Objective-C%E5%9D%97%E8%AF%AD%E6%B3%95/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/12/15/PagerAdapter%E4%B8%8EViewPager/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -2279,7 +2297,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/03/20/Objective-C%E4%B8%AD%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%9A%84%E7%94%A8%E6%B3%95/</loc>
+    <loc>https://seniorzhai.github.io/2018/09/04/OpenCV-contrib/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2306,7 +2324,34 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/01/MD%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://seniorzhai.github.io/2014/03/20/Objective-C%E4%B8%AD%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%9A%84%E7%94%A8%E6%B3%95/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/02/28/Objective-C%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/02/02/LitePal%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/08/04/Loader%E6%9C%BA%E5%88%B6/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2324,7 +2369,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/01/Markdown%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/01/MD%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2351,15 +2396,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/02/02/LitePal%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2015/02/25/Meteor%E5%88%9D%E8%AF%86/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -2378,6 +2414,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/02/27/NSBundle/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/02/22/NDK-Samples/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -2387,7 +2432,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/02/27/NSBundle/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/01/Markdown%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2405,79 +2450,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/04/Loader%E6%9C%BA%E5%88%B6/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2014/04/09/NSURLConnection/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/02/25/JS%E4%B8%AD%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%A4%84%E7%90%86/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/02/09/JS%E6%93%8D%E4%BD%9CJSON/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/07/14/JavaSpcript-strict/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2016/02/18/Kotlin%E7%AE%80%E5%8D%95%E7%9A%84%E5%BC%80%E5%A7%8B/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/01/16/JavaScript%E5%9F%BA%E7%A1%80/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/04/15/LabelView%E8%A7%92%E6%A0%87%E4%B8%8D%E7%94%A8%E6%84%81/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/03/20/KVO/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2495,6 +2468,33 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2015/01/16/JavaScript%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/07/14/JavaSpcript-strict/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/02/25/JS%E4%B8%AD%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%A4%84%E7%90%86/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/09/11/JumpingBeans/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -2504,7 +2504,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/11/20/ListView%E5%B5%8C%E5%A5%97GridView/</loc>
+    <loc>https://seniorzhai.github.io/2015/02/09/JS%E6%93%8D%E4%BD%9CJSON/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2513,7 +2513,25 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/06/11/LayoutInflater%E7%9A%84inflate%E5%87%BD%E6%95%B0/</loc>
+    <loc>https://seniorzhai.github.io/2014/03/20/KVO/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/04/15/LabelView%E8%A7%92%E6%A0%87%E4%B8%8D%E7%94%A8%E6%84%81/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2016/02/18/Kotlin%E7%AE%80%E5%8D%95%E7%9A%84%E5%BC%80%E5%A7%8B/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2531,7 +2549,25 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/11/20/ListView%E5%B5%8C%E5%A5%97GridView/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/09/23/ListView%E7%89%B9%E6%AE%8A%E5%B1%9E%E6%80%A7/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/06/11/LayoutInflater%E7%9A%84inflate%E5%87%BD%E6%95%B0/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2594,24 +2630,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/11/20/GridLayout/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/11/17/GridView%E5%B1%9E%E6%80%A7/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2014/08/03/GsonRequest/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -2621,7 +2639,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/09/10/Gson%E8%A7%A3%E6%9E%90Json/</loc>
+    <loc>https://seniorzhai.github.io/2014/11/20/GridLayout/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2639,6 +2657,24 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/11/17/GridView%E5%B1%9E%E6%80%A7/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/09/10/Gson%E8%A7%A3%E6%9E%90Json/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/06/12/Google-%E5%85%A8%E7%90%83IP%E5%9C%B0%E5%9D%80%E5%BA%93/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -2648,7 +2684,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2019/05/19/Flutter-%E5%BC%95%E5%85%A5%E5%88%B0%E7%8E%B0%E6%9C%89%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>https://seniorzhai.github.io/2018/06/30/Flutter%E5%88%9D%E8%AF%95/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2658,15 +2694,6 @@
   
   <url>
     <loc>https://seniorzhai.github.io/2020/09/23/Flutter%E5%8A%A8%E7%94%BB/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2018/06/30/Flutter%E5%88%9D%E8%AF%95/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2693,7 +2720,16 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/01/24/Github%E9%A1%B9%E7%9B%AE%E6%95%B4%E7%90%86/</loc>
+    <loc>https://seniorzhai.github.io/2015/01/05/Fragment%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2019/05/19/Flutter-%E5%BC%95%E5%85%A5%E5%88%B0%E7%8E%B0%E6%9C%89%E9%A1%B9%E7%9B%AE/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2703,6 +2739,15 @@
   
   <url>
     <loc>https://seniorzhai.github.io/2014/03/04/Foundation%E6%A1%86%E6%9E%B6(%E4%BA%8C)/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/09/04/Fragment/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2729,16 +2774,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/09/04/Fragment/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/01/05/Fragment%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/</loc>
+    <loc>https://seniorzhai.github.io/2015/01/24/Github%E9%A1%B9%E7%9B%AE%E6%95%B4%E7%90%86/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2756,34 +2792,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/01/19/Express%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2014/11/05/FastApple/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2019/05/30/Flex-box/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/01/20/Express%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2801,7 +2810,16 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2019/05/16/Flutter-desktop-%E8%BF%90%E8%A1%8C/</loc>
+    <loc>https://seniorzhai.github.io/2015/01/20/Express%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/01/19/Express%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2828,15 +2846,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2019/05/25/Flutter-%E5%B8%83%E5%B1%80(%E4%B8%80)/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2019/05/25/Flutter-%E5%B8%83%E5%B1%80(%E4%B8%89)/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -2846,7 +2855,25 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2019/05/25/Flutter-%E5%B8%83%E5%B1%80(%E4%BA%8C)/</loc>
+    <loc>https://seniorzhai.github.io/2019/05/30/Flex-box/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2019/05/25/Flutter-%E5%B8%83%E5%B1%80(%E4%B8%80)/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2019/05/16/Flutter-desktop-%E8%BF%90%E8%A1%8C/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2864,7 +2891,34 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2019/05/25/Flutter-%E5%B8%83%E5%B1%80(%E4%BA%8C)/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2017/02/20/Docker%E5%85%A5%E9%97%A8/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/08/26/Eclipse%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/10/15/Eclipse%E5%AE%9E%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2891,7 +2945,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/26/Eclipse%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/</loc>
+    <loc>https://seniorzhai.github.io/2014/07/02/Eclipse%E5%AF%BC%E5%85%A5Gradle%E9%A1%B9%E7%9B%AE/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2900,7 +2954,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/07/02/Eclipse%E5%AF%BC%E5%85%A5Gradle%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>https://seniorzhai.github.io/2014/07/04/Drawerlayout/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2927,25 +2981,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/10/15/Eclipse%E5%AE%9E%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/07/04/Drawerlayout/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/03/21/Collection-Views/</loc>
+    <loc>https://seniorzhai.github.io/2014/10/09/ColorPicker/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -2963,25 +2999,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/10/09/ColorPicker/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/06/25/ContentProvider/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/12/23/Context%E8%AF%A6%E8%A7%A3/</loc>
+    <loc>https://seniorzhai.github.io/2014/03/21/Collection-Views/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3008,7 +3026,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/07/CursorLoader/</loc>
+    <loc>https://seniorzhai.github.io/2014/12/23/Context%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3018,6 +3036,24 @@
   
   <url>
     <loc>https://seniorzhai.github.io/2019/06/07/Dart-%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/08/07/CursorLoader/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/12/15/Crouton%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3044,7 +3080,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/12/15/Crouton%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    <loc>https://seniorzhai.github.io/2014/06/25/ContentProvider/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3071,15 +3107,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/01/06/CardView%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2014/08/06/Camera/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -3089,7 +3116,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2018/08/01/Charles%E4%B8%8ESS%E5%86%B2%E7%AA%81/</loc>
+    <loc>https://seniorzhai.github.io/2015/01/06/CardView%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3098,7 +3125,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/11/17/CocoaPods/</loc>
+    <loc>https://seniorzhai.github.io/2018/08/01/Charles%E4%B8%8ESS%E5%86%B2%E7%AA%81/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3143,6 +3170,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/11/17/CocoaPods/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/04/16/Android%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -3152,7 +3188,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/04/13/Application-mk%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/23/Anroid-Studio%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E6%96%B0%E7%89%B9%E6%80%A7%5BGoogle-IO-2014-Session%5D/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3179,6 +3215,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/08/15/ArcMenu/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/09/11/App%E8%AE%BE%E8%AE%A1%E9%80%9F%E6%9F%A5%E8%A1%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -3188,7 +3233,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/23/Anroid-Studio%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E6%96%B0%E7%89%B9%E6%80%A7%5BGoogle-IO-2014-Session%5D/</loc>
+    <loc>https://seniorzhai.github.io/2015/04/13/Application-mk%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3206,15 +3251,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/15/ArcMenu/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2014/10/29/AutoCompleteTextView/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -3224,7 +3260,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/19/Box2D/</loc>
+    <loc>https://seniorzhai.github.io/2014/04/21/Bootstrap%E9%A3%8E%E6%A0%BC%E6%8C%89%E9%92%AE/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3233,7 +3269,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/04/21/Bootstrap%E9%A3%8E%E6%A0%BC%E6%8C%89%E9%92%AE/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/19/Box2D/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3269,16 +3305,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/03/13/Android%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E5%B9%B6%E7%BC%93%E5%AD%98%E5%88%B0%E6%9C%AC%E5%9C%B0%E8%BD%AF%E5%BC%95%E7%94%A8/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/02/28/Android%E5%BC%80%E5%8F%91%E8%B4%B4%E5%A3%AB/</loc>
+    <loc>https://seniorzhai.github.io/2015/07/13/Android%E5%BC%95%E5%AF%BC%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3288,15 +3315,6 @@
   
   <url>
     <loc>https://seniorzhai.github.io/2014/12/16/Android%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9CUI/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/07/13/Android%E5%BC%95%E5%AF%BC%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3323,6 +3341,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2015/02/28/Android%E5%BC%80%E5%8F%91%E8%B4%B4%E5%A3%AB/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/09/15/Android%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E4%B8%AD%E7%9A%84%E5%B0%8F%E4%BC%97%E5%87%BD%E6%95%B0/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -3332,16 +3359,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/02/08/Android%E4%BB%A3%E7%A0%81-UI/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/02/04/Android%E4%BA%8B%E4%BB%B6/</loc>
+    <loc>https://seniorzhai.github.io/2014/03/13/Android%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E5%B9%B6%E7%BC%93%E5%AD%98%E5%88%B0%E6%9C%AC%E5%9C%B0%E8%BD%AF%E5%BC%95%E7%94%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3359,7 +3377,34 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/05/09/Android%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84%E5%92%8C%E5%BC%80%E5%8F%91%E5%BA%93/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/08/29/Android%E5%8A%A8%E7%94%BB/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/02/08/Android%E4%BB%A3%E7%A0%81-UI/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/08/06/Android%E5%8F%8D%E7%BC%96%E8%AF%91%E2%80%94%E2%80%94Mac%E7%AF%87/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3377,7 +3422,16 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/08/06/Android%E5%8F%8D%E7%BC%96%E8%AF%91%E2%80%94%E2%80%94Mac%E7%AF%87/</loc>
+    <loc>https://seniorzhai.github.io/2015/02/04/Android%E4%BA%8B%E4%BB%B6/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/03/03/Android%E5%AE%89%E5%85%A8(%E4%B8%80)/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3404,16 +3458,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/03/03/Android%E5%AE%89%E5%85%A8(%E4%B8%80)/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/05/09/Android%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84%E5%92%8C%E5%BC%80%E5%8F%91%E5%BA%93/</loc>
+    <loc>https://seniorzhai.github.io/2014/09/05/Android%E3%80%81iOS%E5%A4%A7%E4%B8%8D%E5%90%8C(%E4%BA%94)/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3440,52 +3485,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/09/05/Android%E3%80%81iOS%E5%A4%A7%E4%B8%8D%E5%90%8C(%E4%BA%94)/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/09/01/Android%E3%80%81iOS%E5%A4%A7%E4%B8%8D%E5%90%8C(%E4%BA%8C)/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2014/09/06/Android%E3%80%81iOS%E5%A4%A7%E4%B8%8D%E5%90%8C(%E5%85%AD)/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/09/01/Android%E3%80%81iOS%E5%A4%A7%E4%B8%8D%E5%90%8C-%E5%85%AB-%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/09/04/Android%E3%80%81iOS%E5%A4%A7%E4%B8%8D%E5%90%8C(%E5%9B%9B)/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2016/12/07/Android%E4%B8%8Eso/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3503,7 +3503,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/10/14/Android%E4%B8%BB%E9%A2%98%E5%92%8C%E6%A0%B7%E5%BC%8F/</loc>
+    <loc>https://seniorzhai.github.io/2014/09/04/Android%E3%80%81iOS%E5%A4%A7%E4%B8%8D%E5%90%8C(%E5%9B%9B)/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3521,7 +3521,34 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/06/17/Android-WebView%E4%B8%8EJS%E4%BA%A4%E4%BA%92/</loc>
+    <loc>https://seniorzhai.github.io/2014/09/01/Android%E3%80%81iOS%E5%A4%A7%E4%B8%8D%E5%90%8C(%E4%BA%8C)/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/09/01/Android%E3%80%81iOS%E5%A4%A7%E4%B8%8D%E5%90%8C-%E5%85%AB-%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/10/14/Android%E4%B8%BB%E9%A2%98%E5%92%8C%E6%A0%B7%E5%BC%8F/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2016/12/07/Android%E4%B8%8Eso/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3539,7 +3566,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/06/19/Android-permission%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E5%A4%A7%E5%85%A8/</loc>
+    <loc>https://seniorzhai.github.io/2014/11/06/AndroidDialog/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3548,7 +3575,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/11/06/AndroidDialog/</loc>
+    <loc>https://seniorzhai.github.io/2014/06/17/Android-WebView%E4%B8%8EJS%E4%BA%A4%E4%BA%92/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3575,6 +3602,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2015/02/13/AndroidStudio%E8%B0%83%E7%94%A8so%E6%96%87%E4%BB%B6/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2015/02/28/AndroidStudio%E5%9B%BE%E6%A0%87%E6%8F%92%E4%BB%B6/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -3584,7 +3620,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/02/13/AndroidStudio%E8%B0%83%E7%94%A8so%E6%96%87%E4%BB%B6/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/09/Android%E3%80%81iOS%E5%A4%A7%E4%B8%8D%E5%90%8C(%E4%B8%80)/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3611,7 +3647,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/09/Android%E3%80%81iOS%E5%A4%A7%E4%B8%8D%E5%90%8C(%E4%B8%80)/</loc>
+    <loc>https://seniorzhai.github.io/2014/06/19/Android-permission%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E5%A4%A7%E5%85%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3629,7 +3665,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2016/10/13/Android-Build/</loc>
+    <loc>https://seniorzhai.github.io/2015/08/12/Android-Lint%E5%B7%A5%E5%85%B7/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3638,7 +3674,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/08/12/Android-Lint%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://seniorzhai.github.io/2016/10/13/Android-Build/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3665,24 +3701,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/08/03/Android-Support-Annotations/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/09/29/Android-Studio%E5%AF%BC%E5%85%A5Jar%E5%8C%85%E5%8F%8A%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%80%E6%BA%90%E5%BA%93%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/2015/03/17/Android-Shape%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -3692,7 +3710,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/08/26/Android-ViewFinder/</loc>
+    <loc>https://seniorzhai.github.io/2014/09/29/Android-Studio%E5%AF%BC%E5%85%A5Jar%E5%8C%85%E5%8F%8A%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%80%E6%BA%90%E5%BA%93%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3719,7 +3737,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/03/26/AFNetworking/</loc>
+    <loc>https://seniorzhai.github.io/2014/08/26/Android-ViewFinder/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3728,7 +3746,16 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2016/08/26/API%E5%8F%AF%E7%94%A8%E6%80%A7%E6%A3%80%E6%B5%8B/</loc>
+    <loc>https://seniorzhai.github.io/2015/08/03/Android-Support-Annotations/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/03/26/AFNetworking/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3746,43 +3773,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2014/04/01/AVOS-Cloud/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/07/30/Action-Bar%E9%80%89%E9%A1%B9/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/06/18/Activity%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/03/21/Android-ADB%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/08/19/Android-Activity-Fragment%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
+    <loc>https://seniorzhai.github.io/2016/08/26/API%E5%8F%AF%E7%94%A8%E6%80%A7%E6%A3%80%E6%B5%8B/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3800,6 +3791,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2014/07/30/Action-Bar%E9%80%89%E9%A1%B9/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2014/04/10/AliasActivity/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -3809,7 +3809,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/06/16/-%E8%BD%AC-Android-%E6%89%8B%E6%9C%BA%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%E5%B9%B6%E5%88%B6%E4%BD%9C%E6%88%90-GIF-%E6%BC%94%E7%A4%BA%E5%9B%BE%E7%89%87/</loc>
+    <loc>https://seniorzhai.github.io/2014/03/21/Android-ADB%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3818,7 +3818,25 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/2015/05/28/-%E8%BD%AC-json%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90%E6%8F%92%E4%BB%B6/</loc>
+    <loc>https://seniorzhai.github.io/2014/04/01/AVOS-Cloud/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/06/18/Activity%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/08/19/Android-Activity-Fragment%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3836,6 +3854,15 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2015/05/28/-%E8%BD%AC-json%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90%E6%8F%92%E4%BB%B6/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2015/02/02/-%E8%BD%AC-%E5%8F%91%E7%8E%B0%E4%BC%98%E7%A7%80APP%E7%9A%84%E4%B8%80%E4%BA%9B%E9%80%94%E5%BE%84/</loc>
     
     <lastmod>2026-04-15</lastmod>
@@ -3845,7 +3872,43 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/2016/01/25/-%E8%BD%AC-ReactNative-ES5-ES6%E5%86%99%E6%B3%95%E5%AF%B9%E7%85%A7/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/2019/05/23/2d-inc-History-%E8%BF%90%E8%A1%8Cbug/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/03/19/500-px%E6%A8%A1%E7%B3%8A%E6%8E%A7%E4%BB%B6/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2015/06/16/-%E8%BD%AC-Android-%E6%89%8B%E6%9C%BA%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%E5%B9%B6%E5%88%B6%E4%BD%9C%E6%88%90-GIF-%E6%BC%94%E7%A4%BA%E5%9B%BE%E7%89%87/</loc>
+    
+    <lastmod>2026-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/2014/12/12/AFNetworking-text-html%E9%94%99%E8%AF%AF/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3864,33 +3927,6 @@
   
   <url>
     <loc>https://seniorzhai.github.io/2015/01/12/8%E5%B9%B4%E6%9D%A5iPhone%E7%9A%84%E5%8F%98%E5%8C%96/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2014/12/12/AFNetworking-text-html%E9%94%99%E8%AF%AF/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2016/01/25/-%E8%BD%AC-ReactNative-ES5-ES6%E5%86%99%E6%B3%95%E5%AF%B9%E7%85%A7/</loc>
-    
-    <lastmod>2026-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/2015/03/19/500-px%E6%A8%A1%E7%B3%8A%E6%8E%A7%E4%BB%B6/</loc>
     
     <lastmod>2026-04-15</lastmod>
     
@@ -3926,7 +3962,7 @@
 
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%BD%95%E5%B1%8F/</loc>
+    <loc>https://seniorzhai.github.io/tags/UIScrollView/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3954,21 +3990,28 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/UIScrollView/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%B3%A8%E8%A7%A3/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/App/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/SE5/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/SE6/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/ReactNative/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -3996,6 +4039,48 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/blur/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E6%A8%A1%E7%B3%8A/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E6%AF%9B%E7%8E%BB%E7%92%83/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%BD%95%E5%B1%8F/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/AFNetworking/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E6%B3%A8%E8%A7%A3/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/AndroidStudio/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -4004,13 +4089,6 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/%E5%AE%9A%E4%BD%8D%E4%BB%A3%E7%A0%81/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/iPhone/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4045,7 +4123,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/AFNetworking/</loc>
+    <loc>https://seniorzhai.github.io/tags/iPhone/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4060,41 +4138,6 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/Vision/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/DETR/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Detection/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/SE5/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/SE6/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/ReactNative/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4129,48 +4172,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/AlphaFold2/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Protein-Folding/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Science/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/CLIP/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Multimodal/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Contrastive-Learning/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/Diffusion/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -4199,14 +4200,35 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Sparse-Attention/</loc>
+    <loc>https://seniorzhai.github.io/tags/Multimodal/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Long-Context/</loc>
+    <loc>https://seniorzhai.github.io/tags/DETR/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Detection/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/CLIP/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Contrastive-Learning/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4234,14 +4256,14 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Retrieval/</loc>
+    <loc>https://seniorzhai.github.io/tags/Sparse-Attention/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Knowledge/</loc>
+    <loc>https://seniorzhai.github.io/tags/Long-Context/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4262,28 +4284,112 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/Retrieval/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Knowledge/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/AlphaFold2/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Protein-Folding/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Science/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Vision-Language/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Foundation-Model/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Instruction-Following/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Human-Computer-Interaction/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Evaluation/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Benchmark/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/User-Experience/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Data/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Governance/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Training/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/Swift/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/blur/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%A8%A1%E7%B3%8A/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%AF%9B%E7%8E%BB%E7%92%83/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4304,14 +4410,14 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/IDE/</loc>
+    <loc>https://seniorzhai.github.io/tags/shape/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/shape/</loc>
+    <loc>https://seniorzhai.github.io/tags/IDE/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4353,6 +4459,13 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/so/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/Material/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -4361,27 +4474,6 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/icon/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/so/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/keymap/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4403,6 +4495,20 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/%E5%A4%A7%E4%B8%8D%E5%90%8C/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/keymap/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4437,13 +4543,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Holo/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -4451,21 +4550,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/UI/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%88%86%E9%85%8D%E7%8E%87/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/EventBus/</loc>
+    <loc>https://seniorzhai.github.io/tags/Holo/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4480,6 +4565,20 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/Animation/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/UI/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%88%86%E9%85%8D%E7%8E%87/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4508,6 +4607,13 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/APK/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/EventBus/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4549,13 +4655,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Tips/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/%E5%BC%95%E5%AF%BC/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -4578,6 +4677,13 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Tips/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4675,20 +4781,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/CocosPods/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/Cocos2d-X/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -4717,7 +4809,14 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%95%B0%E5%AD%A6%EF%BC%8C%E5%AE%8F/</loc>
+    <loc>https://seniorzhai.github.io/tags/CocosPods/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4731,7 +4830,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Context/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E6%95%B0%E5%AD%A6%EF%BC%8C%E5%AE%8F/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4759,6 +4858,20 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/Context/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/dart/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/ContentProvider/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -4773,7 +4886,21 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/dart/</loc>
+    <loc>https://seniorzhai.github.io/tags/Crouton/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E6%8F%90%E7%A4%BA/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4801,7 +4928,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%85%A5%E9%97%A8/</loc>
+    <loc>https://seniorzhai.github.io/tags/eclipse/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4822,28 +4949,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Crouton/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%8F%90%E7%A4%BA/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/session/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/express/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4857,13 +4963,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Flex/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/Express%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -4871,7 +4970,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/eclipse/</loc>
+    <loc>https://seniorzhai.github.io/tags/express/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4885,35 +4984,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/github/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Git/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%88%86%E6%94%AF/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/branch/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/git/</loc>
+    <loc>https://seniorzhai.github.io/tags/Flex/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4928,6 +4999,20 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/%E5%8A%A8%E6%80%81%E4%BA%A4%E4%BA%92/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Git/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%88%86%E6%94%AF/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4962,7 +5047,28 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/branch/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/git/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/GridLayout/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/github/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -4976,27 +5082,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Gson/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Json/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Handler/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/Indicator/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -5004,70 +5089,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%AF%B9%E8%B1%A1/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E7%BB%A7%E6%89%BF/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/IntentService/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/js/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/json/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E8%AE%BE%E8%AE%A1%E7%BC%BA%E9%99%B7/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Prose/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Kotlin/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/javascript/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E8%A7%92%E6%A0%87/</loc>
+    <loc>https://seniorzhai.github.io/tags/Json/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5088,6 +5110,48 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/IntentService/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/js/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/javascript/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E8%AE%BE%E8%AE%A1%E7%BC%BA%E9%99%B7/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%AF%B9%E8%B1%A1/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E7%BB%A7%E6%89%BF/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/TextView/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -5096,6 +5160,48 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/json/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Gson/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E8%A7%92%E6%A0%87/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Prose/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Kotlin/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Python/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5123,7 +5229,21 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Python/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/sqlite/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Handler/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5138,13 +5258,6 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/C/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Markdown/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5166,20 +5279,6 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/%E8%87%AA%E9%80%82%E5%BA%94/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/sqlite/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5214,6 +5313,13 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/Markdown/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/%E5%BC%82%E6%AD%A5/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -5242,6 +5348,13 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/Paint/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/%E5%8F%96%E8%89%B2/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -5249,7 +5362,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Paint/</loc>
+    <loc>https://seniorzhai.github.io/tags/PerferenceScreencreen/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5270,21 +5383,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/PerferenceScreencreen/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/yield/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Post/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5298,7 +5397,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E9%81%8D%E5%8E%86/</loc>
+    <loc>https://seniorzhai.github.io/tags/Post/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5326,20 +5425,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Random/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E9%9A%8F%E6%9C%BA/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/React/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -5348,6 +5433,34 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/%E5%BC%80%E5%A7%8B/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E6%A0%B7%E5%BC%8F/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Style/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Random/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E9%9A%8F%E6%9C%BA/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5396,14 +5509,14 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%A0%B7%E5%BC%8F/</loc>
+    <loc>https://seniorzhai.github.io/tags/flutter/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Style/</loc>
+    <loc>https://seniorzhai.github.io/tags/Rive/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5417,35 +5530,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/MaterialDesign/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%B3%A2%E7%BA%B9/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%8C%89%E9%92%AE/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/flutter/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Rive/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E9%81%8D%E5%8E%86/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5480,7 +5565,21 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/shell/</loc>
+    <loc>https://seniorzhai.github.io/tags/MaterialDesign/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E6%B3%A2%E7%BA%B9/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E6%8C%89%E9%92%AE/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5501,49 +5600,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E7%B2%BE%E7%81%B5/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Sprite/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Sublime-Text/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/SublimeText/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/SizeClass/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%A4%9A%E5%B1%8F%E5%B9%95/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E9%80%82%E9%85%8D/</loc>
+    <loc>https://seniorzhai.github.io/tags/shell/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5558,20 +5615,6 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/%E5%B8%A6%E6%A0%87%E9%A2%98%E7%9A%84ListView/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%BC%80%E6%BA%90/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/nil/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5606,6 +5649,69 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/SublimeText/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%BC%80%E6%BA%90/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E7%B2%BE%E7%81%B5/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Sprite/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Sublime-Text/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/SizeClass/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%A4%9A%E5%B1%8F%E5%B9%95/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E9%80%82%E9%85%8D/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/nil/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/%E9%97%AD%E5%8C%85/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -5620,7 +5726,56 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/Log/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E7%94%A8%E6%97%B6/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/ToolBar/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/EditView/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/UIL/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Vue/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/slot/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5648,41 +5803,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/ToolBar/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/UIL/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Log/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E7%94%A8%E6%97%B6/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/View/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -5697,27 +5817,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Vue/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/slot/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Spider/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/weex/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -5725,7 +5824,14 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%B3%A8%E5%85%A5/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E8%BD%AC%E4%B9%89/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/XCode/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5746,21 +5852,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/XCode/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/node/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/electron/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5768,6 +5860,13 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/gravity/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/python/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5788,35 +5887,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/python/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E7%95%8C%E9%9D%A2/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%A4%9A%E5%88%86%E8%BE%A8%E7%8E%87/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/POST/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/GET/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E5%BC%80%E6%BA%90%E5%BA%93/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5837,7 +5908,28 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%BC%80%E6%BA%90%E5%BA%93/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E7%95%8C%E9%9D%A2/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%A4%9A%E5%88%86%E8%BE%A8%E7%8E%87/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Spider/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/module/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5858,21 +5950,35 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E8%BD%AC%E4%B9%89/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/module/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/HTTP/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/node/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/electron/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/npm/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E9%95%9C%E5%83%8F/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5900,21 +6006,14 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%96%87%E6%9C%AC%E5%A4%A7%E5%B0%8F/</loc>
+    <loc>https://seniorzhai.github.io/tags/POST/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/sp/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/px/</loc>
+    <loc>https://seniorzhai.github.io/tags/GET/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -5942,35 +6041,14 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E7%BA%BF%E7%A8%8B/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/Thread/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Ui/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/npm/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E9%95%9C%E5%83%8F/</loc>
+    <loc>https://seniorzhai.github.io/tags/Volley/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6005,21 +6083,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/vim/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/Mongoose/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/findViewById/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6033,7 +6097,21 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E6%9D%82%E6%96%87/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E7%BA%BF%E7%A8%8B/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Thread/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Ui/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6068,7 +6146,42 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%8A%A0%E5%AF%86/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E6%96%87%E6%9C%AC%E5%A4%A7%E5%B0%8F/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/sp/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/px/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E6%9D%82%E6%96%87/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/vim/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/findViewById/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6096,21 +6209,14 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
+    <loc>https://seniorzhai.github.io/tags/NoSQL/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Volley/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E8%BD%BB%E9%87%8F%E7%BA%A7/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6124,6 +6230,13 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%8A%A0%E5%AF%86/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/emoji/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -6131,21 +6244,14 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/%E5%B1%9E%E6%80%A7/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/NoSQL/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E8%BD%BB%E9%87%8F%E7%BA%A7/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6194,13 +6300,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E9%A2%84%E5%A4%84%E7%90%86/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/adb/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -6222,21 +6321,28 @@
   </url>
   
   <url>
+    <loc>https://seniorzhai.github.io/tags/SDK/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/IM/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E7%8E%AF%E4%BF%A1/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seniorzhai.github.io/tags/BaseAdapter/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/Atom/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E9%A2%9C%E8%89%B2/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6271,21 +6377,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/SDK/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/IM/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E7%8E%AF%E4%BF%A1/</loc>
+    <loc>https://seniorzhai.github.io/tags/%E9%A2%84%E5%A4%84%E7%90%86/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6293,6 +6385,13 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/Atom/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6307,6 +6406,20 @@
   
   <url>
     <loc>https://seniorzhai.github.io/tags/Sublime/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E5%A6%88%E5%A6%88%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E6%8B%85%E5%BF%83%E7%B3%BB%E5%88%97/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E7%B2%BE%E7%81%B5%E5%B8%A7/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6334,21 +6447,21 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/%E5%A6%88%E5%A6%88%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E6%8B%85%E5%BF%83%E7%B3%BB%E5%88%97/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E7%B2%BE%E7%81%B5%E5%B8%A7/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/CocoaPods/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/web-app/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6376,27 +6489,6 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/tags/web-app/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/color/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seniorzhai.github.io/tags/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seniorzhai.github.io/tags/ffmpeg/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -6417,10 +6509,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://seniorzhai.github.io/tags/%E9%A2%9C%E8%89%B2/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seniorzhai.github.io/tags/color/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://seniorzhai.github.io/categories/Android/</loc>
+    <loc>https://seniorzhai.github.io/categories/iOS/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6434,7 +6540,7 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/categories/iOS/</loc>
+    <loc>https://seniorzhai.github.io/categories/Android/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -6511,14 +6617,14 @@
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/categories/Camera/</loc>
+    <loc>https://seniorzhai.github.io/categories/flutter/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://seniorzhai.github.io/categories/flutter/</loc>
+    <loc>https://seniorzhai.github.io/categories/Camera/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
